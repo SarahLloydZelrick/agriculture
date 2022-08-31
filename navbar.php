@@ -21,7 +21,7 @@
     <a href="#!">
     <div class="flex flex-col items-center">
         <div class="grow ml-3">
-        <img src="images/icons/logo_doa.png" class="w-24 h-24" alt="Agriculture">
+        <img src="images/Icons/logo_doa.png" class="w-24 h-24" alt="Agriculture">
         </div>
       </div>
       <div class="flex flex-col items-center">
