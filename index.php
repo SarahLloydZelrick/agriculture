@@ -98,7 +98,7 @@ if(isset($_POST["btnsubmit"])) {
             </div>
             <div class="hidden flex flex-col basis-full justify-center items-center md:basis-1/2 h-screen  md:block right_div ">
                 <div class="title flex flex-col items-center p-10 gap-5 ">
-                    <img src="images/icons/logo_doa.png" class="w-72" alt="Agriculture">
+                    <img src="images/Icons/logo_doa.png" class="w-72" alt="Agriculture">
                     <h1 class="text-4xl text-center text-white">Department of Agriculture in Candelaria, Quezon Province</h1>
                 </div>
             </div>
