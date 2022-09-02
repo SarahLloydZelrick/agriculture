@@ -520,27 +520,27 @@
                     <div class="flex flex-col w-full">
                         <div class="flex gap-5">
                         <?php 
-                            $for_mainlivelihood=implode(",",$_POST['mainlivelihood']);
+                            $for_mainlivelihood=explode(",",$_POST['mainlivelihood']);
                         ?>
                             <p>MAIN LIVELIHOOD</p>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                    type="checkbox" id="inlineCheckbox1" value="farmer" <?php echo (in_array("Farmer",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
+                                    type="checkbox" id="inlineCheckbox1" value="Farmer" <?php echo (in_array("Farmer",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">FARMER </label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                    type="checkbox" id="inlineCheckbox2" value="farmworker "<?php echo (in_array("Farmworker",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
+                                    type="checkbox" id="inlineCheckbox2" value="Farmworker "<?php echo (in_array("Farmworker",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">FARMWORKER/LABORER</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                    type="checkbox" id="inlineCheckbox2" value="fisherfolk" <?php echo (in_array("Fisherfolk",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
+                                    type="checkbox" id="inlineCheckbox2" value="Fisherfolk" <?php echo (in_array("Fisherfolk",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">FISHERFOLK</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                    type="checkbox" id="inlineCheckbox2" value="agriyouth" <?php echo (in_array("Agriyouth",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
+                                    type="checkbox" id="inlineCheckbox2" value="Agriyouth" <?php echo (in_array("Agriyouth",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">AGRI YOUTH</label>
                             </div>
                         </div>
