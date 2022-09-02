@@ -520,7 +520,7 @@
                     <div class="flex flex-col w-full">
                         <div class="flex gap-5">
                         <?php 
-                            $for_mainlivelihood=explode(",",$_POST['mainlivelihood']);
+                            $for_mainlivelihood=implode(",",$_POST['mainlivelihood']);
                         ?>
                             <p>MAIN LIVELIHOOD</p>
                             <div class="form-check form-check-inline">
