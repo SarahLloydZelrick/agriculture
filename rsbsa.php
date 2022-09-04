@@ -149,15 +149,15 @@ if(isset($_POST["btnsubmit"])) {
 
                         //$farmingactivitypoultry = implode(',', $_POST['farmingactivity']);
                         //$farmingactivitylivestock = implode(',', $_POST['farmingactivitypoultry']);
-
+                        
+                        /*
                         $kindofwork = implode(',', $_POST['kindofwork']);
                         $kindofworkothers = mysqli_real_escape_string($con, $_POST['kindofworkothers']);
-                        //$typeoffishing = mysqli_real_escape_string($con, $_POST['typeoffishing']);
                         $typeoffishingothers = mysqli_real_escape_string($con, $_POST['typeoffishingothers']);
-                        //$typeofinvolment = mysqli_real_escape_string($con, $_POST['typeofinvolment']);
                         $typeoffishing = implode(',', $_POST['typeoffishing']);
                         $typeofinvolment = implode(',', $_POST['typeofinvolment']);
-            
+                        */
+                        
                         $typeofinvolmentothers = mysqli_real_escape_string($con, $_POST['typeofinvolmentothers']);
                         $grossfarming = mysqli_real_escape_string($con, $_POST['grossfarming']);
                         $grossnonfarming = mysqli_real_escape_string($con, $_POST['grossnonfarming']);
