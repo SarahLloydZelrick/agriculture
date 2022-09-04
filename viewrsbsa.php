@@ -22,6 +22,7 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
     <script src="https://kit.fontawesome.com/49db76c055.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <title>VIEW RSBSA</title>
 </head>
 <style>
@@ -533,7 +534,7 @@ if (!isset($_SESSION['loggedin'])) {
             </div>
         </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
 <script>
         function printDiv(printableArea) {
             var printContents = document.getElementById("myDiv").innerHTML;
