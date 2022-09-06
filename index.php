@@ -4,9 +4,10 @@ $errors = "";
 if(isset($_POST["btnsubmit"])) {
     if (!empty($_POST["email"]) && !empty($_POST["password"])) {
         session_start();
+        $foruserlevel = $_POST["userlevel"];
         include "config.php";
         // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-        $stmt = $con->prepare("SELECT id, CONCAT(name,' ',middlename,' ',lastname) as name, email, password, userlevel,photo,pin FROM tbl_accounts WHERE email = ? AND status = 'approved' AND stat = 'active'");
+        $stmt = $con->prepare("SELECT id, CONCAT(name,' ',middlename,' ',lastname) as name, email, password, userlevel,photo,pin FROM tbl_accounts WHERE email = ? AND status = 'approved' AND stat = 'active' AND userlevel = '".$foruserlevel."'");
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the email is a string so we use "s"
         $stmt->bind_param('s', $_POST['email']);
         $stmt->execute();
@@ -80,6 +81,12 @@ if(isset($_POST["btnsubmit"])) {
                     ?>
                     <h3 class="text-2xl text-center text-white">LOGIN</h3>
                     <form action="" method="POST" class="flex flex-col gap-5">
+                        <select name="userlevel" id="">
+                            <option value="superuser">Super User</option>
+                            <option value="admin">Admin</option>
+                            <option value="employee">Employee</option>
+                            <option value="farmer">Farmer</option>
+                        </select>
                         <input type="email" name="email" id="email" class="form-input" placeholder="Email address">
                         <input type="password" name="password" id="password" class="form-input" placeholder="Password">
                         <input class="btn-primary w-full mt-2" name="btnsubmit" type="submit" value="SIGN IN">
