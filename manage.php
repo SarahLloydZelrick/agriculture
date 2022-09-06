@@ -129,7 +129,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th style="display:none;">Photo</th>
                             <th style="display:none;">Acct stat</th>
                             <th>Account Status</th>
-                            <th>Actions</th>
+                            <th class="admin-hide">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -169,9 +169,9 @@ if (!isset($_SESSION['loggedin'])) {
                                     <button class="fa fa-eye rounded-lg border-2 border-green-500/50 p-2 w-9 icon-green" title="View account" data-bs-toggle="modal" data-bs-target="#all_table_modal"></button>
                                     <?php 
                                         if($acctstat == "inactive"){
-                                            echo '<button class="fa fa-thumbs-up rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Activate Account" data-bs-toggle="modal" data-bs-target="#activateModal"></button>';
+                                            echo '<button class="fa fa-thumbs-up rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue admin-hide" title="Activate Account" data-bs-toggle="modal" data-bs-target="#activateModal"></button>';
                                         }else{
-                                            echo '<button class="fa fa-thumbs-down rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Deactivate Account" data-bs-toggle="modal" data-bs-target="#deactivateModal"></button>';
+                                            echo '<button class="fa fa-thumbs-down rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red admin-hide" title="Deactivate Account" data-bs-toggle="modal" data-bs-target="#deactivateModal"></button>';
                                         }
                                     ?>
                                     
@@ -1086,4 +1086,19 @@ if (isset($_POST['btn_deactivate'] )) {
     }
 
 ?>
+<?php
+if($_SESSION['userlevel'] === "admin"){
+    ?>
+    <script type="text/javascript">
+    var elems = document.getElementsByClassName('admin');
+    var elemshide = document.getElementsByClassName('admin-hide');
+    for (var i=0;i<elems.length;i+=1){
+         elems[i].style.display = 'block';
+        }
+    for (var i=0;i<elemshide.length;i+=1){
+     elemshide[i].style.display = 'none';
+    }
+    </script>
+    <?php
+}
 
