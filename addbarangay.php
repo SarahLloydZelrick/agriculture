@@ -18,7 +18,7 @@ if(isset($_POST["btnsubmit"])) {
     $forbrgy = $tbl.$farmbarangay;
     $selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
     $resultbrgy = mysqli_query($con, $selectbrgy);
-    if (mysqli_num_rows($resultbrgy) < 0) {
+    if (mysqli_num_rows($resultbrgy) > 0) {
         $sql = "INSERT INTO tbl_barangay (`barangay`) VALUES ('".$farmbarangay."')";
                 if(mysqli_query($con, $sql)){
                 
