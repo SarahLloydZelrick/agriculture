@@ -330,7 +330,7 @@
                 <td colspan="3">
                     <div class="flex flex-col w-full">
                         <div class="flex gap-5">
-                            <p>4P's Beneficiary?</p>
+                            <p>4P's Beneficiary?</p> 
                             <?php 
                                 $for_fourps=explode(",",$fourps);
                             ?>
