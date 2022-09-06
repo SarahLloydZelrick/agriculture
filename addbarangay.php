@@ -19,7 +19,7 @@ if(isset($_POST["btnsubmit"])) {
     if (mysqli_num_rows($selectbrgy) > 0) {
         while($rowbrgy = mysqli_fetch_assoc($selectbrgy)) {
             $selectedbrgy = $rowbrgy['barangay'];
-            if($farmbarangay === $selectedbrgy){
+            if($farmbarangay = $selectedbrgy){
                 $errors = "1";
                 $error_message = "Error submitting the form. Barangay already exist.";
             }else{
