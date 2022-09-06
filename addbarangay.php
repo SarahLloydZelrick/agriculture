@@ -255,8 +255,8 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="first_row flex flex-row gap-5 w-full md:w-96">
                         <div class="flex flex-col gap-2 w-full">
                                 <label for="">Barangay</label>
-                                <input type="text" name="barangay" id="" class="form-input w-full" placeholder="Enter barangay ex. mayabobo">
-                                <select name="barangay" id="">
+                                <!--input type="text" name="barangay" id="" class="form-input w-full" placeholder="Enter barangay ex. mayabobo"-->
+                                <select name="barangay" id="" class="form-input">
                                     <option value="Buenavista_East">Buenavista East</option>
                                     <option value="Bukal_Norte">Bukal Norte</option>
                                     <option value="Bukal_Sur">Bukal Sur</option>
