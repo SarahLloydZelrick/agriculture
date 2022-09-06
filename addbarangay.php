@@ -16,7 +16,7 @@ if(isset($_POST["btnsubmit"])) {
     $farmbarangay = mysqli_real_escape_string($con, $_POST['barangay']);
     $forbrgy = $tbl.$farmbarangay;
     $selectbrgy = "SELECT * from tbl_barangay";
-    if (mysqli_num_rows($resultbrgy) > 0) {
+    if (mysqli_num_rows($selectbrgy) > 0) {
         while($rowbrgy = mysqli_fetch_assoc($selectbrgy)) {
             $selectedbrgy = $rowbrgy['barangay'];
             if($farmbarangay == $selectedbrgy){
