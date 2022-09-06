@@ -601,8 +601,10 @@ if(isset($_POST["btnsubmit"])) {
                                     $resultbrgy = mysqli_query($con, $sqlbrgy);
                                     if (mysqli_num_rows($resultbrgy) > 0) {
                                         while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
+                                            $orig = $rowbrgy['barangay'];
+                                            $replace = str_replace('_', ' ', $original, $forbrgy);
                                 ?>
-                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $rowbrgy['barangay']; ?></option>
+                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $forbrgy; ?></option>
                                 <?php
                                         }
                                     } else {
