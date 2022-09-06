@@ -105,8 +105,24 @@ if(isset($_POST["btnsubmit"])) {
             </div>
             <div class="hidden flex flex-col basis-full justify-center items-center md:basis-1/2 h-screen  md:block right_div ">
                 <div class="title flex flex-col items-center p-10 gap-5 ">
-                    <img src="images/Icons/logo_doa.png" class="w-72" alt="Agriculture">
-                    <h1 class="text-4xl text-center text-white">Department of Agriculture in Candelaria, Quezon Province</h1>
+                    <img src="images/Icons/logo_doa.png" class="w-64" alt="Agriculture">
+                    <h1 class="text-3xl text-center text-white">Department of Agriculture in Candelaria, Quezon Province</h1>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col gap-2">
+                            <h2>Mandate</h2>
+                            <p>The Office of the Municipal Agriculture is an agency of the Philippine government responsible for the promotion of the Agriculture & Fisheries development and growth. In partnership with the Department of Agriculture, provide benefits of development to the poor, especially in the rural areas</p>
+                        </div>
+                        <div class="flex">
+                            <div class="flex flex-col gap-2">
+                                <h2>Vision</h2>
+                                <p>Prosperous rural communities built on profitable farms that provide surplus for agro-industry and guarantees food security</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2>Mission</h2>
+                                <p>Increase income of farmers & fisherfolks, thereby contributing to the achievement of national goal of alleviating poverty, generating productive opportunities, fostering social justice and equity, and promoting sustainable economic growth</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
