@@ -199,7 +199,7 @@ if(isset($_POST["btnsubmit"])) {
               ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
               if ($con->query($sqltbl) === TRUE) {
                     $success = "1";
-                    $success_message = "Farm added successfully";
+                    $success_message = "Barangay added successfully";
               } else {
                 echo "Error creating table: " . $conn->error;
               }
