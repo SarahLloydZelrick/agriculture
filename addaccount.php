@@ -101,8 +101,6 @@ if(isset($_POST["btnsubmit"])) {
     }
     }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -151,6 +149,7 @@ if(isset($_POST["btnsubmit"])) {
                             <div class="flex flex-col gap-2 w-full">
                                 <label for="">User Level</label>
                                 <select name="userlevel" id="" class="form-input">
+                                    <option value="superuser">Super User</option>
                                     <option value="admin">Admin</option>
                                     <option value="staff">Staff</option>
                                     <option value="farmer">Farmer</option>
