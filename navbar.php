@@ -57,7 +57,7 @@
         <li class="relative">
           <a href="manage.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Manage Accounts</a>
         </li>
-        <li class="relative admin-hide">
+        <li class="relative">
           <a href="addaccount.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Add Accounts</a>
         </li>
         <li class="relative admin-hide">

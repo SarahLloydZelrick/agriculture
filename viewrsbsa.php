@@ -48,7 +48,7 @@ if (!isset($_SESSION['loggedin'])) {
                 <th>Ref Number</th>
                 <th>Barangay</th>
                 <th>2x2</th>
-                <th>Actions</th>
+                <th class="admin-hide">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <form method="POST" id="form">
                         <input type="text" name="rsbsaid" id="" value="<?php echo $row['id']; ?>" readonly style="display:none;">
                         <button class="fa fa-eye rounded-lg border-2 border-green-500/50 p-2 w-9 icon-green" title="View account" type="submit" name="btnview"></button>
-                        <button class="fa fa-pen rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Edit account" type="submit" name="btnedit"></button>
+                        <button class="fa fa-pen rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue admin-hide" title="Edit account" type="submit" name="btnedit"></button>
                         </form>
                         </td>
                     <?php
