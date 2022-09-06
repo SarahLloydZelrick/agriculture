@@ -36,7 +36,7 @@
     </a>
   </div>
   <ul class="relative px-1">
-    <li class="relative admin staff">
+    <li class="relative admin staff superuser">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="home.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>DASHBOARD</span>
       </a>
@@ -46,7 +46,7 @@
         <span>MY PROFILE</span>
       </a>
     </li-->
-    <li class="relative admin" id="sidenavSecEx2">
+    <li class="relative admin superuser" id="sidenavSecEx2">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx2" aria-expanded="false" aria-controls="collapseSidenavSecEx2">
         <span>ACCOUNT</span>
         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -57,7 +57,7 @@
         <li class="relative">
           <a href="manage.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Manage Accounts</a>
         </li>
-        <li class="relative">
+        <li class="relative admin-hide">
           <a href="addaccount.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Add Accounts</a>
         </li>
         <li class="relative admin-hide">
@@ -65,7 +65,7 @@
         </li>
       </ul>
     </li>
-    <li class="relative admin staff" id="sidenavSecEx3">
+    <li class="relative admin staff superuser" id="sidenavSecEx3">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out cursor-pointer" data-mdb-ripple="true" data-mdb-ripple-color="primary" data-bs-toggle="collapse" data-bs-target="#collapseSidenavSecEx3" aria-expanded="false" aria-controls="collapseSidenavSecEx3">
         <span>RSBSA</span>
         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-3 h-3 ml-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -89,17 +89,17 @@
   </ul>
   <hr class="my-2">
   <ul class="relative px-1">
-    <li class="relative  admin staff">
+    <li class="relative  admin staff superuser">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="intervention.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>INTERVENTIONS</span>
       </a>
     </li>
-    <li class="relative admin staff">
+    <li class="relative admin staff superuser">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="commodity.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>COMMODITY</span>
       </a>
     </li>
-    <li class="relative admin staff farmer">
+    <li class="relative admin staff farmer superuser">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="cropanalysis.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>CROP ANALYSIS</span>
       </a>
@@ -135,6 +135,18 @@ if($_SESSION['userlevel'] === "admin"){
     for (var i=0;i<elemshide.length;i+=1){
      elemshide[i].style.display = 'none';
     }
+    </script>
+    <?php
+}
+?>
+<?php
+if($_SESSION['userlevel'] === "superuser"){
+    ?>
+    <script type="text/javascript">
+    var elems = document.getElementsByClassName('superuser');
+    for (var i=0;i<elems.length;i+=1){
+         elems[i].style.display = 'block';
+        }
     </script>
     <?php
 }
