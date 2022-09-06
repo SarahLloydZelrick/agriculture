@@ -16,9 +16,10 @@ if(isset($_POST["btnsubmit"])) {
     $tbl = "tbl_";
     $farmbarangay = mysqli_real_escape_string($con, $_POST['barangay']);
     $forbrgy = $tbl.$farmbarangay;
-    $selectbrgy = "SELECT * from tbl_barangay";
-    if (mysqli_num_rows($selectbrgy) > 0) {
-        while($rowbrgy = mysqli_fetch_assoc($selectbrgy)) {
+    $selectbrgy = "SELECT * FROM tbl_barangay";
+    $resultbrgy = mysqli_query($con, $selectbrgy);
+    if (mysqli_num_rows($resultbrgy) > 0) {
+        while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
             $selectedbrgy = $rowbrgy['barangay'];
             if($farmbarangay = $selectedbrgy){
                 $errors = "1";
