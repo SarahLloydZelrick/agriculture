@@ -84,7 +84,7 @@ if(isset($_POST["btnsubmit"])) {
                         <select name="userlevel" id="" class="form-input">
                             <option value="superuser">Super User</option>
                             <option value="admin">Admin</option>
-                            <option value="employee">Employee</option>
+                            <option value="staff">Staff</option>
                             <option value="farmer">Farmer</option>
                         </select>
                         <input type="email" name="email" id="email" class="form-input" placeholder="Email address">
