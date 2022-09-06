@@ -19,10 +19,7 @@ if(isset($_POST["btnsubmit"])) {
     $selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
     $resultbrgy = mysqli_query($con, $selectbrgy);
     if (mysqli_num_rows($resultbrgy) < 0) {
-        $error_message = "Error submitting the form. Barangay already exist.";
-    }
-            else{
-                $sql = "INSERT INTO tbl_barangay (`barangay`) VALUES ('".$farmbarangay."')";
+        $sql = "INSERT INTO tbl_barangay (`barangay`) VALUES ('".$farmbarangay."')";
                 if(mysqli_query($con, $sql)){
                 
                 $sqltbl = "CREATE TABLE `$forbrgy` (
@@ -214,7 +211,11 @@ if(isset($_POST["btnsubmit"])) {
                     $errors = "1";
                     $error_message = "Error submitting the form. Please try again.";
                 }
-
+        
+    }
+            else{
+                
+                $error_message = "Error submitting the form. Barangay already exist.";
             }
 
   }
