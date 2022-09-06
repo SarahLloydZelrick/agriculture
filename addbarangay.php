@@ -18,7 +18,7 @@ if(isset($_POST["btnsubmit"])) {
     $forbrgy = $tbl.$farmbarangay;
     $selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
     $resultbrgy = mysqli_query($con, $selectbrgy);
-    if (mysqli_num_rows($resultbrgy) < 0) {
+    if (mysqli_num_rows($resultbrgy) == 0) {
         $error_message = "Error submitting the form. Barangay already exist.";
     }
             else{
