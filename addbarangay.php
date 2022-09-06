@@ -16,15 +16,12 @@ if(isset($_POST["btnsubmit"])) {
     $tbl = "tbl_";
     $farmbarangay = mysqli_real_escape_string($con, $_POST['barangay']);
     $forbrgy = $tbl.$farmbarangay;
-    $selectbrgy = "SELECT * FROM tbl_barangay";
+    $selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
     $resultbrgy = mysqli_query($con, $selectbrgy);
     if (mysqli_num_rows($resultbrgy) > 0) {
-        while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
-            $selectedbrgy = $rowbrgy['barangay'];
-            if($farmbarangay == $selectedbrgy){
-                $errors = "1";
-                $error_message = "Error submitting the form. Barangay already exist.";
-            }else{
+        $error_message = "Error submitting the form. Barangay already exist.";
+    }
+            else{
                 $sql = "INSERT INTO tbl_barangay (`barangay`) VALUES ('".$farmbarangay."')";
                 if(mysqli_query($con, $sql)){
                 
@@ -219,8 +216,7 @@ if(isset($_POST["btnsubmit"])) {
                 }
 
             }
-        }
-    }
+
   }
 ?>
 
