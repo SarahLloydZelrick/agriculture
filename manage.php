@@ -77,7 +77,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Email</th>
                             <th>User level</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="admin-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -95,7 +95,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["email"]; ?></td>
                                     <td><?php echo $row["userlevel"]; ?></td>
                                     <td><?php echo $row["status"]; ?></td>
-                                    <td>
+                                    <td class="admin-hide">
                                         <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Approve account" data-bs-toggle="modal" data-bs-target="#approveModal"></button>
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Reject account" data-bs-toggle="modal" data-bs-target="#rejectModal"></button>
                                     </td>
@@ -367,7 +367,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Email</th>
                             <th>User level</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="admin-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -385,7 +385,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["email"]; ?></td>
                                     <td><?php echo $row["userlevel"]; ?></td>
                                     <td><?php echo $row["status"]; ?></td>
-                                    <td>
+                                    <td class="admin-hide">
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Reject account" data-bs-toggle="modal" data-bs-target="#rejectModal2"></button>
                                     </td>
                                 </tr>
