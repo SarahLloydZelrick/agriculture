@@ -112,7 +112,7 @@ if(isset($_POST["btnsubmit"])) {
                             <h2 class="font-bold text-lg text-[#fbad1b]">Mandate</h2>
                             <p class="text-white">The Office of the Municipal Agriculture is an agency of the Philippine government responsible for the promotion of the Agriculture & Fisheries development and growth. In partnership with the Department of Agriculture, provide benefits of development to the poor, especially in the rural areas</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex gap-5">
                             <div class="flex flex-col gap-2 w-1/2">
                                 <h2 class="font-bold text-lg text-[#fbad1b]">Mission</h2>
                                 <p class="text-white">Increase income of farmers & fisherfolks, thereby contributing to the achievement of national goal of alleviating poverty, generating productive opportunities, fostering social justice and equity, and promoting sustainable economic growth</p>
