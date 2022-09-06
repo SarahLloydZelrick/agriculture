@@ -129,7 +129,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th style="display:none;">Photo</th>
                             <th style="display:none;">Acct stat</th>
                             <th>Account Status</th>
-                            <th class="admin-hide">Actions</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -1101,4 +1101,4 @@ if($_SESSION['userlevel'] === "admin"){
     </script>
     <?php
 }
-
+?>

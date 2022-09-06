@@ -55,7 +55,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Name</th>
                             <th>Barangay</th>
                             <th>Land Size</th>
-                            <th>Action</th>
+                            <th class="admin-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -75,7 +75,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $fullname; ?> </td>
                                     <td><?php echo $row["barangay"]; ?></td>
                                     <td><?php echo $row["sizea1"].$h ; ?></td>
-                                    <td>
+                                    <td class="admin-hide">
                                         <form action="commodity-form.php" method="GET">
                                             <input type="text" name="farmerid" value="<?php echo $row["farmerId"]; ?>" style="display:none;" readonly>
                                             <input type="text" name="barangay" value="<?php echo $row["barangay"]; ?>" style="display:none;" readonly>
@@ -194,3 +194,18 @@ if (isset($_POST['btn_receivedelete'] )) {
 
 }
 ?>
+
+<?php
+if($_SESSION['userlevel'] === "admin"){
+    ?>
+    <script type="text/javascript">
+    var elems = document.getElementsByClassName('admin');
+    var elemshide = document.getElementsByClassName('admin-hide');
+    for (var i=0;i<elems.length;i+=1){
+         elems[i].style.display = 'block';
+        }
+    for (var i=0;i<elemshide.length;i+=1){
+     elemshide[i].style.display = 'none';
+    }
+    </script>
+    <?php

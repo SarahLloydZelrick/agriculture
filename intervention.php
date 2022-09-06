@@ -73,7 +73,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Crop</th>
                             <th>Land Size</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="admin-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -102,7 +102,7 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
-                                    <td>
+                                    <td class="admin-hide">
                                         <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#receiveModal"></button>
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></button>
                                     </td>
@@ -130,7 +130,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Land Size</th>
                             <th>Programs</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="admin-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -159,7 +159,7 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
-                                    <td>
+                                    <td class="admin-hide">
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Not Receive" data-bs-toggle="modal" data-bs-target="#receivedeleteModal"></button>
                                     </td>
                                 </tr>
@@ -186,7 +186,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Land Size</th>
                             <th>Programs</th>
                             <th>Status</th>
-                            <th>Action</th>
+                            <th class="admin-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -215,7 +215,7 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
-                                    <td>
+                                    <td class="admin-hide">
                                     <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#deletereceiveModal"></button>
                                     </td>
                                 </tr>
@@ -883,5 +883,22 @@ if (isset($_POST['btn_deletereceive'] )) {
     mysqli_close($con);
 
 
+}
+?>
+
+<?php
+if($_SESSION['userlevel'] === "admin"){
+    ?>
+    <script type="text/javascript">
+    var elems = document.getElementsByClassName('admin');
+    var elemshide = document.getElementsByClassName('admin-hide');
+    for (var i=0;i<elems.length;i+=1){
+         elems[i].style.display = 'block';
+        }
+    for (var i=0;i<elemshide.length;i+=1){
+     elemshide[i].style.display = 'none';
+    }
+    </script>
+    <?php
 }
 ?>

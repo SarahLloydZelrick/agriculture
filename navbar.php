@@ -73,7 +73,7 @@
         </svg>
       </a>
       <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3" aria-labelledby="sidenavSecEx3" data-bs-parent="#sidenavSecExample">
-        <li class="relative">
+        <li class="relative admin-hide">
           <a href="rsbsa.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Add RSBSA</a>
         </li>
         <li class="relative">
