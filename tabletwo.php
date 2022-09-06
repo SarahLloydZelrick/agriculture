@@ -349,7 +349,7 @@
                     <div class="flex flex-col w-full">
                         <div class="flex gap-5">
                             <p>Member of an Indigeneous Group?</p>
-                            <?php 
+                            <?php  
                                 $for_indgenous=explode(",",$indgenous);
                             ?>
                             <div class="form-check form-check-inline">
