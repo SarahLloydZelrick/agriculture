@@ -506,7 +506,7 @@ if(isset($_POST["btnsubmit"])) {
                 </li>
             </ul>
             <div class="tab-content p-10" id="tabs-tabContentFill">
-                <div class="tab-pane fade show active" id="tabs-step1Fill" role="tabpanel" aria-labelledby="tastep1-tabFill">
+                <div class="tab-pane fade show active pb-10" id="tabs-step1Fill" role="tabpanel" aria-labelledby="tastep1-tabFill">
                 <?php
                     if(!empty($errors)){
                         ?>
@@ -756,7 +756,7 @@ if(isset($_POST["btnsubmit"])) {
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="tabs-step2Fill" role="tabpanel" aria-labelledby="tabs-step2-tabFill">
+                <div class="tab-pane fade pb-10" id="tabs-step2Fill" role="tabpanel" aria-labelledby="tabs-step2-tabFill">
                     <h3 class="text-xl font-bold">Other Information</h3>
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">
@@ -1007,7 +1007,7 @@ if(isset($_POST["btnsubmit"])) {
                             <span onclick="myFunctionTwo()" class="cursor-pointer bg-stone-300 rounded-lg text-center w-24 p-2 md:w-32 md:p-5">NEXT</span>
                         </div>
                 </div>
-                <div class="tab-pane fade" id="tabs-step3Fill" role="tabpanel" aria-labelledby="tabs-step3-tabFill">
+                <div class="tab-pane fade pb-10" id="tabs-step3Fill" role="tabpanel" aria-labelledby="tabs-step3-tabFill">
                     <h3 class="text-xl font-bold">Farm Profile</h3>
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">
@@ -1514,7 +1514,7 @@ if(isset($_POST["btnsubmit"])) {
                         </div>
 
                 </div>
-                <div class="tab-pane fade" id="tabs-step4Fill" role="tabpanel" aria-labelledby="tabs-step4-tabFill">
+                <div class="tab-pane fade pb-10" id="tabs-step4Fill" role="tabpanel" aria-labelledby="tabs-step4-tabFill">
                 <h3 class="text-xl font-bold">Owner Document</h3>
                     <div class="flex flex-col md:flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">

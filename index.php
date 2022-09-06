@@ -81,7 +81,7 @@ if(isset($_POST["btnsubmit"])) {
                     ?>
                     <h3 class="text-2xl text-center text-white">LOGIN</h3>
                     <form action="" method="POST" class="flex flex-col gap-5">
-                        <select name="userlevel" id="">
+                        <select name="userlevel" id="" class="form-input">
                             <option value="superuser">Super User</option>
                             <option value="admin">Admin</option>
                             <option value="employee">Employee</option>
