@@ -146,6 +146,9 @@ if (!isset($_SESSION['loggedin'])) {
                               $education = mysqli_real_escape_string($con, $row['education']);
                               $pwd = mysqli_real_escape_string($con, $row['pwd']);
                               $fourps = mysqli_real_escape_string($con, $row['fourps']);
+                              if($fourps == NULL){
+                                $fourps = "";
+                              }
                               $indgenous = mysqli_real_escape_string($con, $row['indgenous']);
                               $indgenousspecify = mysqli_real_escape_string($con, $row['indgenousspecify']);
                               $gov = mysqli_real_escape_string($con, $row['gov']);
@@ -155,6 +158,9 @@ if (!isset($_SESSION['loggedin'])) {
                               $householdname = mysqli_real_escape_string($con, $row['householdname']);
                               $householdrel = mysqli_real_escape_string($con, $row['householdrel']);
                               $noOfmembers = mysqli_real_escape_string($con, $_POST['noOfmembers']);
+                              if($noOfmembers == NULL){
+                                $noOfmembers = "";
+                              }
                               $nomale = mysqli_real_escape_string($con, $row['nomale']);
                               $nofemale = mysqli_real_escape_string($con, $row['nofemale']);
                               $emergencyname = mysqli_real_escape_string($con, $row['emergencyname']);
@@ -164,8 +170,8 @@ if (!isset($_SESSION['loggedin'])) {
                   
                               //$mainlivelihood = mysqli_real_escape_string($con, $_POST['mainlivelihood']);
                               //$farmingactivity = mysqli_real_escape_string($con, $_POST['farmingactivity']);
-                              $mainlivelihood = implode(',', $row['mainlivelihood']);
-                              $farmingactivity = implode(',', $row['farmingactivity']);
+                              //$mainlivelihood = implode(',', $row['mainlivelihood']);
+                              //$farmingactivity = implode(',', $row['farmingactivity']);
                               $farmingactivityothers = mysqli_real_escape_string($con, $row['farmingactivityothers']);
                               $farmingactivitylivestock = mysqli_real_escape_string($con, $row['farmingactivitylivestock']);
                               $farmingactivitypoultry = mysqli_real_escape_string($con, $row['farmingactivitypoultry']);
@@ -174,13 +180,13 @@ if (!isset($_SESSION['loggedin'])) {
                               //$farmingactivitypoultry = implode(',', $_POST['farmingactivity']);
                               //$farmingactivitylivestock = implode(',', $_POST['farmingactivitypoultry']);
       
-                              $kindofwork = implode(',', $row['kindofwork']);
+                              //$kindofwork = implode(',', $row['kindofwork']);
                               $kindofworkothers = mysqli_real_escape_string($con, $row['kindofworkothers']);
                               //$typeoffishing = mysqli_real_escape_string($con, $_POST['typeoffishing']);
                               $typeoffishingothers = mysqli_real_escape_string($con, $row['typeoffishingothers']);
                               //$typeofinvolment = mysqli_real_escape_string($con, $_POST['typeofinvolment']);
-                              $typeoffishing = implode(',', $row['typeoffishing']);
-                              $typeofinvolment = implode(',', $row['typeofinvolment']);
+                              //$typeoffishing = implode(',', $row['typeoffishing']);
+                              //$typeofinvolment = implode(',', $row['typeofinvolment']);
                   
                               $typeofinvolmentothers = mysqli_real_escape_string($con, $row['typeofinvolmentothers']);
                               $grossfarming = mysqli_real_escape_string($con, $row['grossfarming']);
@@ -362,6 +368,9 @@ if (!isset($_SESSION['loggedin'])) {
                               $education = mysqli_real_escape_string($con, $row['education']);
                               $pwd = mysqli_real_escape_string($con, $row['pwd']);
                               $fourps = mysqli_real_escape_string($con, $row['fourps']);
+                              if($fourps == NULL){
+                                $fourps = "";
+                              }
                               $indgenous = mysqli_real_escape_string($con, $row['indgenous']);
                               $indgenousspecify = mysqli_real_escape_string($con, $row['indgenousspecify']);
                               $gov = mysqli_real_escape_string($con, $row['gov']);
@@ -371,6 +380,9 @@ if (!isset($_SESSION['loggedin'])) {
                               $householdname = mysqli_real_escape_string($con, $row['householdname']);
                               $householdrel = mysqli_real_escape_string($con, $row['householdrel']);
                               $noOfmembers = mysqli_real_escape_string($con, $_POST['noOfmembers']);
+                              if($noOfmembers == NULL){
+                                $noOfmembers = "";
+                              }
                               $nomale = mysqli_real_escape_string($con, $row['nomale']);
                               $nofemale = mysqli_real_escape_string($con, $row['nofemale']);
                               $emergencyname = mysqli_real_escape_string($con, $row['emergencyname']);
