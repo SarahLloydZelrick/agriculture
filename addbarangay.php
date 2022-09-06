@@ -256,6 +256,31 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="flex flex-col gap-2 w-full">
                                 <label for="">Barangay</label>
                                 <input type="text" name="barangay" id="" class="form-input w-full" placeholder="Enter barangay ex. mayabobo">
+                                <select name="barangay" id="">
+                                    <option value="Buenavista_East">Buenavista East</option>
+                                    <option value="Bukal_Norte">Bukal Norte</option>
+                                    <option value="Bukal_Sur">Bukal Sur</option>
+                                    <option value="Kinatihan_I">Kinatihan I</option>
+                                    <option value="Kinatihan_II">Kinatihan II</option>
+                                    <option value="Malabanan_Norte">Malabanban Norte</option>
+                                    <option value="Malabanan_Sur">Malabanban Sur</option>
+                                    <option value="Mangilag_Norte">Mangilag Norte</option>
+                                    <option value="Mangilag_Sur">Mangilag Sur</option>
+                                    <option value="Masalukot_I">Masalukot I</option>
+                                    <option value="Masalukot_II">Masalukot II</option>
+                                    <option value="Masalukot_III">Masalukot III</option>
+                                    <option value="Masalukot_IV">Masalukot IV</option>
+                                    <option value="Masalukot_V">Masalukot V</option>
+                                    <option value="Masin_Norte">Masin Norte</option>
+                                    <option value="Masin_Sur">Masin Sur</option>
+                                    <option value="Mayabobo">Mayabobo</option>
+                                    <option value="Pahinga_Norte">Pahinga Norte</option>
+                                    <option value="Pahinga_Sur">Pahinga Sur</option>
+                                    <option value="San_Andres">San Andres</option>
+                                    <option value="San_Isidro">San Isidro</option>
+                                    <option value="Sta_Catalina_Norte">Sta Catalina Norte</option>
+                                    <option value="Sta_Catalina_Sur">Sta Catalina Sur</option>
+                                </select>
                             </div>
                         </div>
                         <input class="btn-primary w-full mt-2" name="btnsubmit" type="submit" value="Add baranagay">
