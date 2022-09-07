@@ -1034,7 +1034,24 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Barangay</label>
-                                <input type="text" class="form-input w-full" name="farmbarangay1" placeholder="Farm Barangay">
+                                <select name="farmbarangay1" id="" class="form-input w-full">
+                                <?php
+                                    include "config.php";
+                                    $sqlbrgy = "SELECT * FROM `tbl_barangay`";
+                                    $resultbrgy = mysqli_query($con, $sqlbrgy);
+                                    if (mysqli_num_rows($resultbrgy) > 0) {
+                                        while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
+                                            $orig = $rowbrgy['barangay'];
+                                            $forbrgy = str_replace('_', ' ', $orig);
+                                ?>
+                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $forbrgy; ?></option>
+                                <?php
+                                        }
+                                    } else {
+                                    echo "0 results";
+                                    }
+                                ?>
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">City/Municipality</label>
@@ -1195,7 +1212,24 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Barangay</label>
-                                <input type="text" class="form-input w-full" name="farmbarangay2" placeholder="Farm Barangay">
+                                <select name="farmbarangay2" id="" class="form-input w-full">
+                                <?php
+                                    include "config.php";
+                                    $sqlbrgy = "SELECT * FROM `tbl_barangay`";
+                                    $resultbrgy = mysqli_query($con, $sqlbrgy);
+                                    if (mysqli_num_rows($resultbrgy) > 0) {
+                                        while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
+                                            $orig = $rowbrgy['barangay'];
+                                            $forbrgy = str_replace('_', ' ', $orig);
+                                ?>
+                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $forbrgy; ?></option>
+                                <?php
+                                        }
+                                    } else {
+                                    echo "0 results";
+                                    }
+                                ?>
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">City/Municipality</label>
@@ -1355,7 +1389,24 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Barangay</label>
-                                <input type="text" class="form-input w-full" name="farmbarangay3" placeholder="Farm Barangay">
+                                <select name="farmbarangay3" id="" class="form-input w-full">
+                                <?php
+                                    include "config.php";
+                                    $sqlbrgy = "SELECT * FROM `tbl_barangay`";
+                                    $resultbrgy = mysqli_query($con, $sqlbrgy);
+                                    if (mysqli_num_rows($resultbrgy) > 0) {
+                                        while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
+                                            $orig = $rowbrgy['barangay'];
+                                            $forbrgy = str_replace('_', ' ', $orig);
+                                ?>
+                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $forbrgy; ?></option>
+                                <?php
+                                        }
+                                    } else {
+                                    echo "0 results";
+                                    }
+                                ?>
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">City/Municipality</label>
