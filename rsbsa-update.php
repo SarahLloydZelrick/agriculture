@@ -411,7 +411,7 @@
                         <h3 class="text-xl font-bold">Farm Profile</h3>
                         <label for="" class="text-lg">Main Livelihood</label>
                             <?php 
-                                //$for_mainlivelihood=explode(",",$mainlivelihood);
+                                $for_mainlivelihood = $mainlivelihood;
                             ?>
                         <div class="flex flex-row w-full pb-2">
                             <div class="form-check form-check-inline">
@@ -447,7 +447,7 @@
                             <label for="" class="font-bold">For Farmers</label>
                             <label for="" class="">Type of Farming Activity</label>
                                 <?php 
-                                    $for_farmingactivity=explode(",",$farmingactivity);
+                                    $for_farmingactivity = $farmingactivity;
                                 ?>
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
@@ -502,7 +502,7 @@
                             <label for="" class="font-bold">For Farmworkers</label>
                             <label for="" class="">Kind of Work</label>
                                 <?php 
-                                    $for_kindofwork=explode(",",$kindofwork);
+                                    $for_kindofwork = $kindofwork;
                                 ?>
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
@@ -548,7 +548,7 @@
                             <p class="text-sm">The Lending Conduit shall coordinate with the Bureu of Fisheries and Aquatic Resouces (BFAR) in the issuance of a certification that the fisherfolk-borrower under PUNLA/PLEA is registered under the Municipal Registration (FishR)</p>
                             <label for="" class="">Type of Fishing Activity</label>
                                 <?php 
-                                    $for_typeoffishing=explode(",",$typeoffishing);
+                                    $for_typeoffishing = $typeoffishing;
                                 ?>
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
@@ -603,7 +603,7 @@
                             <p class="text-sm">For the purposes of trainings, financial assistance, and other programs catered to the youth with involvement to any agriculture activity.</p>
                             <label for="" class="">Type of involment</label>
                                 <?php 
-                                    $for_typeofinvolment=explode(",",$typeofinvolment);
+                                    $for_typeofinvolment = $typeofinvolment;
                                 ?>
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
