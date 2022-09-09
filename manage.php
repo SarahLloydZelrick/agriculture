@@ -329,6 +329,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Email</th>
                             <th>User level</th>
                             <th>Status</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -345,6 +346,9 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["email"]; ?></td>
                                     <td><?php echo $row["userlevel"]; ?></td>
                                     <td><?php echo $row["status"]; ?></td>
+                                    <td>
+                                    <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Approve account" data-bs-toggle="modal" data-bs-target="#rejectapproveModal"></button>
+                                    </td>
                                 </tr>
                         <?php
                             }
@@ -600,6 +604,71 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
     </div>
     <!-- END MODAL REJECT 2 -->
+    <!-- Modal Reject Approve -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="rejectapproveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog relative w-auto pointer-events-none">
+            <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Are you sure?</h5>
+                    <button 
+                        type="button"
+                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">X
+                    </button>
+                </div>
+                <form action="" method="POST">
+                    <div class="modal-body relative p-4">
+                            Approve the account of <input type="text" name="rejectapprove_name" id="rejectapprove_name" class="modal_input font-bold" readonly>
+                            <input type="text" name="rejectapprove_id" id="rejectapprove_id" style="display:none;">
+
+                            <p class="text-sm">To continue, please enter your PIN</p>
+                            <input type="password" name="" id="reg_pass_rejectapprove" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
+                            <input type="password" name="" id="reg_confirm_pass_rejectapprove" class="form-input">
+                    </div>
+                    <div
+                        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                        <button 
+                            type="button" 
+                            class="px-6
+                            py-2.5
+                            bg-gray-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-gray-700 hover:shadow-lg
+                            focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-gray-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="px-6
+                            py-2.5
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            transition
+                            duration-150
+                            ease-in-out
+                            ml-1"
+                            name="btn_rejectapprove"
+                            id="btn_rejectapprove"
+                            disabled="true"
+                            style="background-color:gray;"
+                            >Approve account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
         <!-- Modal -->
         <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="all_table_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -882,6 +951,21 @@ if (!isset($_SESSION['loggedin'])) {
             }
 
         });
+        //Reject Approve Table - Reject
+        $("#reg_confirm_pass_rejectapprove").blur(function() {
+            var user_pass_pending = $("#reg_pass_rejectapprove").val();
+            var user_pass2_pending = $("#reg_confirm_pass_rejectapprove").val();
+            //var enter = $("#enter").val();
+
+            if (user_pass_pending == user_pass2_pending) {
+                $("#btn_rejectapprove").css("background","red");
+                $("#btn_rejectapprove").prop('disabled',false)//use prop()
+            } else {
+                $("#btn_rejectapprove").css("background","gray");
+                $("#btn_rejectapprove").prop('disabled',true)//use prop()
+            }
+
+        });
         //Reject
         $("#reg_confirm_pass_reject_two").blur(function() {
             var user_pass_pending = $("#reg_pass_reject_two").val();
@@ -1070,6 +1154,37 @@ if (isset($_POST['btn_deactivate'] )) {
         <script>
         Swal.fire({
             title: 'Account deactivated successfully',
+            icon: 'success',
+            confirmButtonText: 'OK'
+          }).then(function(){
+            window.location.href = window.location.href;
+          })
+        </script>
+    ";
+    } else {
+    echo "Error updating record: " . mysqli_error($con);
+    }
+
+    mysqli_close($con);
+
+    }
+
+?>
+<?php
+if (isset($_POST['btn_rejectapprove'] )) {
+
+    $rejectapprove_id = $_POST['rejectapprove_id'];
+
+    include "config.php";
+
+    $sql = "UPDATE tbl_accounts SET status='approved' WHERE id='".$rejectapprove_id."'";
+
+    if (mysqli_query($con, $sql)) {
+    //echo "Record updated successfully";
+    echo "
+        <script>
+        Swal.fire({
+            title: 'Account approved successfully',
             icon: 'success',
             confirmButtonText: 'OK'
           }).then(function(){
