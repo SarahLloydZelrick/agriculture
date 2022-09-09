@@ -411,7 +411,7 @@
                         <h3 class="text-xl font-bold">Farm Profile</h3>
                         <label for="" class="text-lg">Main Livelihood</label>
                             <?php 
-                                $for_mainlivelihood=explode(",",$mainlivelihood);
+                                //$for_mainlivelihood=explode(",",$mainlivelihood);
                             ?>
                         <div class="flex flex-row w-full pb-2">
                             <div class="form-check form-check-inline">

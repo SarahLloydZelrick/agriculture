@@ -392,7 +392,7 @@ if (!isset($_SESSION['loggedin'])) {
                   
                               //$mainlivelihood = mysqli_real_escape_string($con, $_POST['mainlivelihood']);
                               //$farmingactivity = mysqli_real_escape_string($con, $_POST['farmingactivity']);
-                              $mainlivelihood = explode(',', $row['mainlivelihood']);
+                              $for_mainlivelihood = explode(',', $row['mainlivelihood']);
                               //$farmingactivity = implode(',', $row['farmingactivity']);
                               $farmingactivityothers = mysqli_real_escape_string($con, $row['farmingactivityothers']);
                               $farmingactivitylivestock = mysqli_real_escape_string($con, $row['farmingactivitylivestock']);
