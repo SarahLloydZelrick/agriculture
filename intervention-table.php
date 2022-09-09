@@ -198,7 +198,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmbarangagy='$brgy'";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmbarangay='$brgy'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -347,6 +347,13 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="text" name="master_crop_two" id="master_crop_two" style="display:none;">
                             <input type="text" name="master_size_two" id="master_size_two" style="display:none;">
                             <input type="text" name="master_amount_two" id="master_amount_two" style="display:none;">
+
+                            <div class="flex flex-col">
+                                <select name="programs" class="form-input">
+                                    <option value="Financial">Financial</option>
+                                    <option value="Foods">Foods</option>
+                                </select>
+                            </div>
 
                             <div class="amount flex flex-col">
                                 <label for="">Enter the amount to be release</label>
