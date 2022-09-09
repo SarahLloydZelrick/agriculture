@@ -750,7 +750,8 @@ if (!isset($_SESSION['loggedin'])) {
                     buttons: [
                         'csv', 'excel', 'pdf', 'print'
                     ],
-                    responsive: true
+                    responsive: true,
+                    "pageLength": 6
                 }
             );
         } );
@@ -761,7 +762,8 @@ if (!isset($_SESSION['loggedin'])) {
                     buttons: [
                          'csv', 'excel', 'pdf', 'print'
                     ],
-                    responsive: true
+                    responsive: true,
+                    "pageLength": 6
                 }
             );
         } );
@@ -772,7 +774,8 @@ if (!isset($_SESSION['loggedin'])) {
                     buttons: [
                         'csv', 'excel', 'pdf', 'print'
                     ],
-                    responsive: true
+                    responsive: true,
+                    "pageLength": 6
                 }
             );
         } );
@@ -783,7 +786,8 @@ if (!isset($_SESSION['loggedin'])) {
                     buttons: [
                         'csv', 'excel', 'pdf', 'print'
                     ],
-                    responsive: true
+                    responsive: true,
+                    "pageLength": 6
                 }
             );
         } );
