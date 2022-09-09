@@ -84,7 +84,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active'";
+                        $sql = "SELECT * FROM tbl_intervention WHERE barangay = '$brgyname'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -141,7 +141,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received'";
+                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received' AND barangay = '$brgyname'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -197,7 +197,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted'";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmbarangagy='$brgyname'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
