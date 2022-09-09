@@ -84,7 +84,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_intervention WHERE barangay = $brgyname";
+                        $sql = "SELECT * FROM tbl_intervention WHERE farmbarangay = $brgyname";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
