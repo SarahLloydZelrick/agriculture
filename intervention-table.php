@@ -771,7 +771,7 @@ if (isset($_POST['btn_masterapprove'] )) {
     $master_size = $_POST['master_size'];
     $master_status = "received";
     $receive_amount = $_POST['receive_amount'];
-
+    $programs = $_POST['programs'];
 
     include "config.php";
 
@@ -779,8 +779,8 @@ if (isset($_POST['btn_masterapprove'] )) {
 
     if (mysqli_query($con, $sql)) {
     //echo "Record updated successfully";
-        $sqlinsert = "INSERT INTO `tbl_interventiontwo`(`farmerId`, `name`, `farmbarangay`, `crop`, `size`, `amount`, `status`) 
-                    VALUES ('".$master_farmid."','".$master_name."','".$master_barangay."','".$master_crop."','".$master_size."','".$receive_amount."','".$master_status."')";
+        $sqlinsert = "INSERT INTO `tbl_interventiontwo`(`farmerId`, `name`, `farmbarangay`, `crop`, `size`, `amount`, `status`,`programs`) 
+                    VALUES ('".$master_farmid."','".$master_name."','".$master_barangay."','".$master_crop."','".$master_size."','".$receive_amount."','".$master_status."','".$programs."')";
                     if (mysqli_query($con, $sqlinsert)) {
                         echo "
                             <script>
