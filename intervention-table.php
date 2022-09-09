@@ -264,10 +264,12 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="text" name="master_size" id="master_size" style="display:none;">
                             <input type="text" name="master_amount" id="master_amount" style="display:none;">
 
-                            <select name="programs" id="">
-                                <option value="Financial">Financial</option>
-                                <option value="Foods">Foods</option>
-                            </select>
+                            <div class="flex flex-col">
+                                <select name="programs" class="form-input">
+                                    <option value="Financial">Financial</option>
+                                    <option value="Foods">Foods</option>
+                                </select>
+                            </div>
 
                             <div class="amount flex flex-col">
                                 <label for="">Enter the amount to be release</label>
@@ -804,6 +806,7 @@ if (isset($_POST['btn_masterdelete'] )) {
     $master_size = $_POST['master_size_two'];
     $master_status = "deleted";
     $receive_amount = $_POST['receive_amount_two'];
+    $programs = $_POST['programs'];
 
 
     include "config.php";
@@ -812,8 +815,8 @@ if (isset($_POST['btn_masterdelete'] )) {
 
     if (mysqli_query($con, $sql)) {
     //echo "Record updated successfully";
-        $sqlinsert = "INSERT INTO `tbl_interventiontwo`(`farmerId`, `name`, `farmbarangay`, `crop`, `size`, `amount`, `status`) 
-                    VALUES ('".$master_farmid."','".$master_name."','".$master_barangay."','".$master_crop."','".$master_size."','".$receive_amount."','".$master_status."')";
+        $sqlinsert = "INSERT INTO `tbl_interventiontwo`(`farmerId`, `name`, `farmbarangay`, `crop`, `size`, `amount`, `status`,`programs`) 
+                    VALUES ('".$master_farmid."','".$master_name."','".$master_barangay."','".$master_crop."','".$master_size."','".$receive_amount."','".$master_status."','".$programs."')";
                     if (mysqli_query($con, $sqlinsert)) {
                         echo "
                             <script>
