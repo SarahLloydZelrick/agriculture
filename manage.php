@@ -343,7 +343,7 @@ if (!isset($_SESSION['loggedin'])) {
                             while($row = mysqli_fetch_assoc($result)) {
                         ?>
                                 <tr>
-                                    <td style="display:none;"><?php echo $row["id"]; ?> </td>
+                                    <td style="display:none;"><?php echo $row["id"]; ?></td>
                                     <td><?php echo $row["fullname"]; ?> </td>
                                     <td><?php echo $row["email"]; ?></td>
                                     <td><?php echo $row["userlevel"]; ?></td>
