@@ -264,6 +264,11 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="text" name="master_size" id="master_size" style="display:none;">
                             <input type="text" name="master_amount" id="master_amount" style="display:none;">
 
+                            <select name=""programs id="">
+                                <option value="Financial">Financial</option>
+                                <option value="Foods">Foods</option>
+                            </select>
+
                             <div class="amount flex flex-col">
                                 <label for="">Enter the amount to be release</label>
                                 <input type="number" class="form-input" name="receive_amount">
