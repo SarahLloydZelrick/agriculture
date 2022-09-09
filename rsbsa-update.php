@@ -398,7 +398,7 @@
                                     ?>
                                 <select name="memberoffarm" class="form-input" id="" onchange="hideFarmMember(this)">
                                     <option value="yes" <?php echo (in_array("yes",$for_memberoffarm)) ? 'selected="selected"' : ''; ?>>Yes</option>
-                                    <option value="no" <?php echo (in_array("yes",$for_memberoffarm)) ? 'selected="selected"' : ''; ?>>No</option>
+                                    <option value="no" <?php echo (in_array("no",$for_memberoffarm)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
                             </div>
                             <div  id="hidden_farmmember" class=" w-full">
@@ -416,22 +416,30 @@
                         <div class="flex flex-row w-full pb-2">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                       type="checkbox" <?php echo (in_array("Farmer",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> id="inlineCheckbox1" value="Farmer" name="mainlivelihood[]">
+                                       type="checkbox" 
+                                       <?php if(in_array("Farmer",$for_mainlivelihood)) echo 'checked="checked"'; ?>
+                                        id="inlineCheckbox1" value="Farmer" name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Farmer</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                       type="checkbox" <?php echo (in_array("Farmworker",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> id="inlineCheckbox2" value="Farmworker" name="mainlivelihood[]">
+                                       type="checkbox" 
+                                       <?php if(in_array("Farmworker",$for_mainlivelihood)) echo 'checked="checked"'; ?>
+                                       id="inlineCheckbox2" value="Farmworker" name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">Farmworker/Laborer</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                       type="checkbox" <?php echo (in_array("Fisherfolk",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> id="inlineCheckbox1" value="Fisherfolk" name="mainlivelihood[]">
+                                       type="checkbox" 
+                                       <?php if(in_array("Fisherfolk",$for_mainlivelihood)) echo 'checked="checked"'; ?>
+                                       id="inlineCheckbox1" value="Fisherfolk" name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Fisherfolk</label>
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                       type="checkbox" <?php echo (in_array("Agriyouth",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> id="inlineCheckbox2" value="Agriyouth" name="mainlivelihood[]">
+                                       type="checkbox" 
+                                       <?php if(in_array("Agriyouth",$for_mainlivelihood)) echo 'checked="checked"'; ?>
+                                       id="inlineCheckbox2" value="Agriyouth" name="mainlivelihood[]">
                                 <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">Agri Youth</label>
                             </div>
                         </div>
@@ -444,17 +452,25 @@
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="Rice"  <?php echo (in_array("Rice",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="farmingactivity[]">
+                                           type="checkbox" 
+                                           id="inlineCheckbox1" 
+                                           value="Rice"  
+                                           <?php if(in_array("Rice",$farmingactivity)) echo 'checked="checked"'; ?>
+                                           name="farmingactivity[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Rice</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox2" value="Corn"  <?php echo (in_array("Corn",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="farmingactivity[]">
+                                           type="checkbox" id="inlineCheckbox2" value="Corn"  
+                                           <?php if(in_array("Corn",$farmingactivity)) echo 'checked="checked"'; ?>
+                                           name="farmingactivity[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">Corn</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="otherCrops" value="Others"  <?php echo (in_array("Others",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="farmingactivity[]">
+                                           type="checkbox" id="otherCrops" value="Others"  
+                                           <?php if(in_array("Others",$farmingactivity)) echo 'checked="checked"'; ?>
+                                           name="farmingactivity[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Other crops</label>
                                 </div>
                                 <div class="px-2" id="otherCropsSpecify" style="display:none;">
@@ -462,7 +478,9 @@
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="livestock" value="Livestock"  <?php echo (in_array("Livestock",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="farmingactivity[]">
+                                           type="checkbox" id="livestock" value="Livestock"  
+                                           <?php if(in_array("Livestock",$farmingactivity)) echo 'checked="checked"'; ?>
+                                           name="farmingactivity[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Livestock</label>
                                 </div>
                                 <div class="px-2" id="livestockSpecify" style="display:none;">
@@ -470,7 +488,9 @@
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="poultry" value="Poultry"  <?php echo (in_array("Poultry",$for_mainlivelihood)) ? 'checked="checked"' : ''; ?> name="farmingactivity[]">
+                                           type="checkbox" id="poultry" value="Poultry"  
+                                           <?php if(in_array("Poultry",$farmingactivity)) echo 'checked="checked"'; ?>
+                                           name="farmingactivity[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Poultry</label>
                                 </div>
                                 <div class="px-2" id="poultrySpecify" style="display:none;">
@@ -487,22 +507,30 @@
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="Land Preparation"  <?php echo (in_array("Land Preparation",$for_kindofwork)) ? 'checked="checked"' : ''; ?> name="kindofwork[]">
+                                           type="checkbox" id="inlineCheckbox1" value="Land Preparation"  
+                                           <?php if(in_array("Land Preparation",$for_kindofwork)) echo 'checked="checked"'; ?>
+                                           name="kindofwork[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Land Preparation</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox2" value="Planting/Transplanting"  <?php echo (in_array("Planting/Transplanting",$for_kindofwork)) ? 'checked="checked"' : ''; ?> name="kindofwork[]">
+                                           type="checkbox" id="inlineCheckbox2" value="Planting/Transplanting"
+                                           <?php if(in_array("Planting/Transplanting",$for_kindofwork)) echo 'checked="checked"'; ?>  
+                                           name="kindofwork[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">Planting/Transplanting</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="Cultivation"  <?php echo (in_array("Cultivation",$for_kindofwork)) ? 'checked="checked"' : ''; ?> name="kindofwork[]">
+                                           type="checkbox" id="inlineCheckbox1" value="Cultivation"  
+                                           <?php if(in_array("Cultivation",$for_kindofwork)) echo 'checked="checked"'; ?> 
+                                           name="kindofwork[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Cultivation</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="Harvesting"  <?php echo (in_array("Harvesting",$for_kindofwork)) ? 'checked="checked"' : ''; ?> name="kindofwork[]">
+                                           type="checkbox" id="inlineCheckbox1" value="Harvesting"  
+                                           <?php if(in_array("Harvesting",$for_kindofwork)) echo 'checked="checked"'; ?> 
+                                            name="kindofwork[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Harvesting</label>
                                 </div>
                                 <div class="form-check form-check-inline">
@@ -525,32 +553,44 @@
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="FishCapture" <?php echo (in_array("FishCapture",$for_typeoffishing)) ? 'checked="checked"' : ''; ?> name="typeoffishing[]">
+                                           type="checkbox" id="inlineCheckbox1" value="FishCapture" 
+                                           <?php if(in_array("FishCapture",$for_typeoffishing)) echo 'checked="checked"'; ?> 
+                                            name="typeoffishing[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Fish Capture</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox2" value="Aquaculture" <?php echo (in_array("Aquaculture",$for_typeoffishing)) ? 'checked="checked"' : ''; ?> name="typeoffishing[]">
+                                           type="checkbox" id="inlineCheckbox2" value="Aquaculture" 
+                                           <?php if(in_array("Aquaculture",$for_typeoffishing)) echo 'checked="checked"'; ?> 
+                                           name="typeoffishing[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">Aquaculture</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="Gleaning" <?php echo (in_array("Gleaning",$for_typeoffishing)) ? 'checked="checked"' : ''; ?> name="typeoffishing[]">
+                                           type="checkbox" id="inlineCheckbox1" value="Gleaning" 
+                                           <?php if(in_array("Gleaning",$for_typeoffishing)) echo 'checked="checked"'; ?> 
+                                           name="typeoffishing[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Gleaning</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="FishProcessing" <?php echo (in_array("FishProcessing",$for_typeoffishing)) ? 'checked="checked"' : ''; ?> name="typeoffishing[]">
+                                           type="checkbox" id="inlineCheckbox1" value="FishProcessing" 
+                                           <?php if(in_array("FishProcessing",$for_typeoffishing)) echo 'checked="checked"'; ?> 
+                                           name="typeoffishing[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Fish Processing</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="FishVending" <?php echo (in_array("FishVending",$for_typeoffishing)) ? 'checked="checked"' : ''; ?> name="typeoffishing[]">
+                                           type="checkbox" id="inlineCheckbox1" value="FishVending" 
+                                           <?php if(in_array("FishVending",$for_typeoffishing)) echo 'checked="checked"'; ?> 
+                                           name="typeoffishing[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Fish Vending</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" value="Others" <?php echo (in_array("Others",$for_typeoffishing)) ? 'checked="checked"' : ''; ?> name="typeoffishing[]" id="forfisherfolk">
+                                           type="checkbox" value="Others" 
+                                           <?php if(in_array("Others",$for_typeoffishing)) echo 'checked="checked"'; ?>  
+                                           name="typeoffishing[]" id="forfisherfolk">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Others</label>
                                 </div>
                                 <div class="px-2" id="forfisherfolkSpecify" style="display:none;">
@@ -568,27 +608,38 @@
                             <div class="flex flex-row w-full">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="partoffarminghousehold" <?php echo (in_array("partoffarminghousehold",$for_typeofinvolment)) ? 'checked="checked"' : ''; ?> name="typeofinvolment[]">
+                                           type="checkbox" id="inlineCheckbox1" value="partoffarminghousehold" 
+                                           <?php if(in_array("partoffarminghousehold",$for_typeofinvolment)) echo 'checked="checked"'; ?> 
+                                           name="typeofinvolment[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Part of a farming household</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox2" value="attendingformal" <?php echo (in_array("attendingformal",$for_typeofinvolment)) ? 'checked="checked"' : ''; ?> name="typeofinvolment[]">
+                                           type="checkbox" id="inlineCheckbox2" value="attendingformal" 
+                                           <?php if(in_array("attendingformal",$for_typeofinvolment)) echo 'checked="checked"'; ?> 
+                                           name="typeofinvolment[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox2">Attending/attended formal agri-fishery related course</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="attendingnonformal" <?php echo (in_array("attendingnonformal",$for_typeofinvolment)) ? 'checked="checked"' : ''; ?> name="typeofinvolment[]">
+                                           type="checkbox" id="inlineCheckbox1" value="attendingnonformal" 
+                                           <?php if(in_array("attendingnonformal",$for_typeofinvolment)) echo 'checked="checked"'; ?> 
+                                           name="typeofinvolment[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Attending/attended non-formal agri-fishery related course</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="inlineCheckbox1" value="participated" <?php echo (in_array("participated",$for_typeofinvolment)) ? 'checked="checked"' : ''; ?> name="typeofinvolment[]">
+                                           type="checkbox" id="inlineCheckbox1" value="participated"
+                                           <?php if(in_array("participated",$for_typeofinvolment)) echo 'checked="checked"'; ?> 
+                                         
+                                            name="typeofinvolment[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Participated in any agricultural activity/program</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" 
-                                           type="checkbox" id="involment" value="others" <?php echo (in_array("others",$for_typeofinvolment)) ? 'checked="checked"' : ''; ?> name="typeofinvolment[]">
+                                           type="checkbox" id="involment" value="others" 
+                                           <?php if(in_array("involment",$for_typeofinvolment)) echo 'checked="checked"'; ?> 
+                                           name="typeofinvolment[]">
                                     <label class="form-check-label inline-block text-gray-800" for="inlineCheckbox1">Others</label>
                                 </div>
                                 <div class="px-2" id="involmentSpecify" style="display:none;">
@@ -651,16 +702,23 @@
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">With Ancestral Domain?</label>
+                                <?php 
+                                     $for_ancestral1=explode(",",$ancestral1);
+                                ?>
                                 <select name="ancestral1" class="form-input" id="">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                <option value="yes" <?php echo (in_array("yes",$for_ancestral1)) ? 'selected="selected"' : ''; ?>>Yes</option>
+                                    <option value="no" <?php echo (in_array("no",$for_ancestral1)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
+                                
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Agrarlan Reform Beneficiary?</label>
+                                <?php 
+                                     $for_agrarlan1=explode(",",$agrarlan1);
+                                ?>
                                 <select name="agrarlan1" class="form-input" id="">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                <option value="yes" <?php echo (in_array("yes",$for_agrarlan1)) ? 'selected="selected"' : ''; ?>>Yes</option>
+                                    <option value="no" <?php echo (in_array("no",$for_agrarlan1)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
                             </div>
                         </div>
@@ -672,11 +730,14 @@
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Ownership Type</label>
+                                <?php 
+                                     $for_ownershiptype1=explode(",",$ownershiptype1);
+                                ?>
                                 <select name="ownershiptype1" class="form-input" id="" onchange="showTenantOne(this)">
-                                    <option value="owner">Registered Owner</option>
-                                    <option value="tenant">Tenant</option>
-                                    <option value="lessee">Lessee</option>
-                                    <option value="others">Others</option>
+                                    <option value="owner" <?php echo (in_array("owner",$for_ownershiptype1)) ? 'selected="selected"' : ''; ?>>Registered Owner</option>
+                                    <option value="tenant" <?php echo (in_array("tenant",$for_ownershiptype1)) ? 'selected="selected"' : ''; ?>>Tenant</option>
+                                    <option value="lessee" <?php echo (in_array("lessee",$for_ownershiptype1)) ? 'selected="selected"' : ''; ?>>Lessee</option>
+                                    <option value="others" <?php echo (in_array("others",$for_ownershiptype1)) ? 'selected="selected"' : ''; ?>>Others</option>
                                 </select>
                             </div>
                             <div id="hidden_tenantone" style="display:none;" class=" w-full">
@@ -812,16 +873,22 @@
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">With Ancestral Domain?</label>
+                                <?php 
+                                     $for_ancestral2=explode(",",$ancestral2);
+                                ?>
                                 <select name="ancestral2" class="form-input" id="">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                    <option value="yes" <?php echo (in_array("yes",$for_ancestral2)) ? 'selected="selected"' : ''; ?>>Yes</option>
+                                    <option value="no" <?php echo (in_array("no",$for_ancestral2)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Agrarlan Reform Beneficiary?</label>
+                                <?php 
+                                     $for_agrarlan2=explode(",",$agrarlan2);
+                                ?>
                                 <select name="agrarlan2" class="form-input" id="">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                    <option value="yes" <?php echo (in_array("yes",$for_agrarlan2)) ? 'selected="selected"' : ''; ?>>Yes</option>
+                                    <option value="no" <?php echo (in_array("no",$for_agrarlan2)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
                             </div>
                         </div>
@@ -833,11 +900,14 @@
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Ownership Type</label>
+                                <?php 
+                                     $for_ownershiptype2=explode(",",$ownershiptype2);
+                                ?>
                                 <select name="ownershiptype2" class="form-input" id="" onchange="showTenantTwo(this)">
-                                    <option value="owner">Registered Owner</option>
-                                    <option value="tenant">Tenant</option>
-                                    <option value="lessee">Lessee</option>
-                                    <option value="others">Others</option>
+                                    <option value="owner" <?php echo (in_array("owner",$for_ownershiptype2)) ? 'selected="selected"' : ''; ?>>Registered Owner</option>
+                                    <option value="tenant" <?php echo (in_array("tenant",$for_ownershiptype2)) ? 'selected="selected"' : ''; ?>>Tenant</option>
+                                    <option value="lessee" <?php echo (in_array("lessee",$for_ownershiptype2)) ? 'selected="selected"' : ''; ?>>Lessee</option>
+                                    <option value="others" <?php echo (in_array("others",$for_ownershiptype2)) ? 'selected="selected"' : ''; ?>>Others</option>
                                 </select>
                             </div>
                             <div id="hidden_tenanttwo" style="display:none;" class=" w-full">
@@ -972,16 +1042,22 @@
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">With Ancestral Domain?</label>
+                                <?php 
+                                     $for_ancestral3=explode(",",$ancestral3);
+                                ?>
                                 <select name="ancestral3" class="form-input" id="">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                    <option value="yes" <?php echo (in_array("yes",$for_ancestral3)) ? 'selected="selected"' : ''; ?>>Yes</option>
+                                    <option value="no" <?php echo (in_array("no",$for_ancestral3)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Agrarlan Reform Beneficiary?</label>
+                                <?php 
+                                     $for_agrarlan3=explode(",",$agrarlan3);
+                                ?>
                                 <select name="agrarlan3" class="form-input" id="">
-                                    <option value="yes">Yes</option>
-                                    <option value="no">No</option>
+                                    <option value="yes" <?php echo (in_array("yes",$for_agrarlan3)) ? 'selected="selected"' : ''; ?>>Yes</option>
+                                    <option value="no" <?php echo (in_array("no",$for_agrarlan3)) ? 'selected="selected"' : ''; ?>>No</option>
                                 </select>
                             </div>
                         </div>
@@ -993,11 +1069,14 @@
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Ownership Type</label>
+                                <?php 
+                                     $for_ownershiptype3=explode(",",$ownershiptype3);
+                                ?>
                                 <select name="ownershiptype3" class="form-input" id="" onchange="showTenantThree(this)">
-                                    <option value="owner">Registered Owner</option>
-                                    <option value="tenant">Tenant</option>
-                                    <option value="lessee">Lessee</option>
-                                    <option value="others">Others</option>
+                                    <option value="owner" <?php echo (in_array("owner",$for_ownershiptype3)) ? 'selected="selected"' : ''; ?>>Registered Owner</option>
+                                    <option value="tenant" <?php echo (in_array("tenant",$for_ownershiptype3)) ? 'selected="selected"' : ''; ?>>Tenant</option>
+                                    <option value="lessee" <?php echo (in_array("lessee",$for_ownershiptype3)) ? 'selected="selected"' : ''; ?>>Lessee</option>
+                                    <option value="others" <?php echo (in_array("others",$for_ownershiptype3)) ? 'selected="selected"' : ''; ?>>Others</option>
                                 </select>
                             </div>
                             <div id="hidden_tenantthree" style="display:none;" class=" w-full">
