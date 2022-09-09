@@ -891,6 +891,20 @@ if (!isset($_SESSION['loggedin'])) {
         }   
     </script>
     <script>
+        var table = document.getElementById('rejected_table');         
+        for(var i = 1; i < table.rows.length; i++)
+        {
+            table.rows[i].onclick = function()
+            {  
+                //rIndex = this.rowIndex;
+                document.getElementById("rejectapprove_id").value = this.cells[0].innerHTML;
+                document.getElementById("rejectapprove_name").value = this.cells[1].innerHTML;
+
+            };
+
+        }   
+    </script>
+    <script>
         var table = document.getElementById('all_table');         
         for(var i = 1; i < table.rows.length; i++)
         {
