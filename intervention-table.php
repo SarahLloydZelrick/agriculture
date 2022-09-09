@@ -264,7 +264,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="text" name="master_size" id="master_size" style="display:none;">
                             <input type="text" name="master_amount" id="master_amount" style="display:none;">
 
-                            <select name=""programs id="">
+                            <select name="programs" id="">
                                 <option value="Financial">Financial</option>
                                 <option value="Foods">Foods</option>
                             </select>
