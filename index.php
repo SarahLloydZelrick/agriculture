@@ -91,7 +91,8 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="flex flex-col gap-5">
                             <input type="password" name="password" id="password" class="form-input" placeholder="Password">
                             <div class="flex gap-2">
-                                <input type="checkbox" onclick="showPassword()">Show Password
+                                <input type="checkbox" onclick="showPassword()"> 
+                                <p class="text-white">Show Password</p>
                             </div>
                         </div>
                         <input class="btn-primary w-full mt-2" name="btnsubmit" type="submit" value="SIGN IN">
