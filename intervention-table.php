@@ -559,12 +559,13 @@ if (!isset($_SESSION['loggedin'])) {
                         'csv', 'excel', 'pdf', 'print'
                     ],
                     responsive: true,
+                    "pageLength": 6,
                     initComplete: function () {
                         this.api()
                             .columns()
                             .every(function () {
                                 var column = this;
-                                var select = $('<select><option value="" class="form-input"></option></select>')
+                                var select = $('<select class="form-input"><option value=""></option></select>')
                                     .appendTo($(column.header()).empty())
                                     .on('change', function () {
                                         var val = $.fn.dataTable.util.escapeRegex($(this).val());
@@ -591,7 +592,8 @@ if (!isset($_SESSION['loggedin'])) {
                     buttons: [
                          'csv', 'excel', 'pdf', 'print'
                     ],
-                    responsive: true
+                    responsive: true,
+                    "pageLength": 6
                 }
             );
         } );
@@ -602,7 +604,8 @@ if (!isset($_SESSION['loggedin'])) {
                     buttons: [
                         'csv', 'excel', 'pdf', 'print'
                     ],
-                    responsive: true
+                    responsive: true,
+                    "pageLength": 6
                 }
             );
         } );
