@@ -99,6 +99,11 @@
         <span>COMMODITY</span>
       </a>
     </li>
+    <li class="relative admin staff superuser">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+        <span>REPORTS</span>
+      </a>
+    </li>
     <li class="relative admin staff farmer superuser">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="cropanalysis.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>CROP ANALYSIS</span>
