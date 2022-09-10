@@ -86,7 +86,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Crop</th>
                             <th>Land Size</th>
                             <th>Status</th>
-                           
+                            <th class="super-hide" style="visibility: hidden;">Action</th>
                         </tr>
                     </thead>
                     <tbody>
