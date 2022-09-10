@@ -567,7 +567,7 @@ if (!isset($_SESSION['loggedin'])) {
                             .columns()
                             .every(function () {
                                 var column = this;
-                                var select = $('<select><option value=""></option></select>')
+                                var select = $('<select><option value="" class="form-input"></option></select>')
                                     .appendTo($(column.header()).empty())
                                     .on('change', function () {
                                         var val = $.fn.dataTable.util.escapeRegex($(this).val());
