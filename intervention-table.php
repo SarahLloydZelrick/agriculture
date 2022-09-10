@@ -560,9 +560,10 @@ if (!isset($_SESSION['loggedin'])) {
                     ],
                     responsive: true,
                     "pageLength": 6,
+                    
                     initComplete: function () {
                         this.api()
-                            .columns()
+                            .columns([1,2,3])
                             .every(function () {
                                 var column = this;
                                 var select = $('<select class="form-input"><option value=""></option></select>')
