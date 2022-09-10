@@ -143,7 +143,7 @@ if(isset($_POST["btnsubmit"])) {
                     <form action="" method="POST" class="flex flex-col gap-5" enctype="multipart/form-data">
                         <div class="first_row flex flex-row gap-5 w-full">
                             <div class="flex flex-col gap-2 w-full">
-                                <label for="">User Level</label>
+                                <label for="" class="text-white">User Level</label>
                                 <select name="userlevel" id="" class="form-input">
                                     <option value="staff">Staff</option>
                                     <option value="farmer">Farmer</option>
