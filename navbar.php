@@ -124,7 +124,7 @@
 
     
 <?php
-if($_SESSION['userlevel'] === "admin"){
+if($_SESSION['userlevel'] === "superuser"){
     ?>
     <script type="text/javascript">
     var elems = document.getElementsByClassName('admin');
@@ -140,7 +140,7 @@ if($_SESSION['userlevel'] === "admin"){
 }
 ?>
 <?php
-if($_SESSION['userlevel'] === "superuser"){
+if($_SESSION['userlevel'] === "admin"){
     ?>
     <script type="text/javascript">
     var elems = document.getElementsByClassName('superuser');

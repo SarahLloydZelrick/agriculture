@@ -509,7 +509,7 @@
                     <div class="flex flex-col w-full">
                         <div class="flex gap-5">
                         <?php 
-                            $for_mainlivelihood=explode(",",$mainlivelihood);
+                            $for_mainlivelihood=$mainlivelihood;
                         ?>
                             <p>MAIN LIVELIHOOD</p>
                             <div class="form-check form-check-inline">
@@ -540,7 +540,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                     <?php 
-                         $for_farmingactivity=explode(",",$farmingactivity);
+                         $for_farmingactivity = $farmingactivity;
                     ?>
                         <p>For farmers</p>
                         <p>Type of Farming Activity</p>
@@ -587,7 +587,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_kindofwork=explode(",",$kindofwork);
+                            $for_kindofwork=$kindofwork;
                         ?>
                         <p>For farmworkers:</p>
                         <p>Kind of Work</p>
@@ -625,7 +625,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_typeoffishing=explode(",",$ypeoffishing);
+                            $for_typeoffishing=$ypeoffishing;
                         ?>
                         <p>For fisherfolk:</p>
                         <p class="text-xs">The Lending Conduit shall coordinate with the Bureu of Fisheries and Aquatic Resouces (BFAR) in the issuance of a certification that the fisherfolk-borrower under PUNLA/PLEA is registered under the Municipal Registration (FishR)</p>
@@ -670,7 +670,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_typeofinvolvement=explode(",",$typeofinvolvement);
+                            $for_typeofinvolvement= $typeofinvolvement;
                         ?>
                         <p>For agri youth:</p>
                         <p class="text-xs">For the purposes of trainings, financial assistance, and other programs catered to the youth with involvement to any agriculture activity.</p>
