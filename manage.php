@@ -77,7 +77,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Email</th>
                             <th>User level</th>
                             <th>Status</th>
-                            <th class="admin-hide">Action</th>
+                            <th class="super-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -95,7 +95,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["email"]; ?></td>
                                     <td><?php echo $row["userlevel"]; ?></td>
                                     <td><?php echo $row["status"]; ?></td>
-                                    <td class="admin-hide">
+                                    <td class="super-hide">
                                         <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Approve account" data-bs-toggle="modal" data-bs-target="#approveModal"></button>
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Reject account" data-bs-toggle="modal" data-bs-target="#rejectModal"></button>
                                     </td>
@@ -169,9 +169,9 @@ if (!isset($_SESSION['loggedin'])) {
                                     <button class="fa fa-eye rounded-lg border-2 border-green-500/50 p-2 w-9 icon-green" title="View account" data-bs-toggle="modal" data-bs-target="#all_table_modal"></button>
                                     <?php 
                                         if($acctstat == "inactive"){
-                                            echo '<button class="fa fa-thumbs-up rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue admin-hide" title="Activate Account" data-bs-toggle="modal" data-bs-target="#activateModal"></button>';
+                                            echo '<button class="fa fa-thumbs-up rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue super-hide" title="Activate Account" data-bs-toggle="modal" data-bs-target="#activateModal"></button>';
                                         }else{
-                                            echo '<button class="fa fa-thumbs-down rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red admin-hide" title="Deactivate Account" data-bs-toggle="modal" data-bs-target="#deactivateModal"></button>';
+                                            echo '<button class="fa fa-thumbs-down rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red super-hide" title="Deactivate Account" data-bs-toggle="modal" data-bs-target="#deactivateModal"></button>';
                                         }
                                     ?>
                                     
@@ -373,7 +373,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Email</th>
                             <th>User level</th>
                             <th>Status</th>
-                            <th class="admin-hide">Action</th>
+                            <th class="super-hide">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -391,7 +391,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["email"]; ?></td>
                                     <td><?php echo $row["userlevel"]; ?></td>
                                     <td><?php echo $row["status"]; ?></td>
-                                    <td class="admin-hide">
+                                    <td class="super-hide">
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Reject account" data-bs-toggle="modal" data-bs-target="#rejectModal2"></button>
                                     </td>
                                 </tr>
@@ -1231,6 +1231,23 @@ if($_SESSION['userlevel'] === "admin"){
          elems[i].style.display = 'block';
         }
     for (var i=0;i<elemshide.length;i+=1){
+     elemshide[i].style.display = 'none';
+    }
+    </script>
+    <?php
+}
+?>
+
+<?php
+if($_SESSION['userlevel'] === "superuser"){
+    ?>
+    <script type="text/javascript">
+    var elems = document.getElementsByClassName('superuser');
+    var elemshide = document.getElementsByClassName('super-hide');
+    for (var i=0;i<elems.length;i+=1){
+         elems[i].style.display = 'block';
+        }
+        for (var i=0;i<elemshide.length;i+=1){
      elemshide[i].style.display = 'none';
     }
     </script>

@@ -57,10 +57,10 @@
         <li class="relative">
           <a href="manage.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Manage Accounts</a>
         </li>
-        <li class="relative admin-hide">
+        <li class="relative super-hide">
           <a href="addaccount.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Add Accounts</a>
         </li>
-        <li class="relative admin-hide">
+        <li class="relative super-hide">
           <a href="addbarangay.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Add Barangay</a>
         </li>
       </ul>
@@ -73,7 +73,7 @@
         </svg>
       </a>
       <ul class="relative accordion-collapse collapse" id="collapseSidenavSecEx3" aria-labelledby="sidenavSecEx3" data-bs-parent="#sidenavSecExample">
-        <li class="relative admin-hide">
+        <li class="relative super-hide">
           <a href="rsbsa.php" class="flex items-center text-xs py-4 pl-12 pr-6 h-6 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="primary">Add RSBSA</a>
         </li>
         <li class="relative">
@@ -124,7 +124,7 @@
 
     
 <?php
-if($_SESSION['userlevel'] === "superuser"){
+if($_SESSION['userlevel'] === "admin"){
     ?>
     <script type="text/javascript">
     var elems = document.getElementsByClassName('admin');
@@ -140,13 +140,17 @@ if($_SESSION['userlevel'] === "superuser"){
 }
 ?>
 <?php
-if($_SESSION['userlevel'] === "admin"){
+if($_SESSION['userlevel'] === "superuser"){
     ?>
     <script type="text/javascript">
     var elems = document.getElementsByClassName('superuser');
+    var elemshide = document.getElementsByClassName('super-hide');
     for (var i=0;i<elems.length;i+=1){
          elems[i].style.display = 'block';
         }
+        for (var i=0;i<elemshide.length;i+=1){
+     elemshide[i].style.display = 'none';
+    }
     </script>
     <?php
 }
