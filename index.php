@@ -88,7 +88,10 @@ if(isset($_POST["btnsubmit"])) {
                             <option value="farmer">Farmer</option>
                         </select>
                         <input type="email" name="email" id="email" class="form-input" placeholder="Email address">
-                        <input type="password" name="password" id="password" class="form-input" placeholder="Password">
+                        <div class="flex flex-col gap-5">
+                            <input type="password" name="password" id="password" class="form-input" placeholder="Password">
+                            <input type="checkbox" onclick="showPassword()">Show Password
+                        </div>
                         <input class="btn-primary w-full mt-2" name="btnsubmit" type="submit" value="SIGN IN">
                     </form>
                     <div class="card-footer flex flex-col justify-end h-full gap-5">
@@ -131,5 +134,15 @@ if(isset($_POST["btnsubmit"])) {
 </body>
 </html>
 
+<script>
+    function showPassword() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
 
 
