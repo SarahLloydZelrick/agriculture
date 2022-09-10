@@ -39,10 +39,6 @@ if (!isset($_SESSION['loggedin'])) {
     <?php
         include "navbar.php";
         include "topbar.php";
-
-        $tbl = "tbl_";
-        $brgy = $_GET['barangay'];
-        $brgyname = $tbl.$brgy;
     ?>
     <div class="container w-full ml-0 md:ml-60  md:w-4/5">
         <div class="table_container p-10 gap-5 flex flex-col">
@@ -86,7 +82,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_intervention WHERE farmbarangay = '$brgy'";
+                        $sql = "SELECT * FROM tbl_intervention";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -143,7 +139,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received' AND farmbarangay = '$brgy'";
+                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -199,7 +195,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmbarangay='$brgy'";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {

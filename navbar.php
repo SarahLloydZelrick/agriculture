@@ -90,7 +90,7 @@
   <hr class="my-2">
   <ul class="relative px-1">
     <li class="relative  admin staff superuser">
-      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="intervention.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="intervention-table.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>INTERVENTIONS</span>
       </a>
     </li>
