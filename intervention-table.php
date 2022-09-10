@@ -86,7 +86,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Crop</th>
                             <th>Land Size</th>
                             <th>Status</th>
-                            <th class="super-hide">Action</th>
+                            <th class="super-hide" style="display:hidden;">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -97,6 +97,7 @@ if (!isset($_SESSION['loggedin'])) {
                         
                         if (mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_assoc($result)) {
+                                $acctstat =  $row["status"];
                         ?>
                                 <tr>
                                     <td style="display:none;"><?php echo $row["id"]; ?> </td>
@@ -105,9 +106,9 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["farmbarangay"]; ?></td>
                                     <td><?php echo $row["crop"]; ?></td>
                                     <td><?php echo $row["size"]; ?> hectares</td>
+                                    
                                     <td>
                                         <?php 
-                                            $acctstat =  $row["status"];
                                             if($acctstat == "active"){
                                                 echo '<div class="rounded-full w-24 h-auto bg-green-500 text-white flex justify-center">Active</div>';
                                             }else{
