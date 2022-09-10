@@ -563,7 +563,7 @@ if (!isset($_SESSION['loggedin'])) {
                     
                     initComplete: function () {
                         this.api()
-                            .columns([1,2,3])
+                            .columns([1,2,3,4,5,6])
                             .every(function () {
                                 var column = this;
                                 var select = $('<select class="form-input"><option value=""></option></select>')
