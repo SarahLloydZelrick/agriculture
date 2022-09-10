@@ -70,7 +70,7 @@ if(isset($_POST["btnsubmit"])) {
             $startno = "+63";
             $number = $startno.$mobilenumber;
             
-            $userlevel = "farmer";
+            $userlevel = mysqli_real_escape_string($con, $_POST['userlevel']);
             $stat = "active";
             $status = "pending";
 
@@ -141,6 +141,15 @@ if(isset($_POST["btnsubmit"])) {
                     ?>
                       
                     <form action="" method="POST" class="flex flex-col gap-5" enctype="multipart/form-data">
+                        <div class="first_row flex flex-row gap-5 w-full">
+                            <div class="flex flex-col gap-2 w-full">
+                                <label for="">User Level</label>
+                                <select name="userlevel" id="" class="form-input">
+                                    <option value="staff">Staff</option>
+                                    <option value="farmer">Farmer</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="first_row flex flex-col md:flex-row gap-5">
                             <div class="flex flex-col gap-2 w-full">
                                 <label class="text-white" for="">First Name</label>
