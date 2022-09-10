@@ -110,9 +110,11 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td>
                                         <?php 
                                             if($acctstat == "active"){
-                                                echo '<div class="rounded-full w-24 h-auto bg-green-500 text-white flex justify-center">Active</div>';
+                                                //echo '<div class="rounded-full w-24 h-auto bg-green-500 text-white flex justify-center">Active</div>';
+                                                echo "Active";
                                             }else{
-                                                echo '<div class="rounded-full w-24 h-auto bg-red-500 text-white flex justify-center">Inactive</div>';
+                                                //echo '<div class="rounded-full w-24 h-auto bg-red-500 text-white flex justify-center">Inactive</div>';
+                                                echo "Inactive";
                                             }    
                                         ?> 
                                     </td>
