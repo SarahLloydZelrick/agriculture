@@ -77,9 +77,21 @@ if(isset($_POST["btn_changepass"])) {
                     <form action="" method="POST" class="flex flex-col gap-5" id="stepThree">
                         <h3 class="text-2xl text-center text-white">Enter New Password</h3>
                         <label class="text-white">Enter new password</label>
-                        <input type="password" name="new_password" id="n_password" class="form-input" placeholder="Enter Password">
+                        <div class="flex flex-col gap-5">
+                            <input type="password" name="new_password" id="n_password" class="form-input" placeholder="Enter Password">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPasswordone()"> 
+                                <p class="text-white">Show Password</p>
+                            </div>
+                        </div>
                         <label class="text-white">Confirm new password</label>
-                        <input type="password" name="confirm _password" id="c_password" class="form-input" placeholder="Confirm Password">
+                        <div class="flex flex-col gap-5">
+                            <input type="password" name="confirm _password" id="c_password" class="form-input" placeholder="Confirm Password">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPasswordtwo()"> 
+                                <p class="text-white">Show Password</p>
+                            </div>
+                        </div>
                         <input class="w-full mt-2 btn-pass" style="background-color:gray" id="btn_pass" name="btn_changepass" type="submit" disabled="true" value="Change Password">
                     </form>
                     <div class="card-footer flex flex-col justify-end h-full gap-5">
@@ -120,6 +132,25 @@ if(isset($_POST["btn_changepass"])) {
 
         });
     </script>
+    <script>
+    function showPasswordone() {
+        var x = document.getElementById("n_password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    function showPasswordtwo() {
+        var x = document.getElementById("c_password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    </script>
+
 </body>
 </html>
 
