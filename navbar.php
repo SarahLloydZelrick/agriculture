@@ -128,13 +128,9 @@ if($_SESSION['userlevel'] === "admin"){
     ?>
     <script type="text/javascript">
     var elems = document.getElementsByClassName('admin');
-    var elemshide = document.getElementsByClassName('admin-hide');
     for (var i=0;i<elems.length;i+=1){
          elems[i].style.display = 'block';
         }
-    for (var i=0;i<elemshide.length;i+=1){
-     elemshide[i].style.display = 'none';
-    }
     </script>
     <?php
 }
