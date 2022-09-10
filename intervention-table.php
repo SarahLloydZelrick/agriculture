@@ -78,6 +78,16 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Status</th>
                             <th class="super-hide">Action</th>
                         </tr>
+                        <tr>
+                            <th style="display:none;">ID</th>
+                            <th style="display:none;">Farmer ID</th>
+                            <th>Name</th>
+                            <th>Barangay</th>
+                            <th>Crop</th>
+                            <th>Land Size</th>
+                            <th>Status</th>
+                            <th class="super-hide">Action</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <?php
