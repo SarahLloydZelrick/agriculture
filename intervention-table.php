@@ -39,7 +39,7 @@ if (!isset($_SESSION['loggedin'])) {
     <script>
         function fetch_select(val)
         {
-            document.getElementById("forbarangay").value = val.target.value;
+            document.getElementById("forbarangay").value = val;
             $.ajax({
                 type: 'post',
                 url: 'fetch_crops.php',
