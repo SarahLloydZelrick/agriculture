@@ -11,6 +11,7 @@ if(isset($_POST['get_barangay']))
                 echo "<option>".$row['crop']."</option>";
             }
         }
+    exit;
 }
 ?>
 

@@ -12,6 +12,7 @@ if(isset($_POST['get_commodity']))
                 echo "<option>".$row['size']."</option>";
             }
         }
+    exit;
 }
 ?>
 
