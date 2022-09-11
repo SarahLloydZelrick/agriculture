@@ -42,6 +42,12 @@ if (!isset($_SESSION['loggedin'])) {
     ?>
     <div class="container w-full ml-0 md:ml-60  md:w-4/5">
         <div class="table_container p-10 gap-5 flex flex-col">
+            <button 
+                class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
+                data-bs-toggle="modal" data-bs-target="#releaseModal"
+                >
+                    Release
+                </button>
             <h2 class="text-2xl font-bold">Intervention</h2>
             <div class="table_buttons flex flex-row gap-5 ">
                 <button 
@@ -249,6 +255,103 @@ if (!isset($_SESSION['loggedin'])) {
         <?php
             include "footer.php";
         ?>
+    </div>
+    
+    <!-- Modal Release -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="releaseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">_two
+        <div class="modal-dialog relative w-auto pointer-events-none">
+            <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                    <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalLabel">Release</h5>
+                    <button 
+                        type="button"
+                        class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">X
+                    </button>
+                </div>
+                <form action="" method="POST">
+                    <div class="modal-body relative p-4">
+
+                        <div class="flex flex-col">
+                            <label for="">Barangay</label>
+                            <select name="programs" class="form-input">
+                                <option value="mayabobo">Mayabobo</option>
+                                <option value="poblacion">Poblacion</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="">Crop</label>
+                            <select name="programs" class="form-input">
+                                <option value="mayabobo">Corn</option>
+                                <option value="poblacion">Rice</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="">Land Size</label>
+                            <select name="programs" class="form-input">
+                                <option value="mayabobo">2 hectares</option>
+                                <option value="poblacion">3 hectares</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="">Programs</label>
+                            <select name="programs" class="form-input">
+                                <option value="Financial">Financial</option>
+                                <option value="Program">Program</option>
+                            </select>
+                        </div>
+                        <div class="amount flex flex-col">
+                            <label for="">Enter the amount to be release</label>
+                            <input type="number" class="form-input" name="receive_amount">
+                        </div>
+                        <br>
+                        <p class="text-sm">To continue, please enter your PIN</p>
+                        <input type="password" name="" id="reg_pass_pending" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
+                        <input type="password" name="" id="reg_confirm_pass_pending" class="form-input">
+                    </div>
+                    <div
+                        class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+                        <button 
+                            type="button" 
+                            class="px-6
+                            py-2.5
+                            bg-gray-600
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            hover:bg-gray-700 hover:shadow-lg
+                            focus:bg-gray-700 focus:shadow-lg focus:outline-none focus:ring-0
+                            active:bg-gray-800 active:shadow-lg
+                            transition
+                            duration-150
+                            ease-in-out" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="px-6
+                            py-2.5
+                            text-white
+                            font-medium
+                            text-xs
+                            leading-tight
+                            uppercase
+                            rounded
+                            shadow-md
+                            transition
+                            duration-150
+                            ease-in-out
+                            ml-1"
+                            name="btn_masterapprove"
+                            id="btn_pending"
+                            disabled="true"
+                            style="background-color:gray;"
+                            >Release</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
     <!-- Modal Master - Receive-->
