@@ -53,13 +53,13 @@ if (!isset($_SESSION['loggedin'])) {
         
     </script>
     <script>
-    function fetch_land(val)
+        function fetch_land(val)
         {
             $.ajax({
                 type: 'post',
                 url: 'fetch_land.php',
                 data: {
-                get_barangay: document.getElementById("release_barangay").val();
+                get_barangay: document.getElementById("release_barangay").val(),
                 get_commodity:val
                 },
                 success: function (response) {
