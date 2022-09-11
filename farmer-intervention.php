@@ -45,25 +45,19 @@ if (!isset($_SESSION['loggedin'])) {
                 class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
                 onclick="viewMaster()"
                 >
-                    Master List
+                    Account Status
                 </button>
                 <button 
                 class="inline-block px-6 py-2.5 bg-green-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-green active:shadow-lg transition duration-150 ease-in-out"
                 onclick="viewReceived()"
                 >
-                    Received
-                </button>
-                <button 
-                class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
-                onclick="viewNotReceived()"
-                >
-                    Deleted
+                    Account Received
                 </button>
             </div>
             
             <div id="table_master">
                 <table id="master_table" style="width:100%;">
-                    <h2 class="text-xl">Master List</h2>
+                    <h2 class="text-xl">Account Status</h2>
                     <thead>
                         <tr>
                             <th style="display:none;">ID</th>
@@ -73,13 +67,13 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Crop</th>
                             <th>Land Size</th>
                             <th>Status</th>
-                            <th class="super-hide">Action</th>
+                            <!--th class="super-hide">Action</th-->
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active'";
+                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active' AND farmerId = ''";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -102,10 +96,10 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
-                                    <td class="super-hide">
+                                    <!--td class="super-hide">
                                         <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#receiveModal"></button>
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></button>
-                                    </td>
+                                    </td-->
                                 </tr>
                         <?php
                             }
