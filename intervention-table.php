@@ -36,6 +36,22 @@ if (!isset($_SESSION['loggedin'])) {
     <title>Intervention</title>
 </head>
 <body>
+    <script>
+        function fetch_select(val)
+            {
+            $.ajax({
+            type: 'post',
+            url: 'fetch_crops.php',
+            data: {
+            get_option:val
+            },
+            success: function (response) {
+            document.getElementById("new_select").innerHTML=response; 
+            }
+            });
+            }
+
+    </script>
     <?php
         include "navbar.php";
         include "topbar.php";
@@ -275,7 +291,7 @@ if (!isset($_SESSION['loggedin'])) {
 
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
-                            <select name="barangay" id="" class="form-input">
+                            <select name="barangay" id="" class="form-input" onchange="fetch_select(this.value);">
                                 <?php
                                     include "config.php";
                                     $sqlbrgy = "SELECT DISTINCT `farmbarangay` FROM `tbl_intervention`";
@@ -293,6 +309,9 @@ if (!isset($_SESSION['loggedin'])) {
                                     }
                                 ?>
                                 </select>
+                        </div>
+                        <div class="flex flex-col">
+                            <select id="new_select" class="form-input"></select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Crop</label>
