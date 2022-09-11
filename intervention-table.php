@@ -39,6 +39,7 @@ if (!isset($_SESSION['loggedin'])) {
     <script>
         function fetch_select(val)
         {
+            document.getElementById("forbarangay").value = val.target.value
             $.ajax({
                 type: 'post',
                 url: 'fetch_crops.php',
@@ -49,18 +50,19 @@ if (!isset($_SESSION['loggedin'])) {
                     document.getElementById("new_select").innerHTML=response; 
                 }
             });
+
         }
         
     </script>
     <script>
-        var brgy = $( "#release_barangay option:selected" ).value;
+        //var brgy = $( "#release_barangay option:selected" ).value;
         function fetch_land(val)
         {
             $.ajax({
                 type: 'post',
                 url: 'fetch_land.php',
                 data: {
-                get_barangay: brgy,
+                //get_barangay: brgy,
                 get_commodity:val
                 },
                 success: function (response) {
@@ -330,6 +332,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <div class="flex flex-col">
                             <label for="">Commodity</label>
                             <select id="new_select" class="form-input" onchange="fetch_land(this.value);"></select>
+                            <input type="text" name="" id="forbarangay">
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
