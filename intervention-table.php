@@ -275,10 +275,6 @@ if (!isset($_SESSION['loggedin'])) {
 
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
-                            <select name="programs" class="form-input">
-                                <option value="mayabobo">Mayabobo</option>
-                                <option value="poblacion">Poblacion</option>
-                            </select>
                             <select name="barangay" id="" class="form-input">
                                 <?php
                                     include "config.php";
@@ -286,10 +282,10 @@ if (!isset($_SESSION['loggedin'])) {
                                     $resultbrgy = mysqli_query($con, $sqlbrgy);
                                     if (mysqli_num_rows($resultbrgy) > 0) {
                                         while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
-                                            $orig = $rowbrgy['barangay'];
+                                            $orig = $rowbrgy['farmbarangay'];
                                             $forbrgy = str_replace('_', ' ', $orig);
                                 ?>
-                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $forbrgy; ?></option>
+                                         <option value="<?php echo $rowbrgy['farmbarangay'];?>"><?php echo $forbrgy; ?></option>
                                 <?php
                                         }
                                     } else {
