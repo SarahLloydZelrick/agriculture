@@ -52,6 +52,22 @@ if (!isset($_SESSION['loggedin'])) {
         }
         
     </script>
+    <script>
+    function fetch_land(val)
+        {
+            $.ajax({
+                type: 'post',
+                url: 'fetch_land.php',
+                data: {
+                get_barangay: document.getElementById("release_barangay").val();
+                get_commodity:val
+                },
+                success: function (response) {
+                    document.getElementById("release_land").innerHTML=response; 
+                }
+            });
+        }
+    </script>
     <?php
         include "navbar.php";
         include "topbar.php";
