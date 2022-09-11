@@ -37,16 +37,16 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <body>
     <script>
-        function fetch_commodity(val)
+        function fetch_select(val)
         {
             $.ajax({
                 type: 'post',
                 url: 'fetch_crops.php',
                 data: {
-                get_barangay:val
+                    get_option:val
                 },
                 success: function (response) {
-                    document.getElementById("release_commodity").innerHTML=response; 
+                    document.getElementById("new_select").innerHTML=response; 
                 }
             });
         }
@@ -305,7 +305,7 @@ if (!isset($_SESSION['loggedin'])) {
 
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
-                            <select name="barangay" id="release_barangay" class="form-input" onchange="fetch_commodity(this.value);">
+                            <select name="barangay" id="release_barangay" class="form-input" onchange="fetch_select(this.value);">
                                 <?php
                                     include "config.php";
                                     $sqlbrgy = "SELECT DISTINCT `farmbarangay` FROM `tbl_intervention`";
@@ -326,7 +326,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <div class="flex flex-col">
                             <label for="">Commodity</label>
-                            <select id="release_commodity" class="form-input" onchange="fetch_land(this.value);"></select>
+                            <select id="new_select" class="form-input" onchange="fetch_land(this.value);"></select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
