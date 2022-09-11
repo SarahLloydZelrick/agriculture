@@ -43,7 +43,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container w-full ml-0 md:ml-60  md:w-4/5">
         <div class="table_container p-10 gap-5 flex flex-col">
             <button 
-                class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
+                class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out w-32"
                 data-bs-toggle="modal" data-bs-target="#releaseModal"
                 >
                     Release
