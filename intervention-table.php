@@ -326,7 +326,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <div class="flex flex-col">
                             <label for="">Commodity</label>
-                            <select id="new_select" class="form-input" onchange="fetch_land(this.value);"></select>
+                            <select id="new_select" class="form-input"></select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
