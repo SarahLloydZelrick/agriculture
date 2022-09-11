@@ -278,7 +278,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <select name="barangay" id="" class="form-input">
                                 <?php
                                     include "config.php";
-                                    $sqlbrgy = "SELECT * FROM `tbl_intervention`";
+                                    $sqlbrgy = "SELECT DISTINCT `farmbarangay` FROM `tbl_intervention`";
                                     $resultbrgy = mysqli_query($con, $sqlbrgy);
                                     if (mysqli_num_rows($resultbrgy) > 0) {
                                         while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
