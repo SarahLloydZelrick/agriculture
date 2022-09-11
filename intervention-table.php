@@ -55,9 +55,10 @@ if (!isset($_SESSION['loggedin'])) {
         
     </script>
     <script>
-        var brgy = $('#forbarangay').val();
+        
         function fetch_land(val)
         {
+            var brgy = $('#forbarangay').val();
             $.ajax({
                 type: 'post',
                 url: 'fetch_land.php',
