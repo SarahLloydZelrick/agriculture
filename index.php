@@ -70,7 +70,7 @@ if(isset($_POST["btnsubmit"])) {
             <div class="basis-full flex flex-row justify-center items-center p-2.5 md:basis-1/2 h-screen left-div">
                 <div class="card flex flex-col w-full h-5/6 p-10 gap-5 md:w-4/5 md:h-4/6">
                     <?php
-                        if(!empty($errors)){
+                        if(!empty($errors)){ 
                     ?>
                         <div class="alert bg-red-100 rounded-lg py-5 px-6 mb-3 text-base text-red-700 inline-flex items-center w-full alert-dismissible fade show justify-between" role="alert">
                             <strong class="mr-1"><?php echo $error_message; ?></strong>
