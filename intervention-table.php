@@ -53,7 +53,7 @@ if (!isset($_SESSION['loggedin'])) {
         
     </script>
     <script>
-        var brgy = $('#release_barangay').val($(this).find('option:selected').val());
+        var brgy = $( "#release_barangay option:selected" ).val();
         function fetch_land(val)
         {
             $.ajax({
