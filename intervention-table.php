@@ -50,21 +50,7 @@ if (!isset($_SESSION['loggedin'])) {
                 }
             });
         }
-        function fetch_land(val)
-        {
-            $.ajax({
-                type: 'post',
-                url: 'fetch_land.php',
-                data: {
-                get_barangay: document.getElementById("release_barangay").val();
-                get_commodity:val
-                },
-                success: function (response) {
-                    document.getElementById("release_land").innerHTML=response; 
-                }
-            });
-        }
-
+        
     </script>
     <?php
         include "navbar.php";
@@ -326,7 +312,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <div class="flex flex-col">
                             <label for="">Commodity</label>
-                            <select id="new_select" class="form-input"></select>
+                            <select id="new_select" class="form-input" onchange="fetch_land(this.value);"></select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
