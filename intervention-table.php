@@ -59,7 +59,7 @@ if (!isset($_SESSION['loggedin'])) {
                 type: 'post',
                 url: 'fetch_land.php',
                 data: {
-                get_barangay: document.getElementById("release_barangay").val(),
+                get_barangay: document.getElementById("release_barangay").value(),
                 get_commodity:val
                 },
                 success: function (response) {
