@@ -333,18 +333,11 @@ if (!isset($_SESSION['loggedin'])) {
                         <div class="flex flex-col">
                             <label for="">Commodity</label>
                             <select id="new_select" class="form-input" onchange="fetch_land(this.value);"></select>
-                            <input type="text" name="" id="forbarangay">
+                            <input type="text" name="" id="forbarangay" style="display:none;">
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
                             <select id="release_land" class="form-input"></select>
-                        </div>
-                        <div class="flex flex-col">
-                            <label for="">Land Size</label>
-                            <select name="programs" class="form-input">
-                                <option value="mayabobo">2 hectares</option>
-                                <option value="poblacion">3 hectares</option>
-                            </select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Programs</label>
