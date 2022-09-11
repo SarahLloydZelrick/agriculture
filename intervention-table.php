@@ -55,14 +55,14 @@ if (!isset($_SESSION['loggedin'])) {
         
     </script>
     <script>
-        //var brgy = $( "#release_barangay option:selected" ).value;
+        var brgy = document.getElementById("forbarangay").value;
         function fetch_land(val)
         {
             $.ajax({
                 type: 'post',
                 url: 'fetch_land.php',
                 data: {
-                //get_barangay: brgy,
+                get_barangay: brgy,
                 get_commodity:val
                 },
                 success: function (response) {
