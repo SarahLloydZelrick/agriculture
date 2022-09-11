@@ -279,6 +279,24 @@ if (!isset($_SESSION['loggedin'])) {
                                 <option value="mayabobo">Mayabobo</option>
                                 <option value="poblacion">Poblacion</option>
                             </select>
+                            <select name="barangay" id="" class="form-input">
+                                <?php
+                                    include "config.php";
+                                    $sqlbrgy = "SELECT * FROM `tbl_intervention`";
+                                    $resultbrgy = mysqli_query($con, $sqlbrgy);
+                                    if (mysqli_num_rows($resultbrgy) > 0) {
+                                        while($rowbrgy = mysqli_fetch_assoc($resultbrgy)) {
+                                            $orig = $rowbrgy['barangay'];
+                                            $forbrgy = str_replace('_', ' ', $orig);
+                                ?>
+                                         <option value="<?php echo $rowbrgy['barangay'];?>"><?php echo $forbrgy; ?></option>
+                                <?php
+                                        }
+                                    } else {
+                                    echo "0 results";
+                                    }
+                                ?>
+                                </select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Crop</label>
