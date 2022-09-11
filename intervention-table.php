@@ -37,19 +37,33 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <body>
     <script>
-        function fetch_select(val)
-            {
+        function fetch_commodity(val)
+        {
             $.ajax({
-            type: 'post',
-            url: 'fetch_crops.php',
-            data: {
-            get_option:val
-            },
-            success: function (response) {
-            document.getElementById("new_select").innerHTML=response; 
-            }
+                type: 'post',
+                url: 'fetch_crops.php',
+                data: {
+                get_barangay:val
+                },
+                success: function (response) {
+                    document.getElementById("release_commodity").innerHTML=response; 
+                }
             });
-            }
+        }
+        function fetch_land(val)
+        {
+            $.ajax({
+                type: 'post',
+                url: 'fetch_land.php',
+                data: {
+                get_barangay: document.getElementById("#release_barangay").val();
+                get_commodity:val
+                },
+                success: function (response) {
+                    document.getElementById("release_land").innerHTML=response; 
+                }
+            });
+        }
 
     </script>
     <?php
@@ -287,11 +301,11 @@ if (!isset($_SESSION['loggedin'])) {
                     </button>
                 </div>
                 <form action="" method="POST">
-                    <div class="modal-body relative p-4">
+                    <div class="modal-body relative p-4 gap-2">
 
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
-                            <select name="barangay" id="" class="form-input" onchange="fetch_select(this.value);">
+                            <select name="barangay" id="release_barangay" class="form-input" onchange="fetch_commodity(this.value);">
                                 <?php
                                     include "config.php";
                                     $sqlbrgy = "SELECT DISTINCT `farmbarangay` FROM `tbl_intervention`";
@@ -311,14 +325,12 @@ if (!isset($_SESSION['loggedin'])) {
                                 </select>
                         </div>
                         <div class="flex flex-col">
-                            <select id="new_select" class="form-input"></select>
+                            <label for="">Commodity</label>
+                            <select id="release_commodity" class="form-input" onchange="fetch_land(this.value);"></select>
                         </div>
                         <div class="flex flex-col">
-                            <label for="">Crop</label>
-                            <select name="programs" class="form-input">
-                                <option value="mayabobo">Corn</option>
-                                <option value="poblacion">Rice</option>
-                            </select>
+                            <label for="">Land Size</label>
+                            <select id="release_land" class="form-input"></select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
