@@ -591,16 +591,6 @@ if(isset($_POST["btnsubmit"])) {
                                 <input type="number" class="form-input w-full" name="telephone" placeholder="Applicant landline number">
                             </div>
                         </div>
-                        <div class="flex w-full flex-col md:flex-row">
-                            <div class="flex flex-col gap-2 w-full p-2">
-                                <label for="">Middle Name</label>
-                                <input type="text" class="form-input w-full" name="middlename" placeholder="Middle name">
-                            </div>
-                            <div class="flex flex-col gap-2 w-full p-2">
-                                <label for="">Extention Name</label>
-                                <input type="text" class="form-input w-full" name="extentionname" placeholder="Extention name">
-                            </div>
-                        </div>
                         <h3 class="text-xl font-bold">Applicant Address</h3>
                         <div class="flex w-full flex-col md:flex-row">
                             <div class="flex flex-col gap-2 w-full p-2">
