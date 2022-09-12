@@ -338,7 +338,7 @@ if (!isset($_SESSION['loggedin'])) {
                       if(isset($_POST["btnedit"])){
                         echo $modaltwo; 
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_poblacion WHERE id = '".$_POST['rsbsaid']."'";
+                        $sql = "SELECT * FROM tbl_bukal_norte WHERE id = '".$_POST['rsbsaid']."'";
                         $result = mysqli_query($con, $sql);
                         if (mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_assoc($result)) {
