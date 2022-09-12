@@ -16,9 +16,9 @@ if(isset($_POST["btnsubmit"])) {
     $tbl = "tbl_";
     $farmbarangay = mysqli_real_escape_string($con, $_POST['barangay']);
     $forbrgy = $tbl.$farmbarangay;
-    $selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
-    $resultbrgy = mysqli_query($con, $selectbrgy);
-    if (mysqli_num_rows($resultbrgy) > 0) {
+    //$selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
+    //$resultbrgy = mysqli_query($con, $selectbrgy);
+    //if (mysqli_num_rows($resultbrgy) > 0) {
         $sql = "INSERT INTO tbl_barangay (`barangay`) VALUES ('".$farmbarangay."')";
                 if(mysqli_query($con, $sql)){
                 
@@ -213,13 +213,6 @@ if(isset($_POST["btnsubmit"])) {
                     $errors = "1";
                     $error_message = "Error submitting the form. Please try again.";
                 }
-        
-    }
-            else{
-                
-                $error_message = "Error submitting the form. Barangay already exist.";
-            }
-
   }
 ?>
 
