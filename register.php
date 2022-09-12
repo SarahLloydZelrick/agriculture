@@ -150,27 +150,6 @@ if(isset($_POST["btnsubmit"])) {
                                 </select>
                             </div>
                         </div>
-                        <div class="first_row flex flex-row gap-5 w-full" style="display:none;" id="hidden_barangay">
-                            <div class="flex flex-col gap-2 w-full">
-                                <label for="">Barangay</label>
-                                <select name="barangay" id="" class="form-input">
-                                <?php
-                                    include "config.php";
-                                    $sql = "SELECT * FROM `tbl_barangay`";
-                                    $result = mysqli_query($con, $sql);
-                                    if (mysqli_num_rows($result) > 0) {
-                                        while($row = mysqli_fetch_assoc($result)) {
-                                ?>
-                                         <option value="<?php echo $row['barangay'];?>"><?php echo $row['barangay']; ?></option>
-                                <?php
-                                        }
-                                    } else {
-                                    echo "0 results";
-                                    }
-                                ?>
-                                </select>
-                            </div>
-                        </div>
                         <div class="first_row flex flex-col md:flex-row gap-5">
                             <div class="flex flex-col gap-2 w-full">
                                 <label class="text-white" for="">First Name</label>
@@ -231,9 +210,30 @@ if(isset($_POST["btnsubmit"])) {
                                 <input type="password" name="pin" id="" class="form-input" placeholder="Pin" maxlength="4">
                             </div>
                         </div>
+                        <div class="first_row flex flex-row gap-5 w-full" style="display:none;" id="hidden_barangay">
+                            <div class="flex flex-col gap-2 w-full">
+                                <label for="" class="text-white">Barangay</label>
+                                <select name="barangay" id="" class="form-input">
+                                <?php
+                                    include "config.php";
+                                    $sql = "SELECT * FROM `tbl_barangay`";
+                                    $result = mysqli_query($con, $sql);
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                         <option value="<?php echo $row['barangay'];?>"><?php echo $row['barangay']; ?></option>
+                                <?php
+                                        }
+                                    } else {
+                                    echo "0 results";
+                                    }
+                                ?>
+                                </select>
+                            </div>
+                        </div>
                         <div class="second_row flex flex-col md:flex-row gap-5 w-full">
                             <div class="flex flex-col gap-2 w-full">
-                                <label class="text-white" for="">Address</label>
+                                <label class="text-white" for="">Complete Address</label>
                                 <textarea name="address" id="" class="form-input" cols="30" rows="2" placeholder="Address"></textarea>
                             </div>
                         </div>
