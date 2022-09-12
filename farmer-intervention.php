@@ -6,6 +6,8 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
+$session_barangay = $_SESSION['barangay'];
+$session_number = $_SESSION['number'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +42,10 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container w-full ml-0 md:ml-60  md:w-4/5">
         <div class="table_container p-10 gap-5 flex flex-col">
             <h2 class="text-2xl font-bold">Intervention</h2>
+            <?php
+                echo $session_number;
+                echo $session_barangay;
+            ?>
             <div class="table_buttons flex flex-row gap-5 ">
                 <button 
                 class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"

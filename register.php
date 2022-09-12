@@ -69,13 +69,13 @@ if(isset($_POST["btnsubmit"])) {
             $mobilenumber = mysqli_real_escape_string($con, $_POST['number']);
             $startno = "+63";
             $number = $startno.$mobilenumber;
-            
+            $barangay = mysqli_real_escape_string($con, $_POST['barangay']);
             $userlevel = mysqli_real_escape_string($con, $_POST['userlevel']);
             $stat = "active";
             $status = "pending";
 
-            $sql = "INSERT INTO tbl_accounts (name, middlename, lastname, number, email, password, userlevel, address, sex, age, status, photo,stat,bday,pin) 
-                    VALUES ('".$firstname."', '".$middlename."', '".$lastname."', '".$number."', '".$email."', '".$password."', '".$userlevel."', '".$address."', '".$sex."', '".$userbday."','".$status."', '".$photo."','".$stat."','".$bday."','".$pin."')";
+            $sql = "INSERT INTO tbl_accounts (name, middlename, lastname, number, email, password, userlevel, address, sex, age, status, photo,stat,bday,pin,barangay) 
+                    VALUES ('".$firstname."', '".$middlename."', '".$lastname."', '".$number."', '".$email."', '".$password."', '".$userlevel."', '".$address."', '".$sex."', '".$userbday."','".$status."', '".$photo."','".$stat."','".$bday."','".$pin."','".$barangay."')";
                 if(mysqli_query($con, $sql)){
                     $success = "1";
                     $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
