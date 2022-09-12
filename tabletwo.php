@@ -144,11 +144,11 @@
                         <div class="flex gap-2">
                             <div class="flex flex-col w-32">
                                 <label for="">MOBILE NUMBER</label>
-                                <input type="text" name="" id="" value="09176030862" class="w-32">
+                                <input type="text" name="" id="" value="<?php echo $number; ?>" class="w-32">
                             </div>
                             <div class="flex flex-col w-32">
                                 <label for="">LANDLINE NUMBER</label>
-                                <input type="text" name="" id="" value="0437848359" class="w-32">
+                                <input type="text" name="" id="" value="<?php echo $telephone; ?>" class="w-32">
                             </div>
                         </div>
                     </div>

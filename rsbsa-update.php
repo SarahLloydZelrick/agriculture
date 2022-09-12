@@ -155,6 +155,17 @@
                                 <input type="text" class="form-input w-full" value="<?php echo $extentionname; ?>" name="extentionname" placeholder="Extention name">
                             </div>
                         </div>
+                        <h3 class="text-xl font-bold">Applicant Contact Info</h3>
+                        <div class="flex w-full flex-col md:flex-row">
+                            <div class="flex flex-col gap-2 w-full p-2">
+                                <label for="">Mobile Number</label>
+                                <input type="number" class="form-input w-full" name="number" placeholder="Applicant mobile number">
+                            </div>
+                            <div class="flex flex-col gap-2 w-full p-2">
+                                <label for="">Landline Number</label>
+                                <input type="number" class="form-input w-full" name="telephone" placeholder="Applicant landline number">
+                            </div>
+                        </div>
                         <h3 class="text-xl font-bold">Applicant Address</h3>
                         <div class="flex flex-row w-full">
                             <div class="flex flex-col gap-2 w-full p-2">

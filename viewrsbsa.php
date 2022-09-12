@@ -533,6 +533,9 @@ if (!isset($_SESSION['loggedin'])) {
                               $organicepractionerc5 = mysqli_real_escape_string($con, $row['organicepractionerc5']);
                               $remarksc5 = mysqli_real_escape_string($con, $row['remarksc5']);
                               $farmerId = mysqli_real_escape_string($con, $row['farmerId']);
+
+                              $number = mysqli_real_escape_string($con, $row['number']);
+                              $telephone = mysqli_real_escape_string($con, $row['telephone']);
                             }
                         } else {
                         echo "0 results";
