@@ -1238,25 +1238,25 @@
         </form>
 
         <script>
-function myFunctionOne() {
-$('#tabs-step2-tabFill')[0].click(); 
-}
-function myFunctionTwo() {
-$('#tabs-step3-tabFill')[0].click(); 
-}
-function myFunctionThree() {
-$('#tabs-step4-tabFill')[0].click(); 
-}
-function myFunctionTwoprev() {
-$('#tabs-step1-tabFill')[0].click(); 
-}
-function myFunctionThreeprev() {
-$('#tabs-step2-tabFill')[0].click(); 
-}
-function myFunctionFourprev() {
-$('#tabs-step3-tabFill')[0].click(); 
-}
-</script>
+            function myFunctionOne() {
+            $('#tabs-step2-tabFill')[0].click(); 
+            }
+            function myFunctionTwo() {
+            $('#tabs-step3-tabFill')[0].click(); 
+            }
+            function myFunctionThree() {
+            $('#tabs-step4-tabFill')[0].click(); 
+            }
+            function myFunctionTwoprev() {
+            $('#tabs-step1-tabFill')[0].click(); 
+            }
+            function myFunctionThreeprev() {
+            $('#tabs-step2-tabFill')[0].click(); 
+            }
+            function myFunctionFourprev() {
+            $('#tabs-step3-tabFill')[0].click(); 
+            }
+        </script>
 
 <script>
     $(function() {
@@ -1313,100 +1313,100 @@ $('#tabs-step3-tabFill')[0].click();
    });
 </script>
 <script type="text/javascript">
-function showReligion(select){
-   if(select.value=="others"){
-    document.getElementById('hidden_religion').style.display = "block";
-   } else{
-    document.getElementById('hidden_religion').style.display = "none";
-   }
-};
-function showCivil(select){
-   if(select.value=="married"){
-    document.getElementById('hidden_spouse').style.display = "block";
-   } else{
-    document.getElementById('hidden_spouse').style.display = "none";
-   }
-} 
-function hideGroup(select){
-   if(select.value=="yes"){
-    document.getElementById('hidden_group').style.display = "block";
-   } else{
-    document.getElementById('hidden_group').style.display = "none";
-   }
-} 
-function hideGoverment(select){
-   if(select.value=="yes"){
-    document.getElementById('hidden_government').style.display = "block";
-   } else{
-    document.getElementById('hidden_government').style.display = "none";
-   }
-} 
-function hideHousehold(select){
-   if(select.value=="no"){
-    document.getElementById('hidden_household').style.display = "block";
-    document.getElementById('hidden_householdtwo').style.display = "block";
-   } else{
-    document.getElementById('hidden_household').style.display = "none";
-    document.getElementById('hidden_householdtwo').style.display = "none";
-   }
-}
-function hideFarmMember(select){
-   if(select.value=="yes"){
-    document.getElementById('hidden_farmmember').style.display = "block";
-   } else{
-    document.getElementById('hidden_farmmember').style.display = "none";
-   }
-} 
-$(function() {
-    $('#otherCrops').change(function() {
-        $('#otherCropsSpecify').toggle($(this).is(':checked'));
+    function showReligion(select){
+    if(select.value=="others"){
+        document.getElementById('hidden_religion').style.display = "block";
+    } else{
+        document.getElementById('hidden_religion').style.display = "none";
+    }
+    };
+    function showCivil(select){
+    if(select.value=="married"){
+        document.getElementById('hidden_spouse').style.display = "block";
+    } else{
+        document.getElementById('hidden_spouse').style.display = "none";
+    }
+    } 
+    function hideGroup(select){
+    if(select.value=="yes"){
+        document.getElementById('hidden_group').style.display = "block";
+    } else{
+        document.getElementById('hidden_group').style.display = "none";
+    }
+    } 
+    function hideGoverment(select){
+    if(select.value=="yes"){
+        document.getElementById('hidden_government').style.display = "block";
+    } else{
+        document.getElementById('hidden_government').style.display = "none";
+    }
+    } 
+    function hideHousehold(select){
+    if(select.value=="no"){
+        document.getElementById('hidden_household').style.display = "block";
+        document.getElementById('hidden_householdtwo').style.display = "block";
+    } else{
+        document.getElementById('hidden_household').style.display = "none";
+        document.getElementById('hidden_householdtwo').style.display = "none";
+    }
+    }
+    function hideFarmMember(select){
+    if(select.value=="yes"){
+        document.getElementById('hidden_farmmember').style.display = "block";
+    } else{
+        document.getElementById('hidden_farmmember').style.display = "none";
+    }
+    } 
+    $(function() {
+        $('#otherCrops').change(function() {
+            $('#otherCropsSpecify').toggle($(this).is(':checked'));
+        });
     });
-});
-$(function() {
-    $('#poultry').change(function() {
-        $('#poultrySpecify').toggle($(this).is(':checked'));
+    $(function() {
+        $('#poultry').change(function() {
+            $('#poultrySpecify').toggle($(this).is(':checked'));
+        });
     });
-});
-$(function() {
-    $('#livestock').change(function() {
-        $('#livestockSpecify').toggle($(this).is(':checked'));
+    $(function() {
+        $('#livestock').change(function() {
+            $('#livestockSpecify').toggle($(this).is(':checked'));
+        });
     });
-});
-$(function() {
-    $('#kindofwork').change(function() {
-        $('#kindofworkSpecify').toggle($(this).is(':checked'));
+    $(function() {
+        $('#kindofwork').change(function() {
+            $('#kindofworkSpecify').toggle($(this).is(':checked'));
+        });
     });
-});
-$(function() {
-    $('#forfisherfolk').change(function() {
-        $('#forfisherfolkSpecify').toggle($(this).is(':checked'));
+    $(function() {
+        $('#forfisherfolk').change(function() {
+            $('#forfisherfolkSpecify').toggle($(this).is(':checked'));
+        });
     });
-});
-$(function() {
-    $('#involment').change(function() {
-        $('#involmentSpecify').toggle($(this).is(':checked'));
+    $(function() {
+        $('#involment').change(function() {
+            $('#involmentSpecify').toggle($(this).is(':checked'));
+        });
     });
-});
-function showTenantOne(select){
-   if(select.value=="tenant" || select.value == "lessee" || select.value == "others"){
-    document.getElementById('hidden_tenantone').style.display = "block";
-   } else{
-    document.getElementById('hidden_tenantone').style.display = "none";
-   }
-};
-function showTenantTwo(select){
-   if(select.value=="tenant" || select.value == "lessee" || select.value == "others"){
-    document.getElementById('hidden_tenanttwo').style.display = "block";
-   } else{
-    document.getElementById('hidden_tenanttwo').style.display = "none";
-   }
-};
-function showTenantThree(select){
-   if(select.value=="tenant" || select.value == "lessee" || select.value == "others"){
-    document.getElementById('hidden_tenantthree').style.display = "block";
-   } else{
-    document.getElementById('hidden_tenantthree').style.display = "none";
-   }
-};
+    function showTenantOne(select){
+    if(select.value=="tenant" || select.value == "lessee" || select.value == "others"){
+        document.getElementById('hidden_tenantone').style.display = "block";
+    } else{
+        document.getElementById('hidden_tenantone').style.display = "none";
+    }
+    };
+    function showTenantTwo(select){
+    if(select.value=="tenant" || select.value == "lessee" || select.value == "others"){
+        document.getElementById('hidden_tenanttwo').style.display = "block";
+    } else{
+        document.getElementById('hidden_tenanttwo').style.display = "none";
+    }
+    };
+    function showTenantThree(select){
+    if(select.value=="tenant" || select.value == "lessee" || select.value == "others"){
+        document.getElementById('hidden_tenantthree').style.display = "block";
+    } else{
+        document.getElementById('hidden_tenantthree').style.display = "none";
+    }
+    };
 </script>
     
