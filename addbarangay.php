@@ -18,7 +18,7 @@ if(isset($_POST["btnsubmit"])) {
     $forbrgy = $tbl.$farmbarangay;
     $selectbrgy = "SELECT * FROM tbl_barangay WHERE barangay = '".$farmbarangay."'";
     $resultbrgy = mysqli_query($con, $selectbrgy);
-    if (mysqli_num_rows($resultbrgy) < 0) {
+    if (mysqli_num_rows($resultbrgy) > 0) {
         $sql = "INSERT INTO tbl_barangay (`barangay`) VALUES ('".$farmbarangay."')";
                 if(mysqli_query($con, $sql)){
                 
@@ -199,7 +199,8 @@ if(isset($_POST["btnsubmit"])) {
                         `remarksc5` varchar(50) NOT NULL,
                         `landtitle` varchar(200) DEFAULT NULL,
                         `landclearance` varchar(200) DEFAULT NULL,
-                        
+                        `number` varchar(50) DEFAULT NULL,
+                        `telephone` varchar(50) DEFAULT NULL
                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
                     if ($con->query($sqltbl) === TRUE) {
                             $success = "1";
