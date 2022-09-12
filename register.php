@@ -144,9 +144,30 @@ if(isset($_POST["btnsubmit"])) {
                         <div class="first_row flex flex-row gap-5 w-full">
                             <div class="flex flex-col gap-2 w-full">
                                 <label for="" class="text-white">User Level</label>
-                                <select name="userlevel" id="" class="form-input">
+                                <select name="userlevel" id="" class="form-input"  onchange="showUserlevel(this)">
                                     <option value="staff">Staff</option>
                                     <option value="farmer">Farmer</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="first_row flex flex-row gap-5 w-full" style="display:none;" id="hidden_barangay">
+                            <div class="flex flex-col gap-2 w-full">
+                                <label for="">Barangay</label>
+                                <select name="barangay" id="" class="form-input">
+                                <?php
+                                    include "config.php";
+                                    $sql = "SELECT * FROM `tbl_barangay`";
+                                    $result = mysqli_query($con, $sql);
+                                    if (mysqli_num_rows($result) > 0) {
+                                        while($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                         <option value="<?php echo $row['barangay'];?>"><?php echo $row['barangay']; ?></option>
+                                <?php
+                                        }
+                                    } else {
+                                    echo "0 results";
+                                    }
+                                ?>
                                 </select>
                             </div>
                         </div>
@@ -271,4 +292,11 @@ if(isset($_POST["btnsubmit"])) {
             x.type = "password";
         }
     }
+    function showUserlevel(select){
+        if(select.value=="farmer"){
+            document.getElementById('hidden_barangay').style.display = "block";
+        } else{
+            document.getElementById('hidden_barangay').style.display = "none";
+        }
+    };
 </script>

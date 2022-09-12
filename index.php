@@ -7,14 +7,14 @@ if(isset($_POST["btnsubmit"])) {
         $foruserlevel = $_POST["userlevel"];
         include "config.php";
         // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
-        $stmt = $con->prepare("SELECT id, CONCAT(name,' ',middlename,' ',lastname) as name, email, password, userlevel,photo,pin FROM tbl_accounts WHERE email = ? AND status = 'approved' AND stat = 'active' AND userlevel = '".$foruserlevel."'");
+        $stmt = $con->prepare("SELECT id, CONCAT(name,' ',middlename,' ',lastname) as name, email, password, userlevel,photo,pin,number FROM tbl_accounts WHERE email = ? AND status = 'approved' AND stat = 'active' AND userlevel = '".$foruserlevel."'");
         // Bind parameters (s = string, i = int, b = blob, etc), in our case the email is a string so we use "s"
         $stmt->bind_param('s', $_POST['email']);
         $stmt->execute();
         // Store the result so we can check if the account exists in the database.
         $stmt->store_result();
         if ($stmt->num_rows > 0) {
-            $stmt->bind_result($id, $name, $email, $password, $userlevel, $photo, $pin);
+            $stmt->bind_result($id, $name, $email, $password, $userlevel, $photo, $pin,$number);
             $stmt->fetch();
             // Account exists, now we verify the password.
             // Note: remember to use password_hash in your registration file to store the hashed passwords.
@@ -29,6 +29,7 @@ if(isset($_POST["btnsubmit"])) {
                 $_SESSION['userlevel'] = $userlevel;
                 $_SESSION['photo'] = $photo;
                 $_SESSION['pin'] = $pin;
+                $_SESSION['number'] = $number;
                 header('Location: home.php');
             } else {
                 // Incorrect password
