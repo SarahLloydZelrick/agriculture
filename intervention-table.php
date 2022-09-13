@@ -104,6 +104,12 @@ if (!isset($_SESSION['loggedin'])) {
                 >
                     Deleted
                 </button>
+                <button 
+                class="inline-block px-6 py-2.5 bg-yellow-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-600 hover:shadow-lg focus:bg-yellow-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-700 active:shadow-lg transition duration-150 ease-in-out"
+                onclick="viewReleased()"
+                >
+                    Released
+                </button>
             </div>
             
             <div id="table_master">
@@ -250,7 +256,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted'";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status FROM tbl_interventiontwo WHERE status = 'deleted'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -276,6 +282,58 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td class="super-hide">
                                     <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#deletereceiveModal"></button>
                                     </td>
+                                </tr>
+                        <?php
+                            }
+                        } else {
+                        echo "0 results";
+                        }
+                        ?>
+
+                    </tbody>
+                </table>
+            </div>
+             <!-- NOT RECEIVED ACCOUNTS -->
+             <div id="table_released" style="display:none;">
+                <table id="released_table" style="width:100%;">
+                    <h2 class="text-xl">Deleted</h2>
+                    <thead>
+                        <tr>
+                            <th style="display:none;">ID</th>
+                            <th>Farmer ID</th>
+                            <th>Name</th>
+                            <th>Barangay</th>
+                            <th>Crop</th>
+                            <th>Land Size</th>
+                            <th>Status</th>
+                            <th>Program Type</th>
+                            <th>Program</th>
+                            <!--th class="super-hide">Action</th-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        include "config.php";
+                        $sql = "SELECT id,farmerId,name,farmbarangay,crop,size,status,programtype,program FROM tbl_released";
+                        $result = mysqli_query($con, $sql);
+                        
+                        if (mysqli_num_rows($result) > 0) {
+                            while($row = mysqli_fetch_assoc($result)) {
+                        ?>
+                                <tr>
+                                    <td style="display:none;"><?php echo $row["id"]; ?> </td>
+                                    <td><?php echo $row["farmerId"]; ?> </td>
+                                    <td><?php echo $row["name"]; ?> </td>
+                                    <td><?php echo $row["farmbarangay"]; ?></td>
+                                    <td><?php echo $row["crop"]; ?></td>
+                                    <td><?php echo $row["size"]; ?></td>
+                                    <td><?php echo $row["status"]; ?></td>
+                                    <td><?php echo $row["programtype"]; ?></td>
+                                    <td><?php echo $row["program"]; ?></td>
+
+                                    <!--td class="super-hide">
+                                    <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#deletereceiveModal"></button>
+                                    </td-->
                                 </tr>
                         <?php
                             }
@@ -794,14 +852,17 @@ if (!isset($_SESSION['loggedin'])) {
             var a = document.getElementById("table_master");
             var b = document.getElementById("table_received");
             var c = document.getElementById("table_notreceived");
+            var d = document.getElementById("table_released");
             if (a.style.display === "none") {
                 a.style.display = "block";
                 b.style.display = "none";
                 c.style.display = "none";
+                d.style.display = "none";
             } else {
                 a.style.display = "block";
                 b.style.display = "none";
                 c.style.display = "none";
+                d.style.display = "none";
             }
         }
 
@@ -809,14 +870,17 @@ if (!isset($_SESSION['loggedin'])) {
             var a = document.getElementById("table_master");
             var b = document.getElementById("table_received");
             var c = document.getElementById("table_notreceived");
+            var d = document.getElementById("table_released");
             if (b.style.display === "none") {
                 a.style.display = "none";
                 b.style.display = "block";
                 c.style.display = "none";
+                d.style.display = "none";
             } else {
                 a.style.display = "none";
                 b.style.display = "block";
                 c.style.display = "none";
+                d.style.display = "none";
             }
         }
 
@@ -824,14 +888,35 @@ if (!isset($_SESSION['loggedin'])) {
             var a = document.getElementById("table_master");
             var b = document.getElementById("table_received");
             var c = document.getElementById("table_notreceived");
+            var d = document.getElementById("table_released");
             if (c.style.display === "none") {
                 a.style.display = "none";
                 b.style.display = "none";
                 c.style.display = "block";
+                d.style.display = "none";
             } else {
                 a.style.display = "none";
                 b.style.display = "none";
                 c.style.display = "block";
+                d.style.display = "none";
+            }
+        }
+
+        function viewReleased() {
+            var a = document.getElementById("table_master");
+            var b = document.getElementById("table_received");
+            var c = document.getElementById("table_notreceived");
+            var d = document.getElementById("table_released");
+            if (d.style.display === "none") {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "block";
+            } else {
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "block";
             }
         }
     </script>
