@@ -340,13 +340,30 @@ if (!isset($_SESSION['loggedin'])) {
                             <select id="release_land" class="form-input"></select>
                         </div>
                         <div class="flex flex-col">
-                            <label for="">Programs</label>
-                            <select name="programs" class="form-input">
-                                <option value="Financial">Financial</option>
+                            <label for="">Program Type</label>
+                            <select name="programtype" class="form-input" onchange="showDiv(this)">
+                                <option value="Financial">Financial Assistance</option>
                                 <option value="Program">Program</option>
                             </select>
+
                         </div>
-                        <div class="amount flex flex-col">
+                        <div class="flex flex-col" style="display:none;" id="hide_program">
+                            <label for="">Programs</label>
+                            <select name="programs" class="form-input" onchange="showDiv(this)">
+                                <option value="fertilizer_for_corn">Fertilizer for Corn</option>
+                                <option value="fetilizer_for_cassava">Fertilizer for Cassava</option>
+                                <option value="fetilizer_for_rice">Fertilizer for Rice</option>
+                                <option value="fetilizer_for_hvc">Fertilizer for HVC</option>
+                                <option value="seeds_for_kamatis">Seeds for Kamatis</option>
+                                <option value="seeds_for_kalamansi">Seeds for Kalamansi</option>
+                                <option value="seeds_for_sitaw">Seeds for Sitaw</option>
+                                <option value="seeds_for_okra">Seeds for Okra</option>
+                                <option value="seeds_for_papaya">Seeds for Papaya</option>
+                                <option value="seeds_for_hvc">Seeds for HVC</option>
+                            </select>
+                            
+                        </div>
+                        <div class="amount flex flex-col" id="hide_amount">
                             <label for="">Enter the amount to be release</label>
                             <input type="number" class="form-input" name="receive_amount">
                         </div>
@@ -940,6 +957,17 @@ if (!isset($_SESSION['loggedin'])) {
         });
 
     </script>
+    <script type="text/javascript">
+        function showDiv(select){
+            if(select.value=="Program"){
+                document.getElementById('hide_program').style.display = "block";
+                document.getElementById('hide_amount').style.display = "none";
+            } else{
+                document.getElementById('hide_program').style.display = "none";
+                document.getElementById('hide_amount').style.display = "block";
+            }
+        } 
+</script>
 </body>
 </html>
 
