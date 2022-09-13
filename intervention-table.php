@@ -1139,7 +1139,7 @@ if (isset($_POST['btn_release'] )) {
                         . "AND size = '$release_landsize' "
                         . "), $release_programtype)";*/
                 $sqlinserttwo = "INSERT INTO tbl_released (farmerId, name, farmbarangay, crop, size, status, programtype, program)
-                SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize',  $release_programtype,  $release_program";
+                SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize',  $release_programtype,  $release_programs";
                
                         if (mysqli_query($con, $sqlinserttwo)) {
                             echo "
