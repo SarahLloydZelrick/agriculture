@@ -1127,22 +1127,27 @@ if (isset($_POST['btn_release'] )) {
     $release_landsize = $_POST['release_landsize'];
 
     $release_programtype = $_POST['release_programtype'];
-    $release_programs = $_POST['release_programs'];
-    $release_amount = $_POST['release_amount'];
-    $sqlinsert = "INSERT INTO tbl_intervention_archieve (farmerId, name, farmbarangay, crop, size, status)
+    $release_programs = $_POST['release_programs'].$_POST['release_amount'];
+    $sqlinsert = "INSERT INTO tbl_intervention_archieve (farmerId, name, farmbarangay, crop, size, status,)
         SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'";
             if (mysqli_query($con, $sqlinsert)) {
-                echo "
-                <script>
-                Swal.fire({
-                    title: 'Gumana btch',
-                    icon: 'success',
-                    confirmButtonText: 'OK'
-                }).then(function(){
-                    window.location.href = window.location.href;
-                })
-                </script>
-            ";
+                $sqlinserttwo = "INSERT INTO tbl_released (farmerId, name, farmbarangay, crop, size, status, programtype, program) values
+                    (SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'), $release_programtype, $release_programs ";
+                        if (mysqli_query($con, $sqlinserttwo)) {
+                            echo "
+                            <script>
+                            Swal.fire({
+                                title: 'Gumana ulit btch',
+                                icon: 'success',
+                                confirmButtonText: 'OK'
+                            }).then(function(){
+                                window.location.href = window.location.href;
+                            })
+                            </script>
+                        ";
+                    }else{
+                        echo "Error updating record: " . mysqli_error($con);
+                    }
         }else{
             echo "Error updating record: " . mysqli_error($con);
         }
