@@ -1137,7 +1137,7 @@ if (isset($_POST['btn_release'] )) {
                         . "WHERE farmbarangay = '$release_barangay' "
                         . "AND crop = '$release_commodity'"
                         . "AND size = '$release_landsize'"
-                        . "), $release_programtype, release_programs)";
+                        . "), $release_programtype, $release_programs)";
                
                         if (mysqli_query($con, $sqlinserttwo)) {
                             echo "
