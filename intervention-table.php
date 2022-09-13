@@ -296,7 +296,7 @@ if (!isset($_SESSION['loggedin'])) {
              <!-- NOT RECEIVED ACCOUNTS -->
              <div id="table_released" style="display:none;">
                 <table id="released_table" style="width:100%;">
-                    <h2 class="text-xl">Deleted</h2>
+                    <h2 class="text-xl">RELEASED</h2>
                     <thead>
                         <tr>
                             <th style="display:none;">ID</th>
