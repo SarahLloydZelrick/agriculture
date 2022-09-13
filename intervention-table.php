@@ -311,7 +311,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <div class="flex flex-col"></div>
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
-                            <select name="barangay" id="release_barangay" name="release_farmbarangay" class="form-input" onchange="fetch_select(this.value);">
+                            <select id="release_barangay" name="release_farmbarangay" class="form-input" onchange="fetch_select(this.value);">
                                 <?php
                                     include "config.php";
                                     $sqlbrgy = "SELECT DISTINCT `farmbarangay` FROM `tbl_intervention`";
