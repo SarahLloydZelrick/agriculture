@@ -308,7 +308,14 @@ if (!isset($_SESSION['loggedin'])) {
                 </div>
                 <form action="" method="POST">
                     <div class="modal-body relative p-4 gap-2">
-
+                        <div class="flex flex-col">
+                            <input type="text" name="farm_id" id="master_farmid_three">
+                            <input type="text" name="farm_name" id="master_name_three">
+                            <input type="text" name="farm_barangay" id="master_barangay_three">
+                            <input type="text" name="farm_crop" id="master_crop_three">
+                            <input type="text" name="farm_size" id="master_size_three">
+                            <input type="text" name="farm_status" id="master_status_three">
+                        </div>
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
                             <select name="barangay" id="release_barangay" class="form-input" onchange="fetch_select(this.value);">
@@ -405,7 +412,7 @@ if (!isset($_SESSION['loggedin'])) {
                             duration-150
                             ease-in-out
                             ml-1"
-                            name="btn_masterapprove"
+                            name="btn_release"
                             id="btn_pending"
                             disabled="true"
                             style="background-color:gray;"
@@ -847,18 +854,24 @@ if (!isset($_SESSION['loggedin'])) {
                 document.getElementById("master_id_two").value = this.cells[0].innerHTML;
                 document.getElementById("master_farmid").value = this.cells[1].innerHTML;
                 document.getElementById("master_farmid_two").value = this.cells[1].innerHTML;
+                document.getElementById("master_farmid_three").value = this.cells[1].innerHTML;
                 document.getElementById("master_name").value = this.cells[2].innerHTML;
                 document.getElementById("master_name_two").value = this.cells[2].innerHTML;
+                document.getElementById("master_name_three").value = this.cells[2].innerHTML;
                 document.getElementById("master_barangay").value = this.cells[3].innerHTML;
                 document.getElementById("master_barangay_two").value = this.cells[3].innerHTML;
+                document.getElementById("master_barangay_three").value = this.cells[3].innerHTML;
                 document.getElementById("master_crop").value = this.cells[4].innerHTML;
                 document.getElementById("master_crop_two").value = this.cells[4].innerHTML;
+                document.getElementById("master_crop_three").value = this.cells[4].innerHTML;
                 document.getElementById("master_size").value = this.cells[5].innerHTML;
                 document.getElementById("master_size_two").value = this.cells[5].innerHTML;
+                document.getElementById("master_size_three").value = this.cells[5].innerHTML;
                 document.getElementById("master_amount").value = this.cells[6].innerHTML;
                 document.getElementById("master_amount_two").value = this.cells[6].innerHTML;
                 document.getElementById("master_status").value = this.cells[7].innerHTML;
                 document.getElementById("master_status_two").value = this.cells[7].innerHTML;
+                document.getElementById("master_status_three").value = this.cells[7].innerHTML;
 
             };
 
@@ -1118,7 +1131,7 @@ if (isset($_POST['btn_deletereceive'] )) {
 
 }
 ?>
-
+<!-- RELEASE -->
 <?php
 if($_SESSION['userlevel'] === "admin"){
     ?>
