@@ -311,7 +311,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <div class="flex flex-col"></div>
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
-                            <select name="barangay" id="release_barangay" class="form-input" onchange="fetch_select(this.value);">
+                            <select name="barangay" id="release_barangay" name="release_farmbarangay" class="form-input" onchange="fetch_select(this.value);">
                                 <?php
                                     include "config.php";
                                     $sqlbrgy = "SELECT DISTINCT `farmbarangay` FROM `tbl_intervention`";
@@ -1122,7 +1122,7 @@ if (isset($_POST['btn_deletereceive'] )) {
 <?php
 if (isset($_POST['btn_release'] )) {
     include "config.php";
-    $release_barangay = $_POST['release_barangay'];
+    $release_barangay = $_POST['release_farmbarangay'];
     $release_commodity = $_POST['release_commodity'];
     $release_landsize = $_POST['release_landsize'];
 
