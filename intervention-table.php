@@ -308,14 +308,7 @@ if (!isset($_SESSION['loggedin'])) {
                 </div>
                 <form action="" method="POST">
                     <div class="modal-body relative p-4 gap-2">
-                        <div class="flex flex-col">
-                            <input type="text" name="farm_id" id="master_farmid_three">
-                            <input type="text" name="farm_name" id="master_name_three">
-                            <input type="text" name="farm_barangay" id="master_barangay_three">
-                            <input type="text" name="farm_crop" id="master_crop_three">
-                            <input type="text" name="farm_size" id="master_size_three">
-                            <input type="text" name="farm_status" id="master_status_three">
-                        </div>
+                        <div class="flex flex-col"></div>
                         <div class="flex flex-col">
                             <label for="">Barangay</label>
                             <select name="barangay" id="release_barangay" class="form-input" onchange="fetch_select(this.value);">
@@ -339,16 +332,16 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <div class="flex flex-col">
                             <label for="">Commodity</label>
-                            <select id="new_select" class="form-input" onchange="fetch_land(this.value);"></select>
+                            <select id="new_select" name="release_commodity" class="form-input" onchange="fetch_land(this.value);"></select>
                             <input type="text" name="" id="forbarangay" style="display:none;">
                         </div>
                         <div class="flex flex-col">
                             <label for="">Land Size</label>
-                            <select id="release_land" class="form-input"></select>
+                            <select id="release_land" name="release_landsize" class="form-input"></select>
                         </div>
                         <div class="flex flex-col">
                             <label for="">Program Type</label>
-                            <select name="programtype" class="form-input" onchange="showDiv(this)">
+                            <select name="release_programtype" class="form-input" onchange="showDiv(this)">
                                 <option value="Financial">Financial Assistance</option>
                                 <option value="Program">Program</option>
                             </select>
@@ -356,7 +349,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <div class="flex flex-col" style="display:none;" id="hide_program">
                             <label for="">Programs</label>
-                            <select name="programs" class="form-input" onchange="showDiv(this)">
+                            <select name="release_programs" class="form-input" onchange="showDiv(this)">
                                 <option value="fertilizer_for_corn">Fertilizer for Corn</option>
                                 <option value="fetilizer_for_cassava">Fertilizer for Cassava</option>
                                 <option value="fetilizer_for_rice">Fertilizer for Rice</option>
@@ -372,7 +365,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <div class="amount flex flex-col" id="hide_amount">
                             <label for="">Enter the amount to be release</label>
-                            <input type="number" class="form-input" name="receive_amount">
+                            <input type="number" class="form-input" name="release_amount">
                         </div>
                         <br>
                         <p class="text-sm">To continue, please enter your PIN</p>
@@ -854,24 +847,18 @@ if (!isset($_SESSION['loggedin'])) {
                 document.getElementById("master_id_two").value = this.cells[0].innerHTML;
                 document.getElementById("master_farmid").value = this.cells[1].innerHTML;
                 document.getElementById("master_farmid_two").value = this.cells[1].innerHTML;
-                document.getElementById("master_farmid_three").value = this.cells[1].innerHTML;
                 document.getElementById("master_name").value = this.cells[2].innerHTML;
                 document.getElementById("master_name_two").value = this.cells[2].innerHTML;
-                document.getElementById("master_name_three").value = this.cells[2].innerHTML;
                 document.getElementById("master_barangay").value = this.cells[3].innerHTML;
                 document.getElementById("master_barangay_two").value = this.cells[3].innerHTML;
-                document.getElementById("master_barangay_three").value = this.cells[3].innerHTML;
                 document.getElementById("master_crop").value = this.cells[4].innerHTML;
                 document.getElementById("master_crop_two").value = this.cells[4].innerHTML;
-                document.getElementById("master_crop_three").value = this.cells[4].innerHTML;
                 document.getElementById("master_size").value = this.cells[5].innerHTML;
                 document.getElementById("master_size_two").value = this.cells[5].innerHTML;
-                document.getElementById("master_size_three").value = this.cells[5].innerHTML;
                 document.getElementById("master_amount").value = this.cells[6].innerHTML;
                 document.getElementById("master_amount_two").value = this.cells[6].innerHTML;
                 document.getElementById("master_status").value = this.cells[7].innerHTML;
                 document.getElementById("master_status_two").value = this.cells[7].innerHTML;
-                document.getElementById("master_status_three").value = this.cells[7].innerHTML;
 
             };
 
@@ -1132,6 +1119,37 @@ if (isset($_POST['btn_deletereceive'] )) {
 }
 ?>
 <!-- RELEASE -->
+<?php
+if (isset($_POST['btn_release'] )) {
+    include "config.php";
+    $release_barangay = $_POST['release_barangay'];
+    $release_commodity = $_POST['release_commodity'];
+    $release_landsize = $_POST['release_landsize'];
+
+    $release_programtype = $_POST['release_programtype'];
+    $release_programs = $_POST['release_programs'];
+    $release_amount = $_POST['release_amount'];
+    $sqlinsert = "INSERT INTO tbl_intervention_archieve (farmderId, name, farmbarangay, crop, size, status)
+        SELECT farmderId, name, farmbarangay, crop, size, status FROM tbl_intervention";
+            if (mysqli_query($con, $sqlinsert)) {
+                echo "
+                <script>
+                Swal.fire({
+                    title: 'Gumana btch',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                }).then(function(){
+                    window.location.href = window.location.href;
+                })
+                </script>
+            ";
+        }else{
+            echo "Error updating record: " . mysqli_error($con);
+        }
+        mysqli_close($con);
+    }
+?>
+
 <?php
 if($_SESSION['userlevel'] === "admin"){
     ?>
