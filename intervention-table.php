@@ -1135,8 +1135,8 @@ if (isset($_POST['btn_release'] )) {
                 $sqlinserttwo = "INSERT INTO `tbl_released` ( farmerId, name, farmbarangay, crop, size, status, programtype ) VALUES (" 
                         . "(SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention"
                         . "WHERE farmbarangay = '$release_barangay' "
-                        . "AND crop = '$release_commodity'"
-                        . "AND size = '$release_landsize'"
+                        . "AND crop = '$release_commodity' "
+                        . "AND size = '$release_landsize' "
                         . "), $release_programtype)";
                
                         if (mysqli_query($con, $sqlinserttwo)) {
