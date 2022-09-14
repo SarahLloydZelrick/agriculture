@@ -85,7 +85,7 @@ if(isset($_POST["btnsubmit"])) {
             if(move_uploaded_file($_FILES["fileToUploadOne"]["tmp_name"], $target_filetwo)){
                 if(move_uploaded_file($_FILES["fileToUploadTwo"]["tmp_name"], $target_filethree)){
                     //if (!empty($_POST["dateadminstered"]) && !empty($_POST["refnumber"]) && !empty($_POST["surname"]) && !empty($_POST["firstname"]) && !empty($_POST["middlename"]) && !empty($_POST["extentionname"])) {
-                    if (!empty($_POST["dateadminstered"])) {
+                    if (!empty($_POST["dateadminstered"]) | !empty($_POST["mainlivelihood"]) | !empty($_POST["farmingactivity"]) | !empty($_POST["kindofwork"]) | !empty($_POST["typeoffishing"]) | !empty($_POST["typeofinvolment"])  ) {
                         include "config.php";
                         $enrollmenttype = mysqli_real_escape_string($con, $_POST['enrollmenttype']);
                         $dateadminstered = mysqli_real_escape_string($con, $_POST['dateadminstered']);
