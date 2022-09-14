@@ -35,6 +35,10 @@ if (!isset($_SESSION['loggedin'])) {
     <?php
         include "navbar.php";
         include "topbar.php";
+
+        $tbl = "tbl_";
+       $brgy = $_GET['barangay'];
+       $brgyname = $tbl.$brgy;
     ?>
     <div class="add_container pt-10 ml-0 md:ml-60">
       <div class="table_container p-10 gap-5 flex flex-col overflow-x-scroll">
@@ -55,7 +59,7 @@ if (!isset($_SESSION['loggedin'])) {
             <tbody>
               <?php
                   include "config.php";
-                  $sql = "SELECT id, CONCAT(firstname,' ',middlename,' ',surname) as fullname, enrollmenttype, dateadminstered, refnumber, barangay, uploadFile2x2 FROM tbl_poblacion";
+                  $sql = "SELECT id, CONCAT(firstname,' ',middlename,' ',surname) as fullname, enrollmenttype, dateadminstered, refnumber, barangay, uploadFile2x2 FROM $brgyname";
                   $result = $con->query($sql);
                   
                   if ($result->num_rows > 0) {
@@ -115,7 +119,7 @@ if (!isset($_SESSION['loggedin'])) {
                       if(isset($_POST["btnview"])){
                         echo $modal; 
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_poblacion WHERE id = '".$_POST['rsbsaid']."'";
+                        $sql = "SELECT * FROM $brgyname WHERE id = '".$_POST['rsbsaid']."'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
