@@ -553,7 +553,7 @@ if(isset($_POST["btnsubmit"])) {
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">2x2 Picture - Photo Taken within 6 months</label>
-                                <input type="file" class="form-input w-full" name="uploadFile2x2" id="uploadFile2x2">
+                                <input type="file" class="form-input w-full" name="uploadFile2x2" id="uploadFile2x2s">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <div class="w-20 h-20 border-slate-800 bg-no-repeat bg-cover bg-center " id="imagePreview2x2"></div>
@@ -1700,7 +1700,7 @@ $('#tabs-step3-tabFill')[0].click();
 </script>
 <script>
     $(function() {
-        $("#uploadFile2x2").on("change", function()
+        $("#uploadFile2x2s").on("change", function()
         {
         var files = !!this.files ? this.files : [];
         if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
