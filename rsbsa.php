@@ -95,8 +95,8 @@ if(isset($_POST["btnsubmit"])) {
                         $middlename = mysqli_real_escape_string($con, $_POST['middlename']);
                         $extentionname = mysqli_real_escape_string($con, $_POST['extentionname']);
                         
-                        //$farmerfullname = $firstname." ".$middlename." ".$surname.",".$extentionname;
-                        $farmerfullname = "test";
+                        $farmerfullname = $firstname." ".$middlename." ".$surname.",".$extentionname;
+                        //farmerfullname = "test";
                         $purok = mysqli_real_escape_string($con, $_POST['purok']);
                         $street = mysqli_real_escape_string($con, $_POST['street']);
                         $barangay = mysqli_real_escape_string($con, $_POST['barangay']);
