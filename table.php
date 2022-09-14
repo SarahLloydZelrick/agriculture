@@ -681,7 +681,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_typeofinvolvement=$_POST['typeofinvolvement'];
+                            $for_typeofinvolvement=$_POST['typeofinvolment'];
                         ?>
                         <p>For agri youth:</p>
                         <p class="text-xs">For the purposes of trainings, financial assistance, and other programs catered to the youth with involvement to any agriculture activity.</p>
