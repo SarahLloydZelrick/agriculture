@@ -419,7 +419,60 @@ if(isset($_POST["btnsubmit"])) {
     }
 }
 ?>
-    
+<script>
+    $(function() {
+        $("#uploadFileOne").on("change", function()
+        {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreviewOne").css("background-image", "url("+this.result+")");
+            }
+        }
+        });
+   });
+</script>
+<script>
+    $(function() {
+        $("#uploadFileTwo").on("change", function()
+        {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreviewTwo").css("background-image", "url("+this.result+")");
+            }
+        }
+        });
+   });
+</script>
+<script>
+    $(function() {
+        $("#uploadFile2x2").on("change", function()
+        {
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+
+            reader.onloadend = function(){ // set image data as background of div
+                $("#imagePreview2x2").css("background-image", "url("+this.result+")");
+            }
+        }
+        });
+   });
+</script> 
 <body>
     <?php
         include "navbar.php";
@@ -1640,60 +1693,7 @@ if(isset($_POST["btnsubmit"])) {
     </script>
 </body>
 </html>
-<script>
-    $(function() {
-        $("#uploadFileOne").on("change", function()
-        {
-        var files = !!this.files ? this.files : [];
-        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
 
-        if (/^image/.test( files[0].type)){ // only image file
-            var reader = new FileReader(); // instance of the FileReader
-            reader.readAsDataURL(files[0]); // read the local file
-
-            reader.onloadend = function(){ // set image data as background of div
-                $("#imagePreviewOne").css("background-image", "url("+this.result+")");
-            }
-        }
-        });
-   });
-</script>
-<script>
-    $(function() {
-        $("#uploadFileTwo").on("change", function()
-        {
-        var files = !!this.files ? this.files : [];
-        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
-
-        if (/^image/.test( files[0].type)){ // only image file
-            var reader = new FileReader(); // instance of the FileReader
-            reader.readAsDataURL(files[0]); // read the local file
-
-            reader.onloadend = function(){ // set image data as background of div
-                $("#imagePreviewTwo").css("background-image", "url("+this.result+")");
-            }
-        }
-        });
-   });
-</script>
-<script>
-    $(function() {
-        $("#uploadFile2x2").on("change", function()
-        {
-        var files = !!this.files ? this.files : [];
-        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
-
-        if (/^image/.test( files[0].type)){ // only image file
-            var reader = new FileReader(); // instance of the FileReader
-            reader.readAsDataURL(files[0]); // read the local file
-
-            reader.onloadend = function(){ // set image data as background of div
-                $("#imagePreview2x2").css("background-image", "url("+this.result+")");
-            }
-        }
-        });
-   });
-</script>
 <script>
 function myFunctionOne() {
 $('#tabs-step2-tabFill')[0].click(); 
