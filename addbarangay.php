@@ -263,29 +263,29 @@ if(isset($_POST["btnsubmit"])) {
                                 <label for="">Barangay</label>
                                 <!--input type="text" name="barangay" id="" class="form-input w-full" placeholder="Enter barangay ex. mayabobo"-->
                                 <select name="barangay" id="" class="form-input">
-                                    <option value="Buenavista_East">Buenavista East</option>
-                                    <option value="Bukal_Norte">Bukal Norte</option>
-                                    <option value="Bukal_Sur">Bukal Sur</option>
-                                    <option value="Kinatihan_I">Kinatihan I</option>
-                                    <option value="Kinatihan_II">Kinatihan II</option>
-                                    <option value="Malabanan_Norte">Malabanban Norte</option>
-                                    <option value="Malabanan_Sur">Malabanban Sur</option>
-                                    <option value="Mangilag_Norte">Mangilag Norte</option>
-                                    <option value="Mangilag_Sur">Mangilag Sur</option>
-                                    <option value="Masalukot_I">Masalukot I</option>
-                                    <option value="Masalukot_II">Masalukot II</option>
-                                    <option value="Masalukot_III">Masalukot III</option>
-                                    <option value="Masalukot_IV">Masalukot IV</option>
-                                    <option value="Masalukot_V">Masalukot V</option>
-                                    <option value="Masin_Norte">Masin Norte</option>
-                                    <option value="Masin_Sur">Masin Sur</option>
-                                    <option value="Mayabobo">Mayabobo</option>
-                                    <option value="Pahinga_Norte">Pahinga Norte</option>
-                                    <option value="Pahinga_Sur">Pahinga Sur</option>
-                                    <option value="San_Andres">San Andres</option>
-                                    <option value="San_Isidro">San Isidro</option>
-                                    <option value="Sta_Catalina_Norte">Sta Catalina Norte</option>
-                                    <option value="Sta_Catalina_Sur">Sta Catalina Sur</option>
+                                    <option value="buenavista_east">Buenavista East</option>
+                                    <option value="bukal_norte">Bukal Norte</option>
+                                    <option value="bukal_sur">Bukal Sur</option>
+                                    <option value="kinatihan_i">Kinatihan I</option>
+                                    <option value="kinatihan_ii">Kinatihan II</option>
+                                    <option value="malabanan_norte">Malabanban Norte</option>
+                                    <option value="malabanan_sur">Malabanban Sur</option>
+                                    <option value="mangilag_norte">Mangilag Norte</option>
+                                    <option value="mangilag_sur">Mangilag Sur</option>
+                                    <option value="masalukot_i">Masalukot I</option>
+                                    <option value="masalukot_ii">Masalukot II</option>
+                                    <option value="masalukot_iii">Masalukot III</option>
+                                    <option value="masalukot_iv">Masalukot IV</option>
+                                    <option value="masalukot_v">Masalukot V</option>
+                                    <option value="masin_norte">Masin Norte</option>
+                                    <option value="masin_sur">Masin Sur</option>
+                                    <option value="mayabobo">Mayabobo</option>
+                                    <option value="pahinga_norte">Pahinga Norte</option>
+                                    <option value="pahinga_sur">Pahinga Sur</option>
+                                    <option value="san_andres">San Andres</option>
+                                    <option value="san_isidro">San Isidro</option>
+                                    <option value="sta_catalina_norte">Sta Catalina Norte</option>
+                                    <option value="sta_catalina_sur">Sta Catalina Sur</option>
                                 </select>
                             </div>
                         </div>

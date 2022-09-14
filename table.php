@@ -520,7 +520,7 @@
                     <div class="flex flex-col w-full">
                         <div class="flex gap-5">
                         <?php 
-                            $for_mainlivelihood=explode(",",$_POST['mainlivelihood']);
+                            $for_mainlivelihood = $_POST['mainlivelihood'];
                         ?>
                             <p>MAIN LIVELIHOOD</p>
                             <div class="form-check form-check-inline">
@@ -551,7 +551,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                     <?php 
-                         $for_farmingactivity=explode(",",$_POST['farmingactivity']);
+                         $for_farmingactivity = $_POST['farmingactivity'];
                     ?>
                         <p>For farmers</p>
                         <p>Type of Farming Activity</p>
@@ -598,7 +598,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_kindofwork=explode(",",$_POST['kindofwork']);
+                            $for_kindofwork= $_POST['kindofwork'];
                         ?>
                         <p>For farmworkers:</p>
                         <p>Kind of Work</p>
@@ -636,7 +636,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_typeoffishing=explode(",",$_POST['typeoffishing']);
+                            $for_typeoffishing= $_POST['typeoffishing'];
                         ?>
                         <p>For fisherfolk:</p>
                         <p class="text-xs">The Lending Conduit shall coordinate with the Bureu of Fisheries and Aquatic Resouces (BFAR) in the issuance of a certification that the fisherfolk-borrower under PUNLA/PLEA is registered under the Municipal Registration (FishR)</p>
@@ -681,7 +681,7 @@
                 <td colspan="1">
                     <div class="flex flex-col w-full">
                         <?php 
-                            $for_typeofinvolvement=explode(",",$_POST['typeofinvolvement']);
+                            $for_typeofinvolvement=$_POST['typeofinvolvement'];
                         ?>
                         <p>For agri youth:</p>
                         <p class="text-xs">For the purposes of trainings, financial assistance, and other programs catered to the youth with involvement to any agriculture activity.</p>
