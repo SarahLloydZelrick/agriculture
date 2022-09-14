@@ -553,7 +553,7 @@ if(isset($_POST["btnsubmit"])) {
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">2x2 Picture - Photo Taken within 6 months</label>
-                                <input type="file" class="form-input w-full" name="uploadFile2x2" id="uploadFile2x2s">
+                                <input type="file" class="form-input w-full" name="uploadFile2x2" id="uploadFile2x2">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <div class="w-20 h-20 border-slate-800 bg-no-repeat bg-cover bg-center " id="imagePreview2x2"></div>
@@ -1640,28 +1640,6 @@ if(isset($_POST["btnsubmit"])) {
     </script>
 </body>
 </html>
-
-<script>
-function myFunctionOne() {
-$('#tabs-step2-tabFill')[0].click(); 
-}
-function myFunctionTwo() {
-$('#tabs-step3-tabFill')[0].click(); 
-}
-function myFunctionThree() {
-$('#tabs-step4-tabFill')[0].click(); 
-}
-function myFunctionTwoprev() {
-$('#tabs-step1-tabFill')[0].click(); 
-}
-function myFunctionThreeprev() {
-$('#tabs-step2-tabFill')[0].click(); 
-}
-function myFunctionFourprev() {
-$('#tabs-step3-tabFill')[0].click(); 
-}
-</script>
-
 <script>
     $(function() {
         $("#uploadFileOne").on("change", function()
@@ -1700,7 +1678,7 @@ $('#tabs-step3-tabFill')[0].click();
 </script>
 <script>
     $(function() {
-        $("#uploadFile2x2s").on("change", function()
+        $("#uploadFile2x2").on("change", function()
         {
         var files = !!this.files ? this.files : [];
         if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
@@ -1716,6 +1694,28 @@ $('#tabs-step3-tabFill')[0].click();
         });
    });
 </script>
+<script>
+function myFunctionOne() {
+$('#tabs-step2-tabFill')[0].click(); 
+}
+function myFunctionTwo() {
+$('#tabs-step3-tabFill')[0].click(); 
+}
+function myFunctionThree() {
+$('#tabs-step4-tabFill')[0].click(); 
+}
+function myFunctionTwoprev() {
+$('#tabs-step1-tabFill')[0].click(); 
+}
+function myFunctionThreeprev() {
+$('#tabs-step2-tabFill')[0].click(); 
+}
+function myFunctionFourprev() {
+$('#tabs-step3-tabFill')[0].click(); 
+}
+</script>
+
+
 <script type="text/javascript">
 function showReligion(select){
    if(select.value=="others"){
