@@ -496,7 +496,7 @@ if (!isset($_SESSION['loggedin'])) {
 
                             <div class="flex flex-col">
                                 <label for="">Note:</label>
-                                <input type="text" name="rejectnote" class="form-input" id="" placeholder="Enter the reason of rejecting.">
+                                <input type="text" name="rejectnote" class="form-input" id="" placeholder="Enter the reason of rejecting the account.">
                             </div>
 
                             <p class="text-sm">To continue, please enter your PIN</p>
@@ -565,7 +565,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="text" name="reject_id2" id="reject_id2" style="display:none;">
                             <div class="flex flex-col">
                                 <label for="">Note:</label>
-                                <input type="text" name="rejectnote2" class="form-input" id="" placeholder="Enter the reason of rejecting.">
+                                <input type="text" name="rejectnote2" class="form-input" id="" placeholder="Enter the reason of rejecting the account.">
                             </div>
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_reject_two" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
@@ -1078,7 +1078,7 @@ if (isset($_POST['btn_pending'] )) {
 <?php
 if (isset($_POST['btn_reject'] )) {
 
-    $rejectnote = $_POST['rejecnote'];
+    $rejectnote = $_POST['rejectnote'];
     $reject_id = $_POST['reject_id'];
 
     include "config.php";
@@ -1110,7 +1110,7 @@ if (isset($_POST['btn_reject'] )) {
 <?php
 if (isset($_POST['btn_reject2'] )) {
 
-    $rejectnote2 = $_POST['rejecnote2'];
+    $rejectnote2 = $_POST['rejectnote2'];
     $reject_id2 = $_POST['reject_id2'];
 
     include "config.php";
