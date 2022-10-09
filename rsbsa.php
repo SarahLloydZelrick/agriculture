@@ -1289,7 +1289,7 @@ function showTenantThree(select){
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Size (ha)</label>
-                                <input type="number" class="form-input w-full hect" name="sizea1" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizea1" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">No. of head</label>
@@ -1313,7 +1313,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropa2" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizea2" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizea2" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheada2" placeholder="Number of head (for livestock property)">
@@ -1333,7 +1333,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropa3" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizea3" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizea3" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheada3" placeholder="Number of head (for livestock property)">
@@ -1353,7 +1353,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropa4" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizea4" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizea4" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheada4" placeholder="Number of head (for livestock property)">
@@ -1373,7 +1373,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropa5" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizea5" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizea5" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheada5" placeholder="Number of head (for livestock property)">
@@ -1466,7 +1466,7 @@ function showTenantThree(select){
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Size (ha)</label>
-                                <input type="number" class="form-input w-full hect" name="sizeb1" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizeb1" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">No. of head</label>
@@ -1490,7 +1490,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropb2" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizeb2" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizeb2" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadb2" placeholder="Number of head (for livestock property)">
@@ -1510,7 +1510,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropb3" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizeb3" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizeb3" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadb3" placeholder="Number of head (for livestock property)">
@@ -1530,7 +1530,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropb4" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizeb4" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizeb4" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadb4" placeholder="Number of head (for livestock property)">
@@ -1550,7 +1550,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropb5" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizeb5" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizeb5" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadb5" placeholder="Number of head (for livestock property)">
@@ -1643,7 +1643,7 @@ function showTenantThree(select){
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Size (ha)</label>
-                                <input type="number" class="form-input w-full hect" name="sizec1" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizec1" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">No. of head</label>
@@ -1667,7 +1667,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropc2" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizec2" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizec2" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadc2" placeholder="Number of head (for livestock property)">
@@ -1687,7 +1687,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropc3" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizec3" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizec3" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadc3" placeholder="Number of head (for livestock property)">
@@ -1707,7 +1707,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropc4" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizec4" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizec4" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadc4" placeholder="Number of head (for livestock property)">
@@ -1727,7 +1727,7 @@ function showTenantThree(select){
                                 <input type="text" class="form-input w-full" name="cropc5" placeholder="Crop/Commodity | For Livestock & Poultry">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="number" class="form-input w-full hect" name="sizec5" placeholder="Size (ha)">
+                                <input type="number" class="form-input w-full hect" name="sizec5" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="text" class="form-input w-full" name="noofheadc5" placeholder="Number of head (for livestock property)">
@@ -1809,14 +1809,13 @@ function showTenantThree(select){
 
             document.body.innerHTML = originalContents;
         }
-        $(document).ready(function() {
-  $('.hect').keypress(function(event) {
-  
-    if (((event.which == 46 || event.which == 45 || $(this).val().indexOf('.') != -1)) || (event.which < 48 || event.which > 57)) {
-      event.preventDefault();
-    }
-  });
-});
+        function checkSpcialChar(event){
+            if(!((event.keyCode >= 65) && (event.keyCode <= 90) || (event.keyCode >= 97) && (event.keyCode <= 122) || (event.keyCode >= 48) && (event.keyCode <= 57))){
+               event.returnValue = false;
+               return;
+            }
+            event.returnValue = true;
+         }
     </script>
 </body>
 </html>
