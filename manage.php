@@ -494,6 +494,11 @@ if (!isset($_SESSION['loggedin'])) {
                             Reject the account of <input type="text" name="reject_name" id="reject_name" class="modal_input" readonly>
                             <input type="text" name="reject_id" id="reject_id" style="display:none;">
 
+                            <div class="flex flex-col">
+                                <label for="">Note:</label>
+                                <input type="text" name="rejectnote" class="form-input" id="" placeholder="Enter the reason of rejecting.">
+                            </div>
+
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_reject" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_reject" class="form-input">
@@ -558,7 +563,10 @@ if (!isset($_SESSION['loggedin'])) {
                     <div class="modal-body relative p-4">
                             Reject the account of <input type="text" name="reject_name2" id="reject_name2" class="modal_input" readonly>
                             <input type="text" name="reject_id2" id="reject_id2" style="display:none;">
-
+                            <div class="flex flex-col">
+                                <label for="">Note:</label>
+                                <input type="text" name="rejectnote2" class="form-input" id="" placeholder="Enter the reason of rejecting.">
+                            </div>
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_reject_two" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_reject_two" class="form-input">
@@ -1070,11 +1078,12 @@ if (isset($_POST['btn_pending'] )) {
 <?php
 if (isset($_POST['btn_reject'] )) {
 
+    $rejectnote = $_POST['rejecnote'];
     $reject_id = $_POST['reject_id'];
 
     include "config.php";
 
-    $sql = "UPDATE tbl_accounts SET status='rejected' WHERE id='".$reject_id."'";
+    $sql = "UPDATE tbl_accounts SET status='rejected', rejectnote='$rejectnote' WHERE id='".$reject_id."'";
 
     if (mysqli_query($con, $sql)) {
         echo "
@@ -1101,11 +1110,12 @@ if (isset($_POST['btn_reject'] )) {
 <?php
 if (isset($_POST['btn_reject2'] )) {
 
+    $rejectnote2 = $_POST['rejecnote2'];
     $reject_id2 = $_POST['reject_id2'];
 
     include "config.php";
 
-    $sql = "UPDATE tbl_accounts SET status='rejected' WHERE id='".$reject_id2."'";
+    $sql = "UPDATE tbl_accounts SET status='rejected', rejectnote='$rejectnote2' WHERE id='".$reject_id2."'";
 
     if (mysqli_query($con, $sql)) {
         echo "
