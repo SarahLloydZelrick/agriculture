@@ -598,7 +598,17 @@ function checkSpcialChar(event){
     }
     event.returnValue = true;
 }
-$('#dateadminstered').val(new Date().toJSON().slice(0,10));
+$(document).ready( function() {
+    var now = new Date();
+ 
+    var day = ("0" + now.getDate()).slice(-2);
+    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+    var today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+
+   $('#dateadminsteredid').val(today);
+});
 
 </script>
 <body>
@@ -716,7 +726,7 @@ $('#dateadminstered').val(new Date().toJSON().slice(0,10));
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Date Administered</label>
-                                <input type="date" class="form-input w-full" name="dateadminstered" id="dateadminstered">
+                                <input type="date" class="form-input w-full" name="dateadminstered" id="dateadminsteredid">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2" style="display:none;">
                                 <?php 
