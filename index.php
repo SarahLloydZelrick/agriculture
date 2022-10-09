@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
 $errors = "";
 
 if(isset($_POST["btnsubmit"])) {

@@ -166,16 +166,17 @@ if(isset($_POST["btnsubmit"])) {
                         </div>
                         <div class="second_row flex flex-col md:flex-row gap-5">
                             <div class="flex flex-col gap-2 w-full">
-                                <label class="text-white" for="">Contact Number</label>
-                                <input 
-                                    type="number" 
-                                    name="number" 
-                                    id="" 
-                                    class="form-input w-full" 
-                                    placeholder="Ex. 9175048769" 
-                                    oninput="this.value=this.value.slice(0,this.maxLength)"
-                                    maxlength="10">
+                                <label for="name" class="text-white">Contact Number</label>
+                                <div>
+                                    <label class="input-field inline-flex items-baseline border-none shadow-md bg-white p-3 form-input">
+                                        <span class="flex-none text-dusty-blue-darker select-none leading-none">+63</span>
+                                        <div class="flex-1 leading-none">
+                                            <input id="handle" type="number" class="placeholder-blue w-full p-0 no-outline text-dusty-blue-darker" name="number" placeholder="9175048769" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="10">
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
+
                             <!--div class="flex flex-col gap-2 w-full">
                                 <label class="text-white" for="">Age</label>
                                 <input type="number" name="age" id="" class="form-input w-full" placeholder="Age">
