@@ -1809,10 +1809,14 @@ function showTenantThree(select){
 
             document.body.innerHTML = originalContents;
         }
-        $('.hect').on('input', function (e) { 
-            var newVal = $(this).val().replace(".", ""); 
-            $(this).val(newVal); 
-        }); 
+        $(document).ready(function() {
+  $('.hect').keypress(function(event) {
+  
+    if (((event.which == 46 || event.which == 45 || $(this).val().indexOf('.') != -1)) || (event.which < 48 || event.which > 57)) {
+      event.preventDefault();
+    }
+  });
+});
     </script>
 </body>
 </html>
