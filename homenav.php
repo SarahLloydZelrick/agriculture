@@ -13,7 +13,7 @@
         "
       >
        <div>
-          <a href="#" class="text-xl">
+          <a href="index.php" class="text-xl">
             Agriculture
           </a>
         </div>
@@ -30,7 +30,7 @@
               md:pt-0"
           >
             <li>
-              <a class="md:p-4 py-2 block hover:text-yellow-400" href="newindex.php"
+              <a class="md:p-4 py-2 block hover:text-yellow-400" href="index.php"
                 >Home</a
               >
             </li>
@@ -47,7 +47,7 @@
             <li>
               <a
                 class="md:p-4 py-2 block hover:text-yellow-400"
-                href="#"
+                href="login.php"
                 >Login</a
               >
             </li>
