@@ -591,6 +591,13 @@ function showTenantThree(select){
     document.getElementById('hidden_tenantthree').style.display = "none";
    }
 };
+function checkSpcialChar(event){
+            if(!((event.keyCode >= 65) && (event.keyCode <= 90) || (event.keyCode >= 97) && (event.keyCode <= 122) || (event.keyCode >= 48) && (event.keyCode <= 57))){
+               event.returnValue = false;
+               return;
+            }
+            event.returnValue = true;
+         }
 </script>
 <body>
     <?php
@@ -1809,13 +1816,6 @@ function showTenantThree(select){
 
             document.body.innerHTML = originalContents;
         }
-        function checkSpcialChar(event){
-            if(!((event.keyCode >= 65) && (event.keyCode <= 90) || (event.keyCode >= 97) && (event.keyCode <= 122) || (event.keyCode >= 48) && (event.keyCode <= 57))){
-               event.returnValue = false;
-               return;
-            }
-            event.returnValue = true;
-         }
     </script>
 </body>
 </html>
