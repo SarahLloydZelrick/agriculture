@@ -592,12 +592,14 @@ function showTenantThree(select){
    }
 };
 function checkSpcialChar(event){
-            if(!((event.keyCode >= 65) && (event.keyCode <= 90) || (event.keyCode >= 97) && (event.keyCode <= 122) || (event.keyCode >= 48) && (event.keyCode <= 57))){
-               event.returnValue = false;
-               return;
-            }
-            event.returnValue = true;
-         }
+    if(!((event.keyCode >= 65) && (event.keyCode <= 90) || (event.keyCode >= 97) && (event.keyCode <= 122) || (event.keyCode >= 48) && (event.keyCode <= 57))){
+        event.returnValue = false;
+            return;
+    }
+    event.returnValue = true;
+}
+$('#dateadminstered').val(new Date().toJSON().slice(0,10));
+
 </script>
 <body>
     <?php
@@ -714,7 +716,7 @@ function checkSpcialChar(event){
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Date Administered</label>
-                                <input type="date" class="form-input w-full" name="dateadminstered" value="<?php echo date('d-m-y');?>">
+                                <input type="date" class="form-input w-full" name="dateadminstered" id="dateadminstered">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2" style="display:none;">
                                 <?php 
