@@ -714,7 +714,7 @@ function checkSpcialChar(event){
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Date Administered</label>
-                                <input type="date" class="form-input w-full" name="dateadminstered" value="<?php echo date('dd/mm/yy');?>">
+                                <input type="date" class="form-input w-full" name="dateadminstered" value="<?php echo date('d-m-y');?>">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2" style="display:none;">
                                 <?php 
