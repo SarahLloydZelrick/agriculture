@@ -114,7 +114,7 @@ if(isset($_POST["btnsubmit"])) {
             <div class="hidden flex flex-col basis-full justify-center items-center md:basis-1/2 h-screen  md:block right_div ">
                 <div class="title flex flex-col items-center p-10 gap-5 ">
                     <img src="images/Icons/logo_doa.png" class="w-60" alt="Agriculture">
-                    <h1 class="text-3xl text-center text-white">Office of the Municipal Agriculturist Candelaria, Quezon Province</h1>
+                    <h1 class="text-3xl text-center text-white">Office of the Municipal Agriculturist Candelaria, Quezon</h1>
                     <div class="flex flex-col gap-5 pt-5">
                         <div class="flex flex-col gap-2 items-center">
                             <h2 class="font-bold text-lg text-[#fbad1b]">Mandate</h2>
