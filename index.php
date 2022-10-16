@@ -114,20 +114,20 @@ if(isset($_POST["btnsubmit"])) {
             <div class="hidden flex flex-col basis-full justify-center items-center md:basis-1/2 h-screen  md:block right_div ">
                 <div class="title flex flex-col items-center p-10 gap-5 ">
                     <img src="images/Icons/logo_doa.png" class="w-60" alt="Agriculture">
-                    <h1 class="text-3xl text-center text-white">Department of Agriculture in Candelaria, Quezon Province</h1>
+                    <h1 class="text-3xl text-center text-white">Office of the Municipal Agriculturist Candelaria, Quezon Province</h1>
                     <div class="flex flex-col gap-5 pt-5">
                         <div class="flex flex-col gap-2 items-center">
                             <h2 class="font-bold text-lg text-[#fbad1b]">Mandate</h2>
-                            <p class="text-white text-sm">The Office of the Municipal Agriculture is an agency of the Philippine government responsible for the promotion of the Agriculture & Fisheries development and growth. In partnership with the Department of Agriculture, provide benefits of development to the poor, especially in the rural areas</p>
+                            <p class="text-white text-sm">Formulate measures and provide technical assistance, support to the delivery of basic services, and provision of adequate facilities relative to agricultural services, and develops plans and strategies on agricultural programs and projects (Local Government Code, 1991)</p>
                         </div>
                         <div class="flex gap-5">
                             <div class="flex flex-col gap-2 w-1/2">
                                 <h2 class="font-bold text-lg text-[#fbad1b]">Mission</h2>
-                                <p class="text-white text-sm">Increase income of farmers & fisherfolks, thereby contributing to the achievement of national goal of alleviating poverty, generating productive opportunities, fostering social justice and equity, and promoting sustainable economic growth</p>
+                                <p class="text-white text-sm">To increase productivity and real income of farmers thereby contributing to agricultural development and growth of the municipality, support the development of farmers, rural women, and youth organizations, help ensure food security, extend the support services necessary to make agriculture and agri-based initiatives profitable and help spread the development to those in the rural areas.</p>
                             </div>
                             <div class="flex flex-col gap-2 w-1/2">
                                 <h2 class="font-bold text-lg text-[#fbad1b]">Vision</h2>
-                                <p class="text-white text-sm">Prosperous rural communities built on profitable farms that provide surplus for agro-industry and guarantees food security</p>
+                                <p class="text-white text-sm">An agricultural community with efficient allocation and effective utilization of resources, favorable interaction of all sectors, and sound agricultural growth.</p>
                             </div>
                         </div>
                     </div>
