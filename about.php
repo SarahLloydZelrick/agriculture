@@ -41,14 +41,14 @@
         <div class="flex flex-col pb-5">
                 <p class="text-3xl font-bold text-[#009a4e]">Duties and Functions</p>
                 <p class="pt-5 font-bold pb-2">The agriculturist shall take charge of the office for agricultural services, and shall:</p>
-                <hr class="my-4 mx-auto w-48 h-1 bg-[#009a4e] rounded border-0 md:my-10 dark:bg-[#009a4e]">
+                <hr class="my-4 w-48 h-1 bg-[#009a4e] rounded border-0 md:my-10 dark:bg-[#009a4e]">
                 <br>
                 <p>Formulate measures for the approval of the sanggunian and provide technical assistance and support to the mayor, as the case may be, in carrying out said measures to ensure the delivery of basic services and provisions of adequate facilities relative to agricultural services as provided for under Section 17 of this Code.</p>
                 <br>
                 <p>Develop plans and strategies and upon approval thereof by the mayor, as the case may be, implement the same, particularly those which have to do with agricultural programs and projects which the mayor is empowered to implement and which the sanggunian is empowered to provide for under this Code.</p>
                 <br>
                 <p class="font-bold pb-2">In addition to the foregoing duties and functions, the agriculturist shall:</p>
-                <hr class="my-4 mx-auto w-48 h-1 bg-[#009a4e] rounded border-0 md:my-10 dark:bg-[#009a4e]">
+                <hr class="my-4 w-48 h-1 bg-[#009a4e] rounded border-0 md:my-10 dark:bg-[#009a4e]">
                 <br>
                 <p>Ensure that maximum assistance and access to resources in the production, processing and marketing of agricultural and aqua-cultural and marine products are extended to farmers, fishermen and local entrepreneurs</p>
                 <br>
