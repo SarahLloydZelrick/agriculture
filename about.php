@@ -39,12 +39,25 @@
   <div class="px-5 py-2 md:px-32 md:py-10">
         <!-- SECTION 1 -->
         <div class="flex flex-col pb-5">
-                <p class="text-3xl font-bold text-[#009a4e]">Lorem ipsum dolor</p>
-                <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus quam non sollicitudin sollicitudin. In auctor est et commodo faucibus. Phasellus rhoncus dolor ut mi molestie dapibus. </p>
-                <p>Mauris sit amet nibh ut turpis sagittis volutpat. Proin consectetur dignissim massa quis mattis.</p>
+                <p class="text-3xl font-bold text-[#009a4e]">Duties and Functions</p>
+                <p class="pt-5">The agriculturist shall take charge of the office for agricultural services, and shall:</p>
                 <br>
-                <p>Morbi quis erat ac turpis pharetra blandit sit amet nec tellus. Etiam rhoncus scelerisque massa at egestas. Mauris maximus turpis euismod vulputate imperdiet. Ut pellentesque tortor quis consectetur pellentesque. Sed elementum tincidunt ipsum efficitur sollicitudin. Morbi eget erat eget dolor ullamcorper interdum vitae fermentum libero. Curabitur bibendum tristique lectus pharetra suscipit.</p>
+                <p>Formulate measures for the approval of the sanggunian and provide technical assistance and support to the mayor, as the case may be, in carrying out said measures to ensure the delivery of basic services and provisions of adequate facilities relative to agricultural services as provided for under Section 17 of this Code.</p>
+                <br>
+                <p>Develop plans and strategies and upon approval thereof by the mayor, as the case may be, implement the same, particularly those which have to do with agricultural programs and projects which the mayor is empowered to implement and which the sanggunian is empowered to provide for under this Code.</p>
+                <br>
+                <p>In addition to the foregoing duties and functions, the agriculturist shall:</p>
+                <br>
+                <p>Ensure that maximum assistance and access to resources in the production, processing and marketing of agricultural and aqua-cultural and marine products are extended to farmers, fishermen and local entrepreneurs</p>
+                <br>
+                <p>Conduct or cause to be conducted location-specific agricultural researches and assist in making available the appropriate technology arising out of and disseminating information on basic research on crops, preventive and control of plant diseases and pests, and other agricultural matters which will maximize productivity</p>
+                <p>Assist the mayor, as the case may be, in the establishment and extension services of demonstration forms or aqua-culture and marine products</p>
+                <p>Enforce rules and regulations relating to agriculture and aqua-culture</p>
+                <p>Coordinate with government agencies and non-governmental organizations which promote agricultural productivity through appropriate technology compatible with environmental integrity</p>
+                <p>Be in the frontline of delivery of basic agricultural services, particularly those needed for the survival of the inhabitants during and in the aftermath of man-made and natural disasters</p>
+                <p>Recommend to the sanggunian and advise the mayor, as the case may be, on all other matters related to agriculture and aqua-culture which will improve the livelihood and living conditions of the inhabitants and Exercise such other powers and perform such other duties and functions as may be prescribed by law or ordinance</p>
         </div>
+        <p class="text-3xl font-bold text-[#009a4e]">Services</p>
         <div class="flex flex-col md:flex-row justify-between pt-10">
             <div class="flex justify-center">
                 <div class="rounded-lg shadow-lg bg-white max-w-sm">
@@ -52,11 +65,9 @@
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a>
                     <div class="p-6">
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
-                    <p class="text-gray-700 text-base mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">
+                        Technical Assistance on Crops and Livestock Production
+                    </h5>
                     </div>
                 </div>
             </div>
@@ -66,11 +77,9 @@
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a>
                     <div class="p-6">
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
-                    <p class="text-gray-700 text-base mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">
+                        Surveillance and monitoring of Pests and Diseases and related services
+                    </h5>
                     </div>
                 </div>
             </div>
@@ -80,11 +89,9 @@
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a>
                     <div class="p-6">
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
-                    <p class="text-gray-700 text-base mb-4">
-                        Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                    </p>
+                    <h5 class="text-gray-900 text-xl font-medium mb-2">
+                        Soil Sampling, Soil Analysis and issuance of recommendations
+                    </h5>
                     </div>
                 </div>
             </div>

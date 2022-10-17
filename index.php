@@ -43,11 +43,8 @@
         <!-- SECTION 1 -->
         <div class="flex justify-between pb-5">
             <div class="flex flex-col basis-full md:basis-1/2">
-                <p class="text-3xl font-bold text-[#009a4e]">Lorem ipsum dolor</p>
-                <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus quam non sollicitudin sollicitudin. In auctor est et commodo faucibus. Phasellus rhoncus dolor ut mi molestie dapibus. </p>
-                <p>Mauris sit amet nibh ut turpis sagittis volutpat. Proin consectetur dignissim massa quis mattis.</p>
-                <br>
-                <p>Morbi quis erat ac turpis pharetra blandit sit amet nec tellus. Etiam rhoncus scelerisque massa at egestas. Mauris maximus turpis euismod vulputate imperdiet. Ut pellentesque tortor quis consectetur pellentesque. Sed elementum tincidunt ipsum efficitur sollicitudin. Morbi eget erat eget dolor ullamcorper interdum vitae fermentum libero. Curabitur bibendum tristique lectus pharetra suscipit.</p>
+                <p class="text-3xl font-bold text-[#009a4e]">Mission</p>
+                <p class="pt-5">To increase productivity and real income of farmers thereby contributing to agricultural development and growth of the municipality, support the development of farmers, rural women, and youth organizations, help ensure food security, extend the support services necessary to make agriculture and agri-based initiatives profitable and help spread development to those in the rural areas. </p>
             </div>
             <div class="flex basis-full md:basis-1/2 justify-end">
                 <img src="images/home1.jpg" style="width:400px;"alt="">
@@ -58,11 +55,8 @@
                 <img src="images/home2.jpg" style="width:400px;"alt="">
             </div>
             <div class="flex flex-col basis-full md:basis-1/2">
-                <p class="text-3xl font-bold text-[#009a4e]">Lorem ipsum dolor</p>
-                <p class="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus quam non sollicitudin sollicitudin. In auctor est et commodo faucibus. Phasellus rhoncus dolor ut mi molestie dapibus. </p>
-                <p>Mauris sit amet nibh ut turpis sagittis volutpat. Proin consectetur dignissim massa quis mattis.</p>
-                <br>
-                <p>Morbi quis erat ac turpis pharetra blandit sit amet nec tellus. Etiam rhoncus scelerisque massa at egestas. Mauris maximus turpis euismod vulputate imperdiet. Ut pellentesque tortor quis consectetur pellentesque. Sed elementum tincidunt ipsum efficitur sollicitudin. Morbi eget erat eget dolor ullamcorper interdum vitae fermentum libero. Curabitur bibendum tristique lectus pharetra suscipit.</p>
+                <p class="text-3xl font-bold text-[#009a4e]">Vision</p>
+                <p class="pt-5">An agricultural community with efficient allocation and effective utilization of resources, favourable interaction of all sectors, and sound agricultural growth.</p>
             </div>
         </div>
     </div>
