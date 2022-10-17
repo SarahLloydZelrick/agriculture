@@ -49,12 +49,8 @@
                 <br>
                 <p>Morbi quis erat ac turpis pharetra blandit sit amet nec tellus. Etiam rhoncus scelerisque massa at egestas. Mauris maximus turpis euismod vulputate imperdiet. Ut pellentesque tortor quis consectetur pellentesque. Sed elementum tincidunt ipsum efficitur sollicitudin. Morbi eget erat eget dolor ullamcorper interdum vitae fermentum libero. Curabitur bibendum tristique lectus pharetra suscipit.</p>
             </div>
-<<<<<<< HEAD
             <div class="flex basis-full md:basis-1/2 justify-end">
                 <img src="images/home1.jpg" style="width:400px;"alt="">
-=======
-
->>>>>>> 2b93fe0a0cd32c45ed5ace1349f5626c86777557
             </div>
         </div>
         <div class="flex justify-between pt-5">
