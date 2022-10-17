@@ -64,7 +64,7 @@
                     <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a-->
-                    <div class="p-6">
+                    <div class="p-10">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Technical Assistance on Crops and Livestock Production
                     </h5>
@@ -76,7 +76,7 @@
                     <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a-->
-                    <div class="p-6">
+                    <div class="p-10">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Surveillance and monitoring of Pests and Diseases and related services
                     </h5>
@@ -88,7 +88,7 @@
                     <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a-->
-                    <div class="p-6">
+                    <div class="p-10">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Soil Sampling, Soil Analysis and issuance of recommendations
                     </h5>
@@ -100,7 +100,7 @@
                     <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
                     </a-->
-                    <div class="p-6">
+                    <div class="p-10">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Seeds, Planting Materials and Fertilizers Subsidy and Distribution
                     </h5>
