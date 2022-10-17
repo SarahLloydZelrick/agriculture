@@ -61,9 +61,9 @@
         <div class="flex flex-col md:flex-row justify-between pt-10">
             <div class="flex justify-center">
                 <div class="rounded-lg shadow-lg bg-white max-w-sm">
-                    <a href="#!">
+                    <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
-                    </a>
+                    </a-->
                     <div class="p-6">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Technical Assistance on Crops and Livestock Production
@@ -73,9 +73,9 @@
             </div>
             <div class="flex justify-center">
                 <div class="rounded-lg shadow-lg bg-white max-w-sm">
-                    <a href="#!">
+                    <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
-                    </a>
+                    </a-->
                     <div class="p-6">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Surveillance and monitoring of Pests and Diseases and related services
@@ -85,9 +85,9 @@
             </div>
             <div class="flex justify-center">
                 <div class="rounded-lg shadow-lg bg-white max-w-sm">
-                    <a href="#!">
+                    <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
-                    </a>
+                    </a-->
                     <div class="p-6">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Soil Sampling, Soil Analysis and issuance of recommendations
@@ -97,9 +97,9 @@
             </div>
             <div class="flex justify-center">
                 <div class="rounded-lg shadow-lg bg-white max-w-sm">
-                    <a href="#!">
+                    <!--a href="#!">
                     <img class="rounded-t-lg" src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" alt=""/>
-                    </a>
+                    </a-->
                     <div class="p-6">
                     <h5 class="text-gray-900 text-xl font-medium mb-2">
                         Seeds, Planting Materials and Fertilizers Subsidy and Distribution
