@@ -1349,6 +1349,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1416,6 +1421,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1478,6 +1488,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1540,6 +1555,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1602,6 +1622,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1736,6 +1761,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1803,6 +1833,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1865,6 +1900,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1927,6 +1967,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -1989,6 +2034,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -2123,6 +2173,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -2190,6 +2245,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -2252,6 +2312,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -2314,6 +2379,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
@@ -2376,6 +2446,11 @@ $(document).ready(function() {
                                     <option value="coffee">Coffee</option>
                                     <option value="liberica">Liberica</option>
                                     <option value="robusta">Robusta</option>
+                                    <option value="pigs">Pigs</option>
+                                    <option value="cow">Cow</option>
+                                    <option value="carabao">Carabao</option>
+                                    <option value="chicken">Chicken(Native/Tagalog)</option>
+                                    <option value="goat">Goat</option>
 
                                 </select>
                             </div>
