@@ -1310,6 +1310,7 @@ $(document).ready(function() {
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
                                 <!--input type="text" class="form-input w-full" name="cropa1" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropa1" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1376,6 +1377,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropa2" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropa2" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1437,6 +1439,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropa3" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropa3" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1498,6 +1501,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropa4" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropa4" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1559,6 +1563,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropa5" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropa5" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1692,6 +1697,7 @@ $(document).ready(function() {
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
                                 <!--input type="text" class="form-input w-full" name="cropb1" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropb1" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1758,6 +1764,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropb2" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropb2" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1819,6 +1826,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropb3" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropb3" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1880,6 +1888,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropb4" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropb4" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -1941,6 +1950,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropb5" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropb5" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -2074,6 +2084,7 @@ $(document).ready(function() {
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
                                 <!--input type="text" class="form-input w-full" name="cropc1" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropc1" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -2140,6 +2151,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropc2" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropc2" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -2201,6 +2213,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropc3" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropc3" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -2262,6 +2275,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropc4" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropc4" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
@@ -2323,6 +2337,7 @@ $(document).ready(function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <!--input type="text" class="form-input w-full" name="cropc5" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropc5" class="form-input w-full js-example-basic-single">
+                                    <option value="">Select</option>
                                     <option value="corn">Corn</option>
                                     <option value="cassava">Cassava</option>
                                     <option value="rice">Rice</option>
