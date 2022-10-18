@@ -22,6 +22,8 @@ if (!isset($_SESSION['loggedin'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://kit.fontawesome.com/49db76c055.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script-->
     <title>RSBSA</title>
 </head>
@@ -1305,6 +1307,12 @@ $(document).ready( function() {
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
                                 <input type="text" class="form-input w-full" name="cropa1" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <select name="cropa1" class="form-input w-full js-example-basic-singl">
+                                    <option value="owner">Corn</option>
+                                    <option value="tenant">Cassava</option>
+                                    <option value="lessee">Rice</option>
+                                    <option value="others">Ampalaya</option>
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Size (ha)</label>
@@ -1828,6 +1836,9 @@ $(document).ready( function() {
 
             document.body.innerHTML = originalContents;
         }
+        $(document).ready(function() {
+            $('.js-example-basic-single').select2();
+        });
     </script>
 </body>
 </html>
