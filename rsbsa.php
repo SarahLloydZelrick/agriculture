@@ -1337,7 +1337,17 @@ $(document).ready(function() {
                                     <option value="saba">Saba</option>
                                     <option value="latundan">Latundan</option>
                                     <option value="lakatan">Lakatan</option>
-                                    <option value="mango">Mango</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
 
                                 </select>
                             </div>
