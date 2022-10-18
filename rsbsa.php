@@ -611,7 +611,9 @@ $(document).ready( function() {
 
    $('#dateadminsteredid').val(today);
 });
-
+$(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
 </script>
 <body>
     <?php
@@ -1836,9 +1838,6 @@ $(document).ready( function() {
 
             document.body.innerHTML = originalContents;
         }
-        $(document).ready(function() {
-            $('.js-example-basic-single').select2();
-        });
     </script>
 </body>
 </html>
