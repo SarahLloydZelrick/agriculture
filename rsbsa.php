@@ -620,7 +620,7 @@ $(document).ready(function() {
         include "navbar.php";
         include "topbar.php";
     ?>
-    <div class="rsbsa_container ml-0 pt-10  pb-32 md:pb-0 md:ml-60">
+    <div class="rsbsa_container ml-0 pt-10  pb-32 w-fit md:pb-0 md:ml-60">
         <form action="" method="POST"  enctype="multipart/form-data">
             <ul class="nav nav-tabs flex flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tabFill" role="tablist">
                 <li class="nav-item flex-auto text-center" role="presentation">
@@ -1374,7 +1374,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropa2" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropa2" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropa2" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizea2" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1394,7 +1435,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropa3" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropa3" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropa3" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizea3" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1414,7 +1496,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropa4" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropa4" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropa4" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizea4" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1434,7 +1557,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropa5" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropa5" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropa5" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizea5" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1526,7 +1690,48 @@ $(document).ready(function() {
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
-                                <input type="text" class="form-input w-full" name="cropb1" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropb1" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropb1" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Size (ha)</label>
@@ -1551,7 +1756,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropb2" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropb2" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropb2" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizeb2" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1571,7 +1817,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropb3" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropb3" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropb3" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizeb3" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1591,7 +1878,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropb4" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropb4" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropb4" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizeb4" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1611,7 +1939,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropb5" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropb5" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropb5" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizeb5" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1703,7 +2072,48 @@ $(document).ready(function() {
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
-                                <input type="text" class="form-input w-full" name="cropc1" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropc1" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropc1" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Size (ha)</label>
@@ -1728,7 +2138,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropc2" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropc2" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropc2" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizec2" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1748,7 +2199,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropc3" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropc3" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropc3" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizec3" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1768,7 +2260,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropc4" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropc4" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropc4" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizec4" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
@@ -1788,7 +2321,48 @@ $(document).ready(function() {
                         </div>
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
-                                <input type="text" class="form-input w-full" name="cropc5" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropc5" placeholder="Crop/Commodity | For Livestock & Poultry"-->
+                                <select name="cropc5" class="form-input w-full js-example-basic-single">
+                                    <option value="corn">Corn</option>
+                                    <option value="cassava">Cassava</option>
+                                    <option value="rice">Rice</option>
+                                    <option value="ampalaya">Ampalaya</option>
+                                    <option value="cucumber">Cucumber</option>
+                                    <option value="eggplant">Eggplant</option>
+                                    <option value="mustartd">Mustard</option>
+                                    <option value="ladyfinger">Lady Finger</option>
+                                    <option value="petchay">Petchay</option>
+                                    <option value="radish">Radish</option>
+                                    <option value="squash">Squash</option>
+                                    <option value="stringbeans">String Beans</option>
+                                    <option value="snapbeans">Snap Beans</option>
+                                    <option value="tomato">Tomato</option>
+                                    <option value="bottledground">Bottle ground</option>
+                                    <option value="wingedbeans">Winged beans</option>
+                                    <option value="cabbage">Cabbage</option>
+                                    <option value="snapbeans">Snapbeans</option>
+                                    <option value="yam">Yam</option>
+                                    <option value="sweetpotato">Sweet potato</option>
+                                    <option value="sili">Sili (Tingala)</option>
+                                    <option value="panigang">Panigang</option>
+                                    <option value="ginger">Ginger</option>
+                                    <option value="banana">Banana</option>
+                                    <option value="saba">Saba</option>
+                                    <option value="latundan">Latundan</option>
+                                    <option value="lakatan">Lakatan</option>
+                                    <option value="mango">Mango (Carabao)</option>
+                                    <option value="citrus">Citrus (Dalanghita)</option>
+                                    <option value="calamnsi">Calamansi</option>
+                                    <option value="lansones">Lansones</option>
+                                    <option value="rambutan">Rambutan</option>
+                                    <option value="guyabano">Guyabano</option>
+                                    <option value="papaya">Papaya</option>
+                                    <option value="cacao">Cacao</option>
+                                    <option value="coffee">Coffee</option>
+                                    <option value="liberica">Liberica</option>
+                                    <option value="robusta">Robusta</option>
+
+                                </select>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <input type="number" class="form-input w-full hect" name="sizec5" placeholder="Size (ha)" onkeypress="return checkSpcialChar(event)">
