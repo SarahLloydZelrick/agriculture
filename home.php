@@ -44,7 +44,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 
     ?>
-    <div class="container flex flex-col p-10 ml-0 md:ml-60" >
+    <div class="container flex flex-col p-10 ml-0 w-screen md:ml-60 " >
         <div class="card_container gap-5 pb-5 flex flex-col items-center md:flex-row">
             <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-4/5 gap-5">
                 <p class="text-sm md:text-lg font-bold">NUMBER OF FARMERS</p>
