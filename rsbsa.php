@@ -1308,7 +1308,7 @@ $(document).ready(function() {
                         <div class="flex flex-col md:flex-row w-full h-full">
                             <div class="flex flex-col gap-2 w-full p-2 justify-end">
                                 <label for="">Crop/Commodity | For Livestock & Poultry</label>
-                                <input type="text" class="form-input w-full" name="cropa1" placeholder="Crop/Commodity | For Livestock & Poultry">
+                                <!--input type="text" class="form-input w-full" name="cropa1" placeholder="Crop/Commodity | For Livestock & Poultry"-->
                                 <select name="cropa1" class="form-input w-full js-example-basic-single">
                                     <option value="owner">Corn</option>
                                     <option value="tenant">Cassava</option>
