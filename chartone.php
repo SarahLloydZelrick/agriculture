@@ -1,4 +1,13 @@
 <?php
+include "config.php";
+
+$sqlcorn = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'corn'";
+$resultcorn = mysqli_query($con, $sqlocorn);
+$countcorn = mysqli_fetch_assoc($resultcorn)['COUNT(*)'];
+
+?>
+
+<?php
  
 $dataPoints = array(
 	array("label"=> 1997, "y"=> 254722.1),
@@ -59,12 +68,6 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 
 //Chart TWO
 <?php
-include "config.php";
-
-$sqlone = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'corn'";
-$resultone = mysqli_query($con, $sqlone);
-$countcorn = mysqli_fetch_assoc($resultone)['COUNT(*)'];
-
 
     $dataPointstwo = array(
     array("label"=> "Corn", "y"=> 590),
