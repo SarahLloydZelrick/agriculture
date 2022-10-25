@@ -64,7 +64,7 @@ if (!isset($_SESSION['loggedin'])) {
             </div>
 
         </div>
-        <!--div class="flex flex-col" style="overflow: scroll;height:60vh;">
+        <div class="flex flex-col" style="overflow: scroll;height:60vh;">
             <div class="top_chart w-auto flex flex-col md:flex-row">
                 <?php include "chartone.php"; ?>
                 <div class="chart_one md:w-1/2 p-10  w-full">
@@ -79,7 +79,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <div id="chartContainer3" style="height: 310px; width: 100%;"></div>
                 </div>
             </div>
-        </div-->
+        </div>
         <?php
             include "footer.php";
         ?>
