@@ -960,6 +960,7 @@ $(document).ready(function() {
                             <!--span onclick="myFunctionOneprev()" class="p-5 w-32 cursor-pointer bg-stone-300 rounded-lg text-center">PREVIOUS</span-->
                             <span onclick="myFunctionOne()" class="cursor-pointer bg-stone-300 rounded-lg text-center w-24 p-2 md:w-32 md:p-5">NEXT</span>
                         </div>
+                        <br>
                     </div>
                 </div>
                 <div class="tab-pane fade pb-10" id="tabs-step2Fill" role="tabpanel" aria-labelledby="tabs-step2-tabFill">
@@ -1212,6 +1213,7 @@ $(document).ready(function() {
                             <span onclick="myFunctionTwoprev()" class="cursor-pointer bg-stone-300 rounded-lg text-center w-24 p-2 md:w-32 md:p-5">PREVIOUS</span>
                             <span onclick="myFunctionTwo()" class="cursor-pointer bg-stone-300 rounded-lg text-center w-24 p-2 md:w-32 md:p-5">NEXT</span>
                         </div>
+                        <br>
                 </div>
                 <div class="tab-pane fade pb-10" id="tabs-step3Fill" role="tabpanel" aria-labelledby="tabs-step3-tabFill">
                     <h3 class="text-xl font-bold">Farm Profile</h3>
@@ -2474,6 +2476,7 @@ $(document).ready(function() {
                             <span onclick="myFunctionThreeprev()" class="cursor-pointer bg-stone-300 rounded-lg text-center w-24 p-2 md:w-32 md:p-5">PREVIOUS</span>
                             <span onclick="myFunctionThree()" class="cursor-pointer bg-stone-300 rounded-lg text-center w-24 p-2 md:w-32 md:p-5">NEXT</span>
                         </div>
+                        <br>
 
                 </div>
                 <div class="tab-pane fade pb-10" id="tabs-step4Fill" role="tabpanel" aria-labelledby="tabs-step4-tabFill">

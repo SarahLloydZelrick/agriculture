@@ -189,6 +189,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </tbody>
                 </table>
             </div>
+            <br><br>
              <!-- MODAL ACTIVATE -->
             <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="activateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog relative w-auto pointer-events-none">
@@ -362,6 +363,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </tbody>
                 </table>
             </div>
+            <br><br>
             <!-- APPROVED ACCOUNTS -->
             <div id="table_approved" style="display:none;">
                 <table id="approved_table" style="width:100%;">
@@ -405,6 +407,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </tbody>
                 </table>
             </div>
+            <br><br>
         </div>
         <?php
             include "footer.php";
