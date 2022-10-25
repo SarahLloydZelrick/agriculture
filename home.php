@@ -23,7 +23,7 @@ if (!isset($_SESSION['loggedin'])) {
     <?php
         include "navbar.php";
         include "topbar.php";
-    
+
         include "config.php";
 
         $sqlone = "SELECT COUNT(*) FROM tbl_accounts WHERE `userlevel` = 'farmer'";
@@ -67,10 +67,10 @@ if (!isset($_SESSION['loggedin'])) {
         <div class="flex flex-col" style="overflow: scroll;height:60vh;">
             <div class="top_chart w-auto flex flex-col md:flex-row">
                 <?php include "chartone.php"; ?>
-                <div class="chart_one md:w-1/2 p-10  w-full">
+                <!--div class="chart_one md:w-1/2 p-10  w-full">
                     <div id="chartContainer1" style="height: 310px; width: 100%;"></div>
-                </div>
-                <div class="chart_two md:w-1/2 p-10  w-full">
+                </div-->
+                <div class="chart_two p-10 w-full">
                     <div id="chartContainer2" style="height: 310px; width: 100%;"></div>
                 </div>
             </div>

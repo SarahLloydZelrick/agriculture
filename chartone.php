@@ -303,6 +303,7 @@ $dataPoints = array(
 <script>
 window.onload = function () {
  
+	/*
 var chart1 = new CanvasJS.Chart("chartContainer1", {
 	animationEnabled: true,
 	//theme: "light2",
@@ -330,7 +331,7 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 		type: "area",
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
-});
+});*/
 
 //Chart TWO
 <?php
@@ -421,7 +422,7 @@ var chart3 = new CanvasJS.Chart("chartContainer3", {
 	exportEnabled: true,
 	theme: "light1", // "light1", "light2", "dark1", "dark2"
 	title:{
-		text: "Simple Column Chart with Index Labels"
+		text: "Number of all crops"
 	},
 	axisY:{
 		includeZero: true
@@ -434,7 +435,6 @@ var chart3 = new CanvasJS.Chart("chartContainer3", {
 		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
 });
-chart1.render();
 chart2.render();
 chart3.render();
 }
