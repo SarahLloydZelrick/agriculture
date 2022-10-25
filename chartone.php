@@ -61,10 +61,10 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 <?php
 
     $dataPointstwo = array(
-    array("label"=> "Food + Drinks", "y"=> 590),
-    array("label"=> "Activities and Entertainments", "y"=> 261),
-    array("label"=> "Health and Fitness", "y"=> 158),
-    array("label"=> "Shopping & Misc", "y"=> 72),
+    array("label"=> "Corn", "y"=> 590),
+    array("label"=> "Cassava", "y"=> 261),
+    array("label"=> "HVC", "y"=> 158),
+    array("label"=> "RICE", "y"=> 72),
     );
 
 ?>
