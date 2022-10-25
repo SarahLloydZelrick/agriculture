@@ -46,19 +46,19 @@ if (!isset($_SESSION['loggedin'])) {
     ?>
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <div class="card_container gap-5 pb-5 flex flex-col items-center md:flex-row flex-wrap">
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-52">
+            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-fit">
                 <p class="text-sm font-bold md:text-2xl" style="margin:0 auto;"><?php echo $countfarmer; ?></p>
                 <p class="text-sm md:text-lg font-bold">NUMBER OF FARMERS</p>
             </div>
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-52">
+            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-fit">
                 <p class="text-sm font-bold md:text-2xl" style="margin:0 auto;"><?php echo $countstaff; ?></p>
                 <p class="text-sm md:text-lg font-bold">NUMBER OF STAFF</p>
             </div>
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-52">
+            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-fit">
                 <p class="text-sm font-bold md:text-2xl" style="margin:0 auto;"><?php echo $countactive; ?></p>
                 <p class="text-sm md:text-lg font-bold">ACTIVE ACCOUNTS</p>
             </div>
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-52">
+            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-fit gap-5 h-fit">
                 <p class="text-sm font-bold md:text-2xl" style="margin:0 auto;"><?php echo $countacct; ?></p>
                 <p class="text-sm md:text-lg font-bold">TOTAL NUMBER OF ACCOUNTS</p>
             </div>
