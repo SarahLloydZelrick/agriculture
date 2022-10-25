@@ -16,7 +16,6 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="css/style.css" />	  
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <title>Dashboard</title>
 
 </head>
@@ -85,17 +84,7 @@ if (!isset($_SESSION['loggedin'])) {
             include "footer.php";
         ?>
     </div>
-    <script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
-      }
-    }
-  }
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
