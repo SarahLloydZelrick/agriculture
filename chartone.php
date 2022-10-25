@@ -59,6 +59,12 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 
 //Chart TWO
 <?php
+include "config.php";
+
+$sqlone = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'corn'";
+$resultone = mysqli_query($con, $sqlone);
+$countcorn = mysqli_fetch_assoc($resultone)['COUNT(*)'];
+
 
     $dataPointstwo = array(
     array("label"=> "Corn", "y"=> 590),
@@ -73,7 +79,7 @@ var chart2 = new CanvasJS.Chart("chartContainer2", {
 animationEnabled: true,
 exportEnabled: true,
 title:{
-    text: "Total numbe of crops"
+    text: "Total number of crops"
 },
 subtitles: [{
     text: "in candelaria"
