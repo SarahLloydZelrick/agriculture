@@ -24,12 +24,8 @@ if (!isset($_SESSION['loggedin'])) {
         include "navbar.php";
         include "topbar.php";
 
-        include "config.php";
-
-        $sqlone = "SELECT COUNT(*) FROM tbl_accounts WHERE `userlevel` = 'farmer'";
-        $resultone = mysqli_query($con, $sqlone);
-        $countfarmer = mysqli_fetch_assoc($resultone)['COUNT(*)'];
-
+         
+        ini_set('display_errors', 1);
         $sqltwo = "SELECT COUNT(*) FROM tbl_accounts WHERE `userlevel` = 'staff'";
         $resulltwo = mysqli_query($con, $sqltwo);
         $countstaff = mysqli_fetch_assoc($resulltwo)['COUNT(*)'];
