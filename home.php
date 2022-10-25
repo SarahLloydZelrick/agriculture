@@ -70,11 +70,11 @@ if (!isset($_SESSION['loggedin'])) {
                 <!--div class="chart_one md:w-1/2 p-10  w-full">
                     <div id="chartContainer1" style="height: 310px; width: 100%;"></div>
                 </div-->
-                <div class="chart_two p-10 w-full">
+                <div class="chart_two p-10 w-fit">
                     <div id="chartContainer2" style="height: 310px; width: 100%;"></div>
                 </div>
             </div>
-            <div class="bottom_chart w-full p-10">
+            <div class="bottom_chart w-fit p-10">
                 <div class="chart_three">
                     <div id="chartContainer3" style="height: 310px; width: 100%;"></div>
                 </div>
