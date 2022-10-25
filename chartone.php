@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 $sqlcorn = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'corn'";
 $resultcorn = mysqli_query($con, $sqlcorn);
 $countcorn = mysqli_fetch_assoc($resultcorn)['COUNT(*)'];
-if($countcorn = ""){
+if($countcorn = NULL){
 	$countcorn = "0";
 }
 
