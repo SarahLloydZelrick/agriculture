@@ -66,7 +66,7 @@ $resultone = mysqli_query($con, $sqlone);
 $countcorn = mysqli_fetch_assoc($resultone)['COUNT(*)'];
 
     $dataPointstwo = array(
-    array("label"=> "Corn", "y"=> $countcorn),
+    array("label"=> "Corn", "y"=> 10),
     array("label"=> "Cassava", "y"=> 261),
     array("label"=> "HVC", "y"=> 158),
     array("label"=> "Rice", "y"=> 72),
