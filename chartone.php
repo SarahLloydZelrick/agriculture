@@ -5,6 +5,17 @@ $sqlcorn = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'corn'";
 $resultcorn = mysqli_query($con, $sqlcorn);
 $countcorn = mysqli_fetch_assoc($resultcorn)['COUNT(*)'];
 
+$sqlcassava = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'cassava'";
+$resultcassava = mysqli_query($con, $sqlcassava);
+$countcassava = mysqli_fetch_assoc($resultcassava)['COUNT(*)'];
+
+$sqlrice = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'rice'";
+$resultrice = mysqli_query($con, $sqlrice);
+$countrice = mysqli_fetch_assoc($resultrice)['COUNT(*)'];
+
+$sqlhvc = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` != 'rice' AND `crop` != 'cassava' AND `crop` != 'corn'";
+$resulthvc = mysqli_query($con, $sqlhvc);
+$counthvc = mysqli_fetch_assoc($resulthvc)['COUNT(*)'];
 ?>
 
 <?php
@@ -71,9 +82,9 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 
     $dataPointstwo = array(
     array("label"=> "Corn", "y"=> $countcorn),
-    array("label"=> "Cassava", "y"=> 261),
-    array("label"=> "HVC", "y"=> 158),
-    array("label"=> "Rice", "y"=> 72),
+    array("label"=> "Cassava", "y"=> $countcassava),
+    array("label"=> "HVC", "y"=> $counthvc),
+    array("label"=> "Rice", "y"=> $countrice),
     );
 
 ?>
