@@ -70,7 +70,7 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 <?php
 
     $dataPointstwo = array(
-    array("label"=> "Corn", "y"=> 590),
+    array("label"=> "Corn", "y"=> $countcorn),
     array("label"=> "Cassava", "y"=> 261),
     array("label"=> "HVC", "y"=> 158),
     array("label"=> "Rice", "y"=> 72),
