@@ -64,7 +64,7 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
     array("label"=> "Corn", "y"=> 590),
     array("label"=> "Cassava", "y"=> 261),
     array("label"=> "HVC", "y"=> 158),
-    array("label"=> "RICE", "y"=> 72),
+    array("label"=> "Rice", "y"=> 72),
     );
 
 ?>
@@ -73,10 +73,10 @@ var chart2 = new CanvasJS.Chart("chartContainer2", {
 animationEnabled: true,
 exportEnabled: true,
 title:{
-    text: "Average Expense Per Day  in Thai Baht"
+    text: "Total numbe of crops"
 },
 subtitles: [{
-    text: "Currency Used: Thai Baht (฿)"
+    text: "in candelaria"
 }],
 data: [{
     type: "pie",
