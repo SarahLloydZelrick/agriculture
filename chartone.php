@@ -59,12 +59,17 @@ var chart1 = new CanvasJS.Chart("chartContainer1", {
 
 //Chart TWO
 <?php
+include "config.php";
+
+$sqlone = "SELECT COUNT(*) FROM tbl_intervention WHERE `crop` = 'corn'";
+$resultone = mysqli_query($con, $sqlone);
+$countcorn = mysqli_fetch_assoc($resultone)['COUNT(*)'];
 
     $dataPointstwo = array(
-    array("label"=> "Food + Drinks", "y"=> 590),
-    array("label"=> "Activities and Entertainments", "y"=> 261),
-    array("label"=> "Health and Fitness", "y"=> 158),
-    array("label"=> "Shopping & Misc", "y"=> 72),
+    array("label"=> "Corn", "y"=> $countcorn),
+    array("label"=> "Cassava", "y"=> 261),
+    array("label"=> "HVC", "y"=> 158),
+    array("label"=> "Rice", "y"=> 72),
     );
 
 ?>
@@ -73,10 +78,10 @@ var chart2 = new CanvasJS.Chart("chartContainer2", {
 animationEnabled: true,
 exportEnabled: true,
 title:{
-    text: "Average Expense Per Day  in Thai Baht"
+    text: "Total numbe of crops"
 },
 subtitles: [{
-    text: "Currency Used: Thai Baht (฿)"
+    text: "in candelaria"
 }],
 data: [{
     type: "pie",
