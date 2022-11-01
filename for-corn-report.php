@@ -19,6 +19,12 @@ if (!isset($_SESSION['loggedin'])) {
     <title>Corm Report</title>
 
 </head>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
 <body>
     <?php
         include "navbar.php";
