@@ -28,21 +28,21 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
         <div class="flex flex-col gap-2">
-            <form type="GET" action="for-corn-report.php" class="flex flex-col gap-2">
+            <form type="get" action="for-corn-report.php" class="flex flex-col gap-2">
                 <div class="flex flex-row">
                     <div class="flex flex-col">
                         <label>Date To:</label>
-                        <input type="date" name="" id="" class="form-input">
+                        <input type="date" name="" id="" value="" class="form-input">
                     </div>
                     <div class="flex flex-col">
                         <label>Date From:</label>
-                        <input type="date" name="" id="" class="form-input">
+                        <input type="date" name="" id="" value="" class="form-input">
                     </div>
                 </div>
                 <label for="">Report Type</label>
                 <select name="" id="" class="form-input">
-                    <option value="">Add new</option>
-                    <option value="">View</option>
+                    <option value="add">Add new</option>
+                    <option value="view">View</option>
                 </select>
                 <input type="submit" value="Submit" class="btn-primary">
             </form>
