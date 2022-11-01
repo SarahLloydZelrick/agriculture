@@ -23,7 +23,9 @@ if (!isset($_SESSION['loggedin'])) {
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
+        padding:10px;
     }
+    
 </style>
 <body>
     <?php
