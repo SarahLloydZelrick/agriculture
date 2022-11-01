@@ -36,6 +36,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
         <div class="flex flex-col gap-2">
+            <form method="POST" action="">
             <table style="width:100%">
                 <tr>
                     <th rowspan="4" colspan="1">GEOCODE</th>
@@ -125,6 +126,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </td>
                 </tr>
             </table>
+            <input type="submit" value="Save" class="btn-primary">
         </div>
 
     
