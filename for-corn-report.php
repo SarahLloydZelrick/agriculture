@@ -70,6 +70,7 @@ if (!isset($_SESSION['loggedin'])) {
                     
                 </tr>
                 <tr>
+                    <td></td>
                     <!-- BARANGAY -->
                     <td>
                         <input type="text" class="form-input" name="barangay1" id="" value="Candelaria" readonly>
