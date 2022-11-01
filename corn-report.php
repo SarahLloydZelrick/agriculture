@@ -28,7 +28,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
         <div class="flex flex-col gap-2">
-            <form action="for-corn-report.php" class="flex flex-col gap-2">
+            <form type="GET" action="for-corn-report.php" class="flex flex-col gap-2">
                 <div class="flex flex-row">
                     <div class="flex flex-col">
                         <label>Date To:</label>
