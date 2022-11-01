@@ -32,19 +32,19 @@ if (!isset($_SESSION['loggedin'])) {
                 <div class="flex flex-row">
                     <div class="flex flex-col">
                         <label>Date To:</label>
-                        <input type="date" name="" id="" value="" class="form-input">
+                        <input type="date" name="dateto" id="" value="" class="form-input">
                     </div>
                     <div class="flex flex-col">
                         <label>Date From:</label>
-                        <input type="date" name="" id="" value="" class="form-input">
+                        <input type="date" name="datefrom" id="" value="" class="form-input">
                     </div>
                 </div>
                 <label for="">Report Type</label>
-                <select name="" id="" class="form-input">
+                <select name="type" id="" class="form-input">
                     <option value="add">Add new</option>
                     <option value="view">View</option>
                 </select>
-                <input type="submit" value="Submit" class="btn-primary">
+                <input type="submit" name="btnsubmit" value="Submit" class="btn-primary">
             </form>
         </div>
 
