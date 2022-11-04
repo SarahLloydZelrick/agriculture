@@ -26,6 +26,9 @@ if (!isset($_SESSION['loggedin'])) {
         padding:10px;
         background-color:#d7d8d9;
     }
+    .wbrgy{
+        width:150px;
+    }
     
 </style>
 <body>
@@ -172,7 +175,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay1" id="" value="Poblacion" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay1" id="" value="Poblacion" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -220,7 +223,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay2" id="" value="Buenavista East" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay2" id="" value="Buenavista East" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -268,7 +271,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay3" id="" value="Buenavista West" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay3" id="" value="Buenavista West" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -316,7 +319,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay4" id="" value="Bukal Norte" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay4" id="" value="Bukal Norte" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -364,7 +367,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay5" id="" value="Bukal Sur" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay5" id="" value="Bukal Sur" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -412,7 +415,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay6" id="" value="Kinatihan I" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay6" id="" value="Kinatihan I" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -460,7 +463,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay7" id="" value="Kinatihan II" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay7" id="" value="Kinatihan II" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -508,7 +511,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay8" id="" value="Malabanban Norte" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay8" id="" value="Malabanban Norte" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -556,7 +559,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay9" id="" value="Malabanban Sur" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay9" id="" value="Malabanban Sur" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -604,7 +607,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay10" id="" value="Mangilag Norte" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay10" id="" value="Mangilag Norte" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -652,7 +655,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay11" id="" value="Mangilag Sur" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay11" id="" value="Mangilag Sur" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -700,7 +703,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay12" id="" value="Masalukot I" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay12" id="" value="Masalukot I" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -748,7 +751,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay13" id="" value="Masalukot II" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay13" id="" value="Masalukot II" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -796,7 +799,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay14" id="" value="Masalukot III" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay14" id="" value="Masalukot III" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -844,7 +847,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay15" id="" value="Masalukot IV" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay15" id="" value="Masalukot IV" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -892,7 +895,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay16" id="" value="Masalukot V" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay16" id="" value="Masalukot V" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -940,7 +943,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay17" id="" value="Masin Norte" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay17" id="" value="Masin Norte" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -988,7 +991,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay18" id="" value="Masin Sur" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay18" id="" value="Masin Sur" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1036,7 +1039,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay19" id="" value="Mayabobo" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay19" id="" value="Mayabobo" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1084,7 +1087,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay20" id="" value="Pahinga Norte" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay20" id="" value="Pahinga Norte" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1132,7 +1135,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay21" id="" value="Pahinga Sur" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay21" id="" value="Pahinga Sur" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1180,7 +1183,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay22" id="" value="San Andres" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay22" id="" value="San Andres" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1228,7 +1231,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay23" id="" value="San Isidro" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay23" id="" value="San Isidro" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1276,7 +1279,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay24" id="" value="Sta. Catalina Norte" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay24" id="" value="Sta. Catalina Norte" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -1324,7 +1327,7 @@ if (!isset($_SESSION['loggedin'])) {
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay25" id="" value="Sta. Catalina Sur" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay25" id="" value="Sta. Catalina Sur" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
