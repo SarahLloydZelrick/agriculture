@@ -8,7 +8,7 @@ if (!isset($_SESSION['loggedin'])) {
 	exit;
 }
 if($_GET["type"] = "view"){
-    header("Location: corn-report-view.php?dateto='".$_GET['dateto']."'&datefrom='".$_GET['datefrom']."'");
+    header("Location: corn-report-view.php?dateto=".$_GET['dateto']."&datefrom=".$_GET['datefrom']."");
 	exit;
 }
 ?>
