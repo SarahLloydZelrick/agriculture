@@ -98,7 +98,7 @@ if (!isset($_SESSION['loggedin'])) {
             if($_POST['nooffarmer1'] != "" || $_POST['nooffarmer1'] != "0")
                 {
                 $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay1."','".$hybridyellow1."','".$hybridwhite1."','".$hybridtotal1."','".$opvyellow1."','".$opvwhite1."','".$opvtotal1."','".$grandyellow1."','".$grandwhite1."','".$grandtotal1."','".$fromdate."','".$todate."')";
+                VALUES ('".$reporttype."','".$geocode."','".$barangay1."','".$nooffarmer1."','".$hybridyellow1."','".$hybridwhite1."','".$hybridtotal1."','".$opvyellow1."','".$opvwhite1."','".$opvtotal1."','".$grandyellow1."','".$grandwhite1."','".$grandtotal1."','".$fromdate."','".$todate."')";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
                         $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
@@ -110,7 +110,7 @@ if (!isset($_SESSION['loggedin'])) {
             if($_POST['nooffarmer2'] != "" || $_POST['nooffarmer2'] != "0")
                 {
                 $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
+                VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$nooffarmer1."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
                         $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
