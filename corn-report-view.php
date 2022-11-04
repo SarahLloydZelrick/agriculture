@@ -807,7 +807,7 @@ if (!isset($_SESSION['loggedin'])) {
                     }
                     ?>
                     </table>
-                <input type="submit" value="Save" name="btnsave" class="btn-primary">
+                <!--input type="submit" value="Save" name="btnsave" class="btn-primary"-->
             </form>
             <br><br><br><br>
         </div>
