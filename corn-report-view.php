@@ -748,8 +748,9 @@ if (!isset($_SESSION['loggedin'])) {
                     $result = mysqli_query($con, $sql);
                     
                     if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
                         while($row = mysqli_fetch_assoc($result)) {
-                            $i = 1;
+                            $i++;
 
                     ?>
                     <tr>
@@ -802,7 +803,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </td>
                     <?php
                     
-                        }$i++;
+                        }
                     }
                     ?>
                     </table>
