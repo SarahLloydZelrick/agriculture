@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
@@ -24,7 +25,7 @@ if (!isset($_SESSION['loggedin'])) {
         border: 1px solid black;
         border-collapse: collapse;
         padding:10px;
-        background-color:#d7d8d9;
+        /*background-color:#d7d8d9;*/
     }
     .wbrgy{
         width:150px;
@@ -1371,7 +1372,7 @@ if (!isset($_SESSION['loggedin'])) {
                         </td>
                     </tr>
                 </table>
-                <input type="submit" value="Save" name="btnsave" class="btn-primary-s">
+                <input type="submit" value="Save" name="btnsave" class="btn-primary">
             </form>
             <br><br><br><br>
         </div>
