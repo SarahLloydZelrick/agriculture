@@ -166,11 +166,12 @@ if (!isset($_SESSION['loggedin'])) {
                         <td rowspan="1">Area Planted(ha)</td>
                         
                     </tr>
+                    <!-- 1 -->
                     <tr>
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay1" id="" value="Candelaria" readonly>
+                            <input type="text" class="form-input" name="barangay1" id="" value="Poblacion" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -213,11 +214,12 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="number" class="form-input" name="grandtotal1" id="" value="">
                         </td>
                     </tr>
+                    <!-- 2 -->
                     <tr>
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input" name="barangay2" id="" value="Candelaria" readonly>
+                            <input type="text" class="form-input" name="barangay2" id="" value="Buenavista East" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
@@ -258,6 +260,1110 @@ if (!isset($_SESSION['loggedin'])) {
                         <!-- GRAND TOTAL TOTAL -->
                         <td>
                             <input type="number" class="form-input" name="grandtotal2" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 3 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay3" id="" value="Buenavista West" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer3" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow3" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite3" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal3" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow3" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite3" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal3" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow3" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite3" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal3" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 4 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay4" id="" value="Bukal Norte" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer4" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow4" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite4" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal4" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow4" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite4" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal4" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow4" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite4" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal4" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 5 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay5" id="" value="Bukal Sur" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer5" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow5" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite5" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal5" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow5" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite5" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal5" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow5" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite5" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal5" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 6 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay6" id="" value="Kinatihan I" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer6" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow6" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite6" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal6" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow6" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite6" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal6" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow6" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite6" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal6" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 7 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay7" id="" value="Kinatihan II" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer7" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow7" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite7" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal7" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow7" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite7" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal7" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow7" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite7" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal7" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 8 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay8" id="" value="Malabanban Norte" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer8" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow8" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite8" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal8" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow8" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite8" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal8" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow8" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite8" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal8" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 9 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay9" id="" value="Malabanban Sur" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer9" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow9" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite9" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal9" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow9" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite9" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal9" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow9" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite9" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal9" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 10 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay10" id="" value="Mangilag Norte" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer10" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow10" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite10" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal10" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow10" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite10" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal10" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow10" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite10" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal10" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 11 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay11" id="" value="Mangilag Sur" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer11" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow11" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite11" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal11" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow11" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite11" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal11" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow11" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite11" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal11" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 12 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay12" id="" value="Masalukot I" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer12" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow12" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite12" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal12" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow12" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite12" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal12" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow12" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite12" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal12" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 13 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay13" id="" value="Masalukot II" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer13" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow13" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite13" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal13" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow13" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite13" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal13" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow13" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite13" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal13" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 14 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay14" id="" value="Masalukot III" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer14" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow14" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite14" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal14" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow14" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite14" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal14" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow14" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite14" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal14" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 15 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay15" id="" value="Masalukot IV" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer15" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow15" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite15" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal15" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow15" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite15" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal15" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow15" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite15" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal15" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 16 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay16" id="" value="Masalukot V" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer16" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow16" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite16" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal16" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow16" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite16" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal16" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow16" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite16" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal16" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 17 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay17" id="" value="Masin Norte" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer17" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow17" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite17" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal17" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow17" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite17" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal17" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow17" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite17" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal17" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 18 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay18" id="" value="Masin Sur" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer18" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow18" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite18" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal18" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow18" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite18" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal18" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow18" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite18" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal18" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 19 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay19" id="" value="Mayabobo" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer19" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow19" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite19" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal19" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow19" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite19" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal19" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow19" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite19" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal19" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 20 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay20" id="" value="Pahinga Norte" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer20" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow20" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite20" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal20" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow20" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite20" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal20" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow20" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite20" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal20" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 21 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay21" id="" value="Pahinga Sur" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer21" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow21" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite21" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal21" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow21" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite21" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal21" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow21" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite21" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal21" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 22 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay22" id="" value="San Andres" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer22" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow22" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite22" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal22" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow22" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite22" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal22" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow22" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite22" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal22" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 23 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay23" id="" value="San Isidro" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer23" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow23" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite23" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal23" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow23" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite23" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal23" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow23" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite23" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal23" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 24 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay24" id="" value="Sta. Catalina Norte" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer24" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow24" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite24" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal24" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow24" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite24" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal24" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow24" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite24" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal24" id="" value="">
+                        </td>
+                    </tr>
+                    <!-- 25 -->
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay25" id="" value="Sta. Catalina Sur" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer25" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow25" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite25" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal25" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow25" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite25" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal25" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow25" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite25" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal25" id="" value="">
                         </td>
                     </tr>
                 </table>
