@@ -92,7 +92,7 @@ if (!isset($_SESSION['loggedin'])) {
                         $error_message = "Error submitting the form. Please try again.";
                     }
                 }else{
-                    echo "test2";
+                    //echo "test2";
                 }
 
 
@@ -103,6 +103,7 @@ if (!isset($_SESSION['loggedin'])) {
     ?>
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
+        <br>
         <div class="flex flex-col gap-2">
             <form method="POST" action="" class="flex flex-col gap-2">
                 <table style="width:100%">
@@ -135,7 +136,7 @@ if (!isset($_SESSION['loggedin'])) {
                         
                     </tr>
                     <tr>
-                        <td rowspan="1">Area Planted(ha)></td>
+                        <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
