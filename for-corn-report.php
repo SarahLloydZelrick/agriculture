@@ -45,62 +45,20 @@ if (!isset($_SESSION['loggedin'])) {
         if (isset($_POST['btnsave'] )) {
             $geocode = "";
             $barangay1 = $_POST['barangay1'];
-            if($_POST['nooffarmer1'] = ""){
-                $nooffarmer1 = 0;
-            }else{
-                $nooffarmer1 = $_POST['nooffarmer1'];
-            }
-            if($_POST['hybridyellow1'] = ""){
-                $hybridyellow1 = 0;
-            }else{
-                $hybridyellow1 = $_POST['hybridyellow1'];
-            }
-            if($_POST['hybridwhite1'] = ""){
-                $hybridwhite1 = 0;
-            }else{
-                $hybridwhite1 = $_POST['hybridwhite1'];
-            }
-            if($_POST['hybridtotal1'] = ""){
-                $hybridtotal1 = 0;
-            }else{
-                $hybridtotal1 = $_POST['hybridtotal1'];
-            }
-            if($_POST['opvyellow1'] = ""){
-                $opvyellow1 = 0;
-            }else{
-                $opvyellow1 = $_POST['opvyellow1'];
-            }
-            if($_POST['opvwhite1'] = ""){
-                $opvwhite1 = 0;
-            }else{
-                $opvwhite1 = $_POST['opvwhite1'];
-            }
-            if($_POST['opvtotal1'] = ""){
-                $opvtotal1 = 0;
-            }else{
-                $opvtotal1 = $_POST['opvtotal1'];
-            }
-            if($_POST['grandyellow1'] = ""){
-                $grandyellow1 = 0;
-            }else{
-                $grandyellow1 = $_POST['grandyellow1'];
-            }
-            if($_POST['grandwhite1'] = ""){
-                $grandwhite1 = 0;
-            }else{
-                $grandwhite1 = $_POST['grandwhite1'];
-            }
-            if($_POST['grandtotal1'] = ""){
-                $grandtotal1 = 0;
-            }else{
-                $grandtotal1 = $_POST['grandtotal1'];
-            }
-            if($_POST['nooffarmer2'] = ""){
-                $nooffarmer2 = 0;
-            }else{
-                $nooffarmer2 = $_POST['nooffarmer2'];
-            }
-            if($_POST['nooffarmer1'] != "" || $_POST['nooffarmer1'] != "0")
+            $nooffarmer1 = $_POST['nooffarmer1'];
+            $hybridyellow1 = $_POST['hybridyellow1'];
+            $hybridwhite1 = $_POST['hybridwhite1'];
+            $hybridtotal1 = $_POST['hybridtotal1'];
+            $opvyellow1 = $_POST['opvyellow1'];
+            $opvwhite1 = $_POST['opvwhite1'];
+            $opvtotal1 = $_POST['opvtotal1'];
+            $grandyellow1 = $_POST['grandyellow1'];
+            $grandwhite1 = $_POST['grandwhite1'];
+            $grandtotal1 = $_POST['grandtotal1'];
+    
+            $nooffarmer2 = $_POST['nooffarmer2'];
+
+            if($nooffarmer1 != "" || $nooffarmer1 != "0")
                 {
                 $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
                 VALUES ('".$reporttype."','".$geocode."','".$barangay1."','".$nooffarmer1."','".$hybridyellow1."','".$hybridwhite1."','".$hybridtotal1."','".$opvyellow1."','".$opvwhite1."','".$opvtotal1."','".$grandyellow1."','".$grandwhite1."','".$grandtotal1."','".$fromdate."','".$todate."')";
@@ -112,7 +70,7 @@ if (!isset($_SESSION['loggedin'])) {
                         $error_message = "Error submitting the form. Please try again.";
                     }
                 }
-            if($nooffarmer2 != "0")
+            if($nooffarmer2 != "" || $nooffarmer2 != "0")
                 {
                 $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
                 VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$nooffarmer1."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
