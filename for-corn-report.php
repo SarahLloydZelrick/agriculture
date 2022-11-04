@@ -56,7 +56,17 @@ if (!isset($_SESSION['loggedin'])) {
             $grandwhite1 = $_POST['grandwhite1'];
             $grandtotal1 = $_POST['grandtotal1'];
     
+            $barangay2 = $_POST['barangay2'];
             $nooffarmer2 = $_POST['nooffarmer2'];
+            $hybridyellow2 = $_POST['hybridyellow2'];
+            $hybridwhite2 = $_POST['hybridwhite2'];
+            $hybridtotal2 = $_POST['hybridtotal2'];
+            $opvyellow2 = $_POST['opvyellow2'];
+            $opvwhite2 = $_POST['opvwhite2'];
+            $opvtotal2 = $_POST['opvtotal2'];
+            $grandyellow2 = $_POST['grandyellow2'];
+            $grandwhite2 = $_POST['grandwhite2'];
+            $grandtotal2 = $_POST['grandtotal2'];
 
             if($nooffarmer1 != "" || $nooffarmer1 != "0")
                 {
