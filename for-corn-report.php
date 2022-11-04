@@ -112,7 +112,7 @@ if (!isset($_SESSION['loggedin'])) {
                         $error_message = "Error submitting the form. Please try again.";
                     }
                 }
-            if($_POST['nooffarmer2'] != "" || $_POST['nooffarmer2'] != "0")
+            if($nooffarmer2 != "0")
                 {
                 $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
                 VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$nooffarmer1."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
@@ -123,6 +123,8 @@ if (!isset($_SESSION['loggedin'])) {
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
                     }
+                }else{
+                    
                 }
 
 
