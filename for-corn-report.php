@@ -95,6 +95,11 @@ if (!isset($_SESSION['loggedin'])) {
             }else{
                 $grandtotal1 = $_POST['grandtotal1'];
             }
+            if($_POST['nooffarmer2'] = ""){
+                $nooffarmer2 = 0;
+            }else{
+                $nooffarmer2 = $_POST['nooffarmer2'];
+            }
             if($_POST['nooffarmer1'] != "" || $_POST['nooffarmer1'] != "0")
                 {
                 $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
