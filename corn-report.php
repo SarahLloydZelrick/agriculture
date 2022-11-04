@@ -16,7 +16,7 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="css/style.css" />	  
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <title>Corm Report</title>
+    <title>Corn Report</title>
 
 </head>
 <body>

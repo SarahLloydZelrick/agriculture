@@ -21,7 +21,7 @@ if($_GET["type"] == "view"){
     <link rel="stylesheet" href="css/style.css" />	  
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-    <title>Corm Report</title>
+    <title>Add Corn Report</title>
 
 </head>
 <style>
