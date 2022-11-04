@@ -801,8 +801,8 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="number" class="form-input" name="grandtotal1" id="" value="<?php echo $row["grandtotal"]; ?>">
                         </td>
                     <?php
-                    $i++;
-                        }
+                    
+                        }$i++;
                     }
                     ?>
                     </table>
