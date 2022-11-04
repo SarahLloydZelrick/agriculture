@@ -70,18 +70,18 @@ if (!isset($_SESSION['loggedin'])) {
                         $error_message = "Error submitting the form. Please try again.";
                     }
                 }
-            if($nooffarmer2 != "" || $nooffarmer2 != "0")
+            if($nooffarmer2 = "" || $nooffarmer2 = "0")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$nooffarmer1."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
-                    if(mysqli_query($con, $sql)){
-                        $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
-                    } else{
-                        $errors = "1";
-                        $error_message = "Error submitting the form. Please try again.";
-                    }
                 }else{
+                    $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
+                    VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$nooffarmer1."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
+                        if(mysqli_query($con, $sql)){
+                            $success = "1";
+                            $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        } else{
+                            $errors = "1";
+                            $error_message = "Error submitting the form. Please try again.";
+                        }
                     
                 }
 
