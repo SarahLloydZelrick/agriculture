@@ -26,29 +26,31 @@ if (!isset($_SESSION['loggedin'])) {
 
     ?>
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
-        <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
-        <div class="flex flex-col gap-2">
-            <form type="get" action="for-corn-report.php" class="flex flex-col gap-2">
-                <div class="flex flex-row">
-                    <div class="flex flex-col">
-                        <label>Date To:</label>
-                        <input type="date" name="dateto" id="" value="" class="form-input">
-                    </div>
-                    <div class="flex flex-col">
-                        <label>Date From:</label>
-                        <input type="date" name="datefrom" id="" value="" class="form-input">
-                    </div>
+        <div class="flex justify-center">
+            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 w-4/5 gap-5">
+                <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
+                <div class="flex flex-col gap-2">
+                    <form type="get" action="for-corn-report.php" class="flex flex-col gap-2">
+                        <div class="flex flex-row gap-5">
+                            <div class="flex flex-col">
+                                <label>Date To:</label>
+                                <input type="date" name="dateto" id="" value="" class="form-input">
+                            </div>
+                            <div class="flex flex-col">
+                                <label>Date From:</label>
+                                <input type="date" name="datefrom" id="" value="" class="form-input">
+                            </div>
+                        </div>
+                        <label for="">Report Type</label>
+                        <select name="type" id="" class="form-input">
+                            <option value="add">Add new</option>
+                            <option value="view">View</option>
+                        </select>
+                        <input type="submit" name="btnsubmit" value="Submit" class="btn-primary">
+                    </form>
                 </div>
-                <label for="">Report Type</label>
-                <select name="type" id="" class="form-input">
-                    <option value="add">Add new</option>
-                    <option value="view">View</option>
-                </select>
-                <input type="submit" name="btnsubmit" value="Submit" class="btn-primary">
-            </form>
+            </div>
         </div>
-
-    
         <?php
             include "footer.php";
         ?>
