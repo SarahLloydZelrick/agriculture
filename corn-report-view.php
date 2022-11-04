@@ -7,10 +7,6 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
-if($_GET["type"] == "view"){
-    header("Location: corn-report-view.php?dateto=".$_GET['dateto']."&datefrom=".$_GET['datefrom']."");
-	exit;
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -762,11 +758,11 @@ if($_GET["type"] == "view"){
                         </td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input wbrgy" name="barangay<?php $i;?>" id="" value="<?php echo $row["barangay"]; ?>" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="" value="<?php echo $row["barangay"]; ?>" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
-                            <input type="number" class="form-input" name="nooffarmer<?php $i;?>" id="" value="<?php echo $row["nooffarmers"]; ?>">
+                            <input type="number" class="form-input" name="nooffarmer<?php echo $i;?>" id="" value="<?php echo $row["nooffarmers"]; ?>">
                         </td>
                         <!-- HYBRID YELLOW -->
                         <td>
