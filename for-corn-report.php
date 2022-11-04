@@ -24,6 +24,7 @@ if (!isset($_SESSION['loggedin'])) {
         border: 1px solid black;
         border-collapse: collapse;
         padding:10px;
+        background-color:#d7d8d9;
     }
     
 </style>
@@ -1369,6 +1370,7 @@ if (!isset($_SESSION['loggedin'])) {
                 </table>
                 <input type="submit" value="Save" name="btnsave" class="btn-primary-s">
             </form>
+            <br><br><br><br>
         </div>
 
     
