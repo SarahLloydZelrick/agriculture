@@ -763,43 +763,43 @@ if (!isset($_SESSION['loggedin'])) {
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
-                            <input type="number" class="form-input" name="nooffarmer<?php echo $i;?>" id="" value="<?php echo $row["nooffarmers"]; ?>">
+                            <input type="number" class="form-input" name="nooffarmer<?php echo $i;?>" id="" value="<?php echo $row["nooffarmers"]; ?>" disabled>
                         </td>
                         <!-- HYBRID YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="hybridyellow1" id="" value="<?php echo $row["hybridyellow"]; ?>">
+                            <input type="number" class="form-input" name="hybridyellow1" id="" value="<?php echo $row["hybridyellow"]; ?>" disabled>
                         </td>
                         <!-- HYBRID WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="hybridwhite1" id="" value="<?php echo $row["hybridwhite"]; ?>">
+                            <input type="number" class="form-input" name="hybridwhite1" id="" value="<?php echo $row["hybridwhite"]; ?>" disabled>
                         </td>
                         <!-- HYBRID TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="hybridtotal1" id="" value="<?php echo $row["hybridtotal"]; ?>">
+                            <input type="number" class="form-input" name="hybridtotal1" id="" value="<?php echo $row["hybridtotal"]; ?>" disabled>
                         </td>
                         <!-- OPV YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="opvyellow1" id="" value="<?php echo $row["opvyellow"]; ?>">
+                            <input type="number" class="form-input" name="opvyellow1" id="" value="<?php echo $row["opvyellow"]; ?>" disabled>
                         </td>
                         <!-- OPV WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="opvwhite1" id="" value="<?php echo $row["opvwhite"]; ?>">
+                            <input type="number" class="form-input" name="opvwhite1" id="" value="<?php echo $row["opvwhite"]; ?>" disabled>
                         </td>
                         <!-- OPV TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="opvtotal1" id="" value="<?php echo $row["opvtotal"]; ?>">
+                            <input type="number" class="form-input" name="opvtotal1" id="" value="<?php echo $row["opvtotal"]; ?>" disabled>
                         </td>
                         <!-- GRAND TOTAL YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="grandyellow1" id="" value="<?php echo $row["grandyellow"]; ?>">
+                            <input type="number" class="form-input" name="grandyellow1" id="" value="<?php echo $row["grandyellow"]; ?>" disabled>
                         </td>
                         <!-- GRAND TOTAL WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="grandwhite1" id="" value="<?php echo $row["grandwhite"]; ?>">
+                            <input type="number" class="form-input" name="grandwhite1" id="" value="<?php echo $row["grandwhite"]; ?>" disabled>
                         </td>
                         <!-- GRAND TOTAL TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="grandtotal1" id="" value="<?php echo $row["grandtotal"]; ?>">
+                            <input type="number" class="form-input" name="grandtotal1" id="" value="<?php echo $row["grandtotal"]; ?>" disabled>
                         </td>
                     <?php
                     
