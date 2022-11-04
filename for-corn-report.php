@@ -7,6 +7,10 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
+if($_GET["type"] = "view"){
+    header("Location: corn-report-view.php?dateto='".$_GET['dateto']."'&datefrom='".$_GET['datefrom']."'");
+	exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
