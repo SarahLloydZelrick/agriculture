@@ -31,13 +31,14 @@ if (!isset($_SESSION['loggedin'])) {
     <?php
         include "navbar.php";
         include "topbar.php";
+        include "config.php";
 
         $reporttype = "CornPlanting";
         $todate = $_GET['dateto'];
         $fromdate = $_GET['datefrom'];
 
         if (isset($_POST['btnsave'] )) {
-            $geocode = $_POST['geocode'];
+            $geocode = "";
             $barangay1 = $_POST['barangay1'];
             if($_POST['nooffarmer1'] = ""){
                 $nooffarmer1 = 0;
@@ -89,6 +90,34 @@ if (!isset($_SESSION['loggedin'])) {
             }else{
                 $grandtotal1 = $_POST['grandtotal1'];
             }
+            if($_POST['nooffarmer1'] != "" || $_POST['nooffarmer1'] != "0")
+                {
+                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
+                VALUES ('".$reporttype."','".$geocode."','".$barangay1."','".$hybridyellow1."','".$hybridwhite1."','".$hybridtotal1."','".$opvyellow1."','".$opvwhite1."','".$opvtotal1."','".$grandyellow1."','".$grandwhite1."','".$grandtotal1."','".$fromdate."','".$todate."')";
+                    if(mysqli_query($con, $sql)){
+                        $success = "1";
+                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                    } else{
+                        $errors = "1";
+                        $error_message = "Error submitting the form. Please try again.";
+                    }
+                }
+            if($_POST['nooffarmer2'] != "" || $_POST['nooffarmer2'] != "0")
+                {
+                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
+                VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
+                    if(mysqli_query($con, $sql)){
+                        $success = "1";
+                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                    } else{
+                        $errors = "1";
+                        $error_message = "Error submitting the form. Please try again.";
+                    }
+                }
+
+
+
+
         }
 
     ?>
@@ -129,10 +158,10 @@ if (!isset($_SESSION['loggedin'])) {
                         <td rowspan="1">Area Planted(ha)></td>
                         <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
-                        <td rowspan="1">Area Planted(ha)></td>
                         <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
-                        <td rowspan="1">Area Planted(ha)></td>
+                        <td rowspan="1">Area Planted(ha)</td>
+                        <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
                         <td rowspan="1">Area Planted(ha)</td>
                         
@@ -145,43 +174,90 @@ if (!isset($_SESSION['loggedin'])) {
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
-                            <input type="number" class="form-input" name="nooffarmer1" id="" value="0">
+                            <input type="number" class="form-input" name="nooffarmer1" id="" value="">
                         </td>
                         <!-- HYBRID YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="hybridyellow1" id="" value="0">
+                            <input type="number" class="form-input" name="hybridyellow1" id="" value="">
                         </td>
                         <!-- HYBRID WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="hybridwhite1" id="" value="0">
+                            <input type="number" class="form-input" name="hybridwhite1" id="" value="">
                         </td>
                         <!-- HYBRID TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="hybridtotal1" id="" value="0">
+                            <input type="number" class="form-input" name="hybridtotal1" id="" value="">
                         </td>
                         <!-- OPV YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="opvyellow1" id="" value="0">
+                            <input type="number" class="form-input" name="opvyellow1" id="" value="">
                         </td>
                         <!-- OPV WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="opvwhite1" id="" value="0">
+                            <input type="number" class="form-input" name="opvwhite1" id="" value="">
                         </td>
                         <!-- OPV TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="opvtotal1" id="" value="0">
+                            <input type="number" class="form-input" name="opvtotal1" id="" value="">
                         </td>
                         <!-- GRAND TOTAL YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="grandyellow1" id="" value="0">
+                            <input type="number" class="form-input" name="grandyellow1" id="" value="">
                         </td>
                         <!-- GRAND TOTAL WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="grandwhite1" id="" value="0">
+                            <input type="number" class="form-input" name="grandwhite1" id="" value="">
                         </td>
                         <!-- GRAND TOTAL TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="grandtotal1" id="" value="0">
+                            <input type="number" class="form-input" name="grandtotal1" id="" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <!-- BARANGAY -->
+                        <td>
+                            <input type="text" class="form-input" name="barangay2" id="" value="Candelaria" readonly>
+                        </td>
+                        <!-- NUMBER OF FARMER -->
+                        <td>
+                            <input type="number" class="form-input" name="nooffarmer2" id="" value="">
+                        </td>
+                        <!-- HYBRID YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridyellow2" id="" value="">
+                        </td>
+                        <!-- HYBRID WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridwhite2" id="" value="">
+                        </td>
+                        <!-- HYBRID TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="hybridtotal2" id="" value="">
+                        </td>
+                        <!-- OPV YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="opvyellow2" id="" value="">
+                        </td>
+                        <!-- OPV WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="opvwhite2" id="" value="">
+                        </td>
+                        <!-- OPV TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="opvtotal2" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL YELLOW -->
+                        <td>
+                            <input type="number" class="form-input" name="grandyellow2" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL WHITE -->
+                        <td>
+                            <input type="number" class="form-input" name="grandwhite2" id="" value="">
+                        </td>
+                        <!-- GRAND TOTAL TOTAL -->
+                        <td>
+                            <input type="number" class="form-input" name="grandtotal2" id="" value="">
                         </td>
                     </tr>
                 </table>
