@@ -34,11 +34,11 @@ if (!isset($_SESSION['loggedin'])) {
                         <div class="flex flex-row gap-5">
                             <div class="flex flex-col">
                                 <label>Date To:</label>
-                                <input type="date" name="dateto" id="" value="" class="form-input">
+                                <input type="date" name="dateto" id="" value="" class="form-input" required>
                             </div>
                             <div class="flex flex-col">
                                 <label>Date From:</label>
-                                <input type="date" name="datefrom" id="" value="" class="form-input">
+                                <input type="date" name="datefrom" id="" value="" class="form-input" required>
                             </div>
                         </div>
                         <label for="">Report Type</label>
