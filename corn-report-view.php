@@ -86,6 +86,8 @@ function hide() {
                 $grandwhite[$i] = "grandwhite".$i;
                 $grandtotal[$i] = "grandtotal".$i;
 
+                echo $reportid[$i];
+/*
                 if($nooffarmer.$i != "" || $nooffarmer.$i != "0")
                 {
                 $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer.$i."',`hybridyellow`='".$hybridyellow.$i."',`hybridwhite`='".$hybridwhite.$i."',`hybridtotal`='".$hybridtotal.$i."',`opvyellow`='".$opvyellow.$i."',`opvwhite`='".$opvwhite.$i."',`opvtotal`='".$opvtotal.$i."',`grandyellow`='".$grandyellow.$i."',`grandwhite`='".$grandwhite.$i."',`grandtotal`='".$grandtotal.$i."' WHERE `id` = '".$reportid.$i."'";
@@ -96,7 +98,7 @@ function hide() {
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
                     }
-                }
+                }*/
             }   
         
             
