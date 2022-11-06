@@ -1,5 +1,5 @@
 <?php
-ini_set('display_errors', 1);
+//ini_set('display_errors', 1);
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
@@ -203,6 +203,214 @@ function hide() {
             $grandwhite9 = $_POST['grandwhite9'];
             $grandtotal9 = $_POST['grandtotal9'];
 
+            $reportid10 = $_POST['reportid10'];
+            $barangay10 = $_POST['barangay10'];
+            $nooffarmer10 = $_POST['nooffarmer10'];
+            $hybridyellow10 = $_POST['hybridyellow10'];
+            $hybridwhite10 = $_POST['hybridwhite10'];
+            $hybridtotal10 = $_POST['hybridtotal10'];
+            $opvyellow10 = $_POST['opvyellow10'];
+            $opvwhite10 = $_POST['opvwhite10'];
+            $opvtotal10 = $_POST['opvtotal10'];
+            $grandyellow10 = $_POST['grandyellow10'];
+            $grandwhite10 = $_POST['grandwhite10'];
+            $grandtotal10 = $_POST['grandtotal10'];
+
+            $reportid11 = $_POST['reportid11'];
+            $barangay11 = $_POST['barangay11'];
+            $nooffarmer11 = $_POST['nooffarmer11'];
+            $hybridyellow11 = $_POST['hybridyellow11'];
+            $hybridwhite11 = $_POST['hybridwhite11'];
+            $hybridtotal11 = $_POST['hybridtotal11'];
+            $opvyellow11 = $_POST['opvyellow11'];
+            $opvwhite11 = $_POST['opvwhite11'];
+            $opvtotal11 = $_POST['opvtotal11'];
+            $grandyellow11 = $_POST['grandyellow11'];
+            $grandwhite11 = $_POST['grandwhite11'];
+            $grandtotal11 = $_POST['grandtotal11'];
+
+            $reportid12 = $_POST['reportid12'];
+            $barangay12 = $_POST['barangay12'];
+            $nooffarmer12 = $_POST['nooffarmer12'];
+            $hybridyellow12 = $_POST['hybridyellow12'];
+            $hybridwhite12 = $_POST['hybridwhite12'];
+            $hybridtotal12 = $_POST['hybridtotal12'];
+            $opvyellow12 = $_POST['opvyellow12'];
+            $opvwhite12 = $_POST['opvwhite12'];
+            $opvtotal12 = $_POST['opvtotal12'];
+            $grandyellow12 = $_POST['grandyellow12'];
+            $grandwhite12 = $_POST['grandwhite12'];
+            $grandtotal12 = $_POST['grandtotal12'];
+
+            $reportid13 = $_POST['reportid13'];
+            $barangay13 = $_POST['barangay13'];
+            $nooffarmer13 = $_POST['nooffarmer13'];
+            $hybridyellow13 = $_POST['hybridyellow13'];
+            $hybridwhite13 = $_POST['hybridwhite13'];
+            $hybridtotal13 = $_POST['hybridtotal13'];
+            $opvyellow13 = $_POST['opvyellow13'];
+            $opvwhite13 = $_POST['opvwhite13'];
+            $opvtotal13 = $_POST['opvtotal13'];
+            $grandyellow13 = $_POST['grandyellow13'];
+            $grandwhite13 = $_POST['grandwhite13'];
+            $grandtotal13 = $_POST['grandtotal13'];
+
+            $reportid14 = $_POST['reportid14'];
+            $barangay14 = $_POST['barangay14'];
+            $nooffarmer14 = $_POST['nooffarmer14'];
+            $hybridyellow14 = $_POST['hybridyellow14'];
+            $hybridwhite14 = $_POST['hybridwhite14'];
+            $hybridtotal14 = $_POST['hybridtotal14'];
+            $opvyellow14 = $_POST['opvyellow14'];
+            $opvwhite14 = $_POST['opvwhite14'];
+            $opvtotal14 = $_POST['opvtotal14'];
+            $grandyellow14 = $_POST['grandyellow14'];
+            $grandwhite14 = $_POST['grandwhite14'];
+            $grandtotal14 = $_POST['grandtotal14'];
+
+            $reportid15 = $_POST['reportid15'];
+            $barangay15 = $_POST['barangay15'];
+            $nooffarmer15 = $_POST['nooffarmer15'];
+            $hybridyellow15 = $_POST['hybridyellow15'];
+            $hybridwhite15 = $_POST['hybridwhite15'];
+            $hybridtotal15 = $_POST['hybridtotal15'];
+            $opvyellow15 = $_POST['opvyellow15'];
+            $opvwhite15 = $_POST['opvwhite15'];
+            $opvtotal15 = $_POST['opvtotal15'];
+            $grandyellow15 = $_POST['grandyellow15'];
+            $grandwhite15 = $_POST['grandwhite15'];
+            $grandtotal15 = $_POST['grandtotal15'];
+
+            $reportid16 = $_POST['reportid16'];
+            $barangay16 = $_POST['barangay16'];
+            $nooffarmer16 = $_POST['nooffarmer16'];
+            $hybridyellow16 = $_POST['hybridyellow16'];
+            $hybridwhite16 = $_POST['hybridwhite16'];
+            $hybridtotal16 = $_POST['hybridtotal16'];
+            $opvyellow16 = $_POST['opvyellow16'];
+            $opvwhite16 = $_POST['opvwhite16'];
+            $opvtotal16 = $_POST['opvtotal16'];
+            $grandyellow16 = $_POST['grandyellow16'];
+            $grandwhite16 = $_POST['grandwhite16'];
+            $grandtotal16 = $_POST['grandtotal16'];
+
+            $reportid17 = $_POST['reportid17'];
+            $barangay17 = $_POST['barangay17'];
+            $nooffarmer17 = $_POST['nooffarmer17'];
+            $hybridyellow17 = $_POST['hybridyellow17'];
+            $hybridwhite17 = $_POST['hybridwhite17'];
+            $hybridtotal17 = $_POST['hybridtotal17'];
+            $opvyellow17 = $_POST['opvyellow17'];
+            $opvwhite17 = $_POST['opvwhite17'];
+            $opvtotal17 = $_POST['opvtotal17'];
+            $grandyellow17 = $_POST['grandyellow17'];
+            $grandwhite17 = $_POST['grandwhite17'];
+            $grandtotal17 = $_POST['grandtotal17'];
+
+            $reportid18 = $_POST['reportid18'];
+            $barangay18 = $_POST['barangay18'];
+            $nooffarmer18 = $_POST['nooffarmer18'];
+            $hybridyellow18 = $_POST['hybridyellow18'];
+            $hybridwhite18 = $_POST['hybridwhite18'];
+            $hybridtotal18 = $_POST['hybridtotal18'];
+            $opvyellow18 = $_POST['opvyellow18'];
+            $opvwhite18 = $_POST['opvwhite18'];
+            $opvtotal18 = $_POST['opvtotal18'];
+            $grandyellow18 = $_POST['grandyellow18'];
+            $grandwhite18 = $_POST['grandwhite18'];
+            $grandtotal18 = $_POST['grandtotal18'];
+
+            $reportid19 = $_POST['reportid19'];
+            $barangay19 = $_POST['barangay19'];
+            $nooffarmer19 = $_POST['nooffarmer19'];
+            $hybridyellow19 = $_POST['hybridyellow19'];
+            $hybridwhite19 = $_POST['hybridwhite19'];
+            $hybridtotal19 = $_POST['hybridtotal19'];
+            $opvyellow19 = $_POST['opvyellow19'];
+            $opvwhite19 = $_POST['opvwhite19'];
+            $opvtotal19 = $_POST['opvtotal19'];
+            $grandyellow19 = $_POST['grandyellow19'];
+            $grandwhite19 = $_POST['grandwhite19'];
+            $grandtotal19 = $_POST['grandtotal19'];
+
+            $reportid20 = $_POST['reportid20'];
+            $barangay20 = $_POST['barangay20'];
+            $nooffarmer20 = $_POST['nooffarmer20'];
+            $hybridyellow20 = $_POST['hybridyellow20'];
+            $hybridwhite20 = $_POST['hybridwhite20'];
+            $hybridtotal20 = $_POST['hybridtotal20'];
+            $opvyellow20 = $_POST['opvyellow20'];
+            $opvwhite20 = $_POST['opvwhite20'];
+            $opvtotal20 = $_POST['opvtotal20'];
+            $grandyellow20 = $_POST['grandyellow20'];
+            $grandwhite20 = $_POST['grandwhite20'];
+            $grandtotal20 = $_POST['grandtotal20'];
+
+            $reportid21 = $_POST['reportid21'];
+            $barangay21 = $_POST['barangay21'];
+            $nooffarmer21 = $_POST['nooffarmer21'];
+            $hybridyellow21 = $_POST['hybridyellow21'];
+            $hybridwhite21 = $_POST['hybridwhite21'];
+            $hybridtotal21 = $_POST['hybridtotal21'];
+            $opvyellow21 = $_POST['opvyellow21'];
+            $opvwhite21 = $_POST['opvwhite21'];
+            $opvtotal21 = $_POST['opvtotal21'];
+            $grandyellow21 = $_POST['grandyellow21'];
+            $grandwhite21 = $_POST['grandwhite21'];
+            $grandtotal21 = $_POST['grandtotal21'];
+
+            $reportid22 = $_POST['reportid22'];
+            $barangay22 = $_POST['barangay22'];
+            $nooffarmer22 = $_POST['nooffarmer22'];
+            $hybridyellow22 = $_POST['hybridyellow22'];
+            $hybridwhite22 = $_POST['hybridwhite22'];
+            $hybridtotal22 = $_POST['hybridtotal22'];
+            $opvyellow22 = $_POST['opvyellow22'];
+            $opvwhite22 = $_POST['opvwhite22'];
+            $opvtotal22 = $_POST['opvtotal22'];
+            $grandyellow22 = $_POST['grandyellow22'];
+            $grandwhite22 = $_POST['grandwhite22'];
+            $grandtotal22 = $_POST['grandtotal22'];
+
+            $reportid23 = $_POST['reportid23'];
+            $barangay23 = $_POST['barangay23'];
+            $nooffarmer23 = $_POST['nooffarmer23'];
+            $hybridyellow23 = $_POST['hybridyellow23'];
+            $hybridwhite23 = $_POST['hybridwhite23'];
+            $hybridtotal23 = $_POST['hybridtotal23'];
+            $opvyellow23 = $_POST['opvyellow23'];
+            $opvwhite23 = $_POST['opvwhite23'];
+            $opvtotal23 = $_POST['opvtotal23'];
+            $grandyellow23 = $_POST['grandyellow23'];
+            $grandwhite23 = $_POST['grandwhite23'];
+            $grandtotal23 = $_POST['grandtotal23'];
+
+            $reportid24 = $_POST['reportid24'];
+            $barangay24 = $_POST['barangay24'];
+            $nooffarmer24 = $_POST['nooffarmer24'];
+            $hybridyellow24 = $_POST['hybridyellow24'];
+            $hybridwhite24 = $_POST['hybridwhite24'];
+            $hybridtotal24 = $_POST['hybridtotal24'];
+            $opvyellow24 = $_POST['opvyellow24'];
+            $opvwhite24 = $_POST['opvwhite24'];
+            $opvtotal24 = $_POST['opvtotal24'];
+            $grandyellow24 = $_POST['grandyellow24'];
+            $grandwhite24 = $_POST['grandwhite24'];
+            $grandtotal24 = $_POST['grandtotal24'];
+
+            $reportid25 = $_POST['reportid25'];
+            $barangay25 = $_POST['barangay25'];
+            $nooffarmer25 = $_POST['nooffarmer25'];
+            $hybridyellow25 = $_POST['hybridyellow25'];
+            $hybridwhite25 = $_POST['hybridwhite25'];
+            $hybridtotal25 = $_POST['hybridtotal25'];
+            $opvyellow25 = $_POST['opvyellow25'];
+            $opvwhite25 = $_POST['opvwhite25'];
+            $opvtotal25 = $_POST['opvtotal25'];
+            $grandyellow25 = $_POST['grandyellow25'];
+            $grandwhite25 = $_POST['grandwhite25'];
+            $grandtotal25 = $_POST['grandtotal25'];
+
             
             $sql1 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer1."',`hybridyellow`='".$hybridyellow1."',`hybridwhite`='".$hybridwhite1."',`hybridtotal`='".$hybridtotal1."',`opvyellow`='".$opvyellow1."',`opvwhite`='".$opvwhite1."',`opvtotal`='".$opvtotal1."',`grandyellow`='".$grandyellow1."',`grandwhite`='".$grandwhite1."',`grandtotal`='".$grandtotal1."' WHERE `id` = '".$reportid1."'";
                 if(mysqli_query($con, $sql1)){
@@ -274,6 +482,134 @@ function hide() {
                     $success_message = "Updated successfully.";
                 } else{
                     $errors = "9";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql10 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer10."',`hybridyellow`='".$hybridyellow10."',`hybridwhite`='".$hybridwhite10."',`hybridtotal`='".$hybridtotal10."',`opvyellow`='".$opvyellow10."',`opvwhite`='".$opvwhite10."',`opvtotal`='".$opvtotal10."',`grandyellow`='".$grandyellow10."',`grandwhite`='".$grandwhite10."',`grandtotal`='".$grandtotal10."' WHERE `id` = '".$reportid10."'";
+                if(mysqli_query($con, $sql10)){
+                    $success = "10";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "10";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql11 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer11."',`hybridyellow`='".$hybridyellow11."',`hybridwhite`='".$hybridwhite11."',`hybridtotal`='".$hybridtotal11."',`opvyellow`='".$opvyellow11."',`opvwhite`='".$opvwhite11."',`opvtotal`='".$opvtotal11."',`grandyellow`='".$grandyellow11."',`grandwhite`='".$grandwhite11."',`grandtotal`='".$grandtotal11."' WHERE `id` = '".$reportid11."'";
+                if(mysqli_query($con, $sql11)){
+                    $success = "11";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "11";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql12 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer12."',`hybridyellow`='".$hybridyellow12."',`hybridwhite`='".$hybridwhite12."',`hybridtotal`='".$hybridtotal12."',`opvyellow`='".$opvyellow12."',`opvwhite`='".$opvwhite12."',`opvtotal`='".$opvtotal12."',`grandyellow`='".$grandyellow12."',`grandwhite`='".$grandwhite12."',`grandtotal`='".$grandtotal12."' WHERE `id` = '".$reportid12."'";
+                if(mysqli_query($con, $sql12)){
+                    $success = "12";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "12";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql13 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer13."',`hybridyellow`='".$hybridyellow13."',`hybridwhite`='".$hybridwhite13."',`hybridtotal`='".$hybridtotal13."',`opvyellow`='".$opvyellow13."',`opvwhite`='".$opvwhite13."',`opvtotal`='".$opvtotal13."',`grandyellow`='".$grandyellow13."',`grandwhite`='".$grandwhite13."',`grandtotal`='".$grandtotal13."' WHERE `id` = '".$reportid13."'";
+                if(mysqli_query($con, $sql13)){
+                    $success = "13";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "13";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql14 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer14."',`hybridyellow`='".$hybridyellow14."',`hybridwhite`='".$hybridwhite14."',`hybridtotal`='".$hybridtotal14."',`opvyellow`='".$opvyellow14."',`opvwhite`='".$opvwhite14."',`opvtotal`='".$opvtotal14."',`grandyellow`='".$grandyellow14."',`grandwhite`='".$grandwhite14."',`grandtotal`='".$grandtotal14."' WHERE `id` = '".$reportid14."'";
+                if(mysqli_query($con, $sql14)){
+                    $success = "14";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "14";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql15 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer15."',`hybridyellow`='".$hybridyellow15."',`hybridwhite`='".$hybridwhite15."',`hybridtotal`='".$hybridtotal15."',`opvyellow`='".$opvyellow15."',`opvwhite`='".$opvwhite15."',`opvtotal`='".$opvtotal15."',`grandyellow`='".$grandyellow15."',`grandwhite`='".$grandwhite15."',`grandtotal`='".$grandtotal15."' WHERE `id` = '".$reportid15."'";
+                if(mysqli_query($con, $sql15)){
+                    $success = "15";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "15";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql16 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer16."',`hybridyellow`='".$hybridyellow16."',`hybridwhite`='".$hybridwhite16."',`hybridtotal`='".$hybridtotal16."',`opvyellow`='".$opvyellow16."',`opvwhite`='".$opvwhite16."',`opvtotal`='".$opvtotal16."',`grandyellow`='".$grandyellow16."',`grandwhite`='".$grandwhite16."',`grandtotal`='".$grandtotal16."' WHERE `id` = '".$reportid16."'";
+                if(mysqli_query($con, $sql16)){
+                    $success = "16";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "16";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql17 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer17."',`hybridyellow`='".$hybridyellow17."',`hybridwhite`='".$hybridwhite17."',`hybridtotal`='".$hybridtotal17."',`opvyellow`='".$opvyellow17."',`opvwhite`='".$opvwhite17."',`opvtotal`='".$opvtotal17."',`grandyellow`='".$grandyellow17."',`grandwhite`='".$grandwhite17."',`grandtotal`='".$grandtotal17."' WHERE `id` = '".$reportid17."'";
+                if(mysqli_query($con, $sql17)){
+                    $success = "17";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "17";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql18 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer18."',`hybridyellow`='".$hybridyellow18."',`hybridwhite`='".$hybridwhite18."',`hybridtotal`='".$hybridtotal18."',`opvyellow`='".$opvyellow18."',`opvwhite`='".$opvwhite18."',`opvtotal`='".$opvtotal18."',`grandyellow`='".$grandyellow18."',`grandwhite`='".$grandwhite18."',`grandtotal`='".$grandtotal18."' WHERE `id` = '".$reportid18."'";
+                if(mysqli_query($con, $sql18)){
+                    $success = "18";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "18";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql19 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer19."',`hybridyellow`='".$hybridyellow19."',`hybridwhite`='".$hybridwhite19."',`hybridtotal`='".$hybridtotal19."',`opvyellow`='".$opvyellow19."',`opvwhite`='".$opvwhite19."',`opvtotal`='".$opvtotal19."',`grandyellow`='".$grandyellow19."',`grandwhite`='".$grandwhite19."',`grandtotal`='".$grandtotal19."' WHERE `id` = '".$reportid19."'";
+                if(mysqli_query($con, $sql19)){
+                    $success = "19";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "19";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql20 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer20."',`hybridyellow`='".$hybridyellow20."',`hybridwhite`='".$hybridwhite20."',`hybridtotal`='".$hybridtotal20."',`opvyellow`='".$opvyellow20."',`opvwhite`='".$opvwhite20."',`opvtotal`='".$opvtotal20."',`grandyellow`='".$grandyellow20."',`grandwhite`='".$grandwhite20."',`grandtotal`='".$grandtotal20."' WHERE `id` = '".$reportid20."'";
+                if(mysqli_query($con, $sql20)){
+                    $success = "20";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "20";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql21 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer21."',`hybridyellow`='".$hybridyellow21."',`hybridwhite`='".$hybridwhite21."',`hybridtotal`='".$hybridtotal21."',`opvyellow`='".$opvyellow21."',`opvwhite`='".$opvwhite21."',`opvtotal`='".$opvtotal21."',`grandyellow`='".$grandyellow21."',`grandwhite`='".$grandwhite21."',`grandtotal`='".$grandtotal21."' WHERE `id` = '".$reportid21."'";
+                if(mysqli_query($con, $sql21)){
+                    $success = "21";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "21";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql22 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer22."',`hybridyellow`='".$hybridyellow22."',`hybridwhite`='".$hybridwhite22."',`hybridtotal`='".$hybridtotal22."',`opvyellow`='".$opvyellow22."',`opvwhite`='".$opvwhite22."',`opvtotal`='".$opvtotal22."',`grandyellow`='".$grandyellow22."',`grandwhite`='".$grandwhite22."',`grandtotal`='".$grandtotal22."' WHERE `id` = '".$reportid22."'";
+                if(mysqli_query($con, $sql22)){
+                    $success = "22";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "22";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql23 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer23."',`hybridyellow`='".$hybridyellow23."',`hybridwhite`='".$hybridwhite23."',`hybridtotal`='".$hybridtotal23."',`opvyellow`='".$opvyellow23."',`opvwhite`='".$opvwhite23."',`opvtotal`='".$opvtotal23."',`grandyellow`='".$grandyellow23."',`grandwhite`='".$grandwhite23."',`grandtotal`='".$grandtotal23."' WHERE `id` = '".$reportid23."'";
+                if(mysqli_query($con, $sql23)){
+                    $success = "23";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "23";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql24 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer24."',`hybridyellow`='".$hybridyellow24."',`hybridwhite`='".$hybridwhite24."',`hybridtotal`='".$hybridtotal24."',`opvyellow`='".$opvyellow24."',`opvwhite`='".$opvwhite24."',`opvtotal`='".$opvtotal24."',`grandyellow`='".$grandyellow24."',`grandwhite`='".$grandwhite24."',`grandtotal`='".$grandtotal24."' WHERE `id` = '".$reportid24."'";
+                if(mysqli_query($con, $sql24)){
+                    $success = "24";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "24";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql25 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer25."',`hybridyellow`='".$hybridyellow25."',`hybridwhite`='".$hybridwhite25."',`hybridtotal`='".$hybridtotal25."',`opvyellow`='".$opvyellow25."',`opvwhite`='".$opvwhite25."',`opvtotal`='".$opvtotal25."',`grandyellow`='".$grandyellow25."',`grandwhite`='".$grandwhite25."',`grandtotal`='".$grandtotal25."' WHERE `id` = '".$reportid25."'";
+                if(mysqli_query($con, $sql25)){
+                    $success = "25";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "25";
                     $error_message = "Error updating the form. Please try again.";
                 }
 
