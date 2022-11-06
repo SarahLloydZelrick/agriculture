@@ -169,7 +169,7 @@ function hide() {
                     <tr>
                         <td>
                             <?php echo $row["geocode"]; ?>
-                            <input type="text" name="reportid<?php echo $i?>" value="<?php echo $row[id]; ?>">
+                            <input type="text" name="reportid<?php echo $i?>" value="<?php echo $row["id"]; ?>">
                         </td>
                         <!-- BARANGAY -->
                         <td>
