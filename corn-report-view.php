@@ -70,9 +70,10 @@ function hide() {
         $todate = $_GET['dateto'];
         $fromdate = $_GET['datefrom'];
 
-        if (isset($_POST['btnsave'] )) {
+        if (isset($_POST['btnupdate'] )) {
             $geocode = "";
             for($i = 1; $i<=25; $i++) {
+                $reportid.$i = $_POST['reportid'].$i;
                 $barangay.$i = $_POST['barangay'].$i;
                 $nooffarmer.$i = $_POST['nooffarmer'].$i;
                 $hybridyellow.$i = $_POST['hybridyellow'].$i;
@@ -87,8 +88,7 @@ function hide() {
 
                 if($nooffarmer.$i != "" || $nooffarmer.$i != "0")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay1."','".$nooffarmer1."','".$hybridyellow1."','".$hybridwhite1."','".$hybridtotal1."','".$opvyellow1."','".$opvwhite1."','".$opvtotal1."','".$grandyellow1."','".$grandwhite1."','".$grandtotal1."','".$fromdate."','".$todate."')";
+                $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer.$i."',`hybridyellow`='".$hybridyellow.$i."',`hybridwhite`='".hybridwhite.$i."',`hybridtotal`='".$hybridtotal.$i."',`opvyellow`='".$opvyellow.$i."',`opvwhite`='".$opvwhite.$i."',`opvtotal`='".$opvtotal.$i."',`grandyellow`='".$grandyellow.$i."',`grandwhite`='".$grandwhite.$i."',`grandtotal`='".$grandtotal.$i."' WHERE `id` = '".$reportid.$i."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
                         $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
@@ -98,7 +98,7 @@ function hide() {
                     }
                 }
             }   
-            //UPDATE `tbl_reports` SET `id`=[value-1],`reportype`=[value-2],`geocode`=[value-3],`barangay`=[value-4],`nooffarmers`=[value-5],`hybridyellow`=[value-6],`hybridwhite`=[value-7],`hybridtotal`=[value-8],`opvyellow`=[value-9],`opvwhite`=[value-10],`opvtotal`=[value-11],`grandyellow`=[value-12],`grandwhite`=[value-13],`grandtotal`=[value-14],`fromdate`=[value-15],`todate`=[value-16] WHERE 1
+        
             
 
 
@@ -169,7 +169,7 @@ function hide() {
                     <tr>
                         <td>
                             <?php echo $row["geocode"]; ?>
-                            <input type="text" name="reportid<?php echo $i?>" value="<?php echo $row["id"]; ?>">
+                            <input type="hidden" name="reportid<?php echo $i?>" value="<?php echo $row["id"]; ?>">
                         </td>
                         <!-- BARANGAY -->
                         <td>
