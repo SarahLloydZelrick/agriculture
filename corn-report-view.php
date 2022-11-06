@@ -86,7 +86,7 @@ function hide() {
                 $grandwhite[$i] = "grandwhite".$i;
                 $grandtotal[$i] = "grandtotal".$i;
 
-                echo $reportid[$i];
+                echo "reportid".$i;
 /*
                 if($nooffarmer.$i != "" || $nooffarmer.$i != "0")
                 {
