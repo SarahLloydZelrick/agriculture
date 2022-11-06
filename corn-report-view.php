@@ -32,6 +32,24 @@ if (!isset($_SESSION['loggedin'])) {
     }
     
 </style>
+<script>
+function show() {
+  var x = document.getElementById("btnview");
+  var y = document.getElementById("btnupdate");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    y.style.display = "none";
+  }
+}
+function hide() {
+  var x = document.getElementById("btnview");
+  var y = document.getElementById("btnupdate");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+    x.style.display = "none";
+  }
+}
+</script>
 <body>
     <?php
         include "navbar.php";
@@ -699,7 +717,8 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <div class="flex flex-row justify-between">
             <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
-            <button class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-2 w-auto icon-blue">Edit</button>
+            <button class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-5 w-auto icon-blue" id="btnupdate" onclick="show()">&nbsp;Edit</button>
+            <button class="fa fa-eye rounded-lg border-2 border-green-500/50 p-5 w-auto icon-green" id="btnview" style="display:none;" onclick="hide()">&nbsp;View</button>
         </div>
         <br>
         <div class="flex flex-col gap-2">
