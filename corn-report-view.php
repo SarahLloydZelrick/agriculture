@@ -697,9 +697,9 @@ if (!isset($_SESSION['loggedin'])) {
 
     ?>
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
-        <div class="flex flex-row">
+        <div class="flex flex-row justify-between">
             <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
-            <button class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue">Edit</button>
+            <button class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-2 w-auto icon-blue">Edit</button>
         </div>
         <br>
         <div class="flex flex-col gap-2">
