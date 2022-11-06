@@ -73,7 +73,7 @@ function hide() {
         if (isset($_POST['btnupdate'] )) {
             $geocode = "";
             for($i = 1; $i<=25; $i++) {
-                $reportid+$i = "reportid".$i;
+                $reportid[$i] = "reportid".$i;
                 $barangay.$i = "barangay".$i;
                 $nooffarmer.$i = "nooffarmer".$i;
                 $hybridyellow.$i = "hybridyellow".$i;
