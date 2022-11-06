@@ -74,21 +74,21 @@ function hide() {
             $geocode = "";
             for($i = 1; $i<=25; $i++) {
                 $reportid[$i] = "reportid".$i;
-                $barangay.$i = "barangay".$i;
-                $nooffarmer.$i = "nooffarmer".$i;
-                $hybridyellow.$i = "hybridyellow".$i;
-                $hybridwhite.$i = "hybridwhite".$i;
-                $hybridtotal.$i = "hybridtotal".$i;
-                $opvyellow.$i = "opvyellow".$i;
-                $opvwhite.$i = "opvwhite".$i;
-                $opvtotal.$i = "opvtotal".$i;
-                $grandyellow.$i = "grandyellow".$i;
-                $grandwhite.$i = "grandwhite".$i;
-                $grandtotal.$i = "grandtotal".$i;
+                $barangay[$i] = "barangay".$i;
+                $nooffarmer[$i] = "nooffarmer".$i;
+                $hybridyellow[$i] = "hybridyellow".$i;
+                $hybridwhite[$i] = "hybridwhite".$i;
+                $hybridtotal[$i] = "hybridtotal".$i;
+                $opvyellow[$i] = "opvyellow".$i;
+                $opvwhite[$i] = "opvwhite".$i;
+                $opvtotal[$i] = "opvtotal".$i;
+                $grandyellow[$i] = "grandyellow".$i;
+                $grandwhite[$i] = "grandwhite".$i;
+                $grandtotal[$i] = "grandtotal".$i;
 
                 if($nooffarmer.$i != "" || $nooffarmer.$i != "0")
                 {
-                $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer.$i."',`hybridyellow`='".$hybridyellow.$i."',`hybridwhite`='".$hybridwhite.$i."',`hybridtotal`='".$hybridtotal.$i."',`opvyellow`='".$opvyellow.$i."',`opvwhite`='".$opvwhite.$i."',`opvtotal`='".$opvtotal.$i."',`grandyellow`='".$grandyellow.$i."',`grandwhite`='".$grandwhite.$i."',`grandtotal`='".$grandtotal.$i."' WHERE `id` = '".$reportid.$i."'";
+                $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer[$i]."',`hybridyellow`='".$hybridyellow[$i]."',`hybridwhite`='".$hybridwhite[$i]."',`hybridtotal`='".$hybridtotal[$i]."',`opvyellow`='".$opvyellow[$i]."',`opvwhite`='".$opvwhite.$i."',`opvtotal`='".$opvtotal[$i]."',`grandyellow`='".$grandyellow[$i]."',`grandwhite`='".$grandwhite[$i]."',`grandtotal`='".$grandtotal[$i]."' WHERE `id` = '".$reportid[$i]."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
                         $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
