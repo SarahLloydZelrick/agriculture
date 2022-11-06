@@ -73,19 +73,18 @@ function hide() {
         if (isset($_POST['btnupdate'] )) {
             $geocode = "";
             for($i = 1; $i<=25; $i++) {
-                echo "reportid".$i;
-             /*   $reportid.$i = $_POST['reportid'].$i;
-                $barangay.$i = $_POST['barangay'].$i;
-                $nooffarmer.$i = $_POST['nooffarmer'].$i;
-                $hybridyellow.$i = $_POST['hybridyellow'].$i;
-                $hybridwhite.$i = $_POST['hybridwhite'].$i;
-                $hybridtotal.$i = $_POST['hybridtotal'].$i;
-                $opvyellow.$i = $_POST['opvyellow'].$i;
-                $opvwhite.$i = $_POST['opvwhite'].$i;
-                $opvtotal.$i = $_POST['opvtotal'].$i;
-                $grandyellow.$i = $_POST['grandyellow'].$i;
-                $grandwhite.$i = $_POST['grandwhite'].$i;
-                $grandtotal.$i = $_POST['grandtotal'].$i;
+                $reportid.$i = "reportid.$i";
+                $barangay.$i = "barangay.$i";
+                $nooffarmer.$i = "nooffarmer.$i";
+                $hybridyellow.$i = "hybridyellow.$i";
+                $hybridwhite.$i = "hybridwhite".$i;
+                $hybridtotal.$i = "hybridtotal".$i;
+                $opvyellow.$i = "opvyellow".$i;
+                $opvwhite.$i = "opvwhite".$i;
+                $opvtotal.$i = "opvtotal".$i;
+                $grandyellow.$i = "grandyellow".$i;
+                $grandwhite.$i = "grandwhite".$i;
+                $grandtotal.$i = "grandtotal".$i;
 
                 if($nooffarmer.$i != "" || $nooffarmer.$i != "0")
                 {
@@ -98,7 +97,6 @@ function hide() {
                         $error_message = "Error submitting the form. Please try again.";
                     }
                 }
-            */
             }   
         
             
