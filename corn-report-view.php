@@ -36,17 +36,21 @@ if (!isset($_SESSION['loggedin'])) {
 function show() {
   var x = document.getElementById("btnview");
   var y = document.getElementById("btnupdate");
+  var z = document.getElementById("btn_update");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
+    z.style.display = "block";
   }
 }
 function hide() {
   var x = document.getElementById("btnview");
   var y = document.getElementById("btnupdate");
+  var z = document.getElementById("btn_update");
   if (y.style.display === "none") {
     y.style.display = "block";
     x.style.display = "none";
+    z.style.display = "none";
   }
 }
 </script>
@@ -829,7 +833,7 @@ function hide() {
                     }
                     ?>
                     </table>
-                <!--input type="submit" value="Save" name="btnsave" class="btn-primary"-->
+                <input type="submit" value="Update" name="btnupdate" id="btn_update" class="btn-primary" style="display:none;">
             </form>
             <br><br><br><br>
         </div>
