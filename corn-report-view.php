@@ -697,7 +697,10 @@ if (!isset($_SESSION['loggedin'])) {
 
     ?>
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
-        <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
+        <div class="flex flex-row">
+            <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
+            <button class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue">Edit</button>
+        </div>
         <br>
         <div class="flex flex-col gap-2">
             <form method="POST" action="" class="flex flex-col gap-2">
