@@ -37,20 +37,24 @@ function show() {
   var x = document.getElementById("btnview");
   var y = document.getElementById("btnupdate");
   var z = document.getElementById("btn_update");
+  var a = document.getElementByClassName("form-input");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "block";
+    a.disabled = false;
   }
 }
 function hide() {
   var x = document.getElementById("btnview");
   var y = document.getElementById("btnupdate");
   var z = document.getElementById("btn_update");
+  var a = document.getElementByClassName("form-input");
   if (y.style.display === "none") {
     y.style.display = "block";
     x.style.display = "none";
     z.style.display = "none";
+    a.disabled = true;
   }
 }
 </script>
