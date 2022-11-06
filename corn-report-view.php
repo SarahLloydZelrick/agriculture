@@ -37,24 +37,26 @@ function show() {
   var x = document.getElementById("btnview");
   var y = document.getElementById("btnupdate");
   var z = document.getElementById("btn_update");
-  var a = document.getElementsByClassName("form-input");
+  //var a = document.getElementsByClassName("form-input");
   if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "block";
-    a.disabled = false;
+    //a.disabled = false;
+    $('.form-input"').removeAttr('disabled');
   }
 }
 function hide() {
   var x = document.getElementById("btnview");
   var y = document.getElementById("btnupdate");
   var z = document.getElementById("btn_update");
-  var a = document.getElementsByClassName("form-input");
+  //var a = document.getElementsByClassName("form-input");
   if (y.style.display === "none") {
     y.style.display = "block";
     x.style.display = "none";
     z.style.display = "none";
-    a.disabled = true;
+   // a.disabled = true;
+   $('.form-input"').attr('disabled','disabled');
   }
 }
 </script>
