@@ -86,6 +86,7 @@ function hide() {
                 $grandwhite[$i] = "grandwhite".$i;
                 $grandtotal[$i] = "grandtotal".$i;
             }*/
+            $reportid1 = $_POST['reportid1'];
             $barangay1 = $_POST['barangay1'];
             $nooffarmer1 = $_POST['nooffarmer1'];
             $hybridyellow1 = $_POST['hybridyellow1'];
@@ -97,7 +98,8 @@ function hide() {
             $grandyellow1 = $_POST['grandyellow1'];
             $grandwhite1 = $_POST['grandwhite1'];
             $grandtotal1 = $_POST['grandtotal1'];
-    
+            
+            $reportid2 = $_POST['reportid2'];
             $barangay2 = $_POST['barangay2'];
             $nooffarmer2 = $_POST['nooffarmer2'];
             $hybridyellow2 = $_POST['hybridyellow2'];
@@ -110,6 +112,7 @@ function hide() {
             $grandwhite2 = $_POST['grandwhite2'];
             $grandtotal2 = $_POST['grandtotal2'];
 
+            $reportid3 = $_POST['reportid3'];
             $barangay3 = $_POST['barangay3'];
             $nooffarmer3 = $_POST['nooffarmer3'];
             $hybridyellow3 = $_POST['hybridyellow3'];
@@ -122,6 +125,7 @@ function hide() {
             $grandwhite3 = $_POST['grandwhite3'];
             $grandtotal3 = $_POST['grandtotal3'];
 
+            $reportid4 = $_POST['reportid4'];
             $barangay4 = $_POST['barangay4'];
             $nooffarmer4 = $_POST['nooffarmer4'];
             $hybridyellow4 = $_POST['hybridyellow4'];
@@ -134,6 +138,7 @@ function hide() {
             $grandwhite4 = $_POST['grandwhite4'];
             $grandtotal4 = $_POST['grandtotal4'];
 
+            $reportid5 = $_POST['reportid5'];
             $barangay5 = $_POST['barangay5'];
             $nooffarmer5 = $_POST['nooffarmer5'];
             $hybridyellow5 = $_POST['hybridyellow5'];
@@ -146,6 +151,7 @@ function hide() {
             $grandwhite5 = $_POST['grandwhite5'];
             $grandtotal5 = $_POST['grandtotal5'];
 
+            $reportid6 = $_POST['reportid6'];
             $barangay6 = $_POST['barangay6'];
             $nooffarmer6 = $_POST['nooffarmer6'];
             $hybridyellow6 = $_POST['hybridyellow6'];
@@ -158,6 +164,7 @@ function hide() {
             $grandwhite6 = $_POST['grandwhite6'];
             $grandtotal6 = $_POST['grandtotal6'];
 
+            $reportid7 = $_POST['reportid7'];
             $barangay7 = $_POST['barangay7'];
             $nooffarmer7 = $_POST['nooffarmer7'];
             $hybridyellow7 = $_POST['hybridyellow7'];
@@ -170,6 +177,7 @@ function hide() {
             $grandwhite7 = $_POST['grandwhite7'];
             $grandtotal7 = $_POST['grandtotal7'];
 
+            $reportid8 = $_POST['reportid8'];
             $barangay8 = $_POST['barangay8'];
             $nooffarmer8 = $_POST['nooffarmer8'];
             $hybridyellow8 = $_POST['hybridyellow8'];
@@ -182,6 +190,7 @@ function hide() {
             $grandwhite8 = $_POST['grandwhite8'];
             $grandtotal8 = $_POST['grandtotal8'];
 
+            $reportid9 = $_POST['reportid9'];
             $barangay9 = $_POST['barangay9'];
             $nooffarmer9 = $_POST['nooffarmer9'];
             $hybridyellow9 = $_POST['hybridyellow9'];
