@@ -85,17 +85,31 @@ function hide() {
                 $grandyellow[$i] = "grandyellow".$i;
                 $grandwhite[$i] = "grandwhite".$i;
                 $grandtotal[$i] = "grandtotal".$i;
-
-                $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer[$i]."',`hybridyellow`='".$hybridyellow[$i]."',`hybridwhite`='".$hybridwhite[$i]."',`hybridtotal`='".$hybridtotal[$i]."',`opvyellow`='".$opvyellow[$i]."',`opvwhite`='".$opvwhite[$i]."',`opvtotal`='".$opvtotal[$i]."',`grandyellow`='".$grandyellow[$i]."',`grandwhite`='".$grandwhite[$i]."',`grandtotal`='".$grandtotal[$i]."' WHERE `id` = '".$reportid[$i]."'";
-                    if(mysqli_query($con, $sql)){
-                        $success = "1";
-                        $success_message = "Updated successfully.";
-                    } else{
-                        $errors = "1";
-                        $error_message = "Error updating the form. Please try again.";
-                    }
-                
-            }   
+            }
+            $sql1 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer1."',`hybridyellow`='".$hybridyellow1."',`hybridwhite`='".$hybridwhite1."',`hybridtotal`='".$hybridtotal1."',`opvyellow`='".$opvyellow1."',`opvwhite`='".$opvwhite1."',`opvtotal`='".$opvtotal1."',`grandyellow`='".$grandyellow1."',`grandwhite`='".$grandwhite1."',`grandtotal`='".$grandtotal1."' WHERE `id` = '".$reportid1."'";
+                if(mysqli_query($con, $sql1)){
+                    $success = "1";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "1";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql2 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer2."',`hybridyellow`='".$hybridyellow2."',`hybridwhite`='".$hybridwhite2."',`hybridtotal`='".$hybridtotal2."',`opvyellow`='".$opvyellow2."',`opvwhite`='".$opvwhite2."',`opvtotal`='".$opvtotal2."',`grandyellow`='".$grandyellow2."',`grandwhite`='".$grandwhite2."',`grandtotal`='".$grandtotal2."' WHERE `id` = '".$reportid2."'";
+                if(mysqli_query($con, $sql2)){
+                    $success = "2";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "2";
+                    $error_message = "Error updating the form. Please try again.";
+                }
+            $sql3 = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer3."',`hybridyellow`='".$hybridyellow3."',`hybridwhite`='".$hybridwhite3."',`hybridtotal`='".$hybridtotal3."',`opvyellow`='".$opvyellow3."',`opvwhite`='".$opvwhite3."',`opvtotal`='".$opvtotal3."',`grandyellow`='".$grandyellow3."',`grandwhite`='".$grandwhite3."',`grandtotal`='".$grandtotal3."' WHERE `id` = '".$reportid3."'";
+                if(mysqli_query($con, $sql3)){
+                    $success = "3";
+                    $success_message = "Updated successfully.";
+                } else{
+                    $errors = "3";
+                    $error_message = "Error updating the form. Please try again.";
+                }
         
             
 
