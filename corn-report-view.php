@@ -89,10 +89,10 @@ function hide() {
                 $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer[$i]."',`hybridyellow`='".$hybridyellow[$i]."',`hybridwhite`='".$hybridwhite[$i]."',`hybridtotal`='".$hybridtotal[$i]."',`opvyellow`='".$opvyellow[$i]."',`opvwhite`='".$opvwhite[$i]."',`opvtotal`='".$opvtotal[$i]."',`grandyellow`='".$grandyellow[$i]."',`grandwhite`='".$grandwhite[$i]."',`grandtotal`='".$grandtotal[$i]."' WHERE `id` = '".$reportid[$i]."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Updated successfully.";
                     } else{
                         $errors = "1";
-                        $error_message = "Error submitting the form. Please try again.";
+                        $error_message = "Error updating the form. Please try again.";
                     }
                 
             }   
@@ -110,6 +110,24 @@ function hide() {
             <button class="fa fa-eye rounded-lg border-2 border-green-500/50 p-5 w-auto icon-green" id="btnview" style="display:none;" onclick="hide()">&nbsp;View</button>
         </div>
         <br>
+        <?php
+                    if(!empty($errors)){
+                        ?>
+                        <div class="alert bg-red-100 rounded-lg py-5 px-6 mb-3 text-base text-red-700 inline-flex items-center w-full alert-dismissible fade show justify-between" role="alert">
+                            <strong class="mr-1"><?php echo $error_message; ?></strong>
+                            <button type="button" class=""  data-bs-dismiss="alert" aria-label="Close"><span class="fa fa-times"></span></button>
+                        </div>
+                        <?php
+                    }
+                    if(!empty($success)){
+                        ?>
+                        <div class="alert bg-blue-100 rounded-lg py-5 px-6 mb-3 text-base text-blue-700 inline-flex items-center w-full alert-dismissible fade show justify-between" role="alert">
+                            <strong class="mr-1"><?php echo $success_message; ?></strong>
+                            <button type="button"  data-bs-dismiss="alert" aria-label="Close"><span class="fa fa-times"></span></button>
+                        </div>
+                        <?php
+                    }
+                ?>
         <div class="flex flex-col gap-2">
             <form method="POST" action="" class="flex flex-col gap-2">
                 <table style="width:100%">
