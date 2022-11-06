@@ -73,7 +73,8 @@ function hide() {
         if (isset($_POST['btnupdate'] )) {
             $geocode = "";
             for($i = 1; $i<=25; $i++) {
-                $reportid.$i = $_POST['reportid'].$i;
+                echo $_POST['reportid'].$i;
+             /*   $reportid.$i = $_POST['reportid'].$i;
                 $barangay.$i = $_POST['barangay'].$i;
                 $nooffarmer.$i = $_POST['nooffarmer'].$i;
                 $hybridyellow.$i = $_POST['hybridyellow'].$i;
@@ -88,7 +89,7 @@ function hide() {
 
                 if($nooffarmer.$i != "" || $nooffarmer.$i != "0")
                 {
-                $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer.$i."',`hybridyellow`='".$hybridyellow.$i."',`hybridwhite`='".hybridwhite.$i."',`hybridtotal`='".$hybridtotal.$i."',`opvyellow`='".$opvyellow.$i."',`opvwhite`='".$opvwhite.$i."',`opvtotal`='".$opvtotal.$i."',`grandyellow`='".$grandyellow.$i."',`grandwhite`='".$grandwhite.$i."',`grandtotal`='".$grandtotal.$i."' WHERE `id` = '".$reportid.$i."'";
+                $sql = "UPDATE `tbl_reports` SET `nooffarmers`='".$nooffarmer.$i."',`hybridyellow`='".$hybridyellow.$i."',`hybridwhite`='".$hybridwhite.$i."',`hybridtotal`='".$hybridtotal.$i."',`opvyellow`='".$opvyellow.$i."',`opvwhite`='".$opvwhite.$i."',`opvtotal`='".$opvtotal.$i."',`grandyellow`='".$grandyellow.$i."',`grandwhite`='".$grandwhite.$i."',`grandtotal`='".$grandtotal.$i."' WHERE `id` = '".$reportid.$i."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
                         $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
@@ -97,6 +98,7 @@ function hide() {
                         $error_message = "Error submitting the form. Please try again.";
                     }
                 }
+            */
             }   
         
             
