@@ -804,14 +804,15 @@ if($_GET["type"] == "view"){
                         $brgy23 = "San Isidro";
                         $brgy24 = "Sta. Catalina Norte";
                         $brgy25 = "Sta. Catalina Sur";
+                        $brgys = array_chunk('brgy','test');
                         for($i = 1; $i<=25; $i++) {
-                            $brgys = array('brgy','test');
+                            
                             ?>
                             <tr>
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php print $brgys; ?>" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo $brgys; ?>" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
