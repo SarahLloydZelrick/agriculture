@@ -779,40 +779,41 @@ if($_GET["type"] == "view"){
                     </tr>
                     <?php
                         $brgy = "";
-                        $brgy1 = "Poblacion";
-                        $brgy2 = "Buenavista East";
-                        $brgy3 = "Buenavista West";
-                        $brgy4 = "Bukal Norte";
-                        $brgy5 = "Bukal Sur";
-                        $brgy6 = "Kinatihan I";
-                        $brgy7 = "Kinatihan II";
-                        $brgy8 = "Malabanban Norte";
-                        $brgy9 = "Malabanban Sur";
-                        $brgy10 = "Mangilag Norte";
-                        $brgy11 = "Mangilag Sur";
-                        $brgy12 = "Masalukot I";
-                        $brgy13 = "Masalukot II";
-                        $brgy14 = "Masalukot III";
-                        $brgy15 = "Masalukot IV";
-                        $brgy16 = "Masalukot V";
-                        $brgy17 = "Masin Norte";
-                        $brgy18 = "Masin Sur";
-                        $brgy19 = "Mayabobo";
-                        $brgy20 = "Pahinga Norte";
-                        $brgy21 = "Pahinga Sur";
-                        $brgy22 = "San Andres";
-                        $brgy23 = "San Isidro";
-                        $brgy24 = "Sta. Catalina Norte";
-                        $brgy25 = "Sta. Catalina Sur";
-                        $brgys = array_chunk('brgy','test');
+                        
+                        //$brgys = array_chunk('brgy','test');
                         for($i = 1; $i<=25; $i++) {
+                            $brgy[1] = "Poblacion";
+                            $brg[2] = "Buenavista East";
+                            $brg[3] = "Buenavista West";
+                            $brg[4] = "Bukal Norte";
+                            $brg[5] = "Bukal Sur";
+                            $brg[6] = "Kinatihan I";
+                            $brg[7] = "Kinatihan II";
+                            $brg[8] = "Malabanban Norte";
+                            $brg[9] = "Malabanban Sur";
+                            $brgy[10] = "Mangilag Norte";
+                            $brgy[11] = "Mangilag Sur";
+                            $brgy[12] = "Masalukot I";
+                            $brgy[13] = "Masalukot II";
+                            $brgy[14] = "Masalukot III";
+                            $brgy[15] = "Masalukot IV";
+                            $brgy[16] = "Masalukot V";
+                            $brgy[17] = "Masin Norte";
+                            $brgy[18] = "Masin Sur";
+                            $brgy[19] = "Mayabobo";
+                            $brgy[20] = "Pahinga Norte";
+                            $brgy[21] = "Pahinga Sur";
+                            $brgy[22] = "San Andres";
+                            $brgy[23] = "San Isidro";
+                            $brgy[24] = "Sta. Catalina Norte";
+                            $brgy[25] = "Sta. Catalina Sur";
                             
                             ?>
                             <tr>
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo $brgys; ?>" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo $brgy[$i]; ?>" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
