@@ -643,7 +643,7 @@ function hide() {
                     }
                 ?>
         <div class="flex flex-col gap-2">
-            <form method="POST" action="" class="flex flex-col gap-2">
+            <form method="POST" action="" class="flex flex-col gap-2" style="overflow-x:auto">
                 <table style="width:100%">
                     <tr>
                         <th rowspan="4" colspan="1">GEOCODE</th>
