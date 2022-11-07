@@ -804,7 +804,7 @@ if($_GET["type"] == "view"){
                         $brgy24 = "Sta. Catalina Norte";
                         $brgy25 = "Sta. Catalina Sur";
                         for($i = 1; $i<=25; $i++) {
-                            $brgy[$i] = $i;
+                            $brgy[$i] = 'brgy'.$i;
                             ?>
                             <tr>
                         <td></td>
