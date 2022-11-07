@@ -590,7 +590,7 @@
                         </div>
                         <div class="flex gap-5">
                             <p>please specify:</p>
-                            <input type="text" name="" id="" value="<?php echo $farmingacitivitypoultry; ?>" class="">
+                            <input type="text" name="" id="" value="<?php echo $farmingactivitypoultry; ?>" class="">
                         </div>
                     </div>
                     
@@ -629,7 +629,7 @@
                         </div>
                         <div class="flex gap-5">
                             <p>please specify:</p>
-                            <input type="text" name="" id="" value="<?php echo $kinfofworkothers; ?>" class="">
+                            <input type="text" name="" id="" value="<?php echo $kindofworkothers; ?>" class="">
                         </div>
                     </div>
                 </td>
@@ -713,7 +713,7 @@
                         </div>
                         <div class="flex gap-5">
                             <p>please specify:</p>
-                            <input type="text" name="" id="" value="<?php echo $typeofinvolvementothers?>" class="">
+                            <input type="text" name="" id="" value="<?php echo $typeofinvolmentothers; ?>" class="">
                         </div>
                     </div>
                 </td>
@@ -937,7 +937,7 @@
                     <?php echo $farmtypea1; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionera1; ?>
+                    <?php echo $organicepractionera1; ?>
                 </td>
                 <td>
                     <?php echo $remarksa1; ?>
@@ -958,7 +958,7 @@
                     <?php echo $farmtypea2; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionera2; ?>
+                    <?php echo $organicepractionera2; ?>
                 </td>
                 <td>
                     <?php echo $remarksa2; ?>
@@ -978,7 +978,7 @@
                     <?php echo $farmtypea3; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionera3; ?>
+                    <?php echo $organicepractionera3; ?>
                 </td>
                 <td>
                     <?php echo $remarksa3; ?>
@@ -998,7 +998,7 @@
                     <?php echo $farmtypea4; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionera4; ?>
+                    <?php echo $organicepractionera4; ?>
                 </td>
                 <td>
                     <?php echo $remarksa4; ?>
@@ -1018,7 +1018,7 @@
                     <?php echo $farmtypea5; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionera5; ?>
+                    <?php echo $organicepractionera5; ?>
                 </td>
                 <td>
                     <?php echo $remarksa5; ?>
@@ -1142,7 +1142,7 @@
                     <?php echo $farmtypeb1; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerb1; ?>
+                    <?php echo $organicepractionerb1; ?>
                 </td>
                 <td>
                     <?php echo $remarksb1; ?>
@@ -1163,7 +1163,7 @@
                     <?php echo $farmtypeb2; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerb2; ?>
+                    <?php echo $organicepractionerb2; ?>
                 </td>
                 <td>
                     <?php echo $remarksb2; ?>
@@ -1183,7 +1183,7 @@
                     <?php echo $farmtypeb3; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerb3; ?>
+                    <?php echo $organicepractionerb3; ?>
                 </td>
                 <td>
                     <?php echo $remarksb3; ?>
@@ -1203,7 +1203,7 @@
                     <?php echo $farmtypeb4; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerb4; ?>
+                    <?php echo $organicepractionerb4; ?>
                 </td>
                 <td>
                     <?php echo $remarksb4; ?>
@@ -1223,7 +1223,7 @@
                     <?php echo $farmtypeb5; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerb5; ?>
+                    <?php echo $organicepractionerb5; ?>
                 </td>
                 <td>
                     <?php echo $remarksb5; ?>
@@ -1347,7 +1347,7 @@
                     <?php echo $farmtypec1; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerc1; ?>
+                    <?php echo $organicepractionerc1; ?>
                 </td>
                 <td>
                     <?php echo $remarksc1; ?>
@@ -1368,7 +1368,7 @@
                     <?php echo $farmtypec2; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerc2; ?>
+                    <?php echo $organicepractionerc2; ?>
                 </td>
                 <td>
                     <?php echo $remarksc2; ?>
@@ -1388,7 +1388,7 @@
                     <?php echo $farmtypec3; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerc3; ?>
+                    <?php echo $organicepractionerc3; ?>
                 </td>
                 <td>
                     <?php echo $remarksc3; ?>
@@ -1408,7 +1408,7 @@
                     <?php echo $farmtypec4; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerc4; ?>
+                    <?php echo $organicepractionerc4; ?>
                 </td>
                 <td>
                     <?php echo $remarksc4; ?>
@@ -1428,7 +1428,7 @@
                     <?php echo $farmtypec5; ?>
                 </td>
                 <td>
-                    <?php echo $organicpractionerc5; ?>
+                    <?php echo $organicepractionerc5; ?>
                 </td>
                 <td>
                     <?php echo $remarksc5; ?>
