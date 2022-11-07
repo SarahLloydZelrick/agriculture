@@ -779,14 +779,14 @@ if($_GET["type"] == "view"){
                     </tr>
                     <?php
                         $brgy[1] = "Poblacion";
-                        $brg[2] = "Buenavista East";
-                        $brg[3] = "Buenavista West";
-                        $brg[4] = "Bukal Norte";
-                        $brg[5] = "Bukal Sur";
-                        $brg[6] = "Kinatihan I";
-                        $brg[7] = "Kinatihan II";
-                        $brg[8] = "Malabanban Norte";
-                        $brg[9] = "Malabanban Sur";
+                        $brgy[2] = "Buenavista East";
+                        $brgy[3] = "Buenavista West";
+                        $brgy[4] = "Bukal Norte";
+                        $brgy[5] = "Bukal Sur";
+                        $brgy[6] = "Kinatihan I";
+                        $brgy[7] = "Kinatihan II";
+                        $brgy[8] = "Malabanban Norte";
+                        $brgy[9] = "Malabanban Sur";
                         $brgy[10] = "Mangilag Norte";
                         $brgy[11] = "Mangilag Sur";
                         $brgy[12] = "Masalukot I";
