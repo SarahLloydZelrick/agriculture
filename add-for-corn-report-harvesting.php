@@ -810,7 +810,7 @@ if($_GET["type"] == "view"){
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo ("brgy".$i); ?>" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo ($brgy.$i); ?>" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
