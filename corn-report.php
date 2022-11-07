@@ -146,6 +146,7 @@ if (!isset($_SESSION['loggedin'])) {
             </div>
 
         </div>
+        <br><br><br><br>
         <?php
             include "footer.php";
         ?>
