@@ -149,9 +149,10 @@ if (!isset($_SESSION['loggedin'])) {
                               $nameofspouse = mysqli_real_escape_string($con, $row['nameofspouse']);
                               $education = mysqli_real_escape_string($con, $row['education']);
                               $pwd = mysqli_real_escape_string($con, $row['pwd']);
-                              $fourps = mysqli_real_escape_string($con, $row['fourps']);
-                              if($fourps == NULL){
+                              if($row['fourps'] == NULL || $row['fourps'] == ""){
                                 $fourps = "";
+                              }else{
+                                $fourps = mysqli_real_escape_string($con, $row['fourps']);
                               }
                               $indgenous = mysqli_real_escape_string($con, $row['indgenous']);
                               $indgenousspecify = mysqli_real_escape_string($con, $row['indgenousspecify']);
@@ -161,9 +162,10 @@ if (!isset($_SESSION['loggedin'])) {
                               $householdhead = mysqli_real_escape_string($con, $row['householdhead']);
                               $householdname = mysqli_real_escape_string($con, $row['householdname']);
                               $householdrel = mysqli_real_escape_string($con, $row['householdrel']);
-                              $noOfmembers = mysqli_real_escape_string($con, $_POST['noOfmembers']);
-                              if($noOfmembers == NULL){
+                              if($_POST['noOfmembers'] == NULL || $_POST['noOfmembers'] = ""){
                                 $noOfmembers = "";
+                              }else{
+                                $noOfmembers = mysqli_real_escape_string($con, $_POST['noOfmembers']);
                               }
                               $nomale = mysqli_real_escape_string($con, $row['nomale']);
                               $nofemale = mysqli_real_escape_string($con, $row['nofemale']);

@@ -23,7 +23,7 @@ if(isset($_POST["btnsubmit"])) {
                 if(mysqli_query($con, $sql)){
                 
                 $sqltbl = "CREATE TABLE `$forbrgy` (
-                        `id` int(50) NOT NULL,
+                        `id` int(50) NOT NULL AUTO_INCREMENT,
                         `farmerId` varchar(50) NOT NULL,
                         `enrollmenttype` varchar(50) NOT NULL,
                         `dateadminstered` varchar(50) NOT NULL,
@@ -200,7 +200,8 @@ if(isset($_POST["btnsubmit"])) {
                         `landtitle` varchar(200) DEFAULT NULL,
                         `landclearance` varchar(200) DEFAULT NULL,
                         `number` varchar(50) DEFAULT NULL,
-                        `telephone` varchar(50) DEFAULT NULL
+                        `telephone` varchar(50) DEFAULT NULL,
+                        PRIMARY KEY (id)
                     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;";
                     if ($con->query($sqltbl) === TRUE) {
                             $success = "1";
