@@ -26,7 +26,7 @@ if (!isset($_SESSION['loggedin'])) {
 
     ?>
     <div class=" " >
-        <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60t">
+        <div class="container flex flex-row p-10 ml-0 w-fit md:ml-60t">
             <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
                 <div class="flex flex-col gap-2">
