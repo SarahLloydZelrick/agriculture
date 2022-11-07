@@ -805,13 +805,13 @@ if($_GET["type"] == "view"){
                         $brgy24 = "Sta. Catalina Norte";
                         $brgy25 = "Sta. Catalina Sur";
                         for($i = 1; $i<=25; $i++) {
-                            $brgys = ['brgy','test'];
+                            $brgys[$i] = ['brgy','test'];
                             ?>
                             <tr>
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo implode(',', $brgys); ?>" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo implode(',', $brgys[$i]); ?>" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
