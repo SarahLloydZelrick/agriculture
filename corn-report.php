@@ -27,7 +27,7 @@ if (!isset($_SESSION['loggedin'])) {
     ?>
     <div class="container p-10 ml-0 w-fit md:ml-60 " >
         <div class="flex gap-5 w-fit">
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 gap-5">
+            <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">Consolidation Corn Planting</h2>
                 <div class="flex flex-col gap-2">
                     <form type="get" action="for-corn-report.php" class="flex flex-col gap-2">
@@ -50,7 +50,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </form>
                 </div>
             </div>
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 gap-5">
+            <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">Corn Harvesting Accomplishment Report</h2>
                 <div class="flex flex-col gap-2">
                     <form type="get" action="for-corn-report-harvesting.php" class="flex flex-col gap-2">
@@ -73,7 +73,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </form>
                 </div>
             </div>
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 gap-5">
+            <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">Consolidation Report For Corn</h2>
                 <div class="flex flex-col gap-2">
                     <form type="get" action="for-corn-report-consolidation.php" class="flex flex-col gap-2">
@@ -96,9 +96,9 @@ if (!isset($_SESSION['loggedin'])) {
                     </form>
                 </div>
             </div>
-        </div>
+        </div><br><br>
         <div class="flex gap-5 w-fit">
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 gap-5">
+            <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">CORN PLANT PEST MONITORING FORM</h2>
                 <div class="flex flex-col gap-2">
                     <form type="get" action="for-corn-report-pest.php" class="flex flex-col gap-2">
@@ -121,7 +121,7 @@ if (!isset($_SESSION['loggedin'])) {
                     </form>
                 </div>
             </div>
-            <div class="flex flex-col w-auto rounded-lg bg-white shadow-lg p-10 gap-5">
+            <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">CORN & CASSAVA SITUATION REPORT</h2>
                 <div class="flex flex-col gap-2">
                     <form type="get" action="for-corn-report-situation.php" class="flex flex-col gap-2">
