@@ -778,107 +778,133 @@ if($_GET["type"] == "view"){
                         
                     </tr>
                     <?php
+                        $brgy1 = "Poblacion";
+
+                        $brgy2 = "Buenavista East";
+                        $brgy3 = "Buenavista West";
+                        $brgy4 = "Bukal Norte";
+                        $brgy5 = "Bukal Sur";
+                        $brgy6 = "Kinatihan I";
+                        $brgy7 = "Kinatihan II";
+                        $brgy8 = "Malabanban Norte";
+                        $brgy9 = "Malabanban Sur";
+                        $brgy10 = "Mangilag Norte";
+                        $brgy11 = "Mangilag Sur";
+                        $brgy12 = "Masalukot I";
+                        $brgy13 = "Masalukot II";
+                        $brgy14 = "Masalukot III";
+                        $brgy15 = "Masalukot IV";
+                        $brgy16 = "Masalukot V";
+                        $brgy17 = "Masin Norte";
+                        $brgy18 = "Masin Sur";
+                        $brgy19 = "Mayabobo";
+                        $brgy20 = "Pahinga Norte";
+                        $brgy21 = "Pahinga Sur";
+                        $brgy22 = "San Andres";
+                        $brgy23 = "San Isidro";
+                        $brgy24 = "Sta. Catalina Norte";
+                        $brgy25 = "Sta. Catalina Sur";
                         for($i = 1; $i<=25; $i++) {
                             ?>
                             <tr>
                         <td></td>
                         <!-- BARANGAY -->
                         <td>
-                            <input type="text" class="form-input wbrgy" name="barangay<?php $i;?>" id="" value="Poblacion" readonly>
+                            <input type="text" class="form-input wbrgy" name="barangay<?php echo $i;?>" id="brgy<?php echo $i; ?>" value="<?php echo ("brgy".$i); ?>" readonly>
                         </td>
                         <!-- NUMBER OF FARMER -->
                         <td>
-                            <input type="number" class="form-input" name="nooffarmer<?php $i;?>" id="" value="0">
+                            <input type="number" class="form-input" name="nooffarmer<?php echo $i;?>" id="" value="0">
                         </td>
                         <!-- HYBRID YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="hybridyellow<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="hybridyellow<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="hybridyellow<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="hybridyellow<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="hybridyellow<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="hybridyellow<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- HYBRID WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="hybridwhite<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="hybridwhite<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="hybridwhite<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="hybridwhite<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="hybridwhite<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="hybridwhite<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- HYBRID COMBINE -->
                         <td>
-                            <input type="number" class="form-input" name="hybridcombine<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="hybridcombine<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="hybridcombine<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="hybridcombine<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="hybridcombine<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="hybridcombine<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- OPV YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="opvyellow<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="opvyellow<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="opvyellow<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="opvyellow<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="opvyellow<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="opvyellow<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- OPV WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="opvwhite<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="opvwhite<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="opvwhite<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="opvwhite<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="opvwhite<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="opvwhite<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- OPV COMBINE -->
                         <td>
-                            <input type="number" class="form-input" name="opvcombine<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="opvcombine<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="opvcombine<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="opvcombine<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="opvcombine<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="opvcombine<?php echo $i;?>b" id="" value="0">
                         </td>
                         <!-- GRAND TOTAL YELLOW -->
                         <td>
-                            <input type="number" class="form-input" name="grandyellow<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="grandyellow<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="grandyellow<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="grandyellow<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="grandyellow<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="grandyellow<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- GRAND TOTAL WHITE -->
                         <td>
-                            <input type="number" class="form-input" name="grandwhite<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="grandwhite<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="grandwhite<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="grandwhite<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="grandwhite<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="grandwhite<?php echo $i;?>c" id="" value="0">
                         </td>
                         <!-- GRAND TOTAL TOTAL -->
                         <td>
-                            <input type="number" class="form-input" name="grandtotal<?php $i;?>a" id="" value="0">
+                            <input type="number" class="form-input" name="grandtotal<?php echo $i;?>a" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="grandtotal<?php $i;?>b" id="" value="0">
+                            <input type="number" class="form-input" name="grandtotal<?php echo $i;?>b" id="" value="0">
                         </td>
                         <td>
-                            <input type="number" class="form-input" name="grandtotal<?php $i;?>c" id="" value="0">
+                            <input type="number" class="form-input" name="grandtotal<?php echo $i;?>c" id="" value="0">
                         </td>
                     </tr>
                             <?php
