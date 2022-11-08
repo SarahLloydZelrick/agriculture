@@ -802,11 +802,11 @@ if($_GET["type"] == "view"){
 
             if($nooffarmer1 != "" || $nooffarmer1 != "0")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay1."','".$nooffarmer1."','".$hybridyellow1."','".$hybridwhite1."','".$hybridtotal1."','".$opvyellow1."','".$opvwhite1."','".$opvtotal1."','".$grandyellow1."','".$grandwhite1."','".$grandtotal1."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow1a."','".$hybridyellow1b."','".$hybridyellow1c."','".$hybridwhite1a."','".$hybridwhite1b."','".$hybridwhite1c."','".$hybridcombine1a."','".$hybridcombine1b."','".$hybridcombine1c."','".$opvyellow1a."','".$opvyellow1b."','".$opvyellow1c."','".$opvwhite1a."','".$opvwhite1b."',,'".$opvwhite1c."','".$opvcombine1a."','".$opvcombine1b."','".$opvcombine1c."','".$grandyellow1a."','".$grandyellow1b."','".$grandyellow1c."','".$grandwhite1a."','".$grandwhite1b."','".$grandwhite1c."','".$grandtotal1a."','".$grandtotal1b."','".$grandtotal1c."','".$fromdate."','".$todate."')";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -814,11 +814,11 @@ if($_GET["type"] == "view"){
                 }
             if($nooffarmer2 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay2."','".$nooffarmer2."','".$hybridyellow2."','".$hybridwhite2."','".$hybridtotal2."','".$opvyellow2."','".$opvwhite2."','".$opvtotal2."','".$grandyellow2."','".$grandwhite2."','".$grandtotal2."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow2a."','".$hybridyellow2b."','".$hybridyellow2c."','".$hybridwhite2a."','".$hybridwhite2b."','".$hybridwhite2c."','".$hybridcombine2a."','".$hybridcombine2b."','".$hybridcombine2c."','".$opvyellow2a."','".$opvyellow2b."','".$opvyellow2c."','".$opvwhite2a."','".$opvwhite2b."',,'".$opvwhite2c."','".$opvcombine2a."','".$opvcombine2b."','".$opvcombine2c."','".$grandyellow2a."','".$grandyellow2b."','".$grandyellow2c."','".$grandwhite2a."','".$grandwhite2b."','".$grandwhite2c."','".$grandtotal2a."','".$grandtotal2b."','".$grandtotal2c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -828,11 +828,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer3 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay3."','".$nooffarmer3."','".$hybridyellow3."','".$hybridwhite3."','".$hybridtotal3."','".$opvyellow3."','".$opvwhite3."','".$opvtotal3."','".$grandyellow3."','".$grandwhite3."','".$grandtotal3."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow3a."','".$hybridyellow3b."','".$hybridyellow3c."','".$hybridwhite3a."','".$hybridwhite3b."','".$hybridwhite3c."','".$hybridcombine3a."','".$hybridcombine3b."','".$hybridcombine3c."','".$opvyellow3a."','".$opvyellow3b."','".$opvyellow3c."','".$opvwhite3a."','".$opvwhite3b."',,'".$opvwhite3c."','".$opvcombine3a."','".$opvcombine3b."','".$opvcombine3c."','".$grandyellow3a."','".$grandyellow3b."','".$grandyellow3c."','".$grandwhite3a."','".$grandwhite3b."','".$grandwhite3c."','".$grandtotal3a."','".$grandtotal3b."','".$grandtotal3c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -842,11 +842,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer4 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay4."','".$nooffarmer4."','".$hybridyellow4."','".$hybridwhite4."','".$hybridtotal4."','".$opvyellow4."','".$opvwhite4."','".$opvtotal4."','".$grandyellow4."','".$grandwhite4."','".$grandtotal4."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow4a."','".$hybridyellow4b."','".$hybridyellow4c."','".$hybridwhite4a."','".$hybridwhite4b."','".$hybridwhite4c."','".$hybridcombine4a."','".$hybridcombine4b."','".$hybridcombine4c."','".$opvyellow4a."','".$opvyellow4b."','".$opvyellow4c."','".$opvwhite4a."','".$opvwhite4b."',,'".$opvwhite4c."','".$opvcombine4a."','".$opvcombine4b."','".$opvcombine4c."','".$grandyellow4a."','".$grandyellow4b."','".$grandyellow4c."','".$grandwhite4a."','".$grandwhite4b."','".$grandwhite4c."','".$grandtotal4a."','".$grandtotal4b."','".$grandtotal4c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -856,11 +856,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer5 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay5."','".$nooffarmer5."','".$hybridyellow5."','".$hybridwhite5."','".$hybridtotal5."','".$opvyellow5."','".$opvwhite5."','".$opvtotal5."','".$grandyellow5."','".$grandwhite5."','".$grandtotal5."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow5a."','".$hybridyellow5b."','".$hybridyellow5c."','".$hybridwhite5a."','".$hybridwhite5b."','".$hybridwhite5c."','".$hybridcombine5a."','".$hybridcombine5b."','".$hybridcombine5c."','".$opvyellow5a."','".$opvyellow5b."','".$opvyellow5c."','".$opvwhite5a."','".$opvwhite5b."',,'".$opvwhite5c."','".$opvcombine5a."','".$opvcombine5b."','".$opvcombine5c."','".$grandyellow5a."','".$grandyellow5b."','".$grandyellow5c."','".$grandwhite5a."','".$grandwhite5b."','".$grandwhite5c."','".$grandtotal5a."','".$grandtotal5b."','".$grandtotal5c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -870,11 +870,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer6 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay6."','".$nooffarmer6."','".$hybridyellow6."','".$hybridwhite6."','".$hybridtotal6."','".$opvyellow6."','".$opvwhite6."','".$opvtotal6."','".$grandyellow6."','".$grandwhite6."','".$grandtotal6."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow6a."','".$hybridyellow6b."','".$hybridyellow6c."','".$hybridwhite6a."','".$hybridwhite6b."','".$hybridwhite6c."','".$hybridcombine6a."','".$hybridcombine6b."','".$hybridcombine6c."','".$opvyellow6a."','".$opvyellow6b."','".$opvyellow6c."','".$opvwhite6a."','".$opvwhite6b."',,'".$opvwhite6c."','".$opvcombine6a."','".$opvcombine6b."','".$opvcombine6c."','".$grandyellow6a."','".$grandyellow6b."','".$grandyellow6c."','".$grandwhite6a."','".$grandwhite6b."','".$grandwhite6c."','".$grandtotal6a."','".$grandtotal6b."','".$grandtotal6c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -884,11 +884,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer7 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay7."','".$nooffarmer7."','".$hybridyellow7."','".$hybridwhite7."','".$hybridtotal7."','".$opvyellow7."','".$opvwhite7."','".$opvtotal7."','".$grandyellow7."','".$grandwhite7."','".$grandtotal7."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow7a."','".$hybridyellow7b."','".$hybridyellow7c."','".$hybridwhite7a."','".$hybridwhite7b."','".$hybridwhite7c."','".$hybridcombine7a."','".$hybridcombine7b."','".$hybridcombine7c."','".$opvyellow7a."','".$opvyellow7b."','".$opvyellow7c."','".$opvwhite7a."','".$opvwhite7b."',,'".$opvwhite7c."','".$opvcombine7a."','".$opvcombine7b."','".$opvcombine7c."','".$grandyellow7a."','".$grandyellow7b."','".$grandyellow7c."','".$grandwhite7a."','".$grandwhite7b."','".$grandwhite7c."','".$grandtotal7a."','".$grandtotal7b."','".$grandtotal7c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -898,11 +898,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer8 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay8."','".$nooffarmer8."','".$hybridyellow8."','".$hybridwhite8."','".$hybridtotal8."','".$opvyellow8."','".$opvwhite8."','".$opvtotal8."','".$grandyellow8."','".$grandwhite8."','".$grandtotal8."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow8a."','".$hybridyellow8b."','".$hybridyellow8c."','".$hybridwhite8a."','".$hybridwhite8b."','".$hybridwhite8c."','".$hybridcombine8a."','".$hybridcombine8b."','".$hybridcombine8c."','".$opvyellow8a."','".$opvyellow8b."','".$opvyellow8c."','".$opvwhite8a."','".$opvwhite8b."',,'".$opvwhite8c."','".$opvcombine8a."','".$opvcombine8b."','".$opvcombine8c."','".$grandyellow8a."','".$grandyellow8b."','".$grandyellow8c."','".$grandwhite8a."','".$grandwhite8b."','".$grandwhite8c."','".$grandtotal8a."','".$grandtotal8b."','".$grandtotal8c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -912,11 +912,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer9 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay9."','".$nooffarmer9."','".$hybridyellow9."','".$hybridwhite9."','".$hybridtotal9."','".$opvyellow9."','".$opvwhite9."','".$opvtotal9."','".$grandyellow9."','".$grandwhite9."','".$grandtotal9."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow9a."','".$hybridyellow9b."','".$hybridyellow9c."','".$hybridwhite9a."','".$hybridwhite9b."','".$hybridwhite9c."','".$hybridcombine9a."','".$hybridcombine9b."','".$hybridcombine9c."','".$opvyellow9a."','".$opvyellow9b."','".$opvyellow9c."','".$opvwhite9a."','".$opvwhite9b."',,'".$opvwhite9c."','".$opvcombine9a."','".$opvcombine9b."','".$opvcombine9c."','".$grandyellow9a."','".$grandyellow9b."','".$grandyellow9c."','".$grandwhite9a."','".$grandwhite9b."','".$grandwhite9c."','".$grandtotal9a."','".$grandtotal9b."','".$grandtotal9c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -926,11 +926,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer10 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay10."','".$nooffarmer10."','".$hybridyellow10."','".$hybridwhite10."','".$hybridtotal10."','".$opvyellow10."','".$opvwhite10."','".$opvtotal10."','".$grandyellow10."','".$grandwhite10."','".$grandtotal10."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow10a."','".$hybridyellow10b."','".$hybridyellow10c."','".$hybridwhite10a."','".$hybridwhite10b."','".$hybridwhite10c."','".$hybridcombine10a."','".$hybridcombine10b."','".$hybridcombine10c."','".$opvyellow10a."','".$opvyellow10b."','".$opvyellow10c."','".$opvwhite10a."','".$opvwhite10b."',,'".$opvwhite10c."','".$opvcombine10a."','".$opvcombine10b."','".$opvcombine10c."','".$grandyellow10a."','".$grandyellow10b."','".$grandyellow10c."','".$grandwhite10a."','".$grandwhite10b."','".$grandwhite10c."','".$grandtotal10a."','".$grandtotal10b."','".$grandtotal10c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -940,11 +940,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer11 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay11."','".$nooffarmer11."','".$hybridyellow11."','".$hybridwhite11."','".$hybridtotal11."','".$opvyellow11."','".$opvwhite11."','".$opvtotal11."','".$grandyellow11."','".$grandwhite11."','".$grandtotal11."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow11a."','".$hybridyellow11b."','".$hybridyellow11c."','".$hybridwhite11a."','".$hybridwhite11b."','".$hybridwhite11c."','".$hybridcombine11a."','".$hybridcombine11b."','".$hybridcombine11c."','".$opvyellow11a."','".$opvyellow11b."','".$opvyellow11c."','".$opvwhite11a."','".$opvwhite11b."',,'".$opvwhite11c."','".$opvcombine11a."','".$opvcombine11b."','".$opvcombine11c."','".$grandyellow11a."','".$grandyellow11b."','".$grandyellow11c."','".$grandwhite11a."','".$grandwhite11b."','".$grandwhite11c."','".$grandtotal11a."','".$grandtotal11b."','".$grandtotal11c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -954,11 +954,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer12 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay12."','".$nooffarmer12."','".$hybridyellow12."','".$hybridwhite12."','".$hybridtotal12."','".$opvyellow12."','".$opvwhite12."','".$opvtotal12."','".$grandyellow12."','".$grandwhite12."','".$grandtotal12."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow12a."','".$hybridyellow12b."','".$hybridyellow12c."','".$hybridwhite12a."','".$hybridwhite12b."','".$hybridwhite12c."','".$hybridcombine12a."','".$hybridcombine12b."','".$hybridcombine12c."','".$opvyellow12a."','".$opvyellow12b."','".$opvyellow12c."','".$opvwhite12a."','".$opvwhite12b."',,'".$opvwhite12c."','".$opvcombine12a."','".$opvcombine12b."','".$opvcombine12c."','".$grandyellow12a."','".$grandyellow12b."','".$grandyellow12c."','".$grandwhite12a."','".$grandwhite12b."','".$grandwhite12c."','".$grandtotal12a."','".$grandtotal12b."','".$grandtotal12c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -968,11 +968,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer13 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay13."','".$nooffarmer13."','".$hybridyellow13."','".$hybridwhite13."','".$hybridtotal13."','".$opvyellow13."','".$opvwhite13."','".$opvtotal13."','".$grandyellow13."','".$grandwhite13."','".$grandtotal13."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow13a."','".$hybridyellow13b."','".$hybridyellow13c."','".$hybridwhite13a."','".$hybridwhite13b."','".$hybridwhite13c."','".$hybridcombine13a."','".$hybridcombine13b."','".$hybridcombine13c."','".$opvyellow13a."','".$opvyellow13b."','".$opvyellow13c."','".$opvwhite13a."','".$opvwhite13b."',,'".$opvwhite13c."','".$opvcombine13a."','".$opvcombine13b."','".$opvcombine13c."','".$grandyellow13a."','".$grandyellow13b."','".$grandyellow13c."','".$grandwhite13a."','".$grandwhite13b."','".$grandwhite13c."','".$grandtotal13a."','".$grandtotal13b."','".$grandtotal13c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -982,11 +982,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer14 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay14."','".$nooffarmer14."','".$hybridyellow14."','".$hybridwhite14."','".$hybridtotal14."','".$opvyellow14."','".$opvwhite14."','".$opvtotal14."','".$grandyellow14."','".$grandwhite14."','".$grandtotal14."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow14a."','".$hybridyellow14b."','".$hybridyellow14c."','".$hybridwhite14a."','".$hybridwhite14b."','".$hybridwhite14c."','".$hybridcombine14a."','".$hybridcombine14b."','".$hybridcombine14c."','".$opvyellow14a."','".$opvyellow14b."','".$opvyellow14c."','".$opvwhite14a."','".$opvwhite14b."',,'".$opvwhite14c."','".$opvcombine14a."','".$opvcombine14b."','".$opvcombine14c."','".$grandyellow14a."','".$grandyellow14b."','".$grandyellow14c."','".$grandwhite14a."','".$grandwhite14b."','".$grandwhite14c."','".$grandtotal14a."','".$grandtotal14b."','".$grandtotal14c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -996,11 +996,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer15 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay15."','".$nooffarmer15."','".$hybridyellow15."','".$hybridwhite15."','".$hybridtotal15."','".$opvyellow15."','".$opvwhite15."','".$opvtotal15."','".$grandyellow15."','".$grandwhite15."','".$grandtotal15."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow15a."','".$hybridyellow15b."','".$hybridyellow15c."','".$hybridwhite15a."','".$hybridwhite15b."','".$hybridwhite15c."','".$hybridcombine15a."','".$hybridcombine15b."','".$hybridcombine15c."','".$opvyellow15a."','".$opvyellow15b."','".$opvyellow15c."','".$opvwhite15a."','".$opvwhite15b."',,'".$opvwhite15c."','".$opvcombine15a."','".$opvcombine15b."','".$opvcombine15c."','".$grandyellow15a."','".$grandyellow15b."','".$grandyellow15c."','".$grandwhite15a."','".$grandwhite15b."','".$grandwhite15c."','".$grandtotal15a."','".$grandtotal15b."','".$grandtotal15c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1010,11 +1010,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer16 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay16."','".$nooffarmer16."','".$hybridyellow16."','".$hybridwhite16."','".$hybridtotal16."','".$opvyellow16."','".$opvwhite16."','".$opvtotal16."','".$grandyellow16."','".$grandwhite16."','".$grandtotal16."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow16a."','".$hybridyellow16b."','".$hybridyellow16c."','".$hybridwhite16a."','".$hybridwhite16b."','".$hybridwhite16c."','".$hybridcombine16a."','".$hybridcombine16b."','".$hybridcombine16c."','".$opvyellow16a."','".$opvyellow16b."','".$opvyellow16c."','".$opvwhite16a."','".$opvwhite16b."',,'".$opvwhite16c."','".$opvcombine16a."','".$opvcombine16b."','".$opvcombine16c."','".$grandyellow16a."','".$grandyellow16b."','".$grandyellow16c."','".$grandwhite16a."','".$grandwhite16b."','".$grandwhite16c."','".$grandtotal16a."','".$grandtotal16b."','".$grandtotal16c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1024,11 +1024,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer17 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay17."','".$nooffarmer17."','".$hybridyellow17."','".$hybridwhite17."','".$hybridtotal17."','".$opvyellow17."','".$opvwhite17."','".$opvtotal17."','".$grandyellow17."','".$grandwhite17."','".$grandtotal17."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow17a."','".$hybridyellow17b."','".$hybridyellow17c."','".$hybridwhite17a."','".$hybridwhite17b."','".$hybridwhite17c."','".$hybridcombine17a."','".$hybridcombine17b."','".$hybridcombine17c."','".$opvyellow17a."','".$opvyellow17b."','".$opvyellow17c."','".$opvwhite17a."','".$opvwhite17b."',,'".$opvwhite17c."','".$opvcombine17a."','".$opvcombine17b."','".$opvcombine17c."','".$grandyellow17a."','".$grandyellow17b."','".$grandyellow17c."','".$grandwhite17a."','".$grandwhite17b."','".$grandwhite17c."','".$grandtotal17a."','".$grandtotal17b."','".$grandtotal17c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1038,11 +1038,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer18 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay18."','".$nooffarmer18."','".$hybridyellow18."','".$hybridwhite18."','".$hybridtotal18."','".$opvyellow18."','".$opvwhite18."','".$opvtotal18."','".$grandyellow18."','".$grandwhite18."','".$grandtotal18."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow18a."','".$hybridyellow18b."','".$hybridyellow18c."','".$hybridwhite18a."','".$hybridwhite18b."','".$hybridwhite18c."','".$hybridcombine18a."','".$hybridcombine18b."','".$hybridcombine18c."','".$opvyellow18a."','".$opvyellow18b."','".$opvyellow18c."','".$opvwhite18a."','".$opvwhite18b."',,'".$opvwhite18c."','".$opvcombine18a."','".$opvcombine18b."','".$opvcombine18c."','".$grandyellow18a."','".$grandyellow18b."','".$grandyellow18c."','".$grandwhite18a."','".$grandwhite18b."','".$grandwhite18c."','".$grandtotal18a."','".$grandtotal18b."','".$grandtotal18c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1052,11 +1052,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer19 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay19."','".$nooffarmer19."','".$hybridyellow19."','".$hybridwhite19."','".$hybridtotal19."','".$opvyellow19."','".$opvwhite19."','".$opvtotal19."','".$grandyellow19."','".$grandwhite19."','".$grandtotal19."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow19a."','".$hybridyellow19b."','".$hybridyellow19c."','".$hybridwhite19a."','".$hybridwhite19b."','".$hybridwhite19c."','".$hybridcombine19a."','".$hybridcombine19b."','".$hybridcombine19c."','".$opvyellow19a."','".$opvyellow19b."','".$opvyellow19c."','".$opvwhite19a."','".$opvwhite19b."',,'".$opvwhite19c."','".$opvcombine19a."','".$opvcombine19b."','".$opvcombine19c."','".$grandyellow19a."','".$grandyellow19b."','".$grandyellow19c."','".$grandwhite19a."','".$grandwhite19b."','".$grandwhite19c."','".$grandtotal19a."','".$grandtotal19b."','".$grandtotal19c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1066,11 +1066,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer20 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay20."','".$nooffarmer20."','".$hybridyellow20."','".$hybridwhite20."','".$hybridtotal20."','".$opvyellow20."','".$opvwhite20."','".$opvtotal20."','".$grandyellow20."','".$grandwhite20."','".$grandtotal20."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow20a."','".$hybridyellow20b."','".$hybridyellow20c."','".$hybridwhite20a."','".$hybridwhite20b."','".$hybridwhite20c."','".$hybridcombine20a."','".$hybridcombine20b."','".$hybridcombine20c."','".$opvyellow20a."','".$opvyellow20b."','".$opvyellow20c."','".$opvwhite20a."','".$opvwhite20b."',,'".$opvwhite20c."','".$opvcombine20a."','".$opvcombine20b."','".$opvcombine20c."','".$grandyellow20a."','".$grandyellow20b."','".$grandyellow20c."','".$grandwhite20a."','".$grandwhite20b."','".$grandwhite20c."','".$grandtotal20a."','".$grandtotal20b."','".$grandtotal20c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1080,11 +1080,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer21 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay21."','".$nooffarmer21."','".$hybridyellow21."','".$hybridwhite21."','".$hybridtotal21."','".$opvyellow21."','".$opvwhite21."','".$opvtotal21."','".$grandyellow21."','".$grandwhite21."','".$grandtotal21."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow21a."','".$hybridyellow21b."','".$hybridyellow21c."','".$hybridwhite21a."','".$hybridwhite21b."','".$hybridwhite21c."','".$hybridcombine21a."','".$hybridcombine21b."','".$hybridcombine21c."','".$opvyellow21a."','".$opvyellow21b."','".$opvyellow21c."','".$opvwhite21a."','".$opvwhite21b."',,'".$opvwhite21c."','".$opvcombine21a."','".$opvcombine21b."','".$opvcombine21c."','".$grandyellow21a."','".$grandyellow21b."','".$grandyellow21c."','".$grandwhite21a."','".$grandwhite21b."','".$grandwhite21c."','".$grandtotal21a."','".$grandtotal21b."','".$grandtotal21c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1094,11 +1094,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer22 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay22."','".$nooffarmer22."','".$hybridyellow22."','".$hybridwhite22."','".$hybridtotal22."','".$opvyellow22."','".$opvwhite22."','".$opvtotal22."','".$grandyellow22."','".$grandwhite22."','".$grandtotal22."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow22a."','".$hybridyellow22b."','".$hybridyellow22c."','".$hybridwhite22a."','".$hybridwhite22b."','".$hybridwhite22c."','".$hybridcombine22a."','".$hybridcombine22b."','".$hybridcombine22c."','".$opvyellow22a."','".$opvyellow22b."','".$opvyellow22c."','".$opvwhite22a."','".$opvwhite22b."',,'".$opvwhite22c."','".$opvcombine22a."','".$opvcombine22b."','".$opvcombine22c."','".$grandyellow22a."','".$grandyellow22b."','".$grandyellow22c."','".$grandwhite22a."','".$grandwhite22b."','".$grandwhite22c."','".$grandtotal22a."','".$grandtotal22b."','".$grandtotal22c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1108,11 +1108,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer23 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay23."','".$nooffarmer23."','".$hybridyellow23."','".$hybridwhite23."','".$hybridtotal23."','".$opvyellow23."','".$opvwhite23."','".$opvtotal23."','".$grandyellow23."','".$grandwhite23."','".$grandtotal23."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow23a."','".$hybridyellow23b."','".$hybridyellow23c."','".$hybridwhite23a."','".$hybridwhite23b."','".$hybridwhite23c."','".$hybridcombine23a."','".$hybridcombine23b."','".$hybridcombine23c."','".$opvyellow23a."','".$opvyellow23b."','".$opvyellow23c."','".$opvwhite23a."','".$opvwhite23b."',,'".$opvwhite23c."','".$opvcombine23a."','".$opvcombine23b."','".$opvcombine23c."','".$grandyellow23a."','".$grandyellow23b."','".$grandyellow23c."','".$grandwhite23a."','".$grandwhite23b."','".$grandwhite23c."','".$grandtotal23a."','".$grandtotal23b."','".$grandtotal23c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1122,11 +1122,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer24 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay24."','".$nooffarmer24."','".$hybridyellow24."','".$hybridwhite24."','".$hybridtotal24."','".$opvyellow24."','".$opvwhite24."','".$opvtotal24."','".$grandyellow24."','".$grandwhite24."','".$grandtotal24."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow24a."','".$hybridyellow24b."','".$hybridyellow24c."','".$hybridwhite24a."','".$hybridwhite24b."','".$hybridwhite24c."','".$hybridcombine24a."','".$hybridcombine24b."','".$hybridcombine24c."','".$opvyellow24a."','".$opvyellow24b."','".$opvyellow24c."','".$opvwhite24a."','".$opvwhite24b."',,'".$opvwhite24c."','".$opvcombine24a."','".$opvcombine24b."','".$opvcombine24c."','".$grandyellow24a."','".$grandyellow24b."','".$grandyellow24c."','".$grandwhite24a."','".$grandwhite24b."','".$grandwhite24c."','".$grandtotal24a."','".$grandtotal24b."','".$grandtotal24c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1136,11 +1136,11 @@ if($_GET["type"] == "view"){
             }
             if($nooffarmer25 != "")
                 {
-                $sql = "INSERT INTO `tbl_reports`(`reportype`, `geocode`, `barangay`, `nooffarmers`, `hybridyellow`, `hybridwhite`, `hybridtotal`, `opvyellow`, `opvwhite`, `opvtotal`, `grandyellow`, `grandwhite`, `grandtotal`, `fromdate`, `todate`) 
-                VALUES ('".$reporttype."','".$geocode."','".$barangay25."','".$nooffarmer25."','".$hybridyellow25."','".$hybridwhite25."','".$hybridtotal25."','".$opvyellow25."','".$opvwhite25."','".$opvtotal25."','".$grandyellow25."','".$grandwhite25."','".$grandtotal25."','".$fromdate."','".$todate."')";
+                $sql = "INSERT INTO `tbl_corn_harvestng_report`(`reporttype`, `geocode`, `nooffarmers`, `hybridyellowarea`, `hybridyellowyield`, `hybridyellowprod`, `hybridwhitearea`, `hybridwhiteyield`, `hybridwhiteprod`, `hybridcombinearea`, `hybridcombineyield`, `hybridcombineprod`, `opvyellowarea`, `opvyellowyield`, `opvyellowprod`, `opvwhitearea`, `opvwhiteyield`, `opvwhiteprod`, `opvcombinearea`, `opvcombineyield`, `opvcombineprod`, `grandyellowarea`, `grandyellowyield`, `grandyellowprod`, `grandwhitearea`, `grandwhiteyield`, `grandwhiteprod`, `grandcombinearea`, `grandcombineyield`, `grandcombineprod`, `fromdate`, `todate`) VALUES 
+                ('".$reporttype."','".$geocode."','".$hybridyellow25a."','".$hybridyellow25b."','".$hybridyellow25c."','".$hybridwhite25a."','".$hybridwhite25b."','".$hybridwhite25c."','".$hybridcombine25a."','".$hybridcombine25b."','".$hybridcombine25c."','".$opvyellow25a."','".$opvyellow25b."','".$opvyellow25c."','".$opvwhite25a."','".$opvwhite25b."',,'".$opvwhite25c."','".$opvcombine25a."','".$opvcombine25b."','".$opvcombine25c."','".$grandyellow25a."','".$grandyellow25b."','".$grandyellow25c."','".$grandwhite25a."','".$grandwhite25b."','".$grandwhite25c."','".$grandtotal25a."','".$grandtotal25b."','".$grandtotal25c."','".$fromdate."','".$todate."'";
                     if(mysqli_query($con, $sql)){
                         $success = "1";
-                        $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                        $success_message = "Added successfully.";
                     } else{
                         $errors = "1";
                         $error_message = "Error submitting the form. Please try again.";
@@ -1369,6 +1369,7 @@ if($_GET["type"] == "view"){
                     <!-- 1 -->
                     
                 </table>
+                <br><br>
                 <input type="submit" value="Save" name="btnsave" class="btn-primary">
             </form>
             <br><br><br><br>
@@ -1383,3 +1384,4 @@ if($_GET["type"] == "view"){
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
+
