@@ -1095,7 +1095,7 @@ function hide() {
                 ?>
         <div class="flex flex-col gap-2">
             <form method="POST" action="" class="flex flex-col gap-2" style="overflow-x:auto">
-                <table style="width:100%" >
+                <table class="w-fit">
                     <tr>
                         <th colspan="22" style="text-align:center !important;"> CORN PLANT PEST MONITORING FORM </th>
                     </tr>
@@ -1178,99 +1178,51 @@ function hide() {
                     </tr>
                     <tr>
                         <td>EARWORM</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="earworm<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td>CORN PLANTHOPPER</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="planthopper<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td>ARMYWORM</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="armyworm<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td>FALL ARMYWORM</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="fallarmyworm<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td></td>
@@ -1304,123 +1256,63 @@ function hide() {
                     </tr>
                     <tr>
                         <td>BLANDED LEAF/SHEATH BLIGHT</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="blanded<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td>BACTERIA STALK ROT</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="bacteria<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td>DOWNY MILDEW</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="downy<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="extraa<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=21; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="extrab<?php echo $i?>" id="" value="0">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td colspan="22">Other Information</td>
