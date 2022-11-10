@@ -101,7 +101,7 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">CORN PLANT PEST MONITORING FORM</h2>
                 <div class="flex flex-col gap-2">
-                    <form type="get" action="for-corn-report-pest.php" class="flex flex-col gap-2">
+                    <form type="get" action="for-corn-plant-pest.php" class="flex flex-col gap-2">
                         <div class="flex flex-row gap-5">
                             <div class="flex flex-col">
                                 <label>Date To:</label>
