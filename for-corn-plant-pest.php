@@ -1170,7 +1170,7 @@ function hide() {
                             for($i = 1; $i<=20; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="cornborer<?php echo $i?>" id="">
+                            <input type="number" name="cornborer<?php echo $i?>" id="" value="0">
                         </td>
                         <?php
                             }
