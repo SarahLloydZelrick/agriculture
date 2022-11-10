@@ -1094,344 +1094,373 @@ function hide() {
                 ?>
         <div class="flex flex-col gap-2">
             <form method="POST" action="" class="flex flex-col gap-2" style="overflow-x:auto">
-            <table style="width:100%">
-                <tr>
-                    <th colspan="22"> CORN PLANT PEST MONITORING FORM </th>
-                <tr>
-                    <th colspan="11">Date:</th>
-                    <th colspan="11">Crop:</th>
-                </tr>
-                <tr>
-                    <th colspan="11">Location:</th>
-                    <th colspan="11">Variety:</th>
-                </tr>
-                <tr>
-                    <th colspan="11">GPS Coordinates:</th>
-                    <th colspan="11">Growth Stage:</th>
-                </tr>
-                <tr>
-                    <th colspan="11">Name of Farmer:</th>
-                    <th colspan="11">Area Planted (ha):</th>
-                </tr>
-                <tr>
-                    <td rowspan="2" colspan="1">Insect Pests</td>
-                    <td rowspan="1" colspan="21">Number of Sampled Plants</td>
-                </tr>
-                <tr>
-                    <td colspan="1">1</td>
-                    <td colspan="1">2</td>
-                    <td colspan="1">3</td>
-                    <td colspan="1">4</td>
-                    <td colspan="1">5</td>
-                    <td colspan="1">6</td>
-                    <td colspan="1">7</td>
-                    <td colspan="1">8</td>
-                    <td colspan="1">9</td>
-                    <td colspan="1">10</td>
-                    <td colspan="1">11</td>
-                    <td colspan="1">12</td>
-                    <td colspan="1">13</td>
-                    <td colspan="1">14</td>
-                    <td colspan="1">15</td>
-                    <td colspan="1">16</td>
-                    <td colspan="1">17</td>
-                    <td colspan="1">18</td>
-                    <td colspan="1">19</td>
-                    <td colspan="1">20</td>
-                    <td colspan="2">Total</td>
-                </tr>
-                <tr>
-                    <td>CORN BORER</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>EARWORM</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>CORN PLANTHOPPER</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>ARMYWORM</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>FALL ARMYWORM</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="2" colspan="1">Insect Pests</td>
-                    <td rowspan="1" colspan="21">Number of Sampled Plants</td>
-                </tr>
-                <tr>
-                    <td colspan="1">1</td>
-                    <td colspan="1">2</td>
-                    <td colspan="1">3</td>
-                    <td colspan="1">4</td>
-                    <td colspan="1">5</td>
-                    <td colspan="1">6</td>
-                    <td colspan="1">7</td>
-                    <td colspan="1">8</td>
-                    <td colspan="1">9</td>
-                    <td colspan="1">10</td>
-                    <td colspan="1">11</td>
-                    <td colspan="1">12</td>
-                    <td colspan="1">13</td>
-                    <td colspan="1">14</td>
-                    <td colspan="1">15</td>
-                    <td colspan="1">16</td>
-                    <td colspan="1">17</td>
-                    <td colspan="1">18</td>
-                    <td colspan="1">19</td>
-                    <td colspan="1">20</td>
-                    <td colspan="2">Total</td>
-                </tr>
-                <tr>
-                    <td>BLANDED LEAF/SHEATH BLIGHT</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>BACTERIA STALK ROT</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>DOWNY MILDEW</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td colspan="22">Other Information</td>
-                </tr>
-                <tr>
-                    <th colspan="11">A. Fertilizer Application</th>
-
-                    <th colspan="11">B. Pesticide Application</th>
-                </tr>
-                <tr>
-                    <th colspan="4">Kind of Fertilizer</th>
-                    <th colspan="4">Amount applied (kg/vol/ha)</th>
-                    <th colpsan="3">Date applied</th>
+                <table style="width:100%">
+                    <tr>
+                        <th colspan="22"> CORN PLANT PEST MONITORING FORM </th>
+                    <tr>
+                        <th colspan="11">Date:</th>
+                        <th colspan="11">Crop:</th>
+                    </tr>
+                    <tr>
+                        <th colspan="11">Location:</th>
+                        <th colspan="11">Variety:</th>
+                    </tr>
+                    <tr>
+                        <th colspan="11">GPS Coordinates:</th>
+                        <th colspan="11">Growth Stage:</th>
+                    </tr>
+                    <tr>
+                        <th colspan="11">Name of Farmer:</th>
+                        <th colspan="11">Area Planted (ha):</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1">Insect Pests</td>
+                        <td rowspan="1" colspan="21">Number of Sampled Plants</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">1</td>
+                        <td colspan="1">2</td>
+                        <td colspan="1">3</td>
+                        <td colspan="1">4</td>
+                        <td colspan="1">5</td>
+                        <td colspan="1">6</td>
+                        <td colspan="1">7</td>
+                        <td colspan="1">8</td>
+                        <td colspan="1">9</td>
+                        <td colspan="1">10</td>
+                        <td colspan="1">11</td>
+                        <td colspan="1">12</td>
+                        <td colspan="1">13</td>
+                        <td colspan="1">14</td>
+                        <td colspan="1">15</td>
+                        <td colspan="1">16</td>
+                        <td colspan="1">17</td>
+                        <td colspan="1">18</td>
+                        <td colspan="1">19</td>
+                        <td colspan="1">20</td>
+                        <td colspan="2">Total</td>
+                    </tr>
+                    <tr>
+                        <td>CORN BORER</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>EARWORM</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>CORN PLANTHOPPER</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ARMYWORM</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>FALL ARMYWORM</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" colspan="1">Insect Pests</td>
+                        <td rowspan="1" colspan="21">Number of Sampled Plants</td>
+                    </tr>
+                    <tr>
+                        <td colspan="1">1</td>
+                        <td colspan="1">2</td>
+                        <td colspan="1">3</td>
+                        <td colspan="1">4</td>
+                        <td colspan="1">5</td>
+                        <td colspan="1">6</td>
+                        <td colspan="1">7</td>
+                        <td colspan="1">8</td>
+                        <td colspan="1">9</td>
+                        <td colspan="1">10</td>
+                        <td colspan="1">11</td>
+                        <td colspan="1">12</td>
+                        <td colspan="1">13</td>
+                        <td colspan="1">14</td>
+                        <td colspan="1">15</td>
+                        <td colspan="1">16</td>
+                        <td colspan="1">17</td>
+                        <td colspan="1">18</td>
+                        <td colspan="1">19</td>
+                        <td colspan="1">20</td>
+                        <td colspan="2">Total</td>
+                    </tr>
+                    <tr>
+                        <td>BLANDED LEAF/SHEATH BLIGHT</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>BACTERIA STALK ROT</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>DOWNY MILDEW</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="22">Other Information</td>
+                    </tr>
+                    <tr>
+                        <th colspan="10">A. Fertilizer Application</th>
+                        <th colspan="2"></th>
+                        <th colspan="10">B. Pesticide Application</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Kind of Fertilizer</th>
+                        <th colspan="4">Amount applied (kg/vol/ha)</th>
+                        <th colspan="2">Date applied</th>
+                        
+                        <th colspan="2"></th>
+                        
+                        <th colspan="4">Amount applied (kg/vol/ha)</th>
+                        <th colspan="4">Date applied</th>
+                        <th colspan="2">Date applied</th>
+                    </tr>
                     
-
+                    <tr>
+                        <th colspan="4">0</th>
+                        <th colspan="4">0</th>
+                        <th colspan="2">0</th>
+                        
+                        <th colspan="2"></th>
+                        
+                        <th colspan="4">0</th>
+                        <th colspan="4">0</th>
+                        <th colspan="2">0</th>
+                    </tr>
                     
-                    <th colspan="4">Amount applied (kg/vol/ha)</th>
-                    <th colpsan="4">Date applied</th>
-                    <th colpsan="3">Date applied</th>
-                </tr>
-                
-                
-                </table>
+                    <tr>
+                        <th colspan="15">Remarks</th>
+                    </tr>
+                    <tr>
+                        <th colspan="15" rowspan="5">-</th>
+                    </tr>
+                    <tr>
+                        <th colspan="7"> Prepared by: </th>
+                    </tr>
+                    <tr>
+                        <th colspan="7">Name: <input type="text"/>
+                    </tr>
+                    <tr>
+                        <th colspan="7">Designation: <input type="text"/>
+                    </tr>
+                    <tr>
+                        <th colspan="7">Date: <input type="text"/>
+                    </tr>
+                    </table>
                 <input type="submit" value="Update" name="btnupdate" id="btn_update" class="btn-primary" style="display:none;">
             </form>
             <br><br><br><br>
