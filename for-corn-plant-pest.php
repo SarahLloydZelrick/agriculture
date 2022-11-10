@@ -1100,20 +1100,42 @@ function hide() {
                         <th colspan="22" style="text-align:center !important;"> CORN PLANT PEST MONITORING FORM </th>
                     </tr>
                     <tr>
-                        <th colspan="11">Date:</th>
-                        <th colspan="11">Crop:</th>
+                        <th colspan="11">Date: 
+                            <input type="date" name="date"> 
+                        </th>
+                        <th colspan="11">Crop: 
+                            <select name="crop" id="">
+                                <option value="crop">Corn</option>
+                            </select>
+                        </th>
                     </tr>
                     <tr>
-                        <th colspan="11">Location:</th>
-                        <th colspan="11">Variety:</th>
+                        <th colspan="11">Location:
+                            <select name="location" id="">
+                                <option value="mayabobo">Mayabobo</option>
+                            </select>
+                        </th>
+                        <th colspan="11">Variety:
+                            <input type="text" name="variety" id="">
+                        </th>
                     </tr>
                     <tr>
-                        <th colspan="11">GPS Coordinates:</th>
-                        <th colspan="11">Growth Stage:</th>
+                        <th colspan="11">GPS Coordinates:
+                            <input type="text" name="gps">
+                        </th>
+                        <th colspan="11">Growth Stage:
+                            <input type="text" name="growthstage" id="">
+                        </th>
                     </tr>
                     <tr>
-                        <th colspan="11">Name of Farmer:</th>
-                        <th colspan="11">Area Planted (ha):</th>
+                        <th colspan="11">Name of Farmer:
+                            <select name="farmer" id="">
+                                <option value="John">John</option>
+                            </select>
+                        </th>
+                        <th colspan="11">Area Planted (ha):
+                            <input type="number" name="area" value="0">
+                        </th>
                     </tr>
                     <tr>
                         <td rowspan="2" colspan="1">Insect Pests</td>
@@ -1144,27 +1166,15 @@ function hide() {
                     </tr>
                     <tr>
                         <td>CORN BORER</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
+                        <?php
+                            for($i = 1; $i<=20; $i++) {
+                        ?>
+                        <td>
+                            <input type="number" name="cornborer<?php echo $i?>" id="">
+                        </td>
+                        <?php
+                            }
+                        ?>
                     </tr>
                     <tr>
                         <td>EARWORM</td>
