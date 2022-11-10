@@ -1446,6 +1446,7 @@ function hide() {
                     
                     <tr>
                         <th colspan="15">Remarks</th>
+                        <th colspan="7"></th>
                     </tr>
                     <tr>
                         <th colspan="15" rowspan="5">-</th>
