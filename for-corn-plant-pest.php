@@ -26,6 +26,7 @@ if (!isset($_SESSION['loggedin'])) {
         border-collapse: collapse;
         padding:10px;
         /*background-color:#d7d8d9;*/
+        text-align:left;
     }
     .wbrgy{
         width:150px;
@@ -1094,9 +1095,10 @@ function hide() {
                 ?>
         <div class="flex flex-col gap-2">
             <form method="POST" action="" class="flex flex-col gap-2" style="overflow-x:auto">
-                <table style="width:100%">
+                <table style="width:100%" >
                     <tr>
-                        <th colspan="22"> CORN PLANT PEST MONITORING FORM </th>
+                        <th colspan="22" style="text-align:center !important;"> CORN PLANT PEST MONITORING FORM </th>
+                    </tr>
                     <tr>
                         <th colspan="11">Date:</th>
                         <th colspan="11">Crop:</th>
