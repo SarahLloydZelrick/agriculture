@@ -21,8 +21,8 @@ if (!isset($_SESSION['loggedin'])) {
 
 </head>
 <style>
-    td{
-        max-width: 20px !important;
+    .td-sm{
+        max-width: 15px !important;
     }
     table, th, td {
         border: 1px solid black;
@@ -1145,27 +1145,27 @@ function hide() {
                         <td rowspan="1" colspan="21">Number of Sampled Plants</td>
                     </tr>
                     <tr>
-                        <td colspan="1">1</td>
-                        <td colspan="1">2</td>
-                        <td colspan="1">3</td>
-                        <td colspan="1">4</td>
-                        <td colspan="1">5</td>
-                        <td colspan="1">6</td>
-                        <td colspan="1">7</td>
-                        <td colspan="1">8</td>
-                        <td colspan="1">9</td>
-                        <td colspan="1">10</td>
-                        <td colspan="1">11</td>
-                        <td colspan="1">12</td>
-                        <td colspan="1">13</td>
-                        <td colspan="1">14</td>
-                        <td colspan="1">15</td>
-                        <td colspan="1">16</td>
-                        <td colspan="1">17</td>
-                        <td colspan="1">18</td>
-                        <td colspan="1">19</td>
-                        <td colspan="1">20</td>
-                        <td colspan="2">Total</td>
+                        <td class="td-sm" colspan="1">1</td>
+                        <td class="td-sm" colspan="1">2</td>
+                        <td class="td-sm" colspan="1">3</td>
+                        <td class="td-sm" colspan="1">4</td>
+                        <td class="td-sm" colspan="1">5</td>
+                        <td class="td-sm" colspan="1">6</td>
+                        <td class="td-sm" colspan="1">7</td>
+                        <td class="td-sm" colspan="1">8</td>
+                        <td class="td-sm" colspan="1">9</td>
+                        <td class="td-sm" colspan="1">10</td>
+                        <td class="td-sm" colspan="1">11</td>
+                        <td class="td-sm" colspan="1">12</td>
+                        <td class="td-sm" colspan="1">13</td>
+                        <td class="td-sm" colspan="1">14</td>
+                        <td class="td-sm" colspan="1">15</td>
+                        <td class="td-sm" colspan="1">16</td>
+                        <td class="td-sm" colspan="1">17</td>
+                        <td class="td-sm" colspan="1">18</td>
+                        <td class="td-sm" colspan="1">19</td>
+                        <td class="td-sm" colspan="1">20</td>
+                        <td class="td-sm" colspan="2">Total</td>
                     </tr>
                     <tr>
                         <td>CORN BORER</td>
@@ -1173,7 +1173,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="cornborer<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="cornborer<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1185,7 +1185,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="earworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="earworm<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1197,7 +1197,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="planthopper<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="planthopper<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1209,7 +1209,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="armyworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="armyworm<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1221,7 +1221,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="fallarmyworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="fallarmyworm<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1235,27 +1235,27 @@ function hide() {
                         <td rowspan="1" colspan="21">Number of Sampled Plants</td>
                     </tr>
                     <tr>
-                        <td colspan="1">1</td>
-                        <td colspan="1">2</td>
-                        <td colspan="1">3</td>
-                        <td colspan="1">4</td>
-                        <td colspan="1">5</td>
-                        <td colspan="1">6</td>
-                        <td colspan="1">7</td>
-                        <td colspan="1">8</td>
-                        <td colspan="1">9</td>
-                        <td colspan="1">10</td>
-                        <td colspan="1">11</td>
-                        <td colspan="1">12</td>
-                        <td colspan="1">13</td>
-                        <td colspan="1">14</td>
-                        <td colspan="1">15</td>
-                        <td colspan="1">16</td>
-                        <td colspan="1">17</td>
-                        <td colspan="1">18</td>
-                        <td colspan="1">19</td>
-                        <td colspan="1">20</td>
-                        <td colspan="2">Total</td>
+                        <td class="td-sm" colspan="1">1</td>
+                        <td class="td-sm" colspan="1">2</td>
+                        <td class="td-sm" colspan="1">3</td>
+                        <td class="td-sm" colspan="1">4</td>
+                        <td class="td-sm" colspan="1">5</td>
+                        <td class="td-sm" colspan="1">6</td>
+                        <td class="td-sm" colspan="1">7</td>
+                        <td class="td-sm" colspan="1">8</td>
+                        <td class="td-sm" colspan="1">9</td>
+                        <td class="td-sm" colspan="1">10</td>
+                        <td class="td-sm" colspan="1">11</td>
+                        <td class="td-sm" colspan="1">12</td>
+                        <td class="td-sm" colspan="1">13</td>
+                        <td class="td-sm" colspan="1">14</td>
+                        <td class="td-sm" colspan="1">15</td>
+                        <td class="td-sm" colspan="1">16</td>
+                        <td class="td-sm" colspan="1">17</td>
+                        <td class="td-sm" colspan="1">18</td>
+                        <td class="td-sm" colspan="1">19</td>
+                        <td class="td-sm" colspan="1">20</td>
+                        <td class="td-sm" colspan="2">Total</td>
                     </tr>
                     <tr>
                         <td>BLANDED LEAF/SHEATH BLIGHT</td>
@@ -1263,7 +1263,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="blanded<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="blanded<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1275,7 +1275,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="bacteria<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="bacteria<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1287,7 +1287,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="downy<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="downy<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1299,7 +1299,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="extraa<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="extraa<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
@@ -1311,7 +1311,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td>
-                            <input type="number" name="extrab<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="extrab<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
                             }
