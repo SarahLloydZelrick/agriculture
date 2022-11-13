@@ -104,13 +104,17 @@ if (!isset($_SESSION['loggedin'])) {
                     <form type="get" action="add-for-corn-plant-pest.php" class="flex flex-col gap-2">
                         <div class="flex flex-row gap-5">
                             <div class="flex flex-col">
-                                <label>Date To:</label>
-                                <input type="date" name="dateto" id="" value="" class="form-input" required>
+                                <label>Date:</label>
+                                <input type="date" name="date" id="" value="" class="form-input" required>
                             </div>
                             <div class="flex flex-col">
-                                <label>Date From:</label>
-                                <input type="date" name="datefrom" id="" value="" class="form-input" required>
+                                <label>Location:</label>
+                                <input type="text" name="location" id="" value="" class="form-input" required>
                             </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <label>Name:</label>
+                            <input type="text" name="name" id="" value="" class="form-input" required>
                         </div>
                         <label for="">Report Type</label>
                         <select name="type" id="" class="form-input">
