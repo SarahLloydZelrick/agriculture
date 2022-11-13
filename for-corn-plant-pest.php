@@ -35,7 +35,7 @@ if (!isset($_SESSION['loggedin'])) {
         width:150px;
     }
     table{
-        table-layout:fixed;
+        table-layout:fixed !important;
     }
     
 </style>
