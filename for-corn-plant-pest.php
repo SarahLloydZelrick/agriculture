@@ -22,8 +22,8 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <style>
     .td-sm{
-        max-width: 60px !important;
-        min-width: 60px !important;
+        max-width: 40px !important;
+        min-width: 40px !important;
     }
     table, th, td {
         border: 1px solid black;
