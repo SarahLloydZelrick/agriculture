@@ -22,7 +22,8 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 <style>
     .td-sm{
-        max-width: 50px !important;
+        max-width: 30px !important;
+        min-width: 30px !important;
     }
     table, th, td {
         border: 1px solid black;
@@ -36,6 +37,7 @@ if (!isset($_SESSION['loggedin'])) {
     }
     table{
         table-layout:fixed !important;
+        width:100% !important;
     }
     
 </style>
