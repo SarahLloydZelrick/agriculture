@@ -76,7 +76,7 @@ if (!isset($_SESSION['loggedin'])) {
             <div class="flex flex-col w-96 rounded-lg bg-white shadow-lg p-10 gap-5">
                 <h2 class="text-2xl font-bold">Consolidation Report For Corn</h2>
                 <div class="flex flex-col gap-2">
-                    <form type="get" action="for-corn-report-consolidation.php" class="flex flex-col gap-2">
+                    <form type="get" action="add-for-corn-report-consolidation.php" class="flex flex-col gap-2">
                         <div class="flex flex-row gap-5">
                             <div class="flex flex-col">
                                 <label>Date To:</label>
