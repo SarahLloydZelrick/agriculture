@@ -34,6 +34,9 @@ if (!isset($_SESSION['loggedin'])) {
     .wbrgy{
         width:150px;
     }
+    table{
+        table-layout:fixed;
+    }
     
 </style>
 <script>
