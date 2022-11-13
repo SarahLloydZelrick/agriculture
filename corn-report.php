@@ -107,10 +107,10 @@ if (!isset($_SESSION['loggedin'])) {
                                 <label>Date:</label>
                                 <input type="date" name="date" id="" value="" class="form-input" required>
                             </div>
-                            <div class="flex flex-col">
-                                <label>Location:</label>
-                                <input type="text" name="location" id="" value="" class="form-input" required>
-                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <label>Location:</label>
+                            <input type="text" name="location" id="" value="" class="form-input" required>
                         </div>
                         <div class="flex flex-col">
                             <label>Name:</label>

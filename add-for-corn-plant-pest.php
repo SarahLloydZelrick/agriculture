@@ -7,6 +7,10 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
+if($_GET["type"] == "view"){
+    header("Location: for-corn-plant-pest.php?date=".$_GET['date']."&location=".$_GET['location']."&name=".$_GET['name']."");
+	exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -75,10 +79,9 @@ function hide() {
         include "topbar.php";
         include "config.php";
 
-        $reporttype = "CornPlantPest";
-        $date = $_GET['date'];
-        $location = $_GET['location'];
-        $name = $_GET['name'];
+        $reporttype = "CornPlanting";
+        $todate = $_GET['dateto'];
+        $fromdate = $_GET['datefrom'];
 
         if (isset($_POST['btnupdate'] )) {
             $geocode = "";
