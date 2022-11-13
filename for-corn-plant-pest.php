@@ -1172,7 +1172,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="cornborer<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1184,7 +1184,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="earworm<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1196,7 +1196,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="planthopper<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1208,7 +1208,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="armyworm<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1220,7 +1220,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="fallarmyworm<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1262,7 +1262,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="blanded<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1274,7 +1274,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="bacteria<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1286,7 +1286,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="downy<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1298,7 +1298,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="extraa<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
@@ -1310,7 +1310,7 @@ function hide() {
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
-                        <td>
+                        <td class="td-sm">
                             <input type="number" class="td-sm" name="extrab<?php echo $i?>" id="" value="0" disabled>
                         </td>
                         <?php
