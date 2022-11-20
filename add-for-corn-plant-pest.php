@@ -46,33 +46,7 @@ if($_GET["type"] == "view"){
     
 </style>
 <script>
-function show() {
-  var x = document.getElementById("btnview");
-  var y = document.getElementById("btnupdate");
-  var z = document.getElementById("btn_update");
-  //var a = document.getElementsByClassName("form-input")[0];
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    y.style.display = "none";
-    z.style.display = "block";
-    //a.disabled = false;
-    document.querySelectorAll('input').forEach(element => element.disabled = false);
-  }
-}
-function hide() {
-  var x = document.getElementById("btnview");
-  var y = document.getElementById("btnupdate");
-  var z = document.getElementById("btn_update");
-  //var a = document.getElementsByClassName("form-input")[0];
-  if (y.style.display === "none") {
-    y.style.display = "block";
-    x.style.display = "none";
-    z.style.display = "none";
-    document.querySelectorAll('input').forEach(element => element.disabled = true);
-    //a.disabled = true;
-  }
-}
-</script>
+
 <body>
     <?php
         include "navbar.php";
@@ -83,8 +57,16 @@ function hide() {
         $date = $_GET['date'];
         $location = $_GET['location'];
         $name = $_GET['name'];
+        $fourRandomDigit = rand(1000,9999);
+        $reportid = "report"."-".$fourRandomDigit;
 
-        if (isset($_POST['btnupdate'] )) {
+        if (isset($_POST['btnsave'] )) {
+
+            $crop = $_POST['crop'];
+            $variety = $_POST['variety'];
+            $gps = $_POST['gps'];
+            $growthstage = $_POST['growthstage'];
+            $area = $_POST['area'];
 
             $cornborer1 = $_POST['cornborer1'];
             $cornborer2 = $_POST['cornborer2'];
@@ -274,8 +256,8 @@ function hide() {
             $dateremarks = $_POST['dateremarks'];
 
             
-            $sql = "INSERT INTO `tbl_corn_pest_1`(`reporttype`, `date`, `location`, `name`, `cornborer1`, `cornborer2`, `cornborer3`, `cornborer4`, `cornborer5`, `cornborer6`, `cornborer7`, `cornborer8`, `cornborer9`, `cornborer10`, `cornborer11`, `cornborer12`, `cornborer13`, `cornborer14`, `cornborer15`, `cornborer16`, `cornborer17`, `cornborer18`, `cornborer19`, `cornborer20`, `cornborer21`, `reportid`) VALUES
-            ('".$reporttype."','".$date."','".$geocode."','".$location."','".$name."','".$cornborer1."','".$cornborer2."','".$cornborer3."','".$cornborer4."','".$cornborer5."','".$cornborer6."','".$cornborer7."','".$cornborer8."','".$cornborer9."','".$cornborer10."','".$cornborer11."','".$cornborer12."',,'".$cornborer13."','".$cornborer14."','".$cornborer15."','".$cornborer16."','".$cornborer17."','".$cornborer18."','".$cornborer19."','".$cornborer20."','".$cornborer21."','".$reportid."')";
+            $sql = "INSERT INTO `tbl_corn_pest_1`(`reporttype`, `date`, `location`, `name`, `cornborer1`, `cornborer2`, `cornborer3`, `cornborer4`, `cornborer5`, `cornborer6`, `cornborer7`, `cornborer8`, `cornborer9`, `cornborer10`, `cornborer11`, `cornborer12`, `cornborer13`, `cornborer14`, `cornborer15`, `cornborer16`, `cornborer17`, `cornborer18`, `cornborer19`, `cornborer20`, `cornborer21`, `reportid`, `crop`, `variety`, `gps`, `growthstage`, `area`)  VALUES
+            ('".$reporttype."','".$date."','".$location."','".$name."','".$cornborer1."','".$cornborer2."','".$cornborer3."','".$cornborer4."','".$cornborer5."','".$cornborer6."','".$cornborer7."','".$cornborer8."','".$cornborer9."','".$cornborer10."','".$cornborer11."','".$cornborer12."',,'".$cornborer13."','".$cornborer14."','".$cornborer15."','".$cornborer16."','".$cornborer17."','".$cornborer18."','".$cornborer19."','".$cornborer20."','".$cornborer21."','".$reportid."','".$crop."','".$variety."','".$gps."','".$growthstage."','".$area."')";
                 if(mysqli_query($con, $sql)){
 
                     $sql2 = "INSERT INTO `tbl_corn_pest_2`(`id`, `reportid`, `earworm1`, `earworm2`, `earworm3`, `earworm4`, `earworm5`, `earworm6`, `earworm7`, `earworm8`, `earworm9`, `earworm10`, `earworm11`, `earworm12`, `earworm13`, `earworm14`, `earworm15`, `earworm16`, `earworm17`, `earworm18`, `earworm19`, `earworm20`, `earworm21`) VALUES
@@ -356,8 +338,6 @@ function hide() {
     <div class="container flex flex-col p-10 ml-0 w-fit md:ml-60 " >
         <div class="flex flex-row justify-between">
             <h2 class="text-2xl font-bold"> CORN PLANT PEST MONITORING FORM </h2>
-            <button class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-5 w-auto icon-blue" id="btnupdate" onclick="show()">&nbsp;Edit</button>
-            <button class="fa fa-eye rounded-lg border-2 border-green-500/50 p-5 w-auto icon-green" id="btnview" style="display:none;" onclick="hide()">&nbsp;View</button>
         </div>
         <br>
         <?php
@@ -386,40 +366,40 @@ function hide() {
                     </tr>
                     <tr>
                         <th colspan="11">Date: 
-                            <input type="date" name="date" disabled> 
+                            <input type="date" name="date"  > 
                         </th>
                         <th colspan="11">Crop: 
-                            <select name="crop" id="" disabled>
+                            <select name="crop" id=""  >
                                 <option value="crop">Corn</option>
                             </select>
                         </th>
                     </tr>
                     <tr>
                         <th colspan="11">Location:
-                            <select name="location" id="" disabled>
+                            <select name="location" id=""  >
                                 <option value="mayabobo">Mayabobo</option>
                             </select>
                         </th>
                         <th colspan="11">Variety:
-                            <input type="text" name="variety" id="" disabled>
+                            <input type="text" name="variety" id=""  >
                         </th>
                     </tr>
                     <tr>
                         <th colspan="11">GPS Coordinates:
-                            <input type="text" name="gps" disabled>
+                            <input type="text" name="gps"  >
                         </th>
                         <th colspan="11">Growth Stage:
-                            <input type="text" name="growthstage" id="" disabled>
+                            <input type="text" name="growthstage" id=""  >
                         </th>
                     </tr>
                     <tr>
                         <th colspan="11">Name of Farmer:
-                            <select name="farmer" id="" disabled>
+                            <select name="farmer" id=""  >
                                 <option value="John">John</option>
                             </select>
                         </th>
                         <th colspan="11">Area Planted (ha):
-                            <input type="number" name="area" value="0" disabled>
+                            <input type="number" name="area" value="0"  >
                         </th>
                     </tr>
                     <tr>
@@ -455,7 +435,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="cornborer<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="cornborer<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -467,7 +447,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="earworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="earworm<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -479,7 +459,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="planthopper<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="planthopper<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -491,7 +471,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="armyworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="armyworm<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -503,7 +483,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="fallarmyworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="fallarmyworm<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -545,7 +525,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="blanded<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="blanded<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -557,7 +537,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="bacteria<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="bacteria<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -569,7 +549,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="downy<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="downy<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -581,7 +561,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="extraa<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="extraa<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -593,7 +573,7 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="extrab<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="extrab<?php echo $i?>" id="" value="0"  >
                         </td>
                         <?php
                             }
@@ -622,28 +602,28 @@ function hide() {
                     
                     <tr>
                         <th colspan="4">
-                            <input type="text" name="kindoffertilizer" id="" disabled>
+                            <input type="text" name="kindoffertilizer" id=""  >
                         </th>
                         <th colspan="4">
-                            <input type="number" name="amountapplied" id="" disabled>
+                            <input type="number" name="amountapplied" id=""  >
                         </th>
                         <th colspan="2">
-                            <input type="date" name="dateapplied" id="" disabled>
+                            <input type="date" name="dateapplied" id=""  >
                         </th>
                         
                         <th colspan="2"></th>
                         
                         <th colspan="4">
-                            <input type="text" name="kindofpesticide" id="" disabled>
+                            <input type="text" name="kindofpesticide" id=""  >
                         </th>
                         <th colspan="2">
-                            <input type="text" name="dosage" id="" disabled>
+                            <input type="text" name="dosage" id=""  >
                         </th>
                         <th colspan="2">
-                            <input type="date" name="dateappliedplanting" id="" disabled>
+                            <input type="date" name="dateappliedplanting" id=""  >
                         </th>
                         <th colspan="2">
-                            <input type="number" name="tankloads" id="" disabled>
+                            <input type="number" name="tankloads" id=""  >
                         </th>
                     </tr>
                     
@@ -658,16 +638,16 @@ function hide() {
                         <th colspan="7"> Prepared by: </th>
                     </tr>
                     <tr>
-                        <th colspan="7">Name: <input type="text" name="preparedbyname" disabled/>
+                        <th colspan="7">Name: <input type="text" name="preparedbyname"  />
                     </tr>
                     <tr>
                         <th colspan="7">Designation: <input type="text" name="designation"/>
                     </tr>
                     <tr>
-                        <th colspan="7">Date: <input type="text" name="dateremarks" disabled/>
+                        <th colspan="7">Date: <input type="text" name="dateremarks"  />
                     </tr>
                     </table>
-                <input type="submit" value="Update" name="btnupdate" id="btn_update" class="btn-primary" style="display:none;">
+                <input type="submit" value="Save" name="btnsave" id="btn_update" class="btn-primary">
             </form>
             <br><br><br><br>
         </div>

@@ -75,13 +75,20 @@ function hide() {
         include "topbar.php";
         include "config.php";
 
-        $reporttype = "CornPlantPest";
-        $date = $_GET['date'];
-        $location = $_GET['location'];
-        $name = $_GET['name'];
+        
 
         if (isset($_POST['btnupdate'] )) {
-            $geocode = "";
+            $reportid = $_POST['reportid'];
+
+            $date = $_POST['date'];
+            $location = $_POST['location'];
+            $name = $_POST['name'];
+            $crop = $_POST['crop'];
+            $variety = $_POST['variety'];
+            $gps = $_POST['gps'];
+            $growthstage = $_POST['growthstage'];
+            $area = $_POST['area'];
+
             $cornborer1 = $_POST['cornborer1'];
             $cornborer2 = $_POST['cornborer2'];
             $cornborer3 = $_POST['cornborer3'];
@@ -269,6 +276,62 @@ function hide() {
             $designation = $_POST['designation'];
             $dateremarks = $_POST['dateremarks'];
 
+            $sql1 = "UPDATE `tbl_corn_pest_1` SET `cornborer1`='".$cornborer1."',`cornborer2`='".$cornborer2."',`cornborer3`='".$cornborer3."',`cornborer4`='".$cornborer4."',`cornborer5`='".$cornborer5."',`cornborer6`='".$cornborer6."',`cornborer7`='".$cornborer7."',`cornborer8`='".$cornborer8."',`cornborer9`='".$cornborer9."',`cornborer10`='".$cornborer10."',`cornborer11`='".$cornborer11."',`cornborer12`='".$cornborer12."',`cornborer13`='".$cornborer13."',`cornborer14`='".$cornborer14."',`cornborer15`='".$cornborer15."',`cornborer16`='".$cornborer16."',`cornborer17`='".$cornborer17."',`cornborer18`='".$cornborer18."',`cornborer19`='".$cornborer19."',`cornborer20`='".$cornborer20."',`cornborer21`='".$cornborer21."',`crop`='".$crop."',`variety`='".$variety."',`gps`='".$gps."',`growthstage`='".$growthstage."',`area`='".$area."' WHERE `reportid` = '".$reportid."'";
+                if(mysqli_query($con, $sql1)){
+                    $sql2 = "UPDATE `tbl_corn_pest_2` SET `earworm1`='".$earworm1."',`earworm2`='".$earworm2."',`earworm3`='".$earworm3."',`earworm4`='".$earworm4."',`earworm5`='".$earworm5."',`earworm6`='".$earworm6."',`earworm7`='".$earworm7."',`earworm8`='".$earworm8."',`earworm9`='".$earworm9."',`earworm10`='".$earworm10."',`earworm11`='".$earworm11."',`earworm12`='".$earworm12."',`earworm13`='".$earworm13."',`earworm14`='".$earworm14."',`earworm15`='".$earworm15."',`earworm16`='".$earworm16."',`earworm17`='".$earworm17."',`earworm18`='".$earworm18."',`earworm19`='".$earworm19."',`earworm20`='".$earworm20."',`earworm21`='".$earworm21."' WHERE `reportid` = '".$reportid."'";
+                    if(mysqli_query($con, $sql2)){
+                        $sql3 = "UPDATE `tbl_corn_pest_3` SET `planthopper1`='".$planthopper1."',`planthopper2`='".$planthopper2."',`planthopper3`='".$planthopper3."',`planthopper4`='".$planthopper4."',`planthopper5`='".$planthopper5."',`planthopper6`='".$planthopper6."',`planthopper7`='".$planthopper7."',`planthopper8`='".$planthopper8."',`planthopper9`='".$planthopper9."',`planthopper10`='".$planthopper10."',`planthopper11`='".$planthopper11."',`planthopper12`='".$planthopper12."',`planthopper13`='".$planthopper13."',`planthopper14`='".$planthopper14."',`planthopper15`='".$planthopper15."',`planthopper16`='".$planthopper16."',`planthopper17`='".$planthopper17."',`planthopper18`='".$planthopper18."',`planthopper19`='".$planthopper19."',`planthopper20`='".$planthopper20."',`planthopper21`='".$planthopper21."' WHERE `reportid` = '".$reportid."'";
+                        if(mysqli_query($con, $sql3)){
+                            $sql4 = "UPDATE `tbl_corn_pest_4` SET `armyworm1`='".$armyworm1."',`armyworm2`='".$armyworm2."',`armyworm3`='".$armyworm3."',`armyworm4`='".$armyworm4."',`armyworm5`='".$armyworm5."',`armyworm6`='".$armyworm6."',`armyworm7`='".$armyworm7."',`armyworm8`='".$armyworm8."',`armyworm9`='".$armyworm9."',`armyworm10`='".$armyworm10."',`armyworm11`='".$armyworm11."',`armyworm12`='".$armyworm12."',`armyworm13`='".$armyworm13."',`armyworm14`='".$armyworm14."',`armyworm15`='".$armyworm15."',`armyworm16`='".$armyworm16."',`armyworm17`='".$armyworm17."',`armyworm18`='".$armyworm18."',`armyworm19`='".$armyworm19."',`armyworm20`='".$armyworm20."',`armyworm21`='".$armyworm21."' WHERE `reportid` = '".$reportid."'";
+                            if(mysqli_query($con, $sql4)){
+                                $sql5 = "UPDATE `tbl_corn_pest_5` SET `fallarmyworm1`='".$fallarmyworm1."',`fallarmyworm2`='".$fallarmyworm2."',`fallarmyworm3`='".$fallarmyworm3."',`fallarmyworm4`='".$fallarmyworm4."',`fallarmyworm5`='".$fallarmyworm5."',`fallarmyworm6`='".$fallarmyworm6."',`fallarmyworm7`='".$fallarmyworm7."',`fallarmyworm8`='".$fallarmyworm8."',`fallarmyworm9`='".$fallarmyworm9."',`fallarmyworm10`='".$fallarmyworm10."',`fallarmyworm11`='".$fallarmyworm11."',`fallarmyworm12`='".$fallarmyworm12."',`fallarmyworm13`='".$fallarmyworm13."',`fallarmyworm14`='".$fallarmyworm14."',`fallarmyworm15`='".$fallarmyworm15."',`fallarmyworm16`='".$fallarmyworm16."',`fallarmyworm17`='".$fallarmyworm17."',`fallarmyworm18`='".$fallarmyworm18."',`fallarmyworm19`='".$fallarmyworm19."',`fallarmyworm20`='".$fallarmyworm20."',`fallarmyworm21`='".$fallarmyworm21."' WHERE `reportid` = '".$reportid."'";
+                                if(mysqli_query($con, $sql5)){
+                                    $sql6 = "UPDATE `tbl_corn_pest_6` SET `blanded1`='".$blanded1."',`blanded2`='".$blanded2."',`blanded3`='".$blanded3."',`blanded4`='".$blanded4."',`blanded5`='".$blanded5."',`blanded6`='".$blanded6."',`blanded7`='".$blanded7."',`blanded8`='".$blanded8."',`blanded9`='".$blanded9."',`blanded10`='".$blanded10."',`blanded11`='".$blanded11."',`blanded12`='".$blanded12."',`blanded13`='".$blanded13."',`blanded14`='".$blanded14."',`blanded15`='".$blanded15."',`blanded16`='".$blanded16."',`blanded17`='".$blanded17."',`blanded18`='".$blanded18."',`blanded19`='".$blanded19."',`blanded20`='".$blanded20."',`blanded21`='".$blanded21."' WHERE `reportid` = '".$reportid."'";
+                                    if(mysqli_query($con, $sql6)){
+                                        $sql7 = "UPDATE `tbl_corn_pest_7` SET `bacteria1`='".$bacteria1."',`bacteria2`='".$bacteria2."',`bacteria3`='".$bacteria3."',`bacteria4`='".$bacteria4."',`bacteria5`='".$bacteria5."',`bacteria6`='".$bacteria6."',`bacteria7`='".$bacteria7."',`bacteria8`='".$bacteria8."',`bacteria9`='".$bacteria9."',`bacteria10`='".$bacteria10."',`bacteria11`='".$bacteria11."',`bacteria12`='".$bacteria12."',`bacteria13`='".$bacteria13."',`bacteria14`='".$bacteria14."',`bacteria15`='".$bacteria15."',`bacteria16`='".$bacteria16."',`bacteria17`='".$bacteria17."',`bacteria18`='".$bacteria18."',`bacteria19`='".$bacteria19."',`bacteria20`='".$bacteria20."',`bacteria21`='".$bacteria21."' WHERE `reportid` = '".$reportid."'";
+                                        if(mysqli_query($con, $sql7)){
+                                            $sql8 = "UPDATE `tbl_corn_pest_8` SET `downy1`='".$downy1."',`downy2`='".$downy2."',`downy3`='".$downy3."',`downy4`='".$downy4."',`downy5`='".$downy5."',`downy6`='".$downy6."',`downy7`='".$downy7."',`downy8`='".$downy8."',`downy9`='".$downy9."',`downy10`='".$downy10."',`downy11`='".$downy11."',`downy12`='".$downy12."',`downy13`='".$downy13."',`downy14`='".$downy14."',`downy15`='".$downy15."',`downy16`='".$downy16."',`downy17`='".$downy17."',`downy18`='".$downy18."',`downy19`='".$downy19."',`downy20`='".$downy20."',`downy21`='".$downy21."' WHERE `reportid` = '".$reportid."'";
+                                            if(mysqli_query($con, $sql8)){
+                                                $sql9 = "UPDATE `tbl_corn_pest_9` SET `kindoffertilizer`='".$kindoffertilizer."',`amountapplied`='".$amountapplied."',`dateapplied`='".$dateapplied."',`kindofpesticide`='".$kindofpesticide."',`dosage`='".$dosage."',`dateappliedplanting`='".$dateappliedplanting."',`tankloads`='".$tankloads."',`preparedbyname`='".$preparedbyname."',`designation`='".$designation."',`dateremarks`='".$dateremarks."' WHERE `reportid` = '".$reportid."'";
+                                                if(mysqli_query($con, $sql9)){
+                                                    $success = "1";
+                                                    $success_message = "Updated successfully.";
+                                                } else{
+                                                    $errors = "1";
+                                                    $error_message = "Error updating the form. Please try again.";
+                                                }
+                                            } else{
+                                                $errors = "1";
+                                                $error_message = "Error updating the form. Please try again.";
+                                            }
+                                        } else{
+                                            $errors = "1";
+                                            $error_message = "Error updating the form. Please try again.";
+                                        }
+                                    } else{
+                                        $errors = "1";
+                                        $error_message = "Error updating the form. Please try again.";
+                                    }
+                                } else{
+                                    $errors = "1";
+                                    $error_message = "Error updating the form. Please try again.";
+                                }
+                            } else{
+                                $errors = "1";
+                                $error_message = "Error updating the form. Please try again.";
+                            }
+                        } else{
+                            $errors = "1";
+                            $error_message = "Error updating the form. Please try again.";
+                        }
+                    } else{
+                        $errors = "1";
+                        $error_message = "Error updating the form. Please try again.";
+                    }
+                } else{
+                    $errors = "1";
+                    $error_message = "Error updating the form. Please try again.";
+                }
             
           
 
@@ -307,9 +370,19 @@ function hide() {
                     <tr>
                         <th colspan="22" style="text-align:center !important;"> CORN PLANT PEST MONITORING FORM </th>
                     </tr>
+                    <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_1` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                    ?>
                     <tr>
                         <th colspan="11">Date: 
-                            <input type="date" name="date" disabled> 
+                            <input type="date" name="date" value="<?php echo $row['date']; ?>" disabled> 
                         </th>
                         <th colspan="11">Crop: 
                             <select name="crop" id="" disabled>
@@ -324,15 +397,15 @@ function hide() {
                             </select>
                         </th>
                         <th colspan="11">Variety:
-                            <input type="text" name="variety" id="" disabled>
+                            <input type="text" name="variety" id="" value="<?php echo $row['variety']; ?>" disabled>
                         </th>
                     </tr>
                     <tr>
                         <th colspan="11">GPS Coordinates:
-                            <input type="text" name="gps" disabled>
+                            <input type="text" name="gps" value="<?php echo $row['gps']; ?>" disabled>
                         </th>
                         <th colspan="11">Growth Stage:
-                            <input type="text" name="growthstage" id="" disabled>
+                            <input type="text" name="growthstage" value="<?php echo $row['growthstage']; ?>" id="" disabled>
                         </th>
                     </tr>
                     <tr>
@@ -342,7 +415,7 @@ function hide() {
                             </select>
                         </th>
                         <th colspan="11">Area Planted (ha):
-                            <input type="number" name="area" value="0" disabled>
+                            <input type="number" name="area" value="<?php echo $row['areaplanted']; ?>" disabled>
                         </th>
                     </tr>
                     <tr>
@@ -378,60 +451,120 @@ function hide() {
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="cornborer<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="cornborer<?php echo $i?>" id="" value="<?php echo $row['cornborer'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                <?php
+                        }
+                    }
+                ?>
+                <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_2` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                ?>
                     <tr>
                         <td>EARWORM</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="earworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="earworm<?php echo $i?>" id="" value="<?php echo $row['earworm'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                <?php
+                        }
+                    }
+                ?>
+                <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_3` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                ?>
                     <tr>
                         <td>CORN PLANTHOPPER</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="planthopper<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="planthopper<?php echo $i?>" id=""  value="<?php echo $row['planthopper'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                <?php
+                        }
+                    }
+                ?>
+                <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_4` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                ?>
                     <tr>
                         <td>ARMYWORM</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="armyworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="armyworm<?php echo $i?>" id="" value="<?php echo $row['armyworm'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                <?php
+                        }
+                    }
+                ?>
+                <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_5` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                ?>
                     <tr>
                         <td>FALL ARMYWORM</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="fallarmyworm<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="fallarmyworm<?php echo $i?>" id="" value="<?php echo $row['fallarmyworm'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                 <?php
+                        }
+                    }
+                ?>
                     <tr>
                         <td></td>
                     </tr>
@@ -462,42 +595,84 @@ function hide() {
                         <td class="td-sm" colspan="1">20</td>
                         <td class="td-sm" colspan="2">Total</td>
                     </tr>
+                    <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_6` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                    ?>
                     <tr>
                         <td>BLANDED LEAF/SHEATH BLIGHT</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="blanded<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="blanded<?php echo $i?>" id="" value="<?php echo $row['blanded'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                    <?php
+                        }
+                    }
+                    ?>
+                    <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_7` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                    ?>
                     <tr>
                         <td>BACTERIA STALK ROT</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="bacteria<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="bacteria<?php echo $i?>" id="" value="<?php echo $row['bacteria'], $i;?>"  disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                    <?php
+                        }
+                    }
+                    ?>
+                    <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_8` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
+                    
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                    ?>
                     <tr>
                         <td>DOWNY MILDEW</td>
                         <?php
                             for($i = 1; $i<=21; $i++) {
                         ?>
                         <td class="td-sm">
-                            <input type="number" class="td-sm" name="downy<?php echo $i?>" id="" value="0" disabled>
+                            <input type="number" class="td-sm" name="downy<?php echo $i?>" id="" value="<?php echo $row['downy'], $i;?>" disabled>
                         </td>
                         <?php
                             }
                         ?>
                     </tr>
+                    <?php
+                        }
+                    }
+                    ?>
                     <tr>
                         <td></td>
                         <?php
@@ -542,31 +717,40 @@ function hide() {
                         <th colspan="2">Date.days applied after planting</th>
                         <th colspan="2">No. of tankloads/ha</th>
                     </tr>
+                    <?php
+                    $sql = "SELECT * FROM `tbl_corn_pest_9` WHERE reportid = '$reportid'";
+                    $result = mysqli_query($con, $sql);
                     
+                    if (mysqli_num_rows($result) > 0) {
+                        $i = 0;
+                        while($row = mysqli_fetch_assoc($result)) {
+                            $i++;
+
+                    ?>
                     <tr>
                         <th colspan="4">
-                            <input type="text" name="kindoffertilizer" id="" disabled>
+                            <input type="text" name="kindoffertilizer" id="" value="<?php echo $row['kindoffertilizer'];?>" disabled>
                         </th>
                         <th colspan="4">
-                            <input type="number" name="amountapplied" id="" disabled>
+                            <input type="number" name="amountapplied" id="" value="<?php echo $row['amountapplied'];?>" disabled>
                         </th>
                         <th colspan="2">
-                            <input type="date" name="dateapplied" id="" disabled>
+                            <input type="date" name="dateapplied" id="" value="<?php echo $row['dateapplied'];?>" disabled>
                         </th>
                         
                         <th colspan="2"></th>
                         
                         <th colspan="4">
-                            <input type="text" name="kindofpesticide" id="" disabled>
+                            <input type="text" name="kindofpesticide" id="" value="<?php echo $row['kindofpesticide'];?>" disabled>
                         </th>
                         <th colspan="2">
-                            <input type="text" name="dosage" id="" disabled>
+                            <input type="text" name="dosage" id="" value="<?php echo $row['dosage'];?>" disabled>
                         </th>
                         <th colspan="2">
-                            <input type="date" name="dateappliedplanting" id="" disabled>
+                            <input type="date" name="dateappliedplanting" id="" value="<?php echo $row['dateappliedplanting'];?>" disabled>
                         </th>
                         <th colspan="2">
-                            <input type="number" name="tankloads" id="" disabled>
+                            <input type="number" name="tankloads" id="" value="<?php echo $row['tankloads'];?>" disabled>
                         </th>
                     </tr>
                     
@@ -581,14 +765,19 @@ function hide() {
                         <th colspan="7"> Prepared by: </th>
                     </tr>
                     <tr>
-                        <th colspan="7">Name: <input type="text" name="preparedbyname" disabled/>
+                        <th colspan="7">Name: <input type="text" name="preparedbyname" value="<?php echo $row['preparedbyname'];?>"  disabled/>
                     </tr>
                     <tr>
-                        <th colspan="7">Designation: <input type="text" name="designation"/>
+                        <th colspan="7">Designation: <input type="text" name="designation" value="<?php echo $row['designation'];?>" disabled/>
                     </tr>
                     <tr>
-                        <th colspan="7">Date: <input type="text" name="dateremarks" disabled/>
+                        <th colspan="7">Date: <input type="text" name="dateremarks" value="<?php echo $row['dateremarks'];?>" disabled/>
                     </tr>
+                <?php
+                        }
+                    }
+
+                ?>
                     </table>
                 <input type="submit" value="Update" name="btnupdate" id="btn_update" class="btn-primary" style="display:none;">
             </form>
