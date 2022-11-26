@@ -320,8 +320,13 @@ if (!isset($_SESSION['loggedin'])) {
                         } else {
                         echo "0 results";
                         }
-
-                        include "tabletwo.php";
+                        ?>
+                        <fieldset disabled="disabled">
+                          <?php
+                            include "tabletwo.php";
+                          ?>
+                        </fieldset>
+                        <?php
                       }
                     ?> 
                 </div>
