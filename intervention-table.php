@@ -429,6 +429,10 @@ if (!isset($_SESSION['loggedin'])) {
                         <p class="text-sm">To continue, please enter your PIN</p>
                         <input type="password" name="" id="reg_pass_pending" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                         <input type="password" name="" id="reg_confirm_pass_pending" class="form-input">
+                        <div class="flex gap-2">
+                            <input type="checkbox" onclick="showPin()"> 
+                            <p class="text-white">Show Pin</p>
+                        </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -513,6 +517,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_pending" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_pending" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPin()"> 
+                                <p class="text-white">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -596,6 +604,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_master_delete" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_master_delete" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPin()"> 
+                                <p class="text-white">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -667,6 +679,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_receive_delete" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_receive_delete" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPin()"> 
+                                <p class="text-white">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -737,6 +753,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_delete_receive" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_delete_receive" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPin()"> 
+                                <p class="text-white">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
