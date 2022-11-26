@@ -29,7 +29,7 @@ if(isset($_POST["btnsubmit"])) {
                     $_SESSION['otp'] = $fourRandomDigit;
                         // Your Account SID and Auth Token from twilio.com/console
                         $sid = 'ACb342928f23470ab26a4f0daf8f4a0772';
-                        $token = 'e109b328cfd33ef44fbef02354446452';
+                        $token = '6120b64898c667b76d3bee82ea9fa97b';
                         $client = new Client($sid, $token);
 
                         // Use the client to do fun stuff like send text messages!
