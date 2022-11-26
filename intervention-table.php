@@ -518,7 +518,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="password" name="" id="reg_pass_pending" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_pending" class="form-input">
                             <div class="flex gap-2">
-                                <input type="checkbox" onclick="showPin()"> 
+                                <input type="checkbox" onclick="showPins()"> 
                                 <p class="text-white">Show Pin</p>
                             </div>
                     </div>
@@ -605,7 +605,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="password" name="" id="reg_pass_master_delete" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_master_delete" class="form-input">
                             <div class="flex gap-2">
-                                <input type="checkbox" onclick="showPin()"> 
+                                <input type="checkbox" onclick="showPintwo()"> 
                                 <p class="text-white">Show Pin</p>
                             </div>
                     </div>
@@ -680,7 +680,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="password" name="" id="reg_pass_receive_delete" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_receive_delete" class="form-input">
                             <div class="flex gap-2">
-                                <input type="checkbox" onclick="showPin()"> 
+                                <input type="checkbox" onclick="showPinthree()"> 
                                 <p class="text-white">Show Pin</p>
                             </div>
                     </div>
@@ -754,7 +754,7 @@ if (!isset($_SESSION['loggedin'])) {
                             <input type="password" name="" id="reg_pass_delete_receive" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_delete_receive" class="form-input">
                             <div class="flex gap-2">
-                                <input type="checkbox" onclick="showPin()"> 
+                                <input type="checkbox" onclick="showPinfour()"> 
                                 <p class="text-white">Show Pin</p>
                             </div>
                     </div>
@@ -1086,28 +1086,38 @@ if (!isset($_SESSION['loggedin'])) {
         } 
         function showPin() {
             var a = document.getElementById("reg_confirm_pass_pending");
-            var b = document.getElementById("reg_confirm_pass_master_delete");
-            var c = document.getElementById("reg_confirm_pass_receive_delete");
-            var d = document.getElementById("reg_confirm_pass_delete_receive");
-        
             if (a.type === "password") {
                 a.type = "text";
             } else {
                 a.type = "password";
             }
-
+        }
+        function showPins() {
+            var a = document.getElementById("reg_confirm_pass_pending");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+        function showPintwo() {
+            var b = document.getElementById("reg_confirm_pass_master_delete");
             if (b.type === "password") {
                 b.type = "text";
             } else {
                 b.type = "password";
             }
-
+        }
+        function showPinthree() {
+            var c = document.getElementById("reg_confirm_pass_receive_delete");
             if (c.type === "password") {
                 c.type = "text";
             } else {
                 c.type = "password";
             }
-
+        }
+        function showPinfour() {
+            var d = document.getElementById("reg_confirm_pass_delete_receive");
             if (d.type === "password") {
                 d.type = "text";
             } else {
