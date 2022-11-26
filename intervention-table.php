@@ -1084,7 +1084,37 @@ if (!isset($_SESSION['loggedin'])) {
                 document.getElementById('hide_amount').style.display = "block";
             }
         } 
-</script>
+        function showPin() {
+            var a = document.getElementById("reg_confirm_pass_pending");
+            var b = document.getElementById("reg_confirm_pass_master_delete");
+            var c = document.getElementById("reg_confirm_pass_receive_delete");
+            var d = document.getElementById("reg_confirm_pass_delete_receive");
+        
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+
+            if (b.type === "password") {
+                b.type = "text";
+            } else {
+                b.type = "password";
+            }
+
+            if (c.type === "password") {
+                c.type = "text";
+            } else {
+                c.type = "password";
+            }
+
+            if (d.type === "password") {
+                d.type = "text";
+            } else {
+                d.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>
 
