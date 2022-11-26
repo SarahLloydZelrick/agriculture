@@ -211,6 +211,10 @@ if (!isset($_SESSION['loggedin'])) {
                                     <p class="text-sm">To continue, please enter your PIN</p>
                                     <input type="password" name="" id="reg_pass_activate" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                                     <input type="password" name="" id="reg_confirm_pass_activate" class="form-input">
+                                    <div class="flex gap-2">
+                                        <input type="checkbox" onclick="showPin()"> 
+                                        <p class="">Show Pin</p>
+                                    </div>
                             </div>
                             <div
                                 class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -276,6 +280,10 @@ if (!isset($_SESSION['loggedin'])) {
                                     <p class="text-sm">To continue, please enter your PIN</p>
                                     <input type="password" name="" id="reg_pass_deactivate" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                                     <input type="password" name="" id="reg_confirm_pass_deactivate" class="form-input">
+                                    <div class="flex gap-2">
+                                        <input type="checkbox" onclick="showPintwo()"> 
+                                        <p class="">Show Pin</p>
+                                    </div>
                             </div>
                             <div
                                 class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -435,6 +443,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_pending" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_pending" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPinthree()"> 
+                                <p class="">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -505,6 +517,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_reject" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_reject" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPinfour()"> 
+                                <p class="">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -573,6 +589,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_reject_two" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_reject_two" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPinfive()"> 
+                                <p class="">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -638,6 +658,10 @@ if (!isset($_SESSION['loggedin'])) {
                             <p class="text-sm">To continue, please enter your PIN</p>
                             <input type="password" name="" id="reg_pass_rejectapprove" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
                             <input type="password" name="" id="reg_confirm_pass_rejectapprove" class="form-input">
+                            <div class="flex gap-2">
+                                <input type="checkbox" onclick="showPinsix()"> 
+                                <p class="">Show Pin</p>
+                            </div>
                     </div>
                     <div
                         class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
@@ -1042,6 +1066,54 @@ if (!isset($_SESSION['loggedin'])) {
             }
 
         });
+        function showPin() {
+            var a = document.getElementById("reg_confirm_pass_rejectapprove");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+        function showPintwo() {
+            var a = document.getElementById("reg_confirm_pass_reject_two");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+        function showPinthree() {
+            var a = document.getElementById("reg_confirm_pass_reject");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+        function showPinfour() {
+            var a = document.getElementById("reg_confirm_pass_pending");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+        function showPinfive() {
+            var a = document.getElementById("reg_confirm_pass_deactivate");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
+        function showPinsix() {
+            var a = document.getElementById("reg_confirm_pass_activate");
+            if (a.type === "password") {
+                a.type = "text";
+            } else {
+                a.type = "password";
+            }
+        }
     </script>
 </body>
 </html>
