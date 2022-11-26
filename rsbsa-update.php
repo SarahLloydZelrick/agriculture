@@ -1228,7 +1228,7 @@
                             </div>
                     </div>
                     <div class="flex flex-row justify-center pt-5">
-                        <input class="btn-primary w-2/4 mt-2" name="btnsubmit" type="submit" value="Submit RSBSA form">
+                        <input class="btn-primary w-2/4 mt-2" name="btnsubmit" type="submit" value="Update RSBSA form">
                     </div>
                     <div class="flex justify-start pt-5">
                             <span onclick="myFunctionFourprev()" class="p-5 w-32 cursor-pointer bg-stone-300 rounded-lg text-center">PREVIOUS</span>

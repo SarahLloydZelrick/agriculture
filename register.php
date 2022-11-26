@@ -208,7 +208,11 @@ if(isset($_POST["btnsubmit"])) {
                             </div>
                             <div class="flex flex-col gap-2 w-full">
                                 <label class="text-white" for="">Pin</label>
-                                <input type="password" name="pin" id="" class="form-input" placeholder="Pin" maxlength="4">
+                                <input type="password" name="pin" id="pin" class="form-input" placeholder="Pin" maxlength="4">
+                                <div class="flex gap-2">
+                                    <input type="checkbox" onclick="showPin()"> 
+                                    <p class="text-white">Show Pin</p>
+                                </div>
                             </div>
                         </div>
                         <div class="first_row flex flex-row gap-5 w-full" style="display:none;" id="hidden_barangay">
@@ -287,6 +291,14 @@ if(isset($_POST["btnsubmit"])) {
 <script>
     function showPassword() {
         var x = document.getElementById("password");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+    function showPin() {
+        var x = document.getElementById("pin");
         if (x.type === "password") {
             x.type = "text";
         } else {
