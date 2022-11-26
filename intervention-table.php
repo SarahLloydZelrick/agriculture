@@ -427,8 +427,8 @@ if (!isset($_SESSION['loggedin'])) {
                         </div>
                         <br>
                         <p class="text-sm">To continue, please enter your PIN</p>
-                        <input type="password" name="" id="reg_pass_pending" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
-                        <input type="password" name="" id="reg_confirm_pass_pending" class="form-input">
+                        <input type="password" name="" id="reg_pass_pending_two" class="form-input" value="<?php echo $_SESSION['pin']; ?>" style="display:none;">
+                        <input type="password" name="" id="reg_confirm_pass_pending_two" class="form-input">
                         <div class="flex gap-2">
                             <input type="checkbox" onclick="showPin()"> 
                             <p class="text-white">Show Pin</p>
@@ -468,7 +468,7 @@ if (!isset($_SESSION['loggedin'])) {
                             ease-in-out
                             ml-1"
                             name="btn_release"
-                            id="btn_pending"
+                            id="btn_pendingtwo"
                             disabled="true"
                             style="background-color:gray;"
                             >Release</button>
@@ -1012,6 +1012,21 @@ if (!isset($_SESSION['loggedin'])) {
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     
     <script>
+        //Master - Received
+        $("#reg_confirm_pass_pending_two").blur(function() {
+            var user_pass_pending = $("#reg_pass_pending_two").val();
+            var user_pass2_pending = $("#reg_confirm_pass_pending_two").val();
+            //var enter = $("#enter").val();
+
+            if (user_pass_pending == user_pass2_pending) {
+                $("#btn_pendingtwo").css("background","blue");
+                $("#btn_pendingtwo").prop('disabled',false)//use prop()
+            } else {
+                $("#btn_pendingtwo").css("background","gray");
+                $("#btn_pendingtwo").prop('disabled',true)//use prop()
+            }
+
+        });
         //Master - Received
         $("#reg_confirm_pass_pending").blur(function() {
             var user_pass_pending = $("#reg_pass_pending").val();
