@@ -14,7 +14,7 @@ if (isset($_POST['btnsubmit'] )) {
             VALUES ('".$name."','".$email."','".$message."')";
                 if(mysqli_query($con, $sql)){
                     $success = "1";
-                    $success_message = "Registered successfully. Please wait for the admin to accept your registration.";
+                    $success_message = "Successfully sent. We will get back to you. Thank you.";
                 } else{
                     $errors = "1";
                     $error_message = "Error submitting the form. Please try again.";
@@ -64,6 +64,24 @@ if (isset($_POST['btnsubmit'] )) {
             <div class="form-text pb-5">
                 <p class="text-xl text-[#009a4e]">Got any question? Feel free to contact us.</p>
             </div>
+            <?php
+                if(!empty($errors)){
+                    ?>
+                    <div class="alert bg-red-100 rounded-lg py-5 px-6 mb-3 text-base text-red-700 inline-flex items-center w-full alert-dismissible fade show justify-between" role="alert">
+                        <strong class="mr-1"><?php echo $error_message; ?></strong>
+                        <button type="button" class=""  data-bs-dismiss="alert" aria-label="Close"><span class="fa fa-times"></span></button>
+                    </div>
+                    <?php
+                }
+                if(!empty($success)){
+                    ?>
+                    <div class="alert bg-blue-100 rounded-lg py-5 px-6 mb-3 text-base text-blue-700 inline-flex items-center w-full alert-dismissible fade show justify-between" role="alert">
+                        <strong class="mr-1"><?php echo $success_message; ?></strong>
+                        <button type="button"  data-bs-dismiss="alert" aria-label="Close"><span class="fa fa-times"></span></button>
+                    </div>
+                    <?php
+                }
+            ?>
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
