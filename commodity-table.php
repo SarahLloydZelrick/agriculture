@@ -79,7 +79,7 @@ if (!isset($_SESSION['loggedin'])) {
                                         <form action="commodity-form.php" method="GET">
                                             <input type="text" name="farmerid" value="<?php echo $row["farmerId"]; ?>" style="display:none;" readonly>
                                             <input type="text" name="barangay" value="<?php echo $row["barangay"]; ?>" style="display:none;" readonly>
-                                            <button type="submit" class="fa fa-pencil rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Edit"></button>
+                                            <button type="submit" class="fa fa-eye rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="View"></button>
                                         </form>
                                        
                                     </td>

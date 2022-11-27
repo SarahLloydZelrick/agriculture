@@ -315,6 +315,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container w-full ml-0 pb-12  md:ml-60  md:w-4/5">
         <div class="table_container p-14 gap-5 flex flex-col">
             <h2 class="text-2xl font-bold">Commodity for <?php echo $fullname; ?> </h2>
+            <fieldset disabled="disabled">
                 <form action="" method="post">
                     <div class="flex flex-col md:flex-row w-full">
                         <div class="flex flex-col gap-2 w-full p-2">
@@ -817,10 +818,10 @@ if (!isset($_SESSION['loggedin'])) {
                     </div>
                     <div class="flex flex-row gap-5 pt-5">
                         <a href="javascript:history.go(-1)" class="btn-secondary" value="Back">Back</a>
-                        <button class="btn-primary" type="submit" name="btnupdate">Update</button>
+                        <!--button class="btn-primary" type="submit" name="btnupdate">Update</button-->
                     </div>
                 </form>
-            
+            </fieldset>
         </div>
         <?php
             include "footer.php";
