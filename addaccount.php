@@ -205,7 +205,7 @@ if(isset($_POST["btnsubmit"])) {
                                 <input type="password" name="pin" id="" class="form-input" placeholder="Pin" maxlength="4">
                                 <div class="flex gap-2">
                                     <input type="checkbox" onclick="showPin()"> 
-                                    <p class="text-white">Show Pin</p>
+                                    <p>Show Pin</p>
                                 </div>
                             </div>
                         </div>
