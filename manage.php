@@ -1075,7 +1075,7 @@ if (!isset($_SESSION['loggedin'])) {
             }
         }
         function showPintwo() {
-            var a = document.getElementById("reg_confirm_pass_reject_two");
+            var a = document.getElementById("reg_confirm_pass_deactivate");
             if (a.type === "password") {
                 a.type = "text";
             } else {
@@ -1099,7 +1099,7 @@ if (!isset($_SESSION['loggedin'])) {
             }
         }
         function showPinfive() {
-            var a = document.getElementById("reg_confirm_pass_deactivate");
+            var a = document.getElementById("reg_confirm_pass_reject_two");
             if (a.type === "password") {
                 a.type = "text";
             } else {
@@ -1128,21 +1128,25 @@ if (isset($_POST['btn_pending'] )) {
     $sql = "UPDATE tbl_accounts SET status='approved' WHERE id='".$pending_id."'";
 
     if (mysqli_query($con, $sql)) {
-    //echo "Record updated successfully";
-    echo "
-        <script>
-        Swal.fire({
-            title: 'Account approved successfully',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(function(){
-            window.location.href = window.location.href;
-          })
-        </script>
-    ";
-    } else {
-    echo "Error updating record: " . mysqli_error($con);
-    }
+        $action = "Approve of account in Manage Account module";
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                    VALUES ('".$_SESSION['name']."', '".$action."', '".$pending_id."')";
+            if(mysqli_query($con, $sqlaudit)){
+                    echo "
+                        <script>
+                        Swal.fire({
+                            title: 'Account approved successfully',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(function(){
+                            window.location.href = window.location.href;
+                        })
+                        </script>
+                    ";
+            } else{
+                echo "Error updating record: " . mysqli_error($con);
+            }
+        }
 
     mysqli_close($con);
 
@@ -1161,20 +1165,25 @@ if (isset($_POST['btn_reject'] )) {
     $sql = "UPDATE tbl_accounts SET status='rejected', rejectnote='$rejectnote' WHERE id='".$reject_id."'";
 
     if (mysqli_query($con, $sql)) {
-        echo "
-        <script>
-        Swal.fire({
-            title: 'Account rejected successfully',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(function(){
-            window.location.href = window.location.href;
-          })
-        </script>
-    ";
-    } else {
-    echo "Error updating record: " . mysqli_error($con);
-    }
+        $action = "Rejection of account in Manage Account module"." "."With a note"." ".$rejectnote;
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                    VALUES ('".$_SESSION['name']."', '".$action."', '".$reject_id."')";
+            if(mysqli_query($con, $sqlaudit)){
+                    echo "
+                        <script>
+                        Swal.fire({
+                            title: 'Account rejected successfully',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(function(){
+                            window.location.href = window.location.href;
+                        })
+                        </script>
+                    ";
+            } else{
+                echo "Error updating record: " . mysqli_error($con);
+            }
+        }
 
     mysqli_close($con);
 
@@ -1193,20 +1202,25 @@ if (isset($_POST['btn_reject2'] )) {
     $sql = "UPDATE tbl_accounts SET status='rejected', rejectnote='$rejectnote2' WHERE id='".$reject_id2."'";
 
     if (mysqli_query($con, $sql)) {
-        echo "
-        <script>
-        Swal.fire({
-            title: 'Account rejected successfully',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(function(){
-            window.location.href = window.location.href;
-          })
-        </script>
-    ";
-    } else {
-    echo "Error updating record: " . mysqli_error($con);
-    }
+        $action = "Rejection of account in Manage Account module";
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                    VALUES ('".$_SESSION['name']."', '".$action."', '".$reject_id2."')";
+            if(mysqli_query($con, $sqlaudit)){
+                    echo "
+                        <script>
+                        Swal.fire({
+                            title: 'Account rejected successfully',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(function(){
+                            window.location.href = window.location.href;
+                        })
+                        </script>
+                    ";
+            } else{
+                echo "Error updating record: " . mysqli_error($con);
+            }
+        }
 
     mysqli_close($con);
 
@@ -1224,21 +1238,25 @@ if (isset($_POST['btn_activate'] )) {
     $sql = "UPDATE tbl_accounts SET stat='active' WHERE id='".$activate_id."'";
 
     if (mysqli_query($con, $sql)) {
-        echo "
-        <script>
-        Swal.fire({
-            title: 'Account activated successfully',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(function(){
-            window.location.href = window.location.href;
-          })
-        </script>
-    ";
-    } else {
-    echo "Error updating record: " . mysqli_error($con);
-    }
-
+        $action = "Activation of account in Manage Account module";
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                    VALUES ('".$_SESSION['name']."', '".$action."', '".$activate_id."')";
+            if(mysqli_query($con, $sqlaudit)){
+                    echo "
+                        <script>
+                        Swal.fire({
+                            title: 'Account activated successfully',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(function(){
+                            window.location.href = window.location.href;
+                        })
+                        </script>
+                    ";
+            } else{
+                echo "Error updating record: " . mysqli_error($con);
+            }
+        }
     mysqli_close($con);
 
     }
@@ -1253,27 +1271,29 @@ if (isset($_POST['btn_deactivate'] )) {
     include "config.php";
 
     $sql = "UPDATE tbl_accounts SET stat='inactive' WHERE id='".$deactivate_id."'";
-
     if (mysqli_query($con, $sql)) {
-        echo "
-        <script>
-        Swal.fire({
-            title: 'Account deactivated successfully',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(function(){
-            window.location.href = window.location.href;
-          })
-        </script>
-    ";
-    } else {
-    echo "Error updating record: " . mysqli_error($con);
-    }
-
+        $action = "Deactivation of account in Manage Account module";
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                    VALUES ('".$_SESSION['name']."', '".$action."', '".$deactivate_id."')";
+            if(mysqli_query($con, $sqlaudit)){
+                    echo "
+                        <script>
+                        Swal.fire({
+                            title: 'Account deactivated successfully',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(function(){
+                            window.location.href = window.location.href;
+                        })
+                        </script>
+                    ";
+            } else{
+                echo "Error updating record: " . mysqli_error($con);
+            }
+        }
     mysqli_close($con);
 
     }
-
 ?>
 <?php
 if (isset($_POST['btn_rejectapprove'] )) {
@@ -1285,25 +1305,28 @@ if (isset($_POST['btn_rejectapprove'] )) {
     $sql = "UPDATE tbl_accounts SET status='approved' WHERE id='".$rejectapprove_id."'";
 
     if (mysqli_query($con, $sql)) {
-    //echo "Record updated successfully";
-    echo "
-        <script>
-        Swal.fire({
-            title: 'Account approved successfully',
-            icon: 'success',
-            confirmButtonText: 'OK'
-          }).then(function(){
-            window.location.href = window.location.href;
-          })
-        </script>
-    ";
-    } else {
-    echo "Error updating record: " . mysqli_error($con);
-    }
+    $action = "Approve of account from rejection in Manage Account module";
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                    VALUES ('".$_SESSION['name']."', '".$action."', '".$rejectapprove_id."')";
+            if(mysqli_query($con, $sqlaudit)){
+                    echo "
+                        <script>
+                        Swal.fire({
+                            title: 'Account approved successfully',
+                            icon: 'success',
+                            confirmButtonText: 'OK'
+                        }).then(function(){
+                            window.location.href = window.location.href;
+                        })
+                        </script>
+                    ";
+            } else{
+                echo "Error updating record: " . mysqli_error($con);
+            }
+        }
 
     mysqli_close($con);
-
-    }
+}
 
 ?>
 <?php
