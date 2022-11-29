@@ -135,6 +135,11 @@
         <span>CROP ANALYSIS</span>
       </a>
     </li>
+    <li class="relative admin superuser">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="audittrail.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+        <span>AUDIT TRAIL</span>
+      </a>
+    </li>
     <li class="relative farmer" style="display:none;">
       <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="farmer-intervention.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
         <span>FARMER INTERVENTION</span>
@@ -145,6 +150,7 @@
         <span>MY RSBSA</span>
       </a>
     </li>
+
   </ul>
     </div>
 

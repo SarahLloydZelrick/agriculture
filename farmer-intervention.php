@@ -80,7 +80,9 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Barangay</th>
                             <th>Crop</th>
                             <th>Land Size</th>
+                            <th>Date</th>
                             <th>Status</th>
+                            
                             <!--th class="super-hide">Action</th-->
                         </tr>
                     </thead>
@@ -92,6 +94,9 @@ if (!isset($_SESSION['loggedin'])) {
                         
                         if (mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_assoc($result)) {
+                                $dateadd = $row["dateadded"];
+                                $dt = new DateTime($dateadd);
+                                $dateadded = $dt->format('m-d-Y');
                         ?>
                                 <tr>
                                     <td style="display:none;"><?php echo $row["id"]; ?> </td>
@@ -100,6 +105,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["farmbarangay"]; ?></td>
                                     <td><?php echo $row["crop"]; ?></td>
                                     <td><?php echo $row["size"]; ?> hectares</td>
+                                    <td><?php echo $dateadded; ?></td>
                                     <td>
                                         <?php 
                                             $acctstat =  $row["status"];
@@ -110,6 +116,7 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
+                                    
                                     <!--td class="super-hide">
                                         <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#receiveModal"></button>
                                         <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Delete" data-bs-toggle="modal" data-bs-target="#deleteModal"></button>
@@ -137,8 +144,9 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Crop</th>
                             <th>Land Size</th>
                             <th>Programs</th>
+                            <th>Date</th>
                             <th>Status</th>
-                            <th class="super-hide">Action</th>
+                           
                         </tr>
                     </thead>
                     <tbody>
@@ -149,6 +157,9 @@ if (!isset($_SESSION['loggedin'])) {
                         
                         if (mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_assoc($result)) {
+                                $dateadd = $row["dateadded"];
+                                $dt = new DateTime($dateadd);
+                                $dateadded = $dt->format('m-d-Y');
                         ?>
                                 <tr>
                                     <td style="display:none;"><?php echo $row["id"]; ?> </td>
@@ -157,6 +168,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["crop"]; ?></td>
                                     <td><?php echo $row["size"]; ?></td>
                                     <td><?php echo $row["amount"]; ?></td>
+                                    <td><?php echo $dateadded; ?></td>
                                     <td>
                                         <?php 
                                             $acctstat =  $row["status"];
@@ -167,9 +179,7 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
-                                    <td class="super-hide">
-                                        <button class="fa fa-times rounded-lg border-2 border-red-500/50 p-2 w-9 icon-red" title="Not Receive" data-bs-toggle="modal" data-bs-target="#receivedeleteModal"></button>
-                                    </td>
+                                    
                                 </tr>
                         <?php
                             }
@@ -193,18 +203,22 @@ if (!isset($_SESSION['loggedin'])) {
                             <th>Crop</th>
                             <th>Land Size</th>
                             <th>Programs</th>
+                            <th>Date</th>
                             <th>Status</th>
-                            <th class="super-hide">Action</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmerId = '".$_SESSION['farmerId']."";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status,dateadded FROM tbl_interventiontwo WHERE status = 'deleted' AND farmerId = '".$_SESSION['farmerId']."";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
                             while($row = mysqli_fetch_assoc($result)) {
+                                $dateadd = $row["dateadded"];
+                                $dt = new DateTime($dateadd);
+                                $dateadded = $dt->format('m-d-Y');
                         ?>
                                 <tr>
                                 <td style="display:none;"><?php echo $row["id"]; ?> </td>
@@ -213,6 +227,7 @@ if (!isset($_SESSION['loggedin'])) {
                                     <td><?php echo $row["crop"]; ?></td>
                                     <td><?php echo $row["size"]; ?></td>
                                     <td><?php echo $row["amount"]; ?></td>
+                                    <td><?php echo $dateadded; ?></td>
                                     <td>
                                         <?php 
                                             $acctstat =  $row["status"];
@@ -223,9 +238,7 @@ if (!isset($_SESSION['loggedin'])) {
                                             }    
                                         ?> 
                                     </td>
-                                    <td class="super-hide">
-                                    <button class="fa fa-check rounded-lg border-2 border-blue-500/50 p-2 w-9 icon-blue" title="Receive" data-bs-toggle="modal" data-bs-target="#deletereceiveModal"></button>
-                                    </td>
+                                    
                                 </tr>
                         <?php
                             }
