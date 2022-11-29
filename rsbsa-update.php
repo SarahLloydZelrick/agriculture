@@ -159,11 +159,11 @@
                         <div class="flex w-full flex-col md:flex-row">
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Mobile Number</label>
-                                <input type="number" class="form-input w-full" name="number" placeholder="Applicant mobile number">
+                                <input type="number" class="form-input w-full" name="number" value="<?php echo $number; ?>" placeholder="Applicant mobile number">
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Landline Number</label>
-                                <input type="number" class="form-input w-full" name="telephone" placeholder="Applicant landline number">
+                                <input type="number" class="form-input w-full" name="telephone" value="<?php echo $telephone; ?>" placeholder="Applicant landline number">
                             </div>
                         </div>
                         <h3 class="text-xl font-bold">Applicant Address</h3>

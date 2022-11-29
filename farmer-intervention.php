@@ -6,8 +6,18 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
-$session_barangay = $_SESSION['barangay'];
-$session_number = $_SESSION['number'];
+    $session_barangay = "tbl-".$_SESSION['barangay'];
+    $session_number = $_SESSION['number'];
+
+    include "config.php";
+    $sqlId = "SELECT `farmerId` FROM $session_barangay WHERE number = 'session_number' LIMIT 1";
+    $resultId = mysqli_query($con, $sqlId);
+    if (mysqli_num_rows($resultId) > 0) {
+        while($rowId = mysqli_fetch_assoc($resultId)) {
+            $forfarmerId = $rowId['farmerId'];
+        }
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,8 +88,8 @@ $session_number = $_SESSION['number'];
                     </thead>
                     <tbody>
                         <?php
-                        include "config.php";
-                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active' AND farmerId = ''";
+                        
+                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active' AND farmerId = '".$forfarmerId."'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -136,7 +146,7 @@ $session_number = $_SESSION['number'];
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received'";
+                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received' AND farmerId = '".$forfarmerId."'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -192,7 +202,7 @@ $session_number = $_SESSION['number'];
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted'";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmerId = '".$forfarmerId."";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {

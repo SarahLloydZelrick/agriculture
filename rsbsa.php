@@ -279,8 +279,10 @@ if(isset($_POST["btnsubmit"])) {
                         $organicepractionerc5 = mysqli_real_escape_string($con, $_POST['organicepractionerc5']);
                         $remarksc5 = mysqli_real_escape_string($con, $_POST['remarksc5']);
                         $farmerId = mysqli_real_escape_string($con, $_POST['farmerId']);
-                        $number = mysqli_real_escape_string($con, $_POST['number']);
+                        $fornumber = mysqli_real_escape_string($con, $_POST['number']);
                         $telephone = mysqli_real_escape_string($con, $_POST['telephone']);
+
+                        $number = "+63".$fornumber;
                       /*  $tbl = "tbl";
                         $under = "_";
                         $btgy = "barangay1";
@@ -778,8 +780,15 @@ $(document).ready(function() {
                         <h3 class="text-xl font-bold">Applicant Contact Info</h3>
                         <div class="flex w-full flex-col md:flex-row">
                             <div class="flex flex-col gap-2 w-full p-2">
-                                <label for="">Mobile Number</label>
-                                <input type="number" class="form-input w-full" name="number" placeholder="Applicant mobile number">
+                                <label for="name" class="text-white">Contact Number</label>
+                                <div>
+                                    <label class="input-field inline-flex items-baseline border-none shadow-md bg-white p-3 form-input">
+                                        <span class="flex-none text-dusty-blue-darker select-none leading-none">+63</span>
+                                        <div class="flex-1 leading-none">
+                                            <input id="handle" type="number" class="placeholder-blue w-full p-0 no-outline text-dusty-blue-darker" name="number" placeholder="9175048769" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="10">
+                                        </div>
+                                    </label>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-2 w-full p-2">
                                 <label for="">Landline Number</label>

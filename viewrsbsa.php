@@ -545,7 +545,8 @@ if (!isset($_SESSION['loggedin'])) {
                               $remarksc5 = mysqli_real_escape_string($con, $row['remarksc5']);
                               $farmerId = mysqli_real_escape_string($con, $row['farmerId']);
 
-                              $number = mysqli_real_escape_string($con, $row['number']);
+                              $fornumber = mysqli_real_escape_string($con, $row['number']);
+                              $number = "+63".$fornumber;
                               $telephone = mysqli_real_escape_string($con, $row['telephone']);
                             }
                         } else {
