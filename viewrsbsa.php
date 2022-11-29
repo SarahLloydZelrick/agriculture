@@ -316,6 +316,8 @@ if (!isset($_SESSION['loggedin'])) {
                               $organicepractionerc5 = mysqli_real_escape_string($con, $row['organicepractionerc5']);
                               $remarksc5 = mysqli_real_escape_string($con, $row['remarksc5']);
                               $farmerId = mysqli_real_escape_string($con, $row['farmerId']);
+
+                              $farmerimage = mysqli_real_escape_string($con, $row['uploadFile2x2']);
                             }
                         } else {
                         echo "0 results";

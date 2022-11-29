@@ -48,7 +48,7 @@
                     </div>
                 </th>
                 <th colspan="2">
-                    <img src="images/user/userone.png" class="w-36 h-36" alt="" style="margin: 0 auto;">
+                    <img src="<?php echo $farmerimage; ?>" class="w-36 h-36" alt="" style="margin: 0 auto;">
                 </th> 
             </tr>
             <!-- SECOND ROW -->
