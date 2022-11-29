@@ -1343,7 +1343,7 @@ if (isset($_POST['btn_release'] )) {
             if (mysqli_query($con, $sqlinsert)) {
 
                 $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`programtype`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`) 
-                VALUES($release_programs,$release_programtype,(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE `farmbarangay` = '$release_barangay' AND `crop` = '$release_commodity' AND `size` = '$release_landsize'))";
+                VALUES('".$release_programs."','".$release_programtype."',(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE `farmbarangay` = '$release_barangay' AND `crop` = '$release_commodity' AND `size` = '$release_landsize'))";
             /*    $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`,`programtype`) ";
                 $sqlinserttwo .= "VALUES (";
                 $sqlinserttwo .= "'".$release_programs."'"; 
