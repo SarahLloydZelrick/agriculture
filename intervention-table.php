@@ -1344,7 +1344,7 @@ if (isset($_POST['btn_release'] )) {
                 $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`,`programtype`) ";
                 $sqlinserttwo .= "VALUES (";
                 $sqlinserttwo .= "'".$release_programs."'"; 
-                $sqlinserttwo .= ",'"."(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize')" . "'";
+                $sqlinserttwo .= ",'"."(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE farmbarangay = $release_barangay AND crop = $release_commodity AND size = $release_landsize)" . "'";
                 $sqlinserttwo .= ",'".$release_programtype."'"; 
                 $sqlinserttwo .= ")";
                 //$sqlinserttwo = "INSERT INTO tbl_released (farmerId, name, farmbarangay, crop, size, status, programtype, program) VALUES
