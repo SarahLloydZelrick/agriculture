@@ -1,4 +1,5 @@
 <?php
+ini_set('display_errors', 1);
 // We need to use sessions, so you should always start sessions using the below code.
 session_start();
 // If the user is not logged in redirect to the login page...
@@ -6,15 +7,15 @@ if (!isset($_SESSION['loggedin'])) {
 	header('Location: index.php');
 	exit;
 }
-    $session_barangay = "tbl-".$_SESSION['barangay'];
+    $session_barangay = "tbl_".$_SESSION['barangay'];
     $session_number = $_SESSION['number'];
 
     include "config.php";
-    $sqlId = "SELECT `farmerId` FROM $session_barangay WHERE number = 'session_number' LIMIT 1";
+    $sqlId = "SELECT `farmerId` FROM $session_barangay WHERE number = '".$session_number."'";
     $resultId = mysqli_query($con, $sqlId);
     if (mysqli_num_rows($resultId) > 0) {
         while($rowId = mysqli_fetch_assoc($resultId)) {
-            $forfarmerId = $rowId['farmerId'];
+            $_SESSION['farmerId'] = $rowId['farmerId'];
         }
     }
 
@@ -52,10 +53,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container w-full ml-0 md:ml-60  md:w-4/5">
         <div class="table_container p-10 gap-5 flex flex-col">
             <h2 class="text-2xl font-bold">Intervention</h2>
-            <?php
-                echo $session_number;
-                echo $session_barangay;
-            ?>
+            
             <div class="table_buttons flex flex-row gap-5 ">
                 <button 
                 class="inline-block px-6 py-2.5 bg-blue-400 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-500 hover:shadow-lg focus:bg-blue-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-600 active:shadow-lg transition duration-150 ease-in-out"
@@ -89,7 +87,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         
-                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active' AND farmerId = '".$forfarmerId."'";
+                        $sql = "SELECT * FROM tbl_intervention WHERE status = 'active' AND farmerId = '".$_SESSION['farmerId']."'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -146,7 +144,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received' AND farmerId = '".$forfarmerId."'";
+                        $sql = "SELECT * FROM tbl_interventiontwo WHERE status = 'received' AND farmerId = '".$_SESSION['farmerId']."'";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
@@ -202,7 +200,7 @@ if (!isset($_SESSION['loggedin'])) {
                     <tbody>
                         <?php
                         include "config.php";
-                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmerId = '".$forfarmerId."";
+                        $sql = "SELECT id,name,farmbarangay,crop,size,amount,status status FROM tbl_interventiontwo WHERE status = 'deleted' AND farmerId = '".$_SESSION['farmerId']."";
                         $result = mysqli_query($con, $sql);
                         
                         if (mysqli_num_rows($result) > 0) {
