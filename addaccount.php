@@ -81,12 +81,22 @@ if(isset($_POST["btnsubmit"])) {
 
             $stat = "active";
             $status = "approved";
-
+            $fullname = $firstname." ".$middlename." ".$lastname;
             $sql = "INSERT INTO tbl_accounts (name, middlename, lastname, number, email, password, userlevel, address, sex, age, status, photo,stat,bday,pin) 
                     VALUES ('".$firstname."', '".$middlename."', '".$lastname."', '".$number."', '".$email."', '".$password."', '".$userlevel."', '".$address."', '".$sex."', '".$userbday."','".$status."', '".$photo."','".$stat."','".$bday."','".$pin."')";
                 if(mysqli_query($con, $sql)){
-                    $success = "1";
-                    $success_message = "Account added successfully";
+                    $action = "Account creation in Add Account module";
+                    $actionto = "Account created for ".$fullname;
+                    $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                                VALUES ('".$_SESSION['name']."', '".$action."', '".$actionto."')";
+                        if(mysqli_query($con, $sqlaudit)){
+                            $success = "1";
+                            $success_message = "Account added successfully";
+                        }
+                        else{
+                            $errors = "1";
+                            $error_message = "Error submitting the form. Please try again.";
+                        }
                 } else{
                     $errors = "1";
                     $error_message = "Error submitting the form. Please try again.";
