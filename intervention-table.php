@@ -1338,10 +1338,10 @@ if (isset($_POST['btn_release'] )) {
     $release_programtype = $_POST['release_programtype'];
     //$release_programs = $_POST['release_programs'].$_POST['release_amount'];
     $release_programs = "test";
-    $sqlinsert = "INSERT INTO tbl_intervention_archieve (program,farmerId, name, farmbarangay, crop, size, status,programtype)
+    $sqlinsert = "INSERT INTO tbl_intervention_archieve (farmerId, name, farmbarangay, crop, size, status)
         SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'";
             if (mysqli_query($con, $sqlinsert)) {
-                $sqlinserttwo = "INSERT INTO `tbl_released` (`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`,`programtype`) ";
+                $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`,`programtype`) ";
                 $sqlinserttwo .= "VALUES (";
                 $sqlinserttwo .= "'".$release_programs."'"; 
                 $sqlinserttwo .= ",'"."(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize')" . "'";
