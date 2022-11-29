@@ -140,6 +140,11 @@
         <span>FARMER INTERVENTION</span>
       </a>
     </li>
+    <li class="relative farmer" style="display:none;">
+      <a class="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-white text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out" href="farmer-rsbsa.php" data-mdb-ripple="true" data-mdb-ripple-color="primary">
+        <span>MY RSBSA</span>
+      </a>
+    </li>
   </ul>
     </div>
 
