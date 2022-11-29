@@ -1341,15 +1341,19 @@ if (isset($_POST['btn_release'] )) {
     $sqlinsert = "INSERT INTO tbl_intervention_archieve (farmerId, name, farmbarangay, crop, size, status)
         SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'";
             if (mysqli_query($con, $sqlinsert)) {
-                $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`,`programtype`) ";
+
+                $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`programtype`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`) 
+                VALUES('$release_programs','$release_programtype',(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE farmbarangay = $release_barangay AND crop = $release_commodity AND size = $release_landsize))";
+            /*    $sqlinserttwo = "INSERT INTO `tbl_released` (`program`,`farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status`,`programtype`) ";
                 $sqlinserttwo .= "VALUES (";
                 $sqlinserttwo .= "'".$release_programs."'"; 
                 $sqlinserttwo .= ",'"."(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE farmbarangay = $release_barangay AND crop = $release_commodity AND size = $release_landsize)" . "'";
                 $sqlinserttwo .= ",'".$release_programtype."'"; 
-                $sqlinserttwo .= ")";
-                echo "<script>console.log('Debug Objects: " . $sqlinserttwo . "' );</script>";
+                $sqlinserttwo .= ")";*/
+
                 //$sqlinserttwo = "INSERT INTO tbl_released (farmerId, name, farmbarangay, crop, size, status, programtype, program) VALUES
                 //('$release_programtype',(SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'),'$release_programs')";
+
                 //$sqlinserttwo = "INSERT INTO `tbl_released` (`programtype`,`farmerId`, `name`, `farmbarangay`, `crop`, `size`,`status`,`program`) 
                 //VALUES ('$release_programtype',(SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'),'$release_programs')";
                         if (mysqli_query($con, $sqlinserttwo)) {
