@@ -1347,7 +1347,7 @@ if (isset($_POST['btn_release'] )) {
                 $sqlinserttwo .= ",'"."(SELECT `farmerId`,`name`,`farmbarangay`,`crop`,`size`,`status` FROM `tbl_intervention` WHERE farmbarangay = $release_barangay AND crop = $release_commodity AND size = $release_landsize)" . "'";
                 $sqlinserttwo .= ",'".$release_programtype."'"; 
                 $sqlinserttwo .= ")";
-                console.log($sqlinserttwo);
+                echo "<script>console.log('Debug Objects: " . $sqlinserttwo . "' );</script>";
                 //$sqlinserttwo = "INSERT INTO tbl_released (farmerId, name, farmbarangay, crop, size, status, programtype, program) VALUES
                 //('$release_programtype',(SELECT farmerId, name, farmbarangay, crop, size, status FROM tbl_intervention WHERE farmbarangay = '$release_barangay' AND crop = '$release_commodity' AND size = '$release_landsize'),'$release_programs')";
                 //$sqlinserttwo = "INSERT INTO `tbl_released` (`programtype`,`farmerId`, `name`, `farmbarangay`, `crop`, `size`,`status`,`program`) 
