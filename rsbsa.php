@@ -780,7 +780,7 @@ $(document).ready(function() {
                         <h3 class="text-xl font-bold">Applicant Contact Info</h3>
                         <div class="flex w-full flex-col md:flex-row">
                             <div class="flex flex-col gap-2 w-full p-2">
-                                <label for="name" class="text-white">Contact Number</label>
+                                <label for="name">Contact Number</label>
                                 <div>
                                     <label class="input-field inline-flex items-baseline border-none shadow-md bg-white p-3 form-input">
                                         <span class="flex-none text-dusty-blue-darker select-none leading-none">+63</span>
