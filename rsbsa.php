@@ -390,6 +390,14 @@ if(isset($_POST["btnsubmit"])) {
                                         if(mysqli_query($con, $sqlc5)){
                                         }
                                 }
+
+                                $action = "RSBSA created in Add RSBSA module";
+                                $actionto = "Account created for ".$farmerfullname;
+                                $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                                            VALUES ('".$_SESSION['name']."', '".$action."', '".$actionto."')";
+                                    if(mysqli_query($con, $sqlaudit)){
+                                    }
+
                                 $success = "1";
                                 $success_message = "Form added successfully";
                                 echo "<script>

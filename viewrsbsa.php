@@ -59,7 +59,7 @@ if (!isset($_SESSION['loggedin'])) {
             <tbody>
               <?php
                   include "config.php";
-                  $sql = "SELECT id, CONCAT(firstname,' ',middlename,' ',surname) as fullname, enrollmenttype, dateadminstered, refnumber, barangay, uploadFile2x2 FROM $brgyname";
+                  $sql = "SELECT id, CONCAT(firstname,' ',middlename,' ',surname) as fullname, enrollmenttype, dateadminstered, refnumber, barangay, uploadFile2x2 FROM $brgyname WHERE 1";
                   $result = $con->query($sql);
                   
                   if ($result->num_rows > 0) {

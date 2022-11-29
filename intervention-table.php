@@ -1166,7 +1166,13 @@ if (isset($_POST['btn_masterapprove'] )) {
         $sqlinsert = "INSERT INTO `tbl_interventiontwo`(`farmerId`, `name`, `farmbarangay`, `crop`, `size`, `amount`, `status`,`programs`) 
                     VALUES ('".$master_farmid."','".$master_name."','".$master_barangay."','".$master_crop."','".$master_size."','".$receive_amount."','".$master_status."','".$programs."')";
                     if (mysqli_query($con, $sqlinsert)) {
-                        echo "
+                        
+                        $action = "Account received in Intervention module - Master List";
+                        $actionto = "Account received for ".$master_name;
+                        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                                VALUES ('".$_SESSION['name']."', '".$action."', '".$actionto."')";
+                        if(mysqli_query($con, $sqlaudit)){
+                            echo "
                             <script>
                             Swal.fire({
                                 title: 'Account received successfully',
@@ -1177,6 +1183,10 @@ if (isset($_POST['btn_masterapprove'] )) {
                             })
                             </script>
                         ";
+                        }
+                        else{
+                            echo "Error updating record: " . mysqli_error($con);
+                        }
                     } else {
                         echo "Error updating record: " . mysqli_error($con);
             } 
@@ -1210,7 +1220,12 @@ if (isset($_POST['btn_masterdelete'] )) {
         $sqlinsert = "INSERT INTO `tbl_interventiontwo`(`farmerId`, `name`, `farmbarangay`, `crop`, `size`, `amount`, `status`,`programs`) 
                     VALUES ('".$master_farmid."','".$master_name."','".$master_barangay."','".$master_crop."','".$master_size."','".$receive_amount."','".$master_status."','".$programs."')";
                     if (mysqli_query($con, $sqlinsert)) {
-                        echo "
+                        $action = "Account deleted in Intervention module - Master List";
+                        $actionto = "Account deleted for ".$master_name;
+                        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                                VALUES ('".$_SESSION['name']."', '".$action."', '".$actionto."')";
+                        if(mysqli_query($con, $sqlaudit)){
+                            echo "
                             <script>
                             Swal.fire({
                                 title: 'Account deleted successfully',
@@ -1221,6 +1236,10 @@ if (isset($_POST['btn_masterdelete'] )) {
                             })
                             </script>
                         ";
+                        }
+                        else{
+                            echo "Error updating record: " . mysqli_error($con);
+                        }
                     } else {
                         echo "Error updating record: " . mysqli_error($con);
             } 
@@ -1241,7 +1260,12 @@ if (isset($_POST['btn_receivedelete'] )) {
     $sql = "UPDATE tbl_interventiontwo SET status='deleted' WHERE id='".$receive_delete_id."'";
 
     if (mysqli_query($con, $sql)) {
-        echo "
+        $action = "Account deleted in Intervention module - Receive delete";
+        $actionto = "Account deleted for ".$receive_delete_id;
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                VALUES ('".$_SESSION['name']."', '".$action."', '".$actionto."')";
+        if(mysqli_query($con, $sqlaudit)){
+            echo "
             <script>
             Swal.fire({
                 title: 'Account deleted successfully',
@@ -1252,6 +1276,10 @@ if (isset($_POST['btn_receivedelete'] )) {
             })
             </script>
         ";
+        }
+        else{
+            echo "Error updating record: " . mysqli_error($con);
+        }
     }else{
         echo "Error updating record: " . mysqli_error($con);
     }
@@ -1271,10 +1299,15 @@ if (isset($_POST['btn_deletereceive'] )) {
     $sql = "UPDATE tbl_interventiontwo SET status='received' WHERE id='".$delete_receive_id."'";
 
     if (mysqli_query($con, $sql)) {
-        echo "
+        $action = "Account deleted in Intervention module - Delete receive";
+        $actionto = "Account deleted for ".$delete_receive_id;
+        $sqlaudit = "INSERT INTO audit_trail (name, action, actionto) 
+                VALUES ('".$_SESSION['name']."', '".$action."', '".$actionto."')";
+        if(mysqli_query($con, $sqlaudit)){
+            echo "
             <script>
             Swal.fire({
-                title: 'Account received successfully',
+                title: 'Account deleted successfully',
                 icon: 'success',
                 confirmButtonText: 'OK'
             }).then(function(){
@@ -1282,6 +1315,10 @@ if (isset($_POST['btn_deletereceive'] )) {
             })
             </script>
         ";
+        }
+        else{
+            echo "Error updating record: " . mysqli_error($con);
+        }
     }else{
         echo "Error updating record: " . mysqli_error($con);
     }
